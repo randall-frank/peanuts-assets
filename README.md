@@ -9,6 +9,8 @@ Copyright (C) 2026 Andrew Florance and Randall Frank
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
 
+[splash]
+
 Peanuts, Pickles and Propaganda is a work of interactive fiction.
 The core stories are written in a modified copy of the [Ink] framework.
 
@@ -108,4 +110,4 @@ the 'z' field to retain backward compatibility with old save files.
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
-[splash]: locations/splash.png
+[splash]: https://github.com/randall-frank/peanuts-assets/blob/main/src/media/locations/splash.png

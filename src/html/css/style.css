@@ -1,0 +1,172 @@
+body {
+    background-color: #0a0a0c;
+    color: #00ffcc; /* Cyan Terminal Glow */
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+.outerContainer {
+    background: linear-gradient(180deg, #121216 0%, #050505 100%);
+    height: 100vh;
+}
+
+/* Futuristic Borders */
+.container, .sidebar, .imagesidebar {
+    background: rgba(20, 20, 25, 0.8);
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    height: 100%;
+}
+
+/* Typography */
+h1, .head1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ff9900; /* Propaganda Amber */
+    text-shadow: 2px 2px 5px rgba(255, 153, 0, 0.5);
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+h2, .head2 {
+    text-shadow: 2px 2px 5px rgba(255, 153, 0, 0.5);
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.computerblink {
+    color: #ff3300;
+    animation: blinker 1.2s linear infinite;
+}
+
+@keyframes blinker { 50% { opacity: 0; } }
+
+/* Interactive Elements */
+a {
+    color:#ccffcc;  /* #00ffcc; */
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+.choice {
+    text-align: center;
+    background: rgba(0, 255, 204, 0.1);
+    border: 1px solid #00ffcc;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.choice:hover {
+    background: rgba(0, 255, 204, 0.3);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-thumb { background: #00ffcc; }
+
+
+/****************** Attribution image ******************/
+table.devs {
+    font-family: arial, sans-serif;
+    border-collapse: separate;
+    border-spacing: 2;
+    width: 100%;
+    text-align: center; 
+    font-weight: bold;
+    vertical-align: middle;
+    table-layout: fixed;
+}
+
+table.devs td,
+table.devs th {
+    border: 0;
+    box-shadow: 0 0 0 2px #dddddd;
+    padding: 8px;
+}
+
+table.devs>tbody>tr:first-child>td:first-child {
+  border-top-left-radius: 10px;
+}
+table.devs>tbody>tr:first-child>td:last-child {
+  border-top-right-radius: 10px;
+}
+table.devs>tbody>tr:last-child>td:first-child {
+  border-bottom-left-radius: 10px;
+}
+table.devs>tbody>tr:last-child>td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+/**************** Cookie Consent Banner ****************/
+.cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+    font-family: 'Open Sans', sans-serif;
+}
+.cookie-consent-button {
+    background-color: rgba(0, 255, 204, 0.1);;
+    color: white;
+    /* border: none; */
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color:#00ffcc;
+}
+
+/**************** simple-meter display ****************/
+
+.simple-meter {
+  box-sizing: content-box;
+  height: 0.7em; /* Can be anything */
+  position: relative;
+  margin: 0px 0px 0px 12px; /* Just for demo spacing top,right,bottom,left */
+  background: #3e3e3e;
+  border-radius: 0.7em;
+  padding: 2px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+.simple-meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: rgb(204, 143, 26);
+  /* box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4); */
+  position: relative;
+  overflow: hidden;
+}
+

@@ -1,0 +1,63 @@
+# This file defines the items one might find in the game.
+# It is used by 'build' to generate two files:
+#     build/item_globals.ink - contains the VAR specifications for all of the items
+#     build/item_globals.js - defines the json global variable 'storyItems'
+#
+# Items are stored in the [items] block.  The core name used for the ink variable
+# and the HTML entities is "name" from [item.{name}].  This name should be simple
+# lowercase letters (a-z) and the underscore character for compatibility with
+# TOML, JSON, Ink and HTML ids.
+#
+# Required item keys:
+# name = "Short name"   - simple item screen name for lists, etc
+# description = "Item description"  - a longer text block describing the item
+#
+# Optional item keys:
+# url = "items/tattoo.png"   - local URL to an image of the item
+# hide_variable = "varname"  - name of a variable that will hide the item is the variable is non-zero
+# code = "varname"           - the name of a variable with a keycode value
+# symbol = "1"               - if 'symbol' is present, then the code is symbols, not numbers
+#
+# Example:
+#
+# [items.keycard]
+# name = "Magnetic key card"
+# description = "A standard magnetic key card."
+# url = "items/keycard.png"
+#
+[items]
+
+#
+# States
+#
+# States define a collection of entities that represent
+# things that are represented as integer counts.  Things
+# like "health" or "gold", etc are of this ilk.  Like
+# items, the ink variable is defined using tha name [states.{name}]
+#
+# Required state keys:
+# name = "Short name"   - simple item screen name for the value
+# default = X   - the default value used in the .ink VAR value
+# hide = Y   - specify a condition where the state is to be hidden in the GUI
+#            - 0=always show, 1=hide, 2=hide if value is 0
+#
+# Optional item keys:
+# hide_variable = "varname"   - if specified, this variable value is to be
+#                             - used in the evaluation of 'hide' instead of
+#                             - the state value variable.
+# percent = 1   - if present, the value is interpreted as a "percentage" for display
+# meter = 0 - 0=no meter display, 1=meter w/base color, 2=red->green color
+# url = "foo/img.png"  - if specified, an icon to put after the status
+#
+# Example:
+#
+# [states.power]
+# name = "Power"
+# default = 100
+# hide = 2
+# hide_variable = "tattooed"
+# percent = 1
+# meter = 1
+#
+[states]
+

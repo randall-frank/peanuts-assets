@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="items/icon-150x150.png" sizes="32x32" />
+    <title>Peanuts, Pickles and Propaganda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Futuristic Font imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="css/fontawesome.css" rel="stylesheet" />
+    <link href="css/brands.css" rel="stylesheet" />
+    <link href="css/solid.css" rel="stylesheet" />
+    <link href="css/regular.css" rel="stylesheet" />
+
+    <!-- Dependencies -->
+    <script src="js/glitchium.min.js"></script>
+    <script src="js/cookies.js"></script>
+    <script src="js/item_globals.js"></script> 
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2CCLGG3BX9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2CCLGG3BX9');
+    </script>
+</head>
+
+<body class="dark">
+    <div id="storyContainer" class="outerContainer">
+        <div class="row">
+            <!-- Sidebar: System Controls & Inventory -->
+            <div id="sidebar" class="sidebar">
+                <div>                      
+                    <img class="glitch" src="items/icon-150x150.png">
+                </div>
+                <p class="listheader">STATION_OS v4.2</p>
+                <div id="controls" class="buttons">
+                  <a id="rewind" title="Reboot System">Begin</a>
+                  <a id="save" title="Back up Data">| Save</a>
+                  <a id="reload" title="Restore Data">| Load</a>
+                </div>
+                
+                <div id="sound-slider__container" style="display: flex; align-items: center;">  
+                    <i id="volume_off" style="width: 10%;" class="fa-solid fa-volume-xmark"></i>
+                    <i id="volume_med" style="width: 10%;" class="fa-solid fa-volume-low"></i>
+                    <i id="volume_high" style="width: 10%;" class="fa-solid fa-volume-high"></i>  
+                    <input type="range" value="30" min="0" max="100" id="volume_slider">
+                </div>
+
+                <div id="statussection">
+                    <hr>
+                    <p class="listheader">CephaloDynamics Global</p>
+                    <div id="statusinfo">
+                    </div>
+                </div>
+
+                <div id="inventorysection">
+                    <hr>
+                    <p class="listheader">Colossus System Status</p>
+                    <div id="inventory"></div>
+                    <hr>
+                    <p class="listheader"><i class="fa-brands fa-x-twitter"></i> Followers</p>
+                    <div id="itemdetails"></div>
+                </div>
+            </div>
+
+            <!-- Main Story Console -->
+            <div class="container">
+                <p id="locationname" class="computerblink"></p>
+                <div id="story">
+                    <div class="header">
+                        <h1 class="head1">PEANUTS, PICKLES AND PROPAGANDA</h1>
+                        <h2 class="head2">Alien IT Department - Station Log</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar: Visual Feed -->
+            <div class="imagesidebar">
+                <div id="images"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cookie-consent-banner" class="cookie-consent-banner">
+        This work of interactive fiction uses cookies to ensure you get the best experience.
+        <button id="accept-cookies" class="cookie-consent-button">Accept</button>
+        <button id="reject-cookies" class="cookie-consent-button">Reject</button>
+    </div>
+
+    <!-- Core Engine Scripts -->
+    <script src="js/ink.js"></script>
+    <script src="js/peanuts.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        const glitch = new Glitchium();
+        glitch.glitch('.glitch',  
+            { 
+                intensity: 0.2,
+                layers: 7,
+                shake: false,
+                glitchTimeSpan: {start: 0.25, end: 0.4}
+            });
+    </script>
+
+</body>
+</html>

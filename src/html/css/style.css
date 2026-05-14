@@ -42,10 +42,21 @@ h2, .head2 {
     font-size: 1.3em;
 }
 
-.computerblink {
+.locationerror {
     color: #ff3300;
     animation: blinker 1.2s linear infinite;
 }
+
+.locationlocal {
+    color: #00ff2a;
+    animation: blinker 5s linear infinite;
+}
+
+.locationvirtual {
+    color: #0400ff;
+    animation: blinker 3s linear infinite;
+}
+
 
 @keyframes blinker { 50% { opacity: 0; } }
 
@@ -170,3 +181,73 @@ img {
   overflow: hidden;
 }
 
+
+
+/**************** stock ticker display ****************/
+
+.ticker-table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: #121212;  Dark theme standard for tickers */
+  /* color: #ffffff; */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ticker-table th, 
+.ticker-table td {
+  border-bottom: 1px solid #222222;
+}
+
+.ticker-table th {
+  background-color: #1a1a1a;
+  color: #888888;
+  font-size: 0.85rem;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.5px;
+}
+
+.th-right {
+  text-align: right;
+}
+
+/* Typography Enhancements */
+.ticker-symbol {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.price, .change, .pct-change {
+  font-family: monospace; /* Keeps numbers aligned perfectly */
+  font-size: 0.95rem;
+  text-align: right;
+}
+
+/* Row Hover Effect */
+.ticker-table tbody tr:hover {
+  background-color: #1c1c1c;
+}
+
+/* Color Coding Classes */
+.positive .change,
+.positive .pct-change {
+  color: #00b067; /* Market green */
+}
+
+.negative .change,
+.negative .pct-change {
+  color: #ff333a; /* Market red */
+}
+
+.neutral .change,
+.neutral .pct-change {
+  color: #888888; /* Market neutral */
+}
+
+.li-gap {
+    line-height: 1.5;
+}

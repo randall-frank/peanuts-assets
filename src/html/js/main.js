@@ -38,7 +38,11 @@ function post_location_change(story) {
     var storyContainer = document.querySelector('#story');
     var imageContainer = document.querySelector('#images');
     var sidebarContainer = document.querySelector('#sidebar');
-    var outerScrollContainer = document.querySelector('.outerContainer');
+    var outerScrollContainer = document.querySelector('.outerContainer');      
+
+    update_followers(story, true);
+    update_stock(story, true);
+    update_system(story, true);
 
     // 2. Setup Controls
     document.getElementById("rewind").addEventListener("click", () => {
@@ -239,9 +243,18 @@ function post_location_change(story) {
     }
 
     function updateUI() {
-        // Example: Update location variable from Ink
-        let loc = story.variablesState["location_name"] || "UNKNOWN";
-        document.getElementById("locationname").innerText = "TERMINAL: " + loc;
+        // Update location variable from Ink variable
+        let loc = story.variablesState["location_name"] || "EUNKNOWN";
+        let loc_name = loc.slice(0, 1);
+        let location = document.getElementById("locationname");
+        location.innerText = "TERMINAL: " + loc.slice(1);
+        if (loc_name === "V") {
+            location.className = "locationvirtual";
+        } else if (loc_name === "L") {
+            location.className = "locationlocal";
+        } else {
+            location.className = "locationerror";
+        }
     }
 
     function restart() {
@@ -448,3 +461,76 @@ We would like to acknowledge them here and thank them all for their contribution
     return attr;
 }
 
+function update_stock(story, init=false) {
+    var stockTickerContainer = document.querySelector('#stockticker');
+    s = `
+        <table class="ticker-table">
+        <thead>
+            <tr>
+            <th>Symbol</th>
+            <th class="th-right">Price (€)</th>
+            <th class="th-right">% Δ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="positive">
+                <td class="ticker-symbol">CDyG</td>
+                <td class="price">150.25</td>
+                <td class="pct-change">▲ +1.45</td>
+            </tr>
+                <tr class="negative">
+                <td class="ticker-symbol">GOOG</td>
+                <td class="price">89.70</td>
+                <td class="pct-change">▼ -0.55</td>
+            </tr>
+                <tr class="positive">
+                <td class="ticker-symbol">TCEHY</td>
+                <td class="price">12.10</td>
+                <td class="pct-change">▲ +0.83</td>
+            </tr>
+                <tr class="neutral">
+                <td class="ticker-symbol">XHLD</td>
+                <td class="price">55.00</td>
+                <td class="pct-change">0.00</td>
+            </tr>
+        </tbody>
+        </table>
+    `
+    stockTickerContainer.innerHTML = s;
+}
+
+function update_followers(story, init=false) {
+    var followersContainer = document.querySelector('#followers'); 
+    var s = `
+        <ul class="fa-ul" style="margin-left: 0px">
+            <li class="li-gap">
+                <span><i class="fa-solid fa-star"></i></span> 78K Patrons
+            </li>
+            <li class="li-gap">
+                <span><i class="fa-solid fa-heart"></i></span> 1.3M Verified
+            </li>
+            <li class="li-gap">
+                <span><i class="fa-regular fa-circle-question"></i></span> 2.3B Anonymous
+            </li>
+        </ul>
+    `
+    followersContainer.innerHTML = s;
+}
+
+function update_system(story, init=false) {
+    var systemStatusContainer = document.querySelector('#systemstatus');
+    var s = `
+        <ul class="fa-ul" style="margin-left: 0px">
+            <li class="li-gap">
+                <span><i class="fa-solid fa-microchip"></i></span> 238,234 Processors
+            </li>
+            <li class="li-gap">
+                <span><i class="fa-solid fa-gears"></i></span> 2.1M Processes
+            </li>
+            <li class="li-gap">
+                <span><i class="fa-solid fa-spinner fa-pulse"></i></span> 12% Utilization
+            </li>
+        </ul>
+    `
+    systemStatusContainer.innerHTML = s;
+}

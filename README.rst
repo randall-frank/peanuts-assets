@@ -109,6 +109,7 @@ At this point, a browser tab will be opened, pointing to: ``http://127.0.0.1:900
 in which the story may be played.
 
 .. note::
+
     If one double-clicks on the `index.html` file in the `build` directory to
     view the story, the background sound will not work due to CORS issues as the background sound files are accessed via fetch() calls.
 
@@ -129,6 +130,7 @@ the 'z' field to retain backward compatibility with old save files.
 
 License
 -------
+
 This work is licensed under a Creative Commons Attribution 4.0 International license and is
 copyright (C) 2026 Andrew Florance and Randall Frank.
 

@@ -42,7 +42,7 @@ The license allows people to use and adapt the work for any purpose, even commer
 
 === begin ===
 # AUDIOLOOP: audio/endgame.mp3
-~ location_name = "Blue Lagoon IT Department"
+~ location_name = "LBlue Lagoon IT Department"
 # CLASS: head2
 A work in progress...
 

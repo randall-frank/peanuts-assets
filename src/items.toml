@@ -61,3 +61,16 @@
 #
 [states]
 
+[states.followers]
+name = "Followers"
+default = 120234
+
+[states.stockprice]
+name = "Stock price"
+default = 24.5
+
+[states.cpu_use]
+name = "CPU usage"
+default = 3.6
+percent = 1
+

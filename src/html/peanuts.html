@@ -17,7 +17,6 @@
 
     <!-- Dependencies -->
     <script src="js/glitchium.min.js"></script>
-    <script src="js/plotly-3.4.0.min.js"></script>
     <script src="js/cookies.js"></script>
     <script src="js/item_globals.js"></script> 
 
@@ -37,36 +36,44 @@
         <div class="row">
             <!-- Sidebar: System Controls & Inventory -->
             <div id="sidebar" class="sidebar">
-                <div>                      
-                    <img class="glitch" src="items/icon-150x150.png">
-                </div>
+                <!-- <div class="imagesidebar"> -->
+                    <div id="images">
+                        <img class="glitch" src="items/icon-150x150.png">
+                    </div>
+                <!-- </div> -->
+
                 <p class="listheader">STATION_OS v4.2</p>
-                <div id="controls" class="buttons">
-                  <a id="rewind" title="Reboot System">Begin</a>
-                  <a id="save" title="Back up Data">| Save</a>
-                  <a id="reload" title="Restore Data">| Load</a>
+
+                <hr>
+
+                <div id="controls" class="buttons" style="display: flex; justify-content:center;">
+                  <a id="rewind" title="Reboot System">Reboot </a> | 
+                  <a id="save" title="Back up Data">Save</a> | 
+                  <a id="reload" title="Restore Data">Load</a>
                 </div>
                 
-                <div id="sound-slider__container" style="display: flex; align-items: center;">  
+                <div id="sound-slider__container" style="display: flex; align-items: center; margin-top: 8px; justify-content:center;">  
                     <i id="volume_off" style="width: 10%;" class="fa-solid fa-volume-xmark"></i>
                     <i id="volume_med" style="width: 10%;" class="fa-solid fa-volume-low"></i>
                     <i id="volume_high" style="width: 10%;" class="fa-solid fa-volume-high"></i>  
                     <input type="range" value="30" min="0" max="100" id="volume_slider">
                 </div>
 
-                <div id="statussection">
-                    <hr>
-                    <p class="listheader">CephaloDynamics Global</p>
-                    <div id="stockticker"></div>
-                </div>
+                <hr>
+                <p class="listheader">CephaloDynamics Global</p>
+                <div id="stockticker"></div>
 
-                <div id="inventorysection">
-                    <hr>
-                    <p class="listheader">Colossus System Status</p>
-                    <div id="systemstatus"></div>
-                    <hr>
-                    <p class="listheader"><i class="fa-brands fa-x-twitter"></i> Followers</p>
-                    <div id="followers"></div>
+                <hr>
+                <p class="listheader">Colossus System Status</p>
+                <div id="systemstatus"></div>
+                
+                <hr>
+                <p class="listheader"><i class="fa-brands fa-x-twitter"></i> Social Status</p>
+                <div id="followers"></div>
+
+                <div id="bottomimage">   
+                    <hr>                   
+                    <img class="glitch" src="items/icon-150x150.png">
                 </div>
             </div>
 
@@ -81,10 +88,6 @@
                 </div>
             </div>
 
-            <!-- Right Sidebar: Visual Feed -->
-            <div class="imagesidebar">
-                <div id="images"></div>
-            </div>
         </div>
     </div>
 

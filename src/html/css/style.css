@@ -21,9 +21,16 @@ body {
     padding: 20px;
 }
 
+hr {
+  height: 2px;
+  border: none;
+  background-color: #00ffcc;
+}
+
 .row {
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    /* grid-template-columns: 30% 70%; */
+    grid-template-columns: minmax(max-content, 300px) auto;
     height: 100%;
 }
 
@@ -156,7 +163,6 @@ img {
 }
 
 /**************** simple-meter display ****************/
-
 .simple-meter {
   box-sizing: content-box;
   height: 0.7em; /* Can be anything */
@@ -182,9 +188,7 @@ img {
 }
 
 
-
 /**************** stock ticker display ****************/
-
 .ticker-table {
   width: 100%;
   max-width: 600px;
@@ -250,4 +254,7 @@ img {
 
 .li-gap {
     line-height: 1.5;
+    margin-left: 30px;
 }
+
+

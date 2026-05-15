@@ -38,24 +38,26 @@ function post_location_change(story) {
     var storyContainer = document.querySelector('#story');
     var imageContainer = document.querySelector('#images');
     var sidebarContainer = document.querySelector('#sidebar');
-    var outerScrollContainer = document.querySelector('.outerContainer');      
+    var outerScrollContainer = document.querySelector('.outerContainer');
+    theStory = story;
 
+    var savePoint = "";
+    
     update_followers(story, true);
     update_stock(story, true);
     update_system(story, true);
 
     // 2. Setup Controls
-    document.getElementById("rewind").addEventListener("click", () => {
-        story.ResetState();
-        continueStory(true);
-    });
+    var hasSave = false;
+    setupButtons(hasSave);
 
-    // 3. Audio Handlers (Standard Volume Control)
-    const volSlider = document.querySelector('#volume_slider');
-    volSlider.addEventListener('input', (e) => {
-        // current_volume logic from utilities.js[cite: 2]
-        console.log("Volume adjusted to: " + e.target.value);
-    });
+    // Check for "dev" mode
+    story.variablesState.debug = checkDebugMode();
+
+    // Set initial save point
+    savePoint = story.state.toJson();
+
+    continueStory(true);
 
     // 4. Main Loop
     function continueStory(firstTime) {
@@ -75,6 +77,9 @@ function post_location_change(story) {
         
         // IMAGEHEIGHT specification for the IMAGE option
         var IMAGE_height = null;
+
+        // Record location changes (this is actually the previous location and is only working in debug mode)
+        post_location_change(story);
 
         scrollToTop();
 
@@ -217,12 +222,23 @@ function post_location_change(story) {
 
         // 5. Display Choices
         story.currentChoices.forEach(choice => {
+
+            // Stop any playing audio item.
+            if(audio != null) {
+                audio.pause();
+            }
+            
             var choiceDiv = document.createElement('div');
             choiceDiv.classList.add("choice");
             choiceDiv.innerHTML = `<a href="#">${choice.text}</a>`;
             choiceDiv.addEventListener("click", (e) => {
                 e.preventDefault();
                 story.ChooseChoiceIndex(choice.index);
+
+                // This is where the save button will save from.  The new knot is selected, but
+                // not yet generated/displayed.
+                savePoint = story.state.toJson();
+                
                 storyContainer.innerHTML = ''; // Clear for next sequence
                 continueStory();
             });
@@ -373,7 +389,104 @@ function post_location_change(story) {
         }
     }
 
-    continueStory(true);
+    
+    // Save and Load story state...
+    // Save current state to a file
+    function downloadState() {
+        let game = {}
+        // game.saved_ink_json = story.state.toJson();
+        // Note: we save the savePoint, which is the state of the story at the start of the knot.
+        // story.state.toJson(); is after the knot has been displayed
+        game.saved_ink_json = savePoint;
+        game.saved_loop_audio_src = get_audioloop_source();
+        game.saved_loop_audio_scale = get_audioloop_scale();
+        game.saved_background_src = outerScrollContainer.style.backgroundImage;
+        game.saved_story_version = story_version;
+        const text = JSON.stringify(game);
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL( new Blob([text], { type:`application/json` }) );
+        a.download = "peanuts_saved_game.ppp";
+        a.click();
+    }
+    // Load state from an uploaded file
+    function uploadState() {
+        // Get the file to upload
+        const inputFileElement = document.createElement('input');
+        inputFileElement.setAttribute('type', 'file');
+        inputFileElement.setAttribute('accept', '.json, .ppp');
+        inputFileElement.onchange = function() {
+            getUploadedJson(this)
+        };
+        document.body.appendChild(inputFileElement);
+        inputFileElement.click();
+        inputFileElement.remove();
+    }
+    // Handle the uploaded file and load the JSON
+    function getUploadedJson(fileInput) {
+        var files = fileInput.files;
+        if (files.length <= 0) return;
+        files[0].text().then(function(text) { 
+            // console.log(text);
+            try {
+                if (text.length) {
+                    removeAll("p");
+                    removeAll("img");
+                    const temp = JSON.parse(text);
+                    let currentMajorVersion = story_version.slice(0, story_version.lastIndexOf('.'));
+                    let savedMajorVersion = currentMajorVersion; // default to current version
+                    let savedVersion = story_version;
+                    if (temp.hasOwnProperty('saved_story_version')) {
+                        savedVersion = temp.saved_story_version;
+                        savedMajorVersion = savedVersion.slice(0, savedVersion.lastIndexOf('.'));
+                    }
+                    if (currentMajorVersion !== savedMajorVersion) {
+                        alert("Note: This save file is from a different version of the game. It may not load correctly.\n\n" +
+                            "Game version: " + story_version + "\n" +
+                            "Save file version: " + savedVersion);
+                    }
+                    
+                    story.state.LoadJson(temp.saved_ink_json);
+                    savePoint = story.state.toJson();
+                    continueStory(true);
+                    let audio_scale = 1.0;
+                    if (temp.saved_loop_audio_scale) {
+                        audio_scale = temp.saved_loop_audio_scale;
+                    }
+                    if (temp.saved_loop_audio_src) {
+                        set_audioloop_source(temp.saved_loop_audio_src, audio_scale);
+                    }
+                    if (temp.saved_background_src) {
+                        outerScrollContainer.style.backgroundImage = temp.saved_background_src;
+                    }
+                }
+            } catch (e) {
+                alert("The uploaded save file could not be imported.");
+            }
+        });
+    }
+
+    // Used to hook up the functionality for global functionality buttons
+    function setupButtons(hasSave) {
+
+        let rewindEl = document.getElementById("rewind");
+        if (rewindEl) rewindEl.addEventListener("click", function(event) {
+            removeAll("p");
+            removeAll("img");
+            setVisible(".header", false);
+            restart();
+        });
+
+        let saveEl = document.getElementById("save");
+        if (saveEl) saveEl.addEventListener("click", function (event) {
+            downloadState();
+        });
+
+        let reloadEl = document.getElementById("reload");
+        reloadEl.addEventListener("click", function (event) {
+            uploadState();
+        });
+
+    }
 
 })(storyContent);
 
@@ -504,13 +617,13 @@ function update_followers(story, init=false) {
     var s = `
         <ul class="fa-ul" style="margin-left: 0px">
             <li class="li-gap">
-                <span><i class="fa-solid fa-star"></i></span> 78K Patrons
+                <span class="fa-li"><i class="fa-solid fa-star"></i></span> 78K Favorites
             </li>
             <li class="li-gap">
-                <span><i class="fa-solid fa-heart"></i></span> 1.3M Verified
+                <span class="fa-li"><i class="fa-solid fa-bell"></i></span> 1.3M Followers
             </li>
             <li class="li-gap">
-                <span><i class="fa-regular fa-circle-question"></i></span> 2.3B Anonymous
+                <span class="fa-li"><i class="fa-regular fa-heart"></i></span> 2.3B Likes
             </li>
         </ul>
     `
@@ -522,13 +635,13 @@ function update_system(story, init=false) {
     var s = `
         <ul class="fa-ul" style="margin-left: 0px">
             <li class="li-gap">
-                <span><i class="fa-solid fa-microchip"></i></span> 238,234 Processors
+                <span class="fa-li"><i class="fa-solid fa-microchip"></i></span> 238,234 Processors
             </li>
             <li class="li-gap">
-                <span><i class="fa-solid fa-gears"></i></span> 2.1M Processes
+                <span class="fa-li"><i class="fa-solid fa-gears"></i></span> 2.1M Processes
             </li>
             <li class="li-gap">
-                <span><i class="fa-solid fa-spinner fa-pulse"></i></span> 12% Utilization
+                <span class="fa-li"><i class="fa-solid fa-spinner fa-pulse"></i></span> 12% Utilization
             </li>
         </ul>
     `

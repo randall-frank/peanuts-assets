@@ -18,7 +18,7 @@ Copyright © STORY_YEAR Randall Frank & Andrew Florance
 # CLASS: head2
 Version: STORY_VERSION (STORY_BUILD_DATE)
 
-    + [Start...] -> begin
+    + [Begin the story...] -> begin
     + [Attributions and Thanks] -> thanks_to
     + [License] -> license
 

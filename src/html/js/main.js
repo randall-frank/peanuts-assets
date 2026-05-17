@@ -1,6 +1,32 @@
 var old_url = window.location.href;
 var peanuts_allow_cookies = false;
 
+
+var init_stock_info = {
+    'CDYG': { 'price': 150.25, 'change': 1.45 },
+    'GOOG': { 'price': 89.70, 'change': -0.55 },
+    'TCEHY': { 'price': 12.10, 'change': 0.83 },
+    'XHLD': { 'price': 54.0, 'change': 0.00 }
+}
+
+var init_system_info = {
+    'cpus': 238234,
+    'procs': 1400000,
+    'util': 12
+}
+
+var init_social_info = {
+    'patrons': 78234,
+    'subs': 1300000,
+    'likes': 2300000000    
+}
+
+var sidebar_info = {
+    'stock_info': init_stock_info,
+    'system_info': init_system_info,
+    'social_info': init_social_info
+}
+
 function post_location_change(story) {
     if (!peanuts_allow_cookies) return;
     let name = story.state.currentPathString;
@@ -41,16 +67,12 @@ function post_location_change(story) {
     var outerScrollContainer = document.querySelector('.outerContainer');
     theStory = story;
 
-    var savePoint = "";
-    
-    update_followers(story, true);
-    update_stock(story, true);
-    update_system(story, true);
-
     // 2. Setup Controls
+    var savePoint = "";
     var hasSave = false;
     setupButtons(hasSave);
-
+    initStatusSidebar();
+    
     // Check for "dev" mode
     story.variablesState.debug = checkDebugMode();
 
@@ -271,6 +293,7 @@ function post_location_change(story) {
         } else {
             location.className = "locationerror";
         }
+        updateStatusSidebar();
     }
 
     function restart() {
@@ -402,6 +425,7 @@ function post_location_change(story) {
         game.saved_loop_audio_scale = get_audioloop_scale();
         game.saved_background_src = outerScrollContainer.style.backgroundImage;
         game.saved_story_version = story_version;
+        game.saved_sidebar_info = sidebar_info;
         const text = JSON.stringify(game);
         const a = document.createElement('a');
         a.href = URL.createObjectURL( new Blob([text], { type:`application/json` }) );
@@ -457,6 +481,10 @@ function post_location_change(story) {
                     }
                     if (temp.saved_background_src) {
                         outerScrollContainer.style.backgroundImage = temp.saved_background_src;
+                    }
+                    if (temp.saved_sidebar_info) {
+                        sidebar_info = temp.saved_sidebar_info;
+                        updateStatusSidebar();
                     }
                 }
             } catch (e) {
@@ -574,9 +602,25 @@ We would like to acknowledge them here and thank them all for their contribution
     return attr;
 }
 
-function update_stock(story, init=false) {
-    var stockTickerContainer = document.querySelector('#stockticker');
-    s = `
+
+
+function stockChangeInfo(change) {
+    let cname = 'neutral';
+    let pfx = '   ';
+    if (change > 0.) {
+        cname = 'positive';
+        pfx = '▲ +';
+    }
+    if (change < 0.) {
+        cname = 'negative';
+        pfx = '▼ ';
+    }
+    return [cname, pfx];
+}
+
+function initStatusSidebar() {
+    let stockTickerContainer = document.querySelector('#stockticker');
+    let s = `
         <table class="ticker-table">
         <thead>
             <tr>
@@ -586,64 +630,151 @@ function update_stock(story, init=false) {
             </tr>
         </thead>
         <tbody>
-            <tr class="positive">
-                <td class="ticker-symbol">CDyG</td>
-                <td class="price">150.25</td>
-                <td class="pct-change">▲ +1.45</td>
+        `
+    for (const [key, value] of Object.entries(sidebar_info.stock_info)) {
+        let price = value.price;
+        let change = value.change;
+        let info = stockChangeInfo(change);
+        let cname = info[0];
+        let pfx = info[1];
+        s += `
+            <tr class="${cname}" id="${key}_row">
+                <td class="ticker-symbol">${key}</td>
+                <td class="price">${price.toFixed(2)}</td>
+                <td class="pct-change">${pfx}${price.toFixed(2)}</td>
             </tr>
-                <tr class="negative">
-                <td class="ticker-symbol">GOOG</td>
-                <td class="price">89.70</td>
-                <td class="pct-change">▼ -0.55</td>
-            </tr>
-                <tr class="positive">
-                <td class="ticker-symbol">TCEHY</td>
-                <td class="price">12.10</td>
-                <td class="pct-change">▲ +0.83</td>
-            </tr>
-                <tr class="neutral">
-                <td class="ticker-symbol">XHLD</td>
-                <td class="price">55.00</td>
-                <td class="pct-change">0.00</td>
-            </tr>
+            `
+    }
+    s += `
         </tbody>
         </table>
-    `
+        `
     stockTickerContainer.innerHTML = s;
-}
+    
+    const formatter = new Intl.NumberFormat('en-US', {
+        notation: 'compact',
+        compactDisplay: 'short' // Uses 'K', 'M', etc. Use 'long' for 'thousand', 'million'
+    });
+    
+    let patrons = formatter.format(sidebar_info.social_info['patrons']);
+    let subs = formatter.format(sidebar_info.social_info['subs']);
+    let likes = formatter.format(sidebar_info.social_info['likes']);
 
-function update_followers(story, init=false) {
-    var followersContainer = document.querySelector('#followers'); 
-    var s = `
+    let socialContainer = document.querySelector('#social'); 
+    s = `
         <ul class="fa-ul" style="margin-left: 0px">
             <li class="li-gap">
-                <span class="fa-li"><i class="fa-solid fa-star"></i></span> 78K Favorites
+                <span class="fa-li"><i class="fa-solid fa-star" style="color: yellow;"></i> </span>
+                <span id='social_patrons'>${patrons}</span> Patrons
             </li>
             <li class="li-gap">
-                <span class="fa-li"><i class="fa-solid fa-bell"></i></span> 1.3M Followers
+                <span class="fa-li"><i class="fa-solid fa-bell" style="color: yellow;"></i> </span>
+                <span id='social_subs'>${subs}</span> Subscribers
             </li>
             <li class="li-gap">
-                <span class="fa-li"><i class="fa-regular fa-heart"></i></span> 2.3B Likes
+                <span class="fa-li"><i class="fa-solid fa-heart" style="color: red;"></i> </span>
+                <span id='social_likes'>${likes}</span> Likes
             </li>
         </ul>
     `
-    followersContainer.innerHTML = s;
-}
+    socialContainer.innerHTML = s;
 
-function update_system(story, init=false) {
-    var systemStatusContainer = document.querySelector('#systemstatus');
-    var s = `
+    let cpus = sidebar_info.system_info['cpus'].toLocaleString('en-US');
+    let procs = formatter.format(sidebar_info.system_info['procs']);
+    let util = sidebar_info.system_info['util'].toFixed(1);
+
+    let systemStatusContainer = document.querySelector('#systemstatus');
+    s = `
         <ul class="fa-ul" style="margin-left: 0px">
             <li class="li-gap">
-                <span class="fa-li"><i class="fa-solid fa-microchip"></i></span> 238,234 Processors
+                <span class="fa-li"><i class="fa-solid fa-microchip" style="color: white;"></i> </span>
+                <span id='system_cpus'>${cpus}</span> Processors
             </li>
             <li class="li-gap">
-                <span class="fa-li"><i class="fa-solid fa-gears"></i></span> 2.1M Processes
+                <span class="fa-li"><i class="fa-solid fa-beat-fade fa-gears" style="color: lightgray;"></i> </span>
+                <span id='system_procs'>${procs}</span> Processes
             </li>
             <li class="li-gap">
-                <span class="fa-li"><i class="fa-solid fa-spinner fa-pulse"></i></span> 12% Utilization
+                <span class="fa-li"><i class="fa-solid fa-spinner fa-pulse" style="color: yellow;"></i> </span>
+                <span id='system_util'>${util}</span>% Utilization
             </li>
         </ul>
     `
     systemStatusContainer.innerHTML = s;
+}
+
+function updateStatusSidebar() {
+    add_random_sidebar();
+    update_social(sidebar_info.social_info);
+    update_system(sidebar_info.system_info);
+    update_stock(sidebar_info.stock_info);
+    
+    setTimeout(updateStatusSidebar, 5000);
+}
+
+function random_norm(bias) {
+    return Math.random() * 2.0 - 1.0 + bias; 
+}
+
+function random_fraction(num, frac, bias) {
+    return random_norm(bias) * num * frac;
+}
+
+function add_random_sidebar() {
+    sidebar_info.social_info.likes += random_fraction(sidebar_info.social_info.likes, 0.02, 0.05);
+    sidebar_info.social_info.patrons += random_fraction(sidebar_info.social_info.patrons, 0.005, 0.0);
+    sidebar_info.social_info.subs += random_fraction(sidebar_info.social_info.subs, 0.01, 0.02);
+
+    sidebar_info.system_info.procs += random_fraction(sidebar_info.system_info.procs, 0.01, 0.0);
+    sidebar_info.system_info.util += random_fraction(sidebar_info.system_info.util, 0.05, 0.0);
+
+    for (const [key, value] of Object.entries(sidebar_info.stock_info)) {
+        let price = value.price + random_fraction(value.price, 0.02, 0.0);
+        let change = random_fraction(1.5, 1., 0.0);  // 2.5% max change
+        change = Math.trunc(change * 100) / 100;
+        sidebar_info.stock_info[key].price = price;
+        sidebar_info.stock_info[key].change = change;
+    }
+}
+
+function update_stock(info) {
+    for (const [key, value] of Object.entries(info)) {
+        let price = value.price;
+        let change = value.change;
+        let info = stockChangeInfo(change);
+        let cname = info[0];
+        let pfx = info[1];
+        let tre = document.getElementById(key + "_row");
+        tre.className = cname;
+        let price_tde = tre.querySelector(".price");
+        price_tde.innerHTML = price.toFixed(2);
+        let change_tde = tre.querySelector(".pct-change");
+        change_tde.innerHTML = pfx + change.toFixed(2);
+    }
+}
+
+function update_social(info) {
+    const formatter = new Intl.NumberFormat('en-US', {
+        notation: 'compact',
+        compactDisplay: 'short' // Uses 'K', 'M', etc. Use 'long' for 'thousand', 'million'
+    });
+    let patrons = formatter.format(info['patrons']);
+    let subs = formatter.format(info['subs']);
+    let likes = formatter.format(info['likes']);
+    document.getElementById("social_patrons").innerHTML = patrons;
+    document.getElementById("social_subs").innerHTML = subs;
+    document.getElementById("social_likes").innerHTML = likes;
+}
+
+function update_system(info) {
+    const formatter = new Intl.NumberFormat('en-US', {
+        notation: 'compact',
+        compactDisplay: 'short' // Uses 'K', 'M', etc. Use 'long' for 'thousand', 'million'
+    });
+    let cpus = info['cpus'].toLocaleString('en-US');
+    let procs = formatter.format(info['procs']);
+    let util = info['util'].toFixed(1);
+    document.getElementById("system_cpus").innerHTML = cpus;
+    document.getElementById("system_procs").innerHTML = procs;
+    document.getElementById("system_util").innerHTML = util;
 }

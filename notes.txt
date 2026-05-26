@@ -1,4 +1,10 @@
-NOTE - 
+TODO - 
+
+if a stich does not include "#CLEAR" then it should only replace the 
+continuation options, not the previous text (it can update the location however)
+
+
+NOTES - 
 
 Got some cool ideas that we need to capture/integrate?  Here you go.
 Have a slick line that has become a moral imperative to add?  Here you go.

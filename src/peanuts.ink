@@ -10,7 +10,7 @@ INCLUDE station.ink
 = start
 ~ location_name = ""
 # CLEAR
-# AUDIOLOOP:
+# AUDIOLOOP: audio/I5%20-%20Silence%20Among%20the%20Stars.mp3
 # CLASS: head1
 Peanuts, Pickles and Propaganda
 # IMAGE: locations/splash.png
@@ -26,6 +26,7 @@ Version: STORY_VERSION (STORY_BUILD_DATE)
 
 = thanks_to
 # CLEAR
+# AUDIOLOOP: audio/I5%20-%20Silence%20Among%20the%20Stars.mp3
 # ATTRIBUTION
     + [Back] -> start
 
@@ -33,6 +34,7 @@ Version: STORY_VERSION (STORY_BUILD_DATE)
 = end
 ~ location_name = "VThe End"
 # CLEAR
+# AUDIOLOOP: audio/I5%20-%20Silence%20Among%20the%20Stars.mp3
 And so ends our little tale.  We certainly hope you enjoyed spending some time with us.  We've enjoyed bringing to you!
 If you would like to leave some feedback, Itch.io is a good place to do so.
 Thanks again,
@@ -42,6 +44,7 @@ Andrew and Randy.
 
 = license
 # CLEAR
+# AUDIOLOOP: audio/I5%20-%20Silence%20Among%20the%20Stars.mp3
 # HTML: <a target="_blank" href="https:<ss>github.com/randall-frank/peanuts-assets">Peanuts, Pickles and Propaganda</a>
 # CLASS: head2
 HTML is released under a Creative Commons Attribution License.  

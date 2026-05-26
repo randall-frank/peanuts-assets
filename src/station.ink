@@ -4,7 +4,7 @@
 = wake_up
 ~ location_name = "LBlue Lagoon Sleeping pod 14380-e328"
 # CLEAR
-# AUDIOLOOP:
+# AUDIOLOOP: audio/Ambient%20Vol10%20Frozen%20Orbit%20Intensity%201.mp3
 # CLASS: head1
 Monday Morning Blues
 
@@ -30,16 +30,24 @@ Wealth and leisure has resulted in the Teuthans becoming desperate for entertain
 
 
 = epilogue
-~ location_name = "LBlue Lagoon Sleeping pod 14380-e328"
+~ location_name = "LBlue Lagoon Cafeteria"
 # CLEAR
-# AUDIOLOOP:
+# AUDIOLOOP: audio/background_people_restaurant_cafe_noisy_chatter_talk_loop_01.mp3
 # CLASS: head1
 A Peacefull Night's Sleep
 
 The waning station claxon signals the end of another work period.  Andrew and Randy fist-bump discretely in the corridor.  "How about dinner?" Andrew asks as recent events replay visibly on his brow.  "Sure!  Pod 6 cheeseburgers?" Randy suggests.  "No, I was thinking about 'real food'.  I haven't had a proper steak in quite sometime..." he trails off.
 A pair of top sirloins and a kaleidoscopic array of Old Fashioned's and Dirty Shirley's later, they wander toward the sleep pods.  "Night man" and "Dude" are the only words verbalized, but many more are exchanged in the space of a pair of conspiratorial gazes.
-Randy and Andrew climb into respective pods.  The pod doors slide shut with a soft hum.  Lights dim, air cools, they prepare for slumber.  A series of barely audible beeps signal the start of sleep cycle 553,245.  
+Randy and Andrew climb into respective pods.  The pod doors slide shut with a soft hum.  Lights dim, air cools, they prepare for slumber.  A series of barely audible beeps signal the start of sleep cycle 553,245. 
+
+    + [{continue}] -> epilogue2
+
+= epilogue2
+~ location_name = "LBlue Lagoon Sleeping pod 14380-e328"
+# AUDIOLOOP: audio/rain_light_hard_surface_loop_02.mp3
+
 Randy's eyes begin to close as he drifts off.  Once again, the odor of the primeval pines... The soft patter of raindrops softly falling on the leaf-covered forest floor...  The camera pulls in, past the still disconnected speaker wires in the pod to Randy's face as her reaches up and wipes cold raindrops from his forehead and cheek.
+
     + [The End] -> intro.end
 
 

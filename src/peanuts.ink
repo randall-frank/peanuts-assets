@@ -19,6 +19,8 @@ Copyright © STORY_YEAR Randall Frank & Andrew Florance
 # CLASS: head2
 Version: STORY_VERSION (STORY_BUILD_DATE)
 
+Peanuts, Pickles and Propaganda is a work of fiction. Names, characters, businesses, places, events, and incidents are either the products of the author's imagination or used in a fictitious manner. Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
+
     + [Begin the story...] -> station.wake_up
     + [Attributions and Thanks] -> thanks_to
     + [License] -> license
@@ -34,7 +36,7 @@ Version: STORY_VERSION (STORY_BUILD_DATE)
 = end
 ~ location_name = "VThe End"
 # CLEAR
-# AUDIOLOOP: audio/I5%20-%20Silence%20Among%20the%20Stars.mp3
+# AUDIOLOOP: audio/endgame.mp3
 And so ends our little tale.  We certainly hope you enjoyed spending some time with us.  We've enjoyed bringing to you!
 If you would like to leave some feedback, Itch.io is a good place to do so.
 Thanks again,

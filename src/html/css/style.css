@@ -52,16 +52,22 @@ h2, .head2 {
 .locationerror {
     color: #ff3300;
     animation: blinker 1.2s linear infinite;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .locationlocal {
     color: #00ff2a;
     animation: blinker 5s linear infinite;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .locationvirtual {
-    color: #0400ff;
-    animation: blinker 3s linear infinite;
+    color: #6b69ff;
+    animation: blinker 5s linear infinite;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 

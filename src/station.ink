@@ -32,6 +32,7 @@ Wealth and leisure has resulted in the Teuthans becoming desperate for entertain
 = epilogue
 ~ location_name = "LBlue Lagoon Cafeteria"
 # CLEAR
+# AUDIO: audio/alarm.mp3
 # AUDIOLOOP: audio/background_people_restaurant_cafe_noisy_chatter_talk_loop_01.mp3
 # CLASS: head1
 A Peacefull Night's Sleep

@@ -245,23 +245,32 @@ function post_location_change(story) {
         // 5. Display Choices
         story.currentChoices.forEach(choice => {
 
-            // Stop any playing audio item.
-            if(audio != null) {
-                audio.pause();
-            }
+
             
             var choiceDiv = document.createElement('div');
             choiceDiv.classList.add("choice");
             choiceDiv.innerHTML = `<a href="#">${choice.text}</a>`;
             choiceDiv.addEventListener("click", (e) => {
+
+                // Stop any playing audio item.
+                if(audio != null) {
+                    audio.pause();
+                }
+                
+                // Don't follow the link, we'll handle it ourselves.
                 e.preventDefault();
+
+                // Remove all existing choices
+                removeAll(".choice");
+                
                 story.ChooseChoiceIndex(choice.index);
 
                 // This is where the save button will save from.  The new knot is selected, but
                 // not yet generated/displayed.
                 savePoint = story.state.toJson();
                 
-                storyContainer.innerHTML = ''; // Clear for next sequence
+                // You must use CLEAR to clear the screen before continuing.
+                //  storyContainer.innerHTML = ''; // Clear for next sequence
                 continueStory();
             });
             storyContainer.appendChild(choiceDiv);

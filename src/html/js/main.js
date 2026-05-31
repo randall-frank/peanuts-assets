@@ -134,15 +134,29 @@ function post_location_change(story) {
 
                 // SBIMAGE: src
                 if (splitTag && splitTag.property == "SBIMAGE") {
+
+                    imageContainer.replaceChildren();
+
                     var imageElement = document.createElement('img');
-                    imageElement.src = splitTag.val;
-                    imageElement.style.height = 'auto';
-                    imageElement.style.width = '280px';
+                    if (splitTag.val) {
+                        imageElement.src = splitTag.val;
+                    } else {
+                        imageElement.src = "items/icon-150x150.png";
+                        imageElement.classList.add("glitch");
+                    }
+                    imageElement.classList.add("sbimage");
                     imageContainer.appendChild(imageElement);
 
                     imageElement.onload = () => {
                         // console.log(`scrollingto ${previousBottomEdge}`)
-                        scrollDown(previousBottomEdge)
+                        scrollDown(previousBottomEdge);
+                        glitch.glitch(".glitch",  
+                            { 
+                                intensity: 0.2,
+                                layers: 7,
+                                shake: false,
+                                glitchTimeSpan: {start: 0.25, end: 0.4}
+                            });
                     }
 
                     showAfter(delay, imageElement);
@@ -561,8 +575,7 @@ We would like to acknowledge them here and thank them all for their contribution
 <h2>Imagery used with attribution</h2>
 <ul>
 <li>Various images generated using ArtSpace.ai</li>
-<li>Textures: www.myfreetextures.com</li>
-<li>Some images used from wikipedia under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></li>
+<li>Various images generated using Google Gemini</li>
 <li>Some Icons by Font Awesome fontawesome.com, Copyright Fonticons, Inc, License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></li>
 </ul>
 <p></p>
@@ -570,27 +583,9 @@ We would like to acknowledge them here and thank them all for their contribution
 <p></p>
 <table class="attr">
 <tr><th>Individual</th><th>Sound number</th><th>License</th></tr>
-<tr><td>Apollo89</td>
-    <td><a href="https://freesound.org/s/648208/" target="_blank" rel="noopener noreferrer">648208</a></td>
-    <td><a href="http://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">Creative Commons 0</a></td></tr>
-<tr><td>Janaund</td>
-    <td><a href="https://freesound.org/s/274763/" target="_blank" rel="noopener noreferrer">274763</a></td>
-    <td><a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">Attribution 3.0</a></td></tr>
-<tr><td>klankbeeld</td>
-    <td><a href="https://freesound.org/s/580356/" target="_blank" rel="noopener noreferrer">580356</a></td>
+<tr><td>Jackalgirl</td>
+    <td><a href="https://freesound.org/s/683748/" target="_blank" rel="noopener noreferrer">580356</a></td>
     <td><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Attribution 4.0</a></td></tr>
-<tr><td>Universfield</td>
-    <td><a href="https://freesound.org/s/730122/" target="_blank" rel="noopener noreferrer">730122</a></td>
-    <td><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Attribution 4.0</a></td></tr>
-<tr><td>qubodup</td>
-    <td><a href="https://freesound.org/s/722375/" target="_blank" rel="noopener noreferrer">722375</a></td>
-    <td><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Attribution 4.0</a></td></tr>
-<tr><td>0ktober</td>
-    <td><a href="https://freesound.org/s/188828/" target="_blank" rel="noopener noreferrer">188828</a></td>
-    <td><a href="http://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">Creative Commons 0</a></td></tr>
-<tr><td>Aemyn</td>
-    <td><a href="https://freesound.org/s/564166/" target="_blank" rel="noopener noreferrer">564166</a></td>
-    <td><a href="http://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">Creative Commons 0</a></td></tr>
 </table>
 <p></p>
 <h2>Licensed audio files</h2>

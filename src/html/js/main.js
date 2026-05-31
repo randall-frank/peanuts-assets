@@ -136,6 +136,8 @@ function post_location_change(story) {
                 if (splitTag && splitTag.property == "SBIMAGE") {
                     var imageElement = document.createElement('img');
                     imageElement.src = splitTag.val;
+                    imageElement.style.height = 'auto';
+                    imageElement.style.width = '280px';
                     imageContainer.appendChild(imageElement);
 
                     imageElement.onload = () => {

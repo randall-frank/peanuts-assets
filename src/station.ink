@@ -18,15 +18,28 @@ He slips a bit too comfortably into the Blue Lagoon IT department overalls, allo
 = work
 ~ location_name = "LBlue Lagoon IT"
 # CLEAR
+# AUDIO: audio/683752__jackalgirl__benboncan_three-bells.mp3
 # AUDIOLOOP:
-# SBIMAGE: items/squid4.png
 # CLASS: head1
-What, Where?
+Heigh-Ho, Heigh-Ho...
 
-The year is 2237.  The place, space station “Blue Lagoon” orbiting the planet earth.  Here we meet the Earth Simians (ES for short) Randy and Andrew, Tier 3 systems technical support analysts for the CephaloDynamics Global corporation. 
-Their boss is a Teuthan from the moon Europa which presently supplies 67% of the Earth's water supply.  Which has concurrently made them very wealthy and very lazy.  His name is Director Kraal'goth and he really only has room for his ego in that bulbous flab the Teuthans use for brains.  
-Wealth and leisure has resulted in the Teuthans becoming desperate for entertainment.  It turns out that the one thing the ES can do is entertain.  Unfortunately, the most popular form of entertainment turns out to be 1970s Earth sitcoms.  Every Teuthan can recite nearly every line from the Dukes of Hazzard and, due to peculiarities of their vocal system, they all greet each other using variations of the General Lee's horn.
+The ships bells signal the start of the shift, 22 April 2237.  Randy and Andrew (Tier 3 Systems Technical Support Analysts for the CephaloDynamics Global corporation) slip into their assigned workstations and begin their shift.  There they will spend the next ten hours at the beck and call of their dimwitted boss, Director Kraal'goth.  Kraal'goth is a Teuthans and Teuthans rarely have room for more than their ego in the bulbous flab of whet they call a head.  He is however a senior fellow with the CephaloDynamics Global corporation, and his word is law.
+Teuthans? Yeah, well, two hundred years ago, humans fantasized about Europa and the (remote) possibility that it may be capable of supporting some form of 'life' in the aquatic abyss under its icy crust.  Enter the 22nd century, where Earth's manic, maize driven climate shift resulted in a desperate need for water and Europa was just the silver bullet needed.  SpaceX started bringing chunks of Europa back to Earth in the 2150s and for the first time, turned a profit. It took 37 missions before they figured out how to properly melt the blocks in the atmosphere without generating monsoons, but ultimately, Earth had found a reliable source of water.  Europa which presently supplies 67% of the Earth's water supply.
+238 missions later, the Teuthans made themselves known.  These squid-like inhabitants of Europa were not hostile, but they were not friendly either.  They communicated through a series of clicks and whistles that sounded like Morse code. After years of study, humans figured out how to communicate with them.  The Teuthans turned out to be semi-intelligent.  Enter Greenpeace.  Recognizing a golden opportunity, Greenpeace partnered with the Teuthans and took the Earth to court.  They argued that the Teuthans were sentient beings who owned the resources of Europa and plastered the the airwaves with pictures of crying American Indians. Courts ruled in their favor and the Teuthans were granted sovereignty over Europa.  
+Teuthans became instantly affluent and started the CephaloDynamics Global corporation (CDYG), retaining Greenpeace as their legal representation (an incredibly lucrative arrangement for Greenpeace).  Eventually, they bought SpaceX and built the Blue Lagoon space station from with to manage their enterprise.   Today, Europa is a thriving metropolis with millions of inhabitants, all voting members of CephaloDynamics Global.  However, most wealthy Teuthans live on the Blue Lagoon space station.  Teuthans outsourced most of their work to humans having little interest in doing anything other than watching TV, eating pickles and playing video games. Their most popular form of entertainment turned out to be 1970s Earth sitcoms.  Every Teuthan can recite nearly every line from the Dukes of Hazzard.  Due to peculiarities of their vocal system, they greet each other using variations of the General Lee's horn.
+Humans working on the space station are articled servants of the CDYG.  They toil under fixed term century-long contracts with Teuthans providing life extension medical services to ensure they complete the contract.  Randy and Andrew have been working in the station's IT department for the last 50 years.  They are both in their mid-90s and have been working on the same projects for decades.  
+The workday begins with the ringing of three bells.  
+    + [{continue}] -> work2
 
+= work2
+~ location_name = "LBlue Lagoon IT"
+# CLEAR
+# AUDIO: audio/683749__jackalgirl__benboncan_one-bell.mp3
+# CLASS: head1
+The Call
+
+As they slide into their workstations, the station's AI, announces the start of the workday and the day's schedule.  As they settle in, they are interrupted by a single bell and a new meeting notification.  Randy and Andrew exchange glances, such meetings are never good news.  They were expected in the Radula conference room in 3 minutes, promptly.  At least it was not the Inkwell meeting room...
+Precisely 2 minutes and 30 seconds later, they were in the room.  There was only one other being in the room and that was a Human wearing the smart white suit with the gilded Zardozi filigree of the Greenpeace logo.  His eyes followed their entrance into the room, but did not speak or otherwise acknowledge them.  The AI announced the start of the meeting as Director Kraal'goth entered the room.
     + [Join the meeting] -> themeeting
 
 
@@ -35,6 +48,7 @@ Wealth and leisure has resulted in the Teuthans becoming desperate for entertain
 ~ location_name = "LBlue Lagoon Conference Room A"
 # CLEAR
 # IMAGE: items/squid1.jpg
+# SBIMAGE: items/squid4.png
 # AUDIOLOOP:
 # CLASS: head1
 The meeting

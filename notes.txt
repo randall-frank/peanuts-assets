@@ -52,3 +52,12 @@ Benboncan_Four-Bells.wav by Jackalgirl -- https://freesound.org/s/683748/ -- Lic
     <td><a href="https://freesound.org/s/564166/" target="_blank" rel="noopener noreferrer">564166</a></td>
     <td><a href="http://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">Creative Commons 0</a></td></tr>
     
+
+
+    Conference room names???
+
+    The Cephalon: A sleek, central hub for high-level strategy and executive meetings.
+    The Beak: The primary boardroom for "biting" into difficult problems and executing tough decisions.
+    The Inkwell: A secured, confidential briefing room used for sensitive transmissions and tactical planning.
+    The Radula: A versatile conference area designed for brainstorming sessions and collaborative projects. 
+    The Chromatophore: A dynamic meeting space equipped with holographic displays that shift colors based on the station's status.

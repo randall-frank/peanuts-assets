@@ -47,7 +47,7 @@ function post_location_change(story) {
     const url = root + "/" + name;
     // console.log("Location change: " + url);
 
-    gtag('config', 'G-2CCLGG3BX9', {
+    gtag('config', 'G-JWDB4G8TLJ', {
         'send_page_view': false,
         'page_referrer': old_url,
         'page_location': url,

@@ -1,6 +1,7 @@
 
 === forty ===
 # AUDIOLOOP: audio/background_quiet_urban_park_loop_01.mp3
+    ~simulation_count += 1
     -> start
 
 = start

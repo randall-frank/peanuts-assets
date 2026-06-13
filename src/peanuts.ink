@@ -5,6 +5,11 @@ INCLUDE station.ink
 INCLUDE mille.ink
 INCLUDE backforty.ink
 INCLUDE weight.ink
+INCLUDE zero.ink
+INCLUDE bad.ink
+INCLUDE cruising.ink
+INCLUDE ubermom.ink
+
 
 -> intro.start
 

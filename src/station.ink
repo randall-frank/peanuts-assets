@@ -88,7 +88,7 @@ Randy took a deep breath, wanting to point out that both of the examples had pro
 # CLASS: head1
 The Anthropic Engine
 
-Two weeks (and maybe 30hrs of sleep) later...
+{simulation_count>0:"{~Hmm...|Should we be proud or terrified?|What was that?|Did we learn...anything?|So, the mice were hunchback?}" sighed Randy, "That was {~interesting|disappointing|curious|confusing}.  Let's see.  I'm going to {~upgrade Python|merge in latest CVE changes|enable debug mode|review the chain of thought|install updated drivers|clear the RAG cache|nuke the site from orbit|pray to a different God|switch to a higher precision model} and fire off a rebuild."|Two weeks (and maybe 30hrs of sleep) later...}
 
 "Ok, the new build is...3.2.1.  Finished!  Let's bring iteration {ai_build_number} online", Randy called out to Andrew.  The room was filled with the hum of servers and the occasional beep as systems checked themselves.  He walked over to a large monitor on the wall, which displayed a grid of servers.  The wall of blinking LEDs never stopped, a constant reminder that the Anthropic Engine was always running. 
 "{ai_build_number} should be up and running now", Andrew replied, "Give it a new seed and let's see if that make any difference."  Randy clicked on one of the login nodes and brought up its status page.
@@ -101,6 +101,14 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
     + [Simulation seed: 54f37f50{mille: (Mille, Strait and Tall)}] -> mille -> 
         -> weektwo
     + [Simulation seed: 07cd5541{weight: (The Weight of Gravity)}] -> weight -> 
+        -> weektwo
+    + [Simulation seed: abdef192{zero: (Zero, my Hero)}] -> zero -> 
+        -> weektwo
+    + [Simulation seed: 822b39fb{bad: (Bad to the Bone)}] -> bad -> 
+        -> weektwo
+    + [Simulation seed: 99587d72{cruising: (Cruising Altitude)}] -> cruising -> 
+        -> weektwo
+    + [Simulation seed: 678d2c77{ubermom: (Uber-Mom)}] -> ubermom -> 
         -> weektwo
     + [Epilogue] -> epilogue
 

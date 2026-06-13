@@ -1,5 +1,6 @@
 
 === mille ===
+    ~simulation_count += 1
     -> start
 
 = start

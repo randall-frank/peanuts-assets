@@ -58,6 +58,9 @@ VAR location_name = ""
 // The current AI build number in the story
 VAR ai_build_number = 0
 
+// Number of simulations that have been run
+VAR simulation_count = 0
+
 // debug can be set to any value via '?dev=x'
 // This enables shortcuts {debug} that speed development
 VAR debug = 0

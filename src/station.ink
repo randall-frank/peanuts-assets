@@ -88,7 +88,12 @@ The Anthropic Engine
 
 Two weeks (and maybe 30hrs of sleep) later...
 
+    * [Simulation seed: 107818a4] -> forty.start -> weektwo
+    * [Simulation seed: 54f37f50] -> mille.start -> weektwo
+    * [Simulation seed: 07cd5541] -> weight.start -> weektwo
+    
     + [Epilogue] -> epilogue
+
 
 = epilogue
 ~ location_name = "LBlue Lagoon Cafeteria"

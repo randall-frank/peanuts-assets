@@ -707,6 +707,12 @@ function initStatusSidebar() {
         </ul>
     `
     systemStatusContainer.innerHTML = s;
+    periodicStatusUpdate();
+}
+
+function periodicStatusUpdate() {
+    updateStatusSidebar();
+    setTimeout(periodicStatusUpdate, 5000);
 }
 
 function updateStatusSidebar() {
@@ -714,8 +720,6 @@ function updateStatusSidebar() {
     update_social(sidebar_info.social_info);
     update_system(sidebar_info.system_info);
     update_stock(sidebar_info.stock_info);
-    
-    setTimeout(updateStatusSidebar, 5000);
 }
 
 function random_norm(bias) {

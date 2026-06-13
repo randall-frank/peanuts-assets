@@ -3,6 +3,7 @@
 
 = wake_up
 ~ location_name = "LBlue Lagoon Sleeping pod 14380-e328"
+~ ai_build_number =  RANDOM(42345, 62345)
 # CLEAR
 # AUDIOLOOP: audio/Ambient%20Vol10%20Frozen%20Orbit%20Intensity%201.mp3
 # CLASS: head1
@@ -79,6 +80,7 @@ Randy took a deep breath, wanting to point out that both of the examples had pro
 
 = weektwo
 ~ location_name = "LBlue Lagoon Server Control Room"
+~ ai_build_number = ai_build_number + 1
 # CLEAR
 # IMAGE:
 # SBIMAGE: 
@@ -88,10 +90,18 @@ The Anthropic Engine
 
 Two weeks (and maybe 30hrs of sleep) later...
 
-    * [Simulation seed: 107818a4] -> forty.start -> weektwo
-    * [Simulation seed: 54f37f50] -> mille.start -> weektwo
-    * [Simulation seed: 07cd5541] -> weight.start -> weektwo
-    
+"Ok, the new build is...3.2.1.  Finished!  Let's bring iteration {ai_build_number} online", Randy called out to Andrew.  The room was filled with the hum of servers and the occasional beep as systems checked themselves.  He walked over to a large monitor on the wall, which displayed a grid of servers.  The wall of blinking LEDs never stopped, a constant reminder that the Anthropic Engine was always running. 
+"{ai_build_number} should be up and running now", Andrew replied, "Give it a new seed and let's see if that make any difference."  Randy clicked on one of the login nodes and brought up its status page.
+
+# CLASS: computer
+Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number: {ai_build_number}
+
+    + [Simulation seed: 107818a4{forty: (The Back Forty)}] -> forty -> 
+        -> weektwo
+    + [Simulation seed: 54f37f50{mille: (Mille, Strait and Tall)}] -> mille -> 
+        -> weektwo
+    + [Simulation seed: 07cd5541{weight: (The Weight of Gravity)}] -> weight -> 
+        -> weektwo
     + [Epilogue] -> epilogue
 
 

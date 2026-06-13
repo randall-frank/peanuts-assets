@@ -1,10 +1,11 @@
 
 === weight ===
+    -> start
 
 = start
 ~ location_name = "VThe Unified Field Computation Laboratory (UFCL)"
 # CLEAR
-# AUDIOLOOP: audio/Ambient%20Vol10%20Frozen%20Orbit%20Intensity%201.mp3
+# AUDIOLOOP: audio/I5%20-%20Eclipse.mp3
 # CLASS: head1
 The Weight of Gravity (aka Monkeys and Shakespeare)
 

@@ -37,7 +37,7 @@ Peanuts, Pickles and Propaganda is a work of fiction. Names, characters, busines
 
 
 = end
-~ location_name = "VThe End"
+~ location_name = "EThe End"
 # CLEAR
 # AUDIOLOOP: audio/endgame.mp3
 And so ends our little tale.  We certainly hope you enjoyed spending some time with us.  We've enjoyed bringing to you!

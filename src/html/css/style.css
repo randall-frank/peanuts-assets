@@ -59,6 +59,13 @@ h2, .head2 {
     font-size: 1.3em;
 }
 
+/************ computer text ****************/
+.computer {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #ffffff; /* Propaganda Amber */
+}
+
 .locationerror {
     color: #ff3300;
     animation: blinker 1.2s linear infinite;

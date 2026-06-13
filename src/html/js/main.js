@@ -146,7 +146,9 @@ function post_location_change(story) {
                     }
                     imageElement.classList.add("sbimage");
                     imageContainer.appendChild(imageElement);
-
+/*
+ * This really slows things down in tunnels.  Not sure why yet.
+ *
                     imageElement.onload = () => {
                         // console.log(`scrollingto ${previousBottomEdge}`)
                         scrollDown(previousBottomEdge);
@@ -158,7 +160,7 @@ function post_location_change(story) {
                                 glitchTimeSpan: {start: 0.25, end: 0.4}
                             });
                     }
-
+*/
                     showAfter(delay, imageElement);
                     delay += 200.0;
                 }
@@ -310,12 +312,14 @@ function post_location_change(story) {
         let loc = story.variablesState["location_name"] || "EUNKNOWN";
         let loc_name = loc.slice(0, 1);
         let location = document.getElementById("locationname");
-        location.innerText = "TERMINAL: " + loc.slice(1);
         if (loc_name === "V") {
+            location.innerText = "SIMULATION: " + loc.slice(1);
             location.className = "locationvirtual";
         } else if (loc_name === "L") {
+            location.innerText = "LOCATION: " + loc.slice(1);
             location.className = "locationlocal";
         } else {
+            location.innerText = "STATUS: " + loc.slice(1);
             location.className = "locationerror";
         }
         updateStatusSidebar();

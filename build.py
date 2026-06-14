@@ -216,10 +216,13 @@ def clean(remove_cli_tools: bool = False) -> None:
             pass
 
 
-def build() -> None:
+def build(post: bool = False, channel: str = "", auth: str = "") -> None:
     """
     Rebuild the "build" directory from scratch.
-
+    
+    :param post: bool If True, post to Discord.
+    :param channel: str The Discord channel to use for posting.
+    :param auth: str The Discord authentication token to use for posting.
     :return:
     """
     # Complete rebuild
@@ -229,6 +232,9 @@ def build() -> None:
     shutil.copytree(os.path.join("src", "media"), "build", dirs_exist_ok=True)
     # Build the story JSON file
     build_story_js()
+    if post:
+        msg = f"New build is live: {__version__} {__version_git__}"
+        discord_post(msg, channel=channel, auth=auth)
 
 
 def release() -> None:
@@ -252,6 +258,7 @@ def open_url(url: str) -> None:
 
     Args:
         url (str): the URL to open
+    :return:
     """
     webbrowser.open_new_tab(url)
 
@@ -263,8 +270,7 @@ def serve(port: int = 9000, nobrowser: bool = False) -> None:
 
     :param port: int  The port to run the HTML server on. Defaults to 9000.
     :param nobrowser: bool If true, do not attempt to open a web browser tab to the session. Defaults to False.
-
-    :return: None
+    :return:
     """
     orig_cwd = os.getcwd()
     try:
@@ -286,6 +292,27 @@ def serve(port: int = 9000, nobrowser: bool = False) -> None:
     print("Server stopped.")
 
 
+def discord_post(message: str, channel: str = "", auth: str = "") -> None:
+    """
+    Post a message to a Discord channel.
+    :param message: The message to post
+    :param channel: The Discord webhook channel ID.
+    :param auth: The Discord webhook authentication token.
+    :return: None
+    """
+    url = f"https://discord.com/api/webhooks/{channel}/{auth}"
+    payload = dict(content=message)
+    r = requests.post(url, payload)
+    if r.status_code != 204:
+        log.error(f"Failed to post message: {message}")
+    else:
+        log.info("Message posted successfully.")   
+
+
+default_channel = os.environ.get("DISCORD_CHANNEL_ID", "")
+default_auth = os.environ.get("DISCORD_CHANNEL_AUTH", "")
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -296,14 +323,22 @@ if __name__ == "__main__":
     )
     parser.add_argument("--verbose", action="store_true", default=False, help="Run in verbose mode")
     parser.add_argument("--logfile", help="Log file for verbose output", default="")
+    parser.add_argument("--channel", default=default_channel,  
+                        help=f"The channel ID to send the message to. ({default_channel})")
+    parser.add_argument("--auth", default=default_auth,
+                        help=f"The channel auth to send the message to. ({default_auth})")
     
     cmd_parsers = parser.add_subparsers(help="Command", dest="cmd")
     cmd_parsers.required = True
 
     build_parser = cmd_parsers.add_parser("build", aliases=["fullbuild"],
                                           help="Rebuild the entire build directory contents")
+    build_parser.add_argument("--post", action="store_true", default=False, help="Post the build info to Discord")
 
     clean_parser = cmd_parsers.add_parser("clean", help="Remove all build directory contents")
+
+    discord_parser = cmd_parsers.add_parser("discord", help="Send a message to a discord server")
+    discord_parser.add_argument("--message", required=True, help="The message to send")
 
     serve_parser = cmd_parsers.add_parser("serve", help="Server the build via http")
     serve_parser.add_argument("--port", type=int, default=9000, help="The port to use. Default: 9000")
@@ -323,7 +358,9 @@ if __name__ == "__main__":
     log.debug(f"Command line args: {args}")
     
     if args.cmd.endswith("build"):
-        build()
+        build(post=args.post, channel=args.channel, auth=args.auth,)
+    elif args.cmd == "discord":
+        discord_post(args.message, channel=args.channel, auth=args.auth)
     elif args.cmd == "release":
         release()
     elif args.cmd == "clean":

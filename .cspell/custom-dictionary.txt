@@ -1,4 +1,6 @@
 # Custom Dictionary Words
+Brome
+Bromegrass
 CDYG
 Cephalo
 Florance

@@ -16,7 +16,7 @@ Kelvin's mother had used the well-seasoned skillet every day when he was growing
 Kelvin plates the runny eggs, knipp and toast and sits down to eat while listening to the radio. The news is good, no bad weather in sight.  Pork belly up 3 and January wheat up 2. The Royals even pulled out a win last night...  Breakfast complete, he washes the dishes, placing them on the drying rack, then heads out into the still crisp morning air.  
 First order of business, cattle and fences.  There are still two dozen head in the south pasture and they'll be on their way up from the creek to the feeding troughs in the next half hour.  Can't leave them waiting.  
 
-    + [This is going nowhere... slowly. Terminate Simulation] ->->
+    + [This is going nowhere... slowly. {simdone}] ->->
     + [{continue}] -> cattle
 
 
@@ -32,7 +32,7 @@ The cattle have made note of his entrance and slowly begin the ascent from the c
 Kelvin lines up his wheels with the ruts, starts up the Holland and drives slowly along the old wooden 2x6 tables. Hundreds of pounds of coarse milled ear corn, soybeans, vitamins and minerals slough out of the auger into the troughs. The cattle know the drill and vie for the best spots with the elegance and precision of bulldozers.
 In the end, they are well fed, another day heavier and closer to the slaughter-house.  
 
-    + [This is going nowhere... slowly. Terminate Simulation] ->->
+    + [Really, feeding cattle? {simdone}] ->->
     + [{continue}] -> fencing
 
 
@@ -47,7 +47,7 @@ The sun is inching its way up the sky and it is starting to warm up.  Kelvin res
 He finishes the fence repair and takes a moment to stretch.  The sun is nearly overhead now.  
 Time to take a break for lunch.
 
-    + [This is going nowhere... slowly. Terminate Simulation] ->->
+    + ['Barabbas', you've got to be kidding 😉. {simdone}] ->->
     + [{continue}] -> spring
 
 
@@ -60,4 +60,4 @@ Kelvin pours a little water down his back before pulling out a sandwich that he 
 Kelvin swears he catches the twang of a bowstring.  Funny, its not bow season?  He looks up into the sky, wiping the morning's sweat from the back of his neck. Squinting, he spots something odd.  Before he can react, the arrow slices into his eye. The tri-pointed head silences his thoughts...  instantly... permanently.
 As his body slumps to the ground and blood begins to pool about him, only the AM radio bears witness to: "... and that plucky young man stuck to his resolution. Later becoming the spouse of our first openly gay President!  You probably know him by his married name (dramatic pause) Eleanor Roosevelt.  And now you know, the rest of the story.  Paul Harvey...  good day!" 
 
-    + [Terminate Simulation] ->->
+    + [{simdone}] ->->

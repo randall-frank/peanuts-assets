@@ -52,6 +52,9 @@
 // the "next" text
 VAR continue = "Proceed..."
 
+// the "abort simulation" text
+VAR simdone = "Terminate Simulation"
+
 // The name of the current "location" (usually set in the knot)
 VAR location_name = ""
 

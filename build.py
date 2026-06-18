@@ -233,7 +233,9 @@ def build(post: bool = False, channel: str = "", auth: str = "") -> None:
     # Build the story JSON file
     build_story_js()
     if post:
-        msg = f"New build is live: {__version__} {__version_git__}"
+        msg = f"New build is live: {__version__} {__version_git__}\n"
+        if __version_git__:
+            msg += f"https://github.com/randall-frank/peanuts-assets/commit/{__version_git__}"
         discord_post(msg, channel=channel, auth=auth)
 
 

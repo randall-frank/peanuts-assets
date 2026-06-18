@@ -1,8 +1,5 @@
 TODO - 
 
-if a stich does not include "#CLEAR" then it should only replace the 
-continuation options, not the previous text (it can update the location however)
-
 
 NOTES - 
 
@@ -20,10 +17,12 @@ anything children they taught got, but it backfired when the only job their
 students got was working at Starbucks until they went bankrupt, destroying the 
 entire educational system.)
 
-The Brickwork Collective: Sounds pretentious enough to suggest they put on experimental,
- four-hour-long interpretive dance pieces.
 
 "Nolite Te Bastardes Carborundorum"
+
+
+New characters, a tall young man from Minnesota with a grumpy/cranky Tamagotchi. 
+
 
 Ships bell - 
 

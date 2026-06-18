@@ -235,7 +235,8 @@ def build(post: bool = False, channel: str = "", auth: str = "") -> None:
     if post:
         msg = f"New build is live: {__version__} {__version_git__}\n"
         if __version_git__:
-            msg += f"https://github.com/randall-frank/peanuts-assets/commit/{__version_git__}"
+            commit = __version_git__.rsplit(':')[-1]
+            msg += f"https://github.com/randall-frank/peanuts-assets/commit/{commit}"
         discord_post(msg, channel=channel, auth=auth)
 
 

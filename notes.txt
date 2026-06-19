@@ -1,10 +1,26 @@
 TODO - 
 
+Fully reset the story on restart (run "Reboot" code for this)
+Include stock prices as state accessible from JS and Ink
 
 NOTES - 
 
 Got some cool ideas that we need to capture/integrate?  Here you go.
 Have a slick line that has become a moral imperative to add?  Here you go.
+
+
+News Ticker:
+at the top of simulation "dispatch" can generate
+
+Collect state/notes during the simulation to display in the "dispatch" area.
+
+
+"Review" stitches based on state/notes...
+
+"Nolite Te Bastardes Carborundorum"
+
+
+New characters, a tall young man from Minnesota with a grumpy/cranky Tamagotchi. 
 
 
 Meeting with boss and "secret" pal...  turns out that greenpeace runs the squddies,
@@ -16,12 +32,6 @@ like the American Indians and US educators (sued so that they get a percentage o
 anything children they taught got, but it backfired when the only job their 
 students got was working at Starbucks until they went bankrupt, destroying the 
 entire educational system.)
-
-
-"Nolite Te Bastardes Carborundorum"
-
-
-New characters, a tall young man from Minnesota with a grumpy/cranky Tamagotchi. 
 
 
 Ships bell - 

@@ -9,6 +9,10 @@ INCLUDE zero.ink
 INCLUDE bad.ink
 INCLUDE cruising.ink
 INCLUDE ubermom.ink
+INCLUDE david.ink
+INCLUDE battle.ink
+INCLUDE solitaire.ink
+INCLUDE symptoms.ink
 
 
 -> intro.start

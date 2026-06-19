@@ -56,7 +56,7 @@ A smattering of voyeurs are scattered around the theater. Some are just here for
 Mille sees a few familiar face sitting alone in a center section row about two-thirds of the way back, Jake Fedderstein.  Jake recognizes Mille and waves.  Mille waves back and heads towards Jake's row.  Jake writes the theater reviews for a competitor.  She knows that he's not the most trustworthy person in the world, but they share a lot in life and he has helped her out before.  She takes a seat a respectful number of seats away from him.  He smiles and goes back to furiously writing in his notepad. 
 "I've already written half of the review, just deciding on the ending.", he whispers. "Are you here to praise Caesar or to bury him"?
 "The jury is out for me. I think I'm going to see it though first", Mille whispers back. 
-"Well, I'm planning to blow some sunshine their way.", Jake says with a grin. "I'm sure Caesar will appreciate that."  He nods toward the NYC class, "That's Dr. Julian Sterling-Holloway.  The writer of this nonsense was one of her star pupils." 
+"Well, I'm planning to blow some sunshine their way.", Jake says with a grin. "I'm sure Caesar will appreciate that."  He nods toward the NYU class, "That's Dr. Julian Sterling-Holloway.  The writer of this nonsense was one of her star pupils." 
 "No way am I going to risk a wrathful letter to the editor from her", he warns.
 Mille nods, "Thanks for the heads up.  I'll be sure to use kid gloves on this one."
 Jake chuckles quietly. "I'm sure you will."  He turns back to his writing.  

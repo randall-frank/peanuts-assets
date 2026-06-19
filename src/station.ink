@@ -121,6 +121,14 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
         -> weektwo
     + [Simulation seed: 678d2c77{ubermom: (Uber-Mom)}] -> ubermom -> 
         -> weektwo
+    + [Simulation seed: 8796d7bb{david: (David's Friend)}] -> david ->  
+        -> weektwo
+    + [Simulation seed: 13991734{battle: (BattleTech)}] -> battle -> 
+        -> weektwo
+    + [Simulation seed: cd3cae13{symptoms: (Symptoms)}] -> symptoms -> 
+        -> weektwo
+    + [Simulation seed: ad1e89cf{solitaire: (Solitaire)}] -> solitaire -> 
+        -> weektwo
     + [Epilogue] -> epilogue
 
 

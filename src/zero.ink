@@ -1,6 +1,5 @@
-
 === zero ===
-    ~simulation_count += 1
+    ~ set_simulation_state(1)
     -> start
 
 = start
@@ -51,4 +50,4 @@ What? Just a stream of 1s!  How does that happen!
 All for the lack of an occasional 0.
   
 
-    + [Terminate Simulation] ->->
+    + [{simcomplete}] ->->

@@ -1,6 +1,5 @@
-
 === cruising ===
-    ~simulation_count += 1
+    ~ set_simulation_state(1)
     -> start
 
 = start

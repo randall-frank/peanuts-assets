@@ -1,10 +1,10 @@
 === symptoms ===
 # AUDIOLOOP: audio/background_quiet_urban_park_loop_01.mp3
-    ~simulation_count += 1
+    ~ set_simulation_state(1)
     -> start
 
 = start
-~ location_name = "VSouthwest Iowa Farmstead"
+~ location_name = "VThe Library"
 # CLEAR
 # CLASS: head1
 Symptoms
@@ -50,4 +50,4 @@ Grant swallowed uncomfortably.  The drawing was hand signed and dated (with mont
 
 Grant shivered in the warm basement air.
 
-    + [{simdone}] ->->
+    + [{simcomplete}] ->->

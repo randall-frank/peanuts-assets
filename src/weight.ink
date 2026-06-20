@@ -1,6 +1,5 @@
-
 === weight ===
-    ~simulation_count += 1
+    ~ set_simulation_state(1)
     -> start
 
 = start
@@ -16,4 +15,4 @@ One day there is an interesting ping.  The algorithm found an equation! They tal
 They have no idea how to publish this (we just found it?) and decide to start a company that partners with the existing number 2 chip manufacturer to create cell phones and graphics cards, with CPUs coming afterward…   
 
 
-    + [Terminate Simulation] ->->
+    + [{simcomplete}] ->->

@@ -1,10 +1,10 @@
 === david ===
 # AUDIOLOOP: audio/background_quiet_urban_park_loop_01.mp3
-    ~simulation_count += 1
+    ~ set_simulation_state(1)
     -> start
 
 = start
-~ location_name = "VSouthwest Iowa Farmstead"
+~ location_name = "VNeighborhood Backyard"
 # CLEAR
 # CLASS: head1
 David's Friend
@@ -16,6 +16,14 @@ The kids all nod and give signs of moderate acceptance to the virus in the cohes
 "So you're David's friend." he says, as he steps forward.  The rest of the boys have begun to separate into tightly-knit cliques for purposes unknown to any, discussions for no one else to hear.  Todd couldn't make it to the game today.  I hope we don't get stuck with Harold on our team again.  David's friend is supposed to be pretty smart.  The speaking begins, and the kids begin to filter into the vacant lot, some of them trying on a glove, some already slamming a worn baseball repeatedly into the scratchy surface of the brown mitt.
 
 The boy's name is Peter, and we shake hands.  It is the first time I have ever shook hands with anyone within two years of my age, and actually meant the warm greeting it implied.  Peter is a few inches shorter than me, but is not graphically aware of it.  Or at least he does not let on that he is aware of it.  His precocious head is topped with an unkept nest of fiery auburn fuzz, held in place by a grease-stained Mets cap that is almost as blatantly red as his hair.  His smile is comforting; his smile knows all.
+
+    + [{simdone}] ->->
+    + [{continue}] -> part2
+
+
+= part2
+~ location_name = "VThe Ball Field Part 1"
+# CLEAR
 
 He dusts off his hands onto the thighs of his blue jeans, sending coughs of dirt into the air.
 
@@ -47,6 +55,15 @@ He grins sheepishly.
 
 He pivots invitingly on his left heel, and we begin to make our slow progress to home plate, a small piece of white cardboard baking in the September sun.
 
+    + [{simdone}] ->->
+    + [{continue}] -> part3
+
+
+= part3
+~ location_name = "VThe Ball Field Part 2"
+# CLEAR
+
+
 "Dunno." he shrugs "Just didn't feel like it, I guess."
 
 I gape.  My brow creases.  Then I hold my composure.
@@ -73,4 +90,4 @@ I'm just a fucking kid.
 
 My friend David hurls a vicious curve ball through the quiet September air.
 
-    + [{simdone}] ->->
+    + [{simcomplete}] ->->

@@ -1,6 +1,6 @@
 === solitaire ===
 # AUDIOLOOP: audio/background_quiet_urban_park_loop_01.mp3
-    ~simulation_count += 1
+    ~ set_simulation_state(1)
     -> start
 
 = start
@@ -55,4 +55,5 @@ I glanced back to the United States.  There are only three shuttle launch statio
 
 The temperature in here is seventy-two degrees Fahrenheit, but I still feel very, very cold.
 
-    + [{simdone}] ->->
+    + [{simcomplete}] ->->
+    

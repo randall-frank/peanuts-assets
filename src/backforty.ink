@@ -1,7 +1,6 @@
-
 === forty ===
 # AUDIOLOOP: audio/background_quiet_urban_park_loop_01.mp3
-    ~simulation_count += 1
+    ~ set_simulation_state(1)
     -> start
 
 = start
@@ -53,6 +52,7 @@ Time to take a break for lunch.
 
 = spring
 ~ location_name = "VNorth Forty Springhead"
+~ violence_count += 1
 # CLEAR
 
 Fence repaired, Kelvin heads to the spring for lunch and crystal clear, ice cold spring water.  He pulls the tractor up near the springhead and parks it at an angle so the wheels will provide some additional shade.  He shuts off the tractor, but leaves the radio running as he dips an empty half gallon milk container into the stream.  Filling it with crystal clear spring water before taking a seat in the shade of the tractor tire.  
@@ -60,4 +60,4 @@ Kelvin pours a little water down his back before pulling out a sandwich that he 
 Kelvin swears he catches the twang of a bowstring.  Funny, its not bow season?  He looks up into the sky, wiping the morning's sweat from the back of his neck. Squinting, he spots something odd.  Before he can react, the arrow slices into his eye. The tri-pointed head silences his thoughts...  instantly... permanently.
 As his body slumps to the ground and blood begins to pool about him, only the AM radio bears witness to: "... and that plucky young man stuck to his resolution. Later becoming the spouse of our first openly gay President!  You probably know him by his married name (dramatic pause) Eleanor Roosevelt.  And now you know, the rest of the story.  Paul Harvey...  good day!" 
 
-    + [{simdone}] ->->
+    + [{simcomplete}] ->->

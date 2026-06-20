@@ -1,16 +1,13 @@
 === battle ===
 # AUDIOLOOP: audio/background_quiet_urban_park_loop_01.mp3
-    ~simulation_count += 1
+    ~ set_simulation_state(1)
     -> start
 
 = start
-~ location_name = "VSouthwest Iowa Farmstead"
+~ location_name = "VBattleTech: Act I"
 # CLEAR
 # CLASS: head1
 BattleTech
-
-
-Act I
 
 
 'Shit' was the first word Billings thought of.  He could sense that his eyes were well fogged over and could barely open them.  Every muscle in his body hurt, his head pounded, and his stomach felt as if a moose had gone through it.  Most physicians would classify this as a viral infection or some sort of deadly disease.  Billings called it a 'hangover'.
@@ -120,8 +117,13 @@ Drop technician Michael Forest left Billings alone in his room and closed the do
 
 "You're right." said Arden Billings.
 
-Act II
+    + [{simdone}] ->->
+    + [{continue}] -> act2
 
+
+= act2
+~ location_name = "VBattleTech: Act II"
+# CLEAR
 
 The dull roar of engines took over the throbbing of pain that used to be in Billings' mind.  He stared ahead.  Training told him to watch readout VFR's and orbit analysis interfaces to make sure nothing happened.  Today he decided to look out the window.  God, how hw missed sunsets.  Readouts chattered endlessly around him and various VFR's spread an eerie blue light across the bridge.
 
@@ -208,7 +210,13 @@ Billings fell asleep in his chair.
 
 His bottle fell to the floor.
 
-Act III
+    + [{simdone}] ->->
+    + [{continue}] -> act3
+
+
+= act3
+~ location_name = "VBattleTech: Act III"
+# CLEAR
 
 "Billings?...Colonel?...Wake up, sir."
 
@@ -294,4 +302,4 @@ A rail of bullets cut through the shower curtain above him and kicked up porcela
 
 God, how he missed sunsets.
 
-    + [{simdone}] ->->
+    + [{simcomplete}] ->->

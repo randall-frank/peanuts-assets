@@ -612,8 +612,6 @@ We would like to acknowledge them here and thank them all for their contribution
     return attr;
 }
 
-
-
 function stockChangeInfo(change) {
     let cname = 'neutral';
     let pfx = '   ';
@@ -626,6 +624,22 @@ function stockChangeInfo(change) {
         pfx = '▼ ';
     }
     return [cname, pfx];
+}
+
+function updateStateFromInk() {
+    // Stock prices
+    sidebar_info.stock_info['CDYG'].price = theStory.variablesState["stock_CDYG"];
+    sidebar_info.stock_info['GOOG'].price = theStory.variablesState["stock_GOOG"];
+    sidebar_info.stock_info['TCEHY'].price = theStory.variablesState["stock_TCEHY"];
+    sidebar_info.stock_info['XHLD'].price = theStory.variablesState["stock_XHLD"];
+    // CPU state
+    sidebar_info.system_info.cpus = theStory.variablesState["cpu_cpus"];
+    sidebar_info.system_info.procs = theStory.variablesState["cpu_procs"];
+    sidebar_info.system_info.util = theStory.variablesState["cpu_util"];
+    // Social state
+    sidebar_info.social_info.patrons = theStory.variablesState["social_patrons"];
+    sidebar_info.social_info.subs = theStory.variablesState["social_subs"];
+    sidebar_info.social_info.likes = theStory.variablesState["social_likes"];
 }
 
 function initStatusSidebar() {
@@ -715,6 +729,7 @@ function initStatusSidebar() {
 }
 
 function periodicStatusUpdate() {
+    updateStateFromInk();
     updateStatusSidebar();
     setTimeout(periodicStatusUpdate, 5000);
 }
@@ -744,8 +759,7 @@ function add_random_sidebar() {
 
     for (const [key, value] of Object.entries(sidebar_info.stock_info)) {
         let price = value.price + random_fraction(value.price, 0.02, 0.0);
-        let change = random_fraction(1.5, 1., 0.0);  // 2.5% max change
-        change = Math.trunc(change * 100) / 100;
+        let change = ((price - value.price) / value.price) * 100;
         sidebar_info.stock_info[key].price = price;
         sidebar_info.stock_info[key].change = change;
     }

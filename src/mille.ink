@@ -1,6 +1,5 @@
-
 === mille ===
-    ~simulation_count += 1
+    ~ set_simulation_state(1)
     -> start
 
 = start
@@ -81,10 +80,11 @@ Interspersed with terrible lines from a truly bad play/set(ketchup)/acting. Some
 
 = denouement
 ~ location_name = "VDénouement"
+~ violence_count += 1
 # CLEAR
 
 Opens with a woman in her 30s attending an off-off-off broadway show. She is the "low-end shlock" reviewer for a third-tier magazine, trying to make a mark as a writer.   
 
 She dies it the most absurd way imaginable... 
 
-    + [{simdone}] ->->
+    + [{simcomplete}] ->->

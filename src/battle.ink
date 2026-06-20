@@ -4,7 +4,7 @@
     -> start
 
 = start
-~ location_name = "VBattleTech: Act I"
+~ location_name = "VWaking up Armed"
 # CLEAR
 # CLASS: head1
 BattleTech
@@ -34,6 +34,14 @@ Instead, he said "Oooh."
 
 "Jesus tits." said Tanner as he walked out the door leaving a trail of smoke.  He left to go do something dangerous in the commons.
 
+    + [{simdone}] ->->
+    + [{continue}] -> drop
+
+
+= drop
+~ location_name = "VDropday"
+# CLEAR
+
 "Oooh." said Billings again.  It was his favorite noise.  He made the final decision to fall out of bed.  Drop vectors, wind resistance factors, and pain shot through his head as he worked his way to the bathroom.  Billings did things in the morning by priority.  Whatever was most important to him came first.  Today, taking several pills came before a shower, and loading his Branton-Hills .55 caliber semi-automatic pistol came in third.
 
 Today was drop-day.  They has spent months planning it and two weeks in an Overlord waiting to get there.  All the waiting would soon be over.
@@ -48,7 +56,6 @@ Billings sat down.
 
 Billings collapsed into his breakfast.
 
-
 "Everybody, everybody, your attention please-"
 
 O'Brien, the medic, always had a flair for the dramatic.  Everyone turned silent.
@@ -57,9 +64,15 @@ O'Brien, the medic, always had a flair for the dramatic.  Everyone turned silent
 
 Many cheers and applause followed.  John Clayton, a cadet, was given many handshakes and slaps on the back.  People said things like "What a way to spend it, huh?"
 
-
 Billings sadly left the room.
 
+    + [{simdone}] ->->
+    + [{continue}] -> nobirthday
+
+
+= nobirthday
+~ location_name = "VThe Problem with Clayton"
+# CLEAR
 
 Michael Forest, a drop technician followed Billings into his stateroom.
 
@@ -89,6 +102,14 @@ Forest started to leave.
 
 "Over four hundred!" Billings grimaced.  He grabbed his stomach.  Finally, all the pain swelled into his head.
 
+    + [{simdone}] ->->
+    + [{continue}] -> fourhundred
+
+
+= fourhundred
+~ location_name = "VThe Four Hundred"
+# CLEAR
+
 "Four hundred lives in my command and I couldn't do a fucking thing about it!!"
 
 He held his face in his hands and sobbed once quietly.
@@ -109,9 +130,7 @@ He held his face in his hands and sobbed once quietly.
 
 They sat in silence for a long time.
 
-Finally, Forest spoke up.
-
-"We tell him he's going to live."
+Finally, Forest spoke up, "We tell him he's going to live."
 
 Drop technician Michael Forest left Billings alone in his room and closed the door behind him.
 
@@ -122,7 +141,7 @@ Drop technician Michael Forest left Billings alone in his room and closed the do
 
 
 = act2
-~ location_name = "VBattleTech: Act II"
+~ location_name = "VAirborne"
 # CLEAR
 
 The dull roar of engines took over the throbbing of pain that used to be in Billings' mind.  He stared ahead.  Training told him to watch readout VFR's and orbit analysis interfaces to make sure nothing happened.  Today he decided to look out the window.  God, how hw missed sunsets.  Readouts chattered endlessly around him and various VFR's spread an eerie blue light across the bridge.
@@ -144,6 +163,14 @@ Billings flipped on the intercom.
 "Confirmed, standby."
 
 Billings computed launch vectors, the answers were fed carrier wave to the aerospace fighters.  The control chutes flared up.  A computer began a countdown.
+
+    + [{simdone}] ->->
+    + [{continue}] -> countdown
+
+
+= countdown
+~ location_name = "VThe Countdown"
+# CLEAR
 
 "Twenty...nineteen...eighteen..."
 
@@ -173,8 +200,15 @@ Billings started counting with the computer.
 
 "Good luck...four...three...two...one...launch."
 
-A loud roar shook the Overlord dropship.
+    + [{simdone}] ->->
+    + [{continue}] -> launch
 
+
+= launch
+~ location_name = "VLaunching"
+# CLEAR
+
+A loud roar shook the Overlord dropship.
 
 One by one, nine aerospace fighters left the dropship with fiery tails of thrust that distorted the background of stars with ripples of heat.  They accelerated quickly into orbit, then fell evenly into formation.
 
@@ -260,6 +294,14 @@ Billings left.
 
 He trudged slowly down the hall.  Billings smelled the nauseous odor of Tanner's cigars as he passed the commons.
 
+    + [{simdone}] ->->
+    + [{continue}] -> deckfive
+
+
+= deckfive
+~ location_name = "VDeck Five"
+# CLEAR
+
 "Hi, Colonel!"
 
 "Oh...how are you O'Brien."
@@ -285,6 +327,15 @@ The sparking died and the flame started to as the security unit powered down and
 "Negative, I leave in twenty-five minutes.  Don't bother.  I'll be out in a sec."
 
 "All right, Colonel, bridge out."
+
+    + [{simdone}] ->->
+    + [{continue}] -> itends
+
+
+= itends
+~ location_name = "VFriendly Neighbors"
+~ violence_count += 1
+# CLEAR
 
 Billing slid open the door and stepped in.  He never remembered his stateroom smelling this bad.  Billings closed the door and stepped into the bathroom long enough to start the shower.  He went back into his room to strip off his clothes ans his sidearm.  His right shoulder was very stiff.  He swung it around for a while, then stepped over the pile of clothes and into the shower.
 

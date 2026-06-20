@@ -37,6 +37,8 @@ Grant's memory was getting almost as old as the French instruction he had almost
 = picture
 ~ location_name = "VA Picture is Worth 1000 Words"
 # CLEAR
+# IMAGE: items/demon_page.png
+# SBIMAGE: items/demon_head.png
 
 The thrill of exploration was about to become boredom when he came across the first picture.  Before making a closer scrutiny of it's contents, he was struck with a curious sense of anachronism.
 

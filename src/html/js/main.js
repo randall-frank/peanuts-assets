@@ -231,8 +231,7 @@ function post_location_change(story) {
                     setVisible(".header", false);
 
                     if( tag == "RESTART" ) {
-                        restart();
-                        return;
+                        restart(false);
                     }
                 }
             }
@@ -263,8 +262,6 @@ function post_location_change(story) {
         // 5. Display Choices
         story.currentChoices.forEach(choice => {
 
-
-            
             var choiceDiv = document.createElement('div');
             choiceDiv.classList.add("choice");
             choiceDiv.innerHTML = `<a href="#">${choice.text}</a>`;
@@ -325,7 +322,7 @@ function post_location_change(story) {
         updateStatusSidebar();
     }
 
-    function restart() {
+    function restart(need_continue) {
         story.ResetState();
 
         setVisible(".header", true);
@@ -333,7 +330,7 @@ function post_location_change(story) {
         // set save point to here
         savePoint = story.state.toJson();
 
-        continueStory(true);
+        if (need_continue) continueStory(true);
 
         outerScrollContainer.scrollTo(0, 0);
     }
@@ -530,7 +527,7 @@ function post_location_change(story) {
             removeAll("p");
             removeAll("img");
             setVisible(".header", false);
-            restart();
+            restart(true);
         });
 
         let saveEl = document.getElementById("save");

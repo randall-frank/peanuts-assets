@@ -1,7 +1,6 @@
 TODO - 
 
 Fully reset the story on restart (run "Reboot" code for this)
-Include stock prices as state accessible from JS and Ink
 
 NOTES - 
 

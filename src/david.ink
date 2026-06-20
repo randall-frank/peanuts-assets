@@ -4,7 +4,7 @@
     -> start
 
 = start
-~ location_name = "VNeighborhood Backyard"
+~ location_name = "VNeighborhood Vacant Lot"
 # CLEAR
 # CLASS: head1
 David's Friend
@@ -22,7 +22,7 @@ The boy's name is Peter, and we shake hands.  It is the first time I have ever s
 
 
 = part2
-~ location_name = "VThe Ball Field Part 1"
+~ location_name = "VMeeting Peter"
 # CLEAR
 
 He dusts off his hands onto the thighs of his blue jeans, sending coughs of dirt into the air.
@@ -60,7 +60,7 @@ He pivots invitingly on his left heel, and we begin to make our slow progress to
 
 
 = part3
-~ location_name = "VThe Ball Field Part 2"
+~ location_name = "VChildren of Tomorrow"
 # CLEAR
 
 

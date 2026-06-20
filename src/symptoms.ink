@@ -30,6 +30,14 @@ The binding board creaked in protest, but the front cover swung open, revealing 
 
 Grant's memory was getting almost as old as the French instruction he had almost completely ignored in high school, and the text was, to him, illegible.  He did notice that it was a very peculiar dialect, and dismissed this as a side effect of the volume's age.  He continued to flip through the amber pages.
 
+    + [{simdone}] ->->
+    + [{continue}] -> picture
+
+
+= picture
+~ location_name = "VA Picture is Worth 1000 Words"
+# CLEAR
+
 The thrill of exploration was about to become boredom when he came across the first picture.  Before making a closer scrutiny of it's contents, he was struck with a curious sense of anachronism.
 
 Pictures? he thought to himself.  The book was far too old to include illustrations of any kind.  It didn't make sense.  He quickly flipped back to the title page, hoping to find a publishing or copyright date.  He found none.  No publishing house was listed either.

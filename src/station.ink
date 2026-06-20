@@ -64,9 +64,8 @@ The Meeting
 "Zyn. Yes! yes.", continued Kraal'goth, his previous certainty muted. 
 For the next 10 minutes, Kraal'goth began to describe the history and 'achievements' of CephaloDynamics.  He spoke of their 'innovative' technology and how it was used to make the world a better place for all (remaining) humans, conveniently leaving out the fact that there were less than 2 billion humans left on Earth.  The majority of them were living in subsistence, not to mention the fact that CephaloDynamics had effectively enslaved and exploited them.  Greenie listened with a mixture of boredom and disgust, while Randy and Andrew nodded along, trying to appear interested.
 Kraal looks nervously at Zyn before continuing.  At this point he pulls up a graph, showing the profits of CephaloDynamics over the past 5 years.  The graph stands in stark contrast to their public story.  Kraal paged though a collection of sidebar slides that 'explain' the numbers.  The Earth's environment has been improving.  The oceans once again, 'clean'.  Removing billions of people and effectively replacing the oceans provided a much needed shock to the system and it had been responding.  Water shipments were 'drying up', along with profits.  
-The company would not be thriving for long.  They had staved off a decline by cutting costs and shifting into 'finance', but the next set of numbers were telling.  They had invested heavily in real-estate, but humans with no resources were not 'paying rent'.  They had invested in 'new' places, like the Blue Lagoon, and the Red Desert. But again, nothing humanly affordable.  The company was running out of options. They were losing money on every deal they made.
 
-    + [Join the meeting] -> themeetingB
+    + [Here it comes...] -> themeetingB
 
 = themeetingB
 ~ location_name = "LBlue Lagoon Conference Room A"
@@ -76,12 +75,24 @@ The company would not be thriving for long.  They had staved off a decline by cu
 # CLASS: head1
 The Meeting 
 
+The company would not be thriving for long.  They had staved off a decline by cutting costs and shifting into 'finance', but the next set of numbers were telling.  They had invested heavily in real-estate, but humans with no resources were not 'paying rent'.  They had invested in 'new' places, like the Blue Lagoon, and the Red Desert. But again, nothing humanly affordable.  The company was running out of options. They were losing money on every deal they made.
 Kraal began blaming humans for their lack of 'intelligence' ruining their investments and presenting a danger to the Teuthan lifestyle...  Zyn frowned and cut him off, "Look, the Teuthans are...  idiots.  They have no idea how even basic business works.  Last month they spent a little over 2 Trillion € in a attempt to revive 'Happy Days' using a 'new' technology called 'AI'.  A complete failure.  They lost over a Trillion in that attempt.  Turns out they did not even own the IP!"  "In any case, they're in hot water and are looking for a silver bullet."  "That's where you come in...", he added dryly.  
 "Yes, that's where you come in", said Kraal.  "We're starting project Janus to help us understand human reactions and explore new opportunities using simulation", he continued.  "Andrew, you are an AI expert, correct?"  
 "umm, yes?" replied Andrew, "I have been running the AI automation project in the IT department for the last decade or so, but I'm not a simulation..."
 "Great", interjected Kraal!  "And I have been informed that Randy has done some work on simulations?"
 Randy started to answer, but never got a chance...
 "The two of you are going to build our 'Anthropic Engine'.  You will run our simulations and gather data on human reactions.  We'll give you access to additional quantum computing resources and will expect you to deliver results within the next 6 months.  We'll be monitoring your progress, closely, via weekly progress reports", Kraal finished.
+
+    + [The meeting wraps up] -> themeetingC
+
+= themeetingC
+~ location_name = "LBlue Lagoon Conference Room A"
+# CLEAR
+# SBIMAGE: items/squid4.png
+# AUDIOLOOP:
+# CLASS: head1
+The Meeting 
+
 Andrew and Randy look at each other, a bit bewildered.  "So you want us to come up with a new revenue stream for CephaloDynamics?  By simulating human behavior?  And you want us to do it in just 6 months?", Andrew asked.
 "Yes", Kraal replied. "We need to find a new way to exploit the human condition and generate revenue for CephaloDynamics.  You know, something like the American Indians or the 'learned knowledge' tax from the 20th century.  We'll be using your simulations to identify new markets and opportunities", Kraal explained.  "You will be working on this project full-time.  If you succeed, we will allow you out of your contracts...  2 years early, fully pensioned.  If you fail, well there are two openings on the 'outer colonies'",  Kraal smirked.  Zyn just stared through Randy and Andrew.
 "Well, that's about it", Kraal straightened and moved to the door.  "I'll be expecting your progress reports next week. Woop-woop-woop! Do-do-do-do-do-doooo!", Kraal said as he left.

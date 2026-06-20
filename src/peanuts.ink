@@ -18,7 +18,7 @@ INCLUDE symptoms.ink
 -> intro.start
 
 === intro ===
-
+    
 = start
 ~ location_name = ""
 # CLEAR
@@ -53,8 +53,11 @@ And so ends our little tale.  We certainly hope you enjoyed spending some time w
 If you would like to leave some feedback, Itch.io is a good place to do so.
 Thanks again,
 Andrew and Randy.
-    + [{continue}] -> start
+    + [Thank You] -> restart
 
+= restart
+# RESTART
+    + [{continue}] -> start
 
 = license
 # CLEAR

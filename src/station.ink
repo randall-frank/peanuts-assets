@@ -98,9 +98,9 @@ Andrew and Randy look at each other, a bit bewildered.  "So you want us to come 
 "Well, that's about it", Kraal straightened and moved to the door.  "I'll be expecting your progress reports next week. Woop-woop-woop! Do-do-do-do-do-doooo!", Kraal said as he left.
 Randy took a deep breath, wanting to point out that both of the examples had proven disastrous for the exploited targets.  Teachers arguing they were entitled to a cut of what their students earned had led to the destruction of the entire education system (if you only teach kids enough to work in food-service, you can only get a percentage of the food-service labor profit).  Randy knew that would only make Kraal angrier and probably get him fired (which he could not afford to happen right now).  Instead, he turned to Andrew.  The two exchanged an understanding look.  Andrew pushed his Poltrona Frau back, stood and walked out the door.  The door closed behind, leaving Randy alone in the room.
 
-    + [The Engine] -> weektwo
+    + [The Engine] -> building
 
-= weektwo
+= building
 ~ location_name = "LBlue Lagoon Server Control Room"
 ~ ai_build_number = ai_build_number + 1
 ~ set_simulation_state(0)
@@ -118,30 +118,64 @@ The Anthropic Engine
 
 # CLASS: computer
 Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number: {ai_build_number}
-
+# if there are enough violent scenes, allow this stitch, just once
+# currently tunneled, but could be standard stitch?
+{violence_count>1:
+    * [Andrew looks at Randy with concern] -> violence ->
+        -> building
+}
     + [Simulation seed: 107818a4{forty: (The Back Forty)}] -> forty -> 
-        -> weektwo
+        -> building
     + [Simulation seed: 54f37f50{mille: (Mille, Strait and Tall)}] -> mille -> 
-        -> weektwo
+        -> building
     + [Simulation seed: 07cd5541{weight: (The Weight of Gravity)}] -> weight -> 
-        -> weektwo
+        -> building
     + [Simulation seed: abdef192{zero: (Zero, my Hero)}] -> zero -> 
-        -> weektwo
+        -> building
     + [Simulation seed: 822b39fb{bad: (Bad to the Bone)}] -> bad -> 
-        -> weektwo
+        -> building
     + [Simulation seed: 99587d72{cruising: (Cruising Altitude)}] -> cruising -> 
-        -> weektwo
+        -> building
     + [Simulation seed: 678d2c77{ubermom: (Uber-Mom)}] -> ubermom -> 
-        -> weektwo
+        -> building
     + [Simulation seed: 8796d7bb{david: (David's Friend)}] -> david ->  
-        -> weektwo
+        -> building
     + [Simulation seed: 13991734{battle: (BattleTech)}] -> battle -> 
-        -> weektwo
+        -> building
     + [Simulation seed: cd3cae13{symptoms: (Symptoms)}] -> symptoms -> 
-        -> weektwo
+        -> building
     + [Simulation seed: ad1e89cf{solitaire: (Solitaire)}] -> solitaire -> 
-        -> weektwo
+        -> building
     + [Epilogue] -> epilogue
+
+
+= violence
+~ location_name = "LEmployee Lounge"
+# CLEAR
+# SBIMAGE:
+# CLASS: head1
+Intervention?
+
+Andrew looks at Randy with concern.  "You okay?" he asks.  
+
+Randy looks at him quizzically, "Yeah, I'm fine.  What's up?" 
+
+"Dude, I'm a little concerned about some of the simulations we've been running with your new code...", he trails off.
+
+A confused look drapes over Randy's face, "What do you mean?" 
+
+Andrew sighs, "I've been running some simulations with your new code and the results often result in deaths.  I'm seeing a marked increase in the old ultra-v.  Like, really violent stuff."
+
+"Interesting.  There's nothing I've encoded into the system for that, at least not explicitly.  We should correlate with the commit logs and look for traces of that behavior."
+
+"Sounds good.  I'll check the commit logs and see what I can find, ", Andrew starts pounding out a query.
+A minute or so later Andrew face palms, "Looks like we're not the only contributors to the current context.  It looks like the ultra-violent behavior correlates with a new agent."  Again, he types furiously, "I'm going to need to look into this further.  It looks like the user 'CaptKraal' added and locked in a new agent called 'Daisy'."
+Randy shakes his head, "Alright, we've got to end this project before we lose control.  See what you can do to isolate and insulate Daisy's stream.  We might not be able to remove the effect, but we can certainly lessen it."
+Andrew agrees, "On it.  I'm introducing 'Cletus' as a nuisance  filter to the Daisy stream.  I'll also add a new agent called 'Cooter' that will monitor and report on any anomalies in the system."
+"Good work", Randy says, "I'm going to start looking into how we can isolate this project from the rest of the network."
+
+    + [{continue}] ->->
+
 
 
 = epilogue

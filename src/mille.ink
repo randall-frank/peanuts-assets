@@ -65,9 +65,9 @@ The room lights suddenly drop and stage lights come up.  A middle age man steps 
 The already quiet audience falls silent as he continues, "we have a special treat for you tonight.  Mikael Koskinen's latest work 'The Entropy of Dust', an self-reflexive exploration of the trajectory of the being."
 
     + [Quit while you're ahead? {simdone}] ->->
-    + [{continue}] -> actone
+    + [{continue}] -> act_one
 
-= actone
+= act_one
 ~ location_name = "VEntropy of Dust: Act One"
 # CLEAR
 

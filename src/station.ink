@@ -206,10 +206,10 @@ Andrew is about to say something, but a surreptitious nudge from Randy stops him
 # CLASS: head1
 Emergency Stock Alert Meeting
 
-"Do I have to do everything! Here, I'll show you inbred primates how it's done," Kraal hovers over the terminal, typing in 'how to make money quick easy money'.
+"Do I have to do everything! Here, I'll show you inbred primates how it's done," Kraal hovers over the terminal, typing in 'how to make quick easy money'.
 
 # CLASS: computer
-Become an independent entrepreneur! Leverage a universally recognized portfolio of premium health, beauty, and home care products people already use every day. Instead of just earning retail profits on personal sales, the real magic happens when one mentors and builds a dedicated team of like-minded individuals, unlocking exponential residual income as everyone succeeds together. This is a turnkey opportunity to build a scalable asset and secure true financial independence.
+Become an independent entrepreneur! Leverage a universally recognized portfolio of premium health, beauty, and home care products people already use every day. Instead of just earning retail profits on personal sales, the real magic happens when one mentors and builds a dedicated team of like-minded individuals, unlocking exponential residual income as everyone succeeds together. A turnkey opportunity to build a scalable asset and secure true financial independence.
 
 Kraal steps back, supremely proud of his work, "See, how can you two be so stupid?  Zyn, look into this business opportunity immediately before someone else does!  We might be able to assuage the shareholders a little while until the pair of ingrate morons figure out how to make us some real money."
 

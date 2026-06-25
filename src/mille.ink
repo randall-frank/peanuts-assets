@@ -70,8 +70,26 @@ The already quiet audience falls silent as he continues, "we have a special trea
 = act_one
 ~ location_name = "VEntropy of Dust: Act One"
 # CLEAR
+Two shirtless men wearing green spandex tights appear, stage left.  They push a wheeled table front and center.  Mille stains to see it, but it looks like a rough chunk of half-inch drywall being stood upright on the table by a wooden frame.  The men step back.
+Really? Mille absentmindedly writes into her notebook. She had not expected the description of the play to be so literal.  Mille slides a little deeper into her chair and looks around at the audience as the lights shine starkly on the lone piece of gypsum.  
+A man in what could best be described as a Paul Bunyan outfit steps up and begins narration, "Gypsum sheetrock panels.  12.7mm thick.  Made of calcium sulfate dihydrate.  CaSO₄⋅2H₂O Also known as plaster of Paris. ..."
+Mille zones out, looking at the audience as the man continues to read off facts about gypsum.  She remembers her first attempts at poetry.  She had been so sure that she would be able to write something beautiful, something that would make people feel. 
 
-Internal monologue about following her dreams, getting pumped up in college only to find the real-world a much colder, steeper climb than she could imagine.
+# CLASS: computer
+Gray clouds tapestry the hidden sky.<br>Whispers stirs in the canopy.<br>Woods awaken in steady patter.<br>Rhythmic, green chorus of falling rain.<br>Washing the shadows and softening the air.<br>Velvet moss and roots at my feet.<br>The forest listens, and breathes, and grows.
+
+The man continues to read off facts about gypsum, "... Water-Resistant, FIRECODE and FIRECODE C Core.  Edge tapers allows for two layers of gypsum plaster ..." Water begins to drip from the ceiling on stage onto the sheetrock. It spatters on contact as a middle-aged woman in the first row removes he glasses and wipes them on her spouse's shirt.
+
+Mille looks over to the professor who has begun exuberantly gesturing, seeming genuinely passionate.  She thinks back to her own time at NYU.  She had been so sure that she would be able to write something that would bring that level of emotion to people...
+
+"The past, the future.  Death and rebirth.  Circles, circles within circles...", as the wet stain spreads over the gray surface, the green tights brigade hustle the table off the stage as Paul Bunyan trails off and the lighting lowers. 
+
+    + [{simdone}] ->->
+    + [{continue}] -> act_two
+
+= act_two
+~ location_name = "VEntropy of Dust: Act Two"
+# CLEAR
 
 Interspersed with terrible lines from a truly bad play/set(ketchup)/acting. Someone runs off the stage with a pistol yelling: "Sic Semper Tyrannus" which she sighs about the bad Latin... "Sic Semper Tyrannis, Tyrannis, Tyrannis!" and for a half second she thinks it is real until the actor limps past her, a college dropout she knows all too well... and with a wink he is gone. ...lot more writing... stepping out into the street, biting wind, wondering if she should just let Gemini handle the writeup when ...
 

@@ -5,6 +5,8 @@ Brome
 Bromegrass
 CDYG
 Cephalo
+dihydrate
+FIRECODE
 Florance
 Greenie
 Hazzard

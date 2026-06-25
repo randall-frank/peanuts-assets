@@ -1,9 +1,15 @@
 var old_url = window.location.href;
 var peanuts_allow_cookies = false;
 
+var baseline_stock_info = {
+    'CDYG': { 'price': 512.0, 'change': 1.45 },
+    'GOOG': { 'price': 89.70, 'change': -0.55 },
+    'TCEHY': { 'price': 12.10, 'change': 0.83 },
+    'XHLD': { 'price': 54.0, 'change': 0.00 }
+}
 
 var init_stock_info = {
-    'CDYG': { 'price': 150.25, 'change': 1.45 },
+    'CDYG': { 'price': 512.0, 'change': 1.45 },
     'GOOG': { 'price': 89.70, 'change': -0.55 },
     'TCEHY': { 'price': 12.10, 'change': 0.83 },
     'XHLD': { 'price': 54.0, 'change': 0.00 }
@@ -702,8 +708,8 @@ function initStatusSidebar() {
 
     let cpus = sidebar_info.system_info['cpus'].toLocaleString('en-US');
     let procs = formatter.format(sidebar_info.system_info['procs']);
-    let util = sidebar_info.system_info['util'].toFixed(1);
-
+    let util = sidebar_info.system_info['util'].toFixed(1).padStart(5);
+    
     let systemStatusContainer = document.querySelector('#systemstatus');
     s = `
         <ul class="fa-ul" style="margin-left: 0px">
@@ -715,7 +721,7 @@ function initStatusSidebar() {
                 <span class="fa-li"><i class="fa-solid fa-beat-fade fa-gears" style="color: lightgray;"></i> </span>
                 <span id='system_procs'>${procs}</span> Processes
             </li>
-            <li class="li-gap">
+            <li class="li-gap" id="system_util_li">
                 <span class="fa-li"><i class="fa-solid fa-spinner fa-pulse" style="color: yellow;"></i> </span>
                 <span id='system_util'>${util}</span>% Utilization
             </li>
@@ -756,7 +762,7 @@ function add_random_sidebar() {
 
     for (const [key, value] of Object.entries(sidebar_info.stock_info)) {
         let price = value.price + random_fraction(value.price, 0.02, 0.0);
-        let change = ((price - value.price) / value.price) * 100;
+        let change = ((price - baseline_stock_info[key].price) / baseline_stock_info[key].price) * 100;
         sidebar_info.stock_info[key].price = price;
         sidebar_info.stock_info[key].change = change;
     }
@@ -773,6 +779,11 @@ function update_stock(info) {
         tre.className = cname;
         let price_tde = tre.querySelector(".price");
         price_tde.innerHTML = price.toFixed(2);
+        const base_price = baseline_stock_info[key].price;
+        let ratio = (price - base_price) / (base_price*1.4)  + 0.5;
+        ratio = clampValue(ratio, 0., 1.0);
+        let price_color = interpolateHSL("#ff0000", "#00ff00", ratio);
+        price_tde.style.color = price_color;
         let change_tde = tre.querySelector(".pct-change");
         change_tde.innerHTML = pfx + change.toFixed(2);
     }
@@ -798,8 +809,10 @@ function update_system(info) {
     });
     let cpus = info['cpus'].toLocaleString('en-US');
     let procs = formatter.format(info['procs']);
-    let util = info['util'].toFixed(1);
+    let util = info['util'].toFixed(1)
+    const util_color = interpolateHSL("#00ff00", "#ff0000", sidebar_info.system_info['util'] / 100);
     document.getElementById("system_cpus").innerHTML = cpus;
     document.getElementById("system_procs").innerHTML = procs;
     document.getElementById("system_util").innerHTML = util;
+    document.getElementById("system_util_li").style.color = util_color;
 }

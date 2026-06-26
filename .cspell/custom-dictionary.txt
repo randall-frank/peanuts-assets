@@ -1,6 +1,9 @@
 # Custom Dictionary Words
+animatronic
 AUDIOLOOP
 avant
+Bigsby
+Bomba
 Brome
 Bromegrass
 CDYG
@@ -10,15 +13,20 @@ FIRECODE
 Florance
 Greenie
 Hazzard
+hebben
 Hermès
 Jackalgirl
+Kardashian
 Knipp
 Koskinen's
 Luxon
 Mikael
+newswire
+Onder
 Poltrona
 Radula
 SBIMAGE
+Soylent
 TCEHY
 Teuthan
 Teuthans

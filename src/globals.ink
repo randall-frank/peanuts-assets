@@ -125,3 +125,13 @@ VAR debug = 0
             ~cpu_util -= 80.0
     }
     ~ return
+
+
+// whole number
+=== function get_whole_number(n) 
+    ~ return INT(n)
+
+// hardcoded two decimal places
+=== function get_decimal_part(n)
+    ~ temp i = (n - INT(n)) * 100
+    ~ return INT(i)

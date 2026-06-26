@@ -13,6 +13,7 @@ INCLUDE david.ink
 INCLUDE battle.ink
 INCLUDE solitaire.ink
 INCLUDE symptoms.ink
+INCLUDE newswire.ink
 
 
 -> intro.start
@@ -32,7 +33,6 @@ Copyright © STORY_YEAR Randall Frank & Andrew Florance
 Version: STORY_VERSION (STORY_BUILD_DATE)
 
 Peanuts, Pickles and Propaganda is a work of fiction. Names, characters, businesses, places, events, and incidents are either the products of the author's imagination or used in a fictitious manner. Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
-
     + [Begin the story...] -> station.wake_up
     + [Attributions and Thanks] -> thanks_to
     + [License] -> license

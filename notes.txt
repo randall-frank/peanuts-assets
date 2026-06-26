@@ -1,6 +1,5 @@
 TODO - 
 
-Fully reset the story on restart (run "Reboot" code for this)
 
 NOTES - 
 

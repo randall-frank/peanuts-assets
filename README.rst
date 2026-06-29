@@ -10,7 +10,7 @@ Peanuts, Pickles and Propaganda
     :target: https://www.inklestudios.com/ink/
 
 .. |Itch| image:: https://img.shields.io/badge/Itch.io-fa5c5c.svg
-   :target: https://myleftgoat.itch.io/
+   :target: https://myleftgoat.itch.io/peanuts?secret=tCdbpYkFwZN7mvBSusfiKRDbE
 
 
 Overview
@@ -52,9 +52,11 @@ dependencies:
 To build the web-based version of the story, the 
 `Inklecate <https://github.com/inkle/ink/releases>`_ compiler needs to be
 available.  The `build.py` script will attempt to download the
-compiler from github when building the story.   It can also be included in the
-search path on your system or one can set the environmental variable
-*PEANUTS_INKLECATE* to the complete pathname of the executable.
+compiler from github when building the story.   
+
+If you have a locally installed inklecate compuled, it can be used by 
+setting the environmental variable *PEANUTS_INKLECATE* to the complete 
+pathname of the executable.
 A Powershell example if you downloaded the CLI tools yourself:
 
 .. code:: Powershell
@@ -63,7 +65,7 @@ A Powershell example if you downloaded the CLI tools yourself:
     & $Env:PEANUTS_INKLECATE
     Usage: inklecate <options> <ink file> ...
 
-However, in most cases you can just run the command `python build.py build`
+In most cases you can just run the command `python build.py build`
 and the tools will be downloaded into the directory `ink_tools`.
 
 *build.py* has several options:
@@ -85,6 +87,14 @@ and the tools will be downloaded into the directory `ink_tools`.
     default port is 9000.  By default, a web browser tab will be opened to view 
     the story. `--nobrowser` may be used to suppress the opening of the tab.
 
+- release
+
+  - This will first execute a `build` operation, then create a zip file of the
+    contents of the `build` directory.  It will generate a file named: `peanuts_vX.Y.Z.zip` where X.Y.Z is the current build version from version.txt.  The resulting
+    zip file can be served to run the game.  It can be used on platforms like
+    `itch.io <https://itch.io>`_.
+
+
 Running
 ~~~~~~~
 
@@ -92,7 +102,7 @@ One can use the `build.py` file to build and run the story:
 
 .. code:: Powershell
 
-    python build.py build
+    > python build.py build
     INFO:peanuts_build:Story version: 0.0.1
     INFO:peanuts_build:File 'ink_tools\inklecate_windows.zip' downloaded successfully from 'https://github.com/inkle/ink/releases/download/v.1.2.0/inklecate_windows.zip'
     INFO:peanuts_build:All files extracted from 'ink_tools\inklecate_windows.zip' to 'ink_tools'.
@@ -101,7 +111,7 @@ One can use the `build.py` file to build and run the story:
 
     INFO:peanuts_build:Operation complete
 
-    python build.py serve
+    > python build.py serve
     Serving story:  http://127.0.0.1:9000
 
 

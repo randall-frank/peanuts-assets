@@ -9,6 +9,8 @@
 # CLASS: head1
 David's Friend
 
+# IMAGE: locations/baseball.png
+
 "And this," says Brian, waving an unclenched yet unweilding hand in my direction, "is David's friend."
 
 The kids all nod and give signs of moderate acceptance to the virus in the cohesive bondage of sixth grade boys trying too hard to be men.  I am the New Kid.  I am David's friend.  One of them, whose name I do not know, continues to stare at me.  No, that's not right: stare through me.  I am instantly charmed by his ability to sort out the hundreds of personas piled on him, his ability to pick out one kid among a baker's dozen and try to understand what he thinks. Especially when he's the New Kid.

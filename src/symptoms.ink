@@ -9,12 +9,24 @@
 # CLASS: head1
 Symptoms
 
+# IMAGE: locations/library.png
 
 Grant reached for the first book on the shelf.  He ran his stubby fingers over the coarse binding and felt the months of thought that went into its creation and the years of indulgence it provided afterwards.  It was a small book, mostly a dull brown, with alternating sun-bleached red stripes along the binding.  The title was in French.  The author he did not recognize.
 
 "Michel Laronde?" he whispered to himself.  His grandfather would have known the author, or at least in a remote sense: most of the books had been given to him, directly and indirectly, by the authors themselves.  Now the aged volumes rested in taut organization on an aching wooden shelf in his basement.  Grant had obtained the keys by order of his grandfather's will, and had been intrigued by the fact that the keys had rested in a safety deposit box from the time when his grandfather had been committed to Elderbrook up to his death two days ago.  The house had remained uninhabited for a total of fourteen years.
 
 Grant pulled at the binding in an effort to remove it from the shelf.  It seemed to be slightly stuck.  Grant tugged at it harder, sending tiny coughs of dust into the already dank basement air.  The book shifted forward, and Grant went in with both hands.  The book slid out, and small flecks of the binding board came off in his fingers, staining them an ancient brown.
+
+
+    + [{simdone}] ->->
+    + [{continue}] -> abook
+
+
+= abook
+~ location_name = "VThe Library"
+# CLEAR
+
+# IMAGE: locations/library.png
 
 The cover was plain.  The blatantly French title emblazoned the upper third in set gold print, and Laronde's name appeared under it.
 

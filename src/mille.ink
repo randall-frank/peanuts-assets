@@ -34,7 +34,7 @@ Mille is not particularly bothered by their disdain.  She has seen it all before
 = tickets
 ~ location_name = "VThe Theater of Broken Dreams"
 # CLEAR
-# IMAGE: locations/brickwork.png
+# SBIMAGE: locations/brickwork_clip.png
 
 'Larry' (badge name) is working the booth. The bald, elderly man is wearing his usual black suit and tie.  He looks up as Mille approaches.
 "Good evening, Mille," he says with a smile.  "Business or pleasure tonight?"
@@ -43,16 +43,6 @@ Mille is not particularly bothered by their disdain.  She has seen it all before
 "You shouldn't do that Lawrence", Mille says as she takes the ticket and credit card back.  "I know you're doing me a favor, but others might not see it that way."  
 Lawrence chuckles, "Mille, I know what they're making you watch tonight. They should be paying you to sit through this."  
 "Well, thank-you Lawrence.  I do appreciate it", Mille smiles and thanks him before leaving the booth.
-
-    + [Last chance... {simdone}] ->->
-    + [{continue}] -> seats
-
-
-= seats
-~ location_name = "VThe Theater of Broken Dreams"
-# CLEAR
-# SBIMAGE: locations/brickwork_clip.png
-
 Mille heads into the theater.  As expected, an untold number of seating opportunities present themselves. The theater is empty... ish.  A smattering of folks in the center section look generally excited about being here.  A quick glance sorts them into the classic categories.  'Friends, lovers, lover wannabes', blind to the world around them.  The rest are just here for specific actors.  Likewise with the 'Family' attendees, they are there for support, but with confused, midwestern politeness.  This is not what they expected for an NYC theatrical experience, but they fully support their loved ones and will stoically soldier through.  
 On the far right, a class of NYU theater students and their professor are packed into a couple of rows.  All have discrete ear buds, writing utensils and notebooks at the ready.  The professor is sub-vocalizing a narrative to them and most are distracted, taking notes.  They are focused on their own little worlds, not really paying attention to what is going on around them, obvious to their being observed and judged by the other attendees.
 A smattering of voyeurs are scattered around the theater. Some are just here for the experience, to see what happens next.  Couples discretely cuddle in dark corners.  A couple of 'working professionals' and their Johns make their way to the balcony.  Two or three homeless folks keep to themselves, warming themselves in the climate controlled theater with a boost from the stereotypical bottle of Cisco wine in a brown paper bag. All in all, the expected audience for an event like this, a cross section of the human experience on display. The audience would make a far more interesting story than the play, sighed Mille.  But no one is paying for that story.  

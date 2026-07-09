@@ -5,7 +5,7 @@
 ~ location_name = "LBlue Lagoon Sleeping pod 14380-e328"
 ~ ai_build_number =  RANDOM(42345, 62345)
 # CLEAR
-# AUDIOLOOP: audio/Ambient%20Vol10%20Frozen%20Orbit%20Intensity%201.mp3
+# AUDIOLOOP: audio/Ambiance_Nature_Rain_Calm_Leaves_Loop_Stereo.mp3
 # CLASS: head1
 Monday Morning Blues
 
@@ -274,7 +274,7 @@ Randy retraces the familiar path to '14380-e328'.  Home sweet pod.  The same one
 
 = epilogue2
 ~ location_name = "LBlue Lagoon Sleeping pod 14380-e328"
-# AUDIOLOOP: audio/rain_light_hard_surface_loop_02.mp3
+# AUDIOLOOP: audio/Ambiance_Nature_Rain_Calm_Leaves_Loop_Stereo.mp3
 
 Randy's eyes begin to close as he drifts off.  Once again, the odor of the primeval pines... The soft patter of raindrops softly falling on the leaf-covered forest floor...  The world went strangely silent, even the soft rain ceased.  A tepid step on the decomposing leaves resulted in a wet scrunch as leaves impress into the damp soil.  That soil, so rich and dark...  The result of years of microorganisms, insects and worms.  Worms, toiling soundlessly underfoot, converting dead leaves into rich soil.  The worms, backbones of regeneration, rebirth and... evolution.  The lowly, vital worms... 
 Eyes flutter under still closed eyelids.  The camera pulls in, past the still disconnected pod speaker wires to Randy's face as he reaches up and wipes cold raindrops from his forehead and cheek.

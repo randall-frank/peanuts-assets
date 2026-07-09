@@ -591,12 +591,17 @@ We would like to acknowledge them here and thank them all for their contribution
 <p></p>
 <table class="attr">
 <tr><th>Individual</th><th>Sound number</th><th>License</th></tr>
-<tr><td>Jackalgirl</td>
+<tr>
+    <td>Jackalgirl</td>
     <td><a href="https://freesound.org/s/683748/" target="_blank" rel="noopener noreferrer">580356</a></td>
-    <td><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Attribution 4.0</a></td></tr>
+    <td><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Attribution 4.0</a></td>
+</tr>
 </table>
 <p></p>
 <h2>Licensed audio files</h2>
+<ul>
+<li>Some sounds are from the <a href="https://nox-sound-design.itch.io/essentials-series-sfx-nox-sound" target="_blank" rel="noopener noreferrer">'Essentials Series'</a> on Itch.io by <a href="https://linktr.ee/Nox_Sound" target="_blank" rel="noopener noreferrer">Nox_Sound</a></li>
+</ul>
 <p>Audio tracks other than those listed above have been commercially licensed from other sources.  These files are not covered under the overall game CC license.</p>
 <ul>
 <li>Some audio tracks are licensed from Nicolas Jeudy and <a href="https://darkfantasystudio.itch.io/" target="_blank" rel="noopener noreferrer">DARK FANTASY STUDIO</a></li>

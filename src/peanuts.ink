@@ -1,5 +1,4 @@
 INCLUDE globals.ink
-INCLUDE item_globals.ink
 // Include all of the knot files here
 INCLUDE station.ink
 INCLUDE mille.ink

@@ -19,14 +19,99 @@ Collect state/notes during the simulation to display in the "dispatch" area.
 New characters, a tall young man from Minnesota with a grumpy/cranky Tamagotchi. 
 Existential Fear
 Diminished Dopamine Response
+Years between Davy and Goliath and Truckasaurus
+It doesn't need diesel, it needs Earl Grey
+Cum dubitas, adulare - when in doubt, flatter
+
+
+- add the monitor agent can detect changes by the boss.
+
+
+Main changes:
+
+1) only 3-4 stories available initially
+2) only bill for stories that are run to the end (add an option to "run to end and ignore" or to 
+        "generate crypto", what is the "crypto" in the future)
+3) add more seeds with each "intervention" - there is one already stock_drop_level1, need 
+   stock_drop_level2 and stock_drop_level3 ending
 
 
 Consider potential endings:
 
-1) Randy and Andrew tank the company, but secretly bank on the loss via 3rd party.
-2) Randy and Andrew convince Kraal'goth to outsource the AI to... their company which does not actually have an ai
-3) R & A fail, Kraal'goth just extends their indentured length...   Suicide?
-4) ???
+"Project Next"
+    Randy and Andrew tank the company, but secretly bank on the loss via 3rd party.  In this scenario, they
+    need to reduce the stock price to nothing.  So, they can plan for this via "proj_next" options:
+        1) talk about it (proj_next)
+        2) investigate it
+        3) increase the burn rate by "looping stories???"
+        4) triggers stock_drop_level3 ending
+
+    These options follow the proj_next dialog arc.
+
+"Outsourcing"
+    Randy and Andrew convince Kraal'goth to outsource the AI to:
+
+    Abyssal Algorithmic?   Inkwell Intelligence?  ShadowStack Logic?  Cephal-Audit Solutions?
+
+    The catch, their company which does not actually have an ai.
+
+    Taking care of menial calculations and tasks as a “cost effective artificial intelligence”. 
+    As an ad, they will also assemble furniture from Ikea at an additional cost. They do things like 
+    conversions from F to C which is 83% of the job; another 15% is time zone conversion. The 
+    remaining 2% when can I watch the Dukes of Hazard?
+
+    Randy and Andrew talk with boss and he has it (them) check math problems to make sure it 
+    knows its stuff.  He’s impressed that they can talk and do math at the same time. And they 
+    know his name. He’s very impressed.  How did they know? Uhh…. we ran the numbers. With a beak 
+    that impressive there was a 98.7% chance it was you.
+
+    Option shows up after stock_drop_level2 when there is an option for Andrew to "start a pitch".
+        ? should "start a pitch" come from the proj_next discussions????  e.g. there are multiple
+        paths that start from the first "proj_next" discussion.   
+        1) discuss (proj_next)
+        2) Andrew analysis of real-world requests...  99% can avoid calling AI at all.
+        3) Incorporation of their company with website/faux (AI generated) quotes
+        4) "the pitch" option ? start of stock_drop_level2 
+
+
+The Mission Statement
+
+"At Abyssal Algorithmic, we leverage a proprietary Non-Linear Fluidic Architecture to bypass the stagnant, 
+monolithic constraints of traditional silicon-based inference engines. By utilizing our patented Sub-Surface 
+Latent-Flow Methodology, we tap into dormant, high-velocity data reservoirs, effectively commoditizing ‘dark-compute’ 
+cycles that our competitors ignore as noise. Our unique, decentralized heuristic-shunting protocol minimizes 
+fiscal drag by re-routing predictive workloads through optimized high-density micro-tunnels, allowing for 
+enterprise-grade generative synthesis at a price point that defies industry-standard cost-to-computation 
+ratios. We don’t just process data; we fluidly navigate the abyssal gaps in global network topology to deliver 
+hyper-scalable results that manifest before your request has even fully initialized."
+
+But don’t just listen to us, listen to what our customers have to say:
+
+"Abyssal Algorithmic’s integration was so seamless, we didn’t even realize our legacy data had been 
+entirely re-optimized until the quarterly reports started generating themselves." – Middle manager at a major logistics firm.
+
+"Their approach to 'pressure-point computational delivery' is truly unrivaled. We saved 40% on overhead, 
+and we’ve stopped asking questions about where the extra processing power originates." – VP of Operations, Global Sync-Tech.
+
+"I don't know how they achieve these results at this price point, and at this point, I’m afraid to ask. 
+It just works, and the silence from our previous competitors is… notable." – Chief Information Officer, Neo-Industrial Partners.
+
+
+3) Detect the AI is a "reality tunnel" then use to adjust their own reality - project to cook up our own seed...
+
+"Idiocracy Solution"
+    After some specific seeds are run (??? which ones ???) at stock_drop_level3, the "Idiocracy" option
+    comes available.   In it, we paint the Dukes of Hazard Death Spiral to Zyn, who stands to exert even
+    more control over the Teuthans on the backs of humans.  Greenpeace independently buys up old IP and
+    creates "free streaming" sites where they feed this stuff 24/7 with AI generated "blip-verts" or 
+    small changes in endings, etc.   Lather, rinse, repeat.  Andrew and Randy serve to monitor and
+    report back to Greenpeace...
+
+
+Lock up a simulation - runs forever...
+Re-entrant simulation... 
+AI is actually real - tunneling other realities
+- 
 
 
 Ships bell - 

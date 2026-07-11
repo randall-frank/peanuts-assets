@@ -77,6 +77,8 @@ VAR simulation_running = 0
 VAR player_cryptids = 0
 // "ABAL" has 10 shares
 VAR shell_company_name = "Abyssal Intelligence"
+VAR shell_company_shares = 10.0
+
 
 // State of "Project Next" 0=not started, 1=started, 2=implemented, 3=triggered
 VAR eg_project_next = 0
@@ -89,7 +91,7 @@ VAR eg_outsourcing = 0
 VAR stock_CDYG = 512.0
 VAR stock_GOOG = 89.70
 VAR stock_TCEHY = 12.10
-VAR stock_XHLD = 54.0
+VAR stock_ABAL = 0.0
 
 // CPU status
 VAR cpu_cpus = 238234
@@ -107,6 +109,12 @@ VAR debug = 0
 
 
 // Utility functions
+
+=== function update_cryptids(cryptid_delta) ===
+    ~ player_cryptids += cryptid_delta
+    ~ stock_ABAL = player_cryptids / shell_company_shares
+    ~ return
+
 === function update_stock_price(name, delta) ===
     {
         - name == "CDYG":
@@ -115,8 +123,8 @@ VAR debug = 0
             ~stock_GOOG += delta
         - name == "TCEHY":
             ~stock_TCEHY += delta
-        - name == "XHLD":
-            ~stock_XHLD += delta
+        - name == "ABAL":
+            ~stock_ABAL += delta
     }
     ~ return
 

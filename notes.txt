@@ -26,7 +26,6 @@ Cum dubitas, adulare - when in doubt, flatter
 
 - add the monitor agent can detect changes by the boss.
 
-
 Main changes:
 
 1) only 3-4 stories available initially

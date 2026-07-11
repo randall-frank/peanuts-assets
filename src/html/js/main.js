@@ -5,14 +5,14 @@ var baseline_stock_info = {
     'CDYG': { 'price': 512.0, 'change': 1.45 },
     'GOOG': { 'price': 89.70, 'change': -0.55 },
     'TCEHY': { 'price': 12.10, 'change': 0.83 },
-    'XHLD': { 'price': 54.0, 'change': 0.00 }
+    'ABAL': { 'price': 0.0, 'change': 0.00 }
 }
 
 var init_stock_info = {
     'CDYG': { 'price': 512.0, 'change': 1.45 },
     'GOOG': { 'price': 89.70, 'change': -0.55 },
     'TCEHY': { 'price': 12.10, 'change': 0.83 },
-    'XHLD': { 'price': 54.0, 'change': 0.00 }
+    'ABAL': { 'price': 0.0, 'change': 0.00 }
 }
 
 var init_system_info = {
@@ -636,11 +636,20 @@ function stockChangeInfo(change) {
 }
 
 function updateStateFromInk() {
+    // If ABAL price is changing, we update the baseline stock info
+    if (theStory.variablesState["stock_ABAL"] != sidebar_info.stock_info['ABAL'].price) {
+        // baseline is the previous price
+        baseline_stock_info['ABAL'].price = sidebar_info.stock_info['ABAL'].price; 
+        // if previous baseline is zero, we set it to current stock price as well
+        if (baseline_stock_info['ABAL'].price == 0) {
+            baseline_stock_info['ABAL'].price = theStory.variablesState["stock_ABAL"];
+        }
+    }
     // Stock prices
     sidebar_info.stock_info['CDYG'].price = theStory.variablesState["stock_CDYG"];
     sidebar_info.stock_info['GOOG'].price = theStory.variablesState["stock_GOOG"];
     sidebar_info.stock_info['TCEHY'].price = theStory.variablesState["stock_TCEHY"];
-    sidebar_info.stock_info['XHLD'].price = theStory.variablesState["stock_XHLD"];
+    sidebar_info.stock_info['ABAL'].price = theStory.variablesState["stock_ABAL"];
     // CPU state
     sidebar_info.system_info.cpus = theStory.variablesState["cpu_cpus"];
     sidebar_info.system_info.procs = theStory.variablesState["cpu_procs"];
@@ -779,7 +788,10 @@ function add_random_sidebar() {
     sidebar_info.system_info.util += random_fraction(sidebar_info.system_info.util, 0.05, 0.0);
 
     for (const [key, value] of Object.entries(sidebar_info.stock_info)) {
+        // Generate a random fraction to add or subtract from the current price
+        let frac = Math.random() * 2 - 1; // Random number between -1 and 1
         let price = value.price + random_fraction(value.price, 0.02, 0.0);
+        if (key == "ABAL") price = value.price;
         let change = ((price - baseline_stock_info[key].price) / baseline_stock_info[key].price) * 100;
         sidebar_info.stock_info[key].price = price;
         sidebar_info.stock_info[key].change = change;
@@ -790,6 +802,14 @@ function update_stock(info) {
     for (const [key, value] of Object.entries(info)) {
         let price = value.price;
         let change = value.change;
+        if (key === "ABAL") {
+            const abal_row = document.getElementById('ABAL_row');
+            if (price > 0) {
+                abal_row.style.display = 'table-row';
+            } else {
+                abal_row.style.display = 'none';
+            }
+        }
         let info = stockChangeInfo(change);
         let cname = info[0];
         let pfx = info[1];

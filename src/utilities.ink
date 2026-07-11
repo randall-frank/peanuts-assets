@@ -1,6 +1,6 @@
 // This is used to inject common, state specific options into the "next" options
 ===  common_options(ret_text, -> ret_target)
-    {eg_project_next or eg_outsourcing or 1:
+    {eg_project_next or eg_outsourcing:
         + [Redirect simulation to Cryptid mining] -> crypto_output(ret_target)
     }
     ~ temp text = ret_text
@@ -20,13 +20,14 @@
     ->->
 
 === crypto_output(-> ret_target) ===
+# CLEAR
 # CLASS: head2
     Simulation complete
 
-    ~ temp c = RANDOM(500,800)
+    ~ temp c = RANDOM(400,500)
     This simulation (mining operation) has completed. 
     {c}Ͼ have been mined and transferred to "{shell_company_name}".
-    ~ player_cryptids += c
+    ~ update_cryptids(c)
     The "{shell_company_name}" account now contains {player_cryptids}Ͼ.
 
     + [Continue] -> ret_target

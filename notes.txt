@@ -51,7 +51,7 @@ Consider potential endings:
 "Outsourcing"
     Randy and Andrew convince Kraal'goth to outsource the AI to:
 
-    Abyssal Algorithmic?   Inkwell Intelligence?  ShadowStack Logic?  Cephal-Audit Solutions?
+    Abyssal Intelligence
 
     The catch, their company which does not actually have an ai.
 
@@ -76,7 +76,7 @@ Consider potential endings:
 
 The Mission Statement
 
-"At Abyssal Algorithmic, we leverage a proprietary Non-Linear Fluidic Architecture to bypass the stagnant, 
+"At Abyssal Intelligence, we leverage a proprietary Non-Linear Fluidic Architecture to bypass the stagnant, 
 monolithic constraints of traditional silicon-based inference engines. By utilizing our patented Sub-Surface 
 Latent-Flow Methodology, we tap into dormant, high-velocity data reservoirs, effectively commoditizing ‘dark-compute’ 
 cycles that our competitors ignore as noise. Our unique, decentralized heuristic-shunting protocol minimizes 
@@ -91,7 +91,7 @@ But don’t just listen to us, listen to what our customers have to say:
 entirely re-optimized until the quarterly reports started generating themselves." – Middle manager at a major logistics firm.
 
 "Their approach to 'pressure-point computational delivery' is truly unrivaled. We saved 40% on overhead, 
-and we’ve stopped asking questions about where the extra processing power originates." – VP of Operations, Global Sync-Tech.
+and we’ve stopped asking questions." – VP of Operations, Global Sync-Tech.
 
 "I don't know how they achieve these results at this price point, and at this point, I’m afraid to ask. 
 It just works, and the silence from our previous competitors is… notable." – Chief Information Officer, Neo-Industrial Partners.

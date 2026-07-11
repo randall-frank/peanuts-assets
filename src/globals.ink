@@ -73,6 +73,18 @@ VAR violence_count = 0
 // Is a simulation running
 VAR simulation_running = 0
 
+// player "cash" (Ͼ)
+VAR player_cryptids = 0
+// "ABAL" has 10 shares
+VAR shell_company_name = "Abyssal Intelligence"
+
+// State of "Project Next" 0=not started, 1=started, 2=implemented, 3=triggered
+VAR eg_project_next = 0
+
+// State of "Outsourcing" 0=not started, 1=started, 2=pitch option enabled, 3=pitched
+VAR eg_outsourcing = 0
+
+
 // Stock prices (center point for JS updates)
 VAR stock_CDYG = 512.0
 VAR stock_GOOG = 89.70
@@ -108,6 +120,11 @@ VAR debug = 0
     }
     ~ return
 
+=== function reduce_stock_price() ===
+    ~ temp delta = stock_CDYG * 0.1
+    ~ update_stock_price("CDYG", -delta)
+    ~ return
+
 === function set_simulation_state(state) ===
     {
         - state == simulation_running:
@@ -117,15 +134,11 @@ VAR debug = 0
     { 
         - state == 1:
             ~cpu_util += 80.0
-            ~simulation_count += 1
         - else:
-            // When a simulation stops, the stock price drops by 10%
-            ~ temp delta = stock_CDYG * 0.1
-            ~update_stock_price("CDYG", -delta)
+            ~simulation_count += 1
             ~cpu_util -= 80.0
     }
     ~ return
-
 
 // whole number
 === function get_whole_number(n) 

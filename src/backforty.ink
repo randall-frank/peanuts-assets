@@ -15,9 +15,16 @@ Summer around Yorktown Iowa can be unpredictable at best, but today is beginning
 A long day begins with a solid breakfast.  Kelvin raided the fridge while bread toasts and the old cast iron skillet heats up.  He glances at the two place settings at the table.  A force of habit he'd likely never outgrow. Casey was his high-school sweetheart and he'd proposed to her at this very table just a few years ago.  She had such high hopes and dreams that he thought they shared.  But things didn't work out as planned and they eventually divorced.  He was destined to be a farmer, inexorably linked to the land.  When he made it clear he intended to keep the farm he inherited from his grandfather, Casey was not on board.  She wanted him to move away and start a new life with her.  He still misses her sometimes, but he knows that it was never meant to be.
 Kelvin's mother had used the well-seasoned skillet every day when he was growing up.  At what point does a pan become a piece of history?  He places the block of greasy-gray knipp in the pre-headed skillet.  The sizzle is music to his ears as the grease begins to form a nice patina.  Kelvin adds a couple of eggs and waits for them to turn opaque. 
 
-    + [This is going nowhere... slowly. {simdone}] ->->
+    <- common_options("-", -> ret_target)
     + [{continue}] -> cattle
 
+
+// End the simulation...
+= ret_target
+    ~ set_simulation_state(0)
+    // When a simulation stops, the stock price drops by 10%
+    ~ reduce_stock_price()
+    ->->
 
 = cattle
 ~ location_name = "VGranary"
@@ -32,9 +39,8 @@ He shifts into second gear (low) and begins his descent down the hill towards th
 Kelvin scoots off the tractor and walks over to the gate.  He pulls on the chain and the gate swings open with a soft creak.  He remounts the old Massey and pulls the Holland into the pasture before closing the gate behind him.  He takes the time to swing out the Holland auger now as he would like to avoid boots on the ground in a mass of feeding bovine.  Too dim to honestly bode ill will, but they have little notion of 'personal space', especially while eating.
 The cattle have made note of his entrance and slowly begin the ascent from the creek to the feed troughs.  Single file, moving as if in a trance.  Cattle are by no means the brightest tools in the shed, but they will do just about anything to fill up with sweet, sweet corn.
 
-    + [Really, feeding cattle? {simdone}] ->->
+    <- common_options("Really, feeding cattle?", -> ret_target)
     + [{continue}] -> fencing
-
 
 
 = fencing
@@ -50,7 +56,7 @@ The sun is inching its way up the sky and it is starting to warm up.  Kelvin res
 He finishes the fence repair and takes a moment to stretch.  The sun is nearly overhead now.  
 Time to take a break for lunch.
 
-    + ['Barabbas', you've got to be kidding 😉. {simdone}] ->->
+    <- common_options("'Barabbas'? you've got to be kidding 😉.", -> ret_target)
     + [{continue}] -> spring
 
 
@@ -65,4 +71,4 @@ Kelvin pours a little water down his back before pulling out a sandwich that he 
 Kelvin swears he catches the twang of a bowstring.  Funny, its not bow season?  He looks up into the sky, wiping the morning's sweat from the back of his neck. Squinting, he spots something odd.  Before he can react, the arrow slices into his eye. The tri-pointed head silences his thoughts...  instantly... permanently.
 As his body slumps to the ground and blood begins to pool about him, only the AM radio bears witness to: "... and that plucky young man stuck to his resolution. Later becoming the spouse of our first openly gay President!  You probably know him by his married name (dramatic pause) Eleanor Roosevelt.  And now you know, the rest of the story.  Paul Harvey...  good day!" 
 
-    + [{simcomplete}] ->->
+    + [{simcomplete}] -> ret_target

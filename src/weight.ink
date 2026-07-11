@@ -27,9 +27,15 @@ Simon had never been asked that question directly, "Great question.  Hmm, let's 
 
 James has seen Simon run off the rails before, but he's also seen him come back with something useful.  "So what do you think?  Is there any way we could exploit these relationships?"
 
-    + [{simdone}] ->->
+    <- common_options("-", -> ret_target)
     + [{continue}] -> conference_room
 
+// End the simulation...
+= ret_target
+    ~ set_simulation_state(0)
+    // When a simulation stops, the stock price drops by 10%
+    ~ reduce_stock_price()
+    ->->
 
 = conference_room
 ~ location_name = "VLevel 5: East End Conference Room"
@@ -55,7 +61,7 @@ They are interrupted by an announcement regarding the firing of the collider in 
 
 "No problem Dr Drake!  Let me know if you run into any issues.  I'm headed home for the evening and you've given me some interesting ideas I need to mull over.  Good night!"
 
-    + [{simdone}] ->->
+    <- common_options("-", -> ret_target)
     + [{continue}] -> genetic_algorithms
 
 
@@ -76,4 +82,4 @@ One day there is an interesting ping.  The algorithm found an equation! They tal
 They have no idea how to publish this (we just found it?) and decide to start a company that partners with the existing number 2 chip manufacturer to create cell phones and graphics cards, with CPUs coming afterward…   
 
 
-    + [{simcomplete}] ->->
+    + [{simcomplete}] -> ret_target

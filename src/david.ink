@@ -19,9 +19,16 @@ The kids all nod and give signs of moderate acceptance to the virus in the cohes
 
 The boy's name is Peter, and we shake hands.  It is the first time I have ever shook hands with anyone within two years of my age, and actually meant the warm greeting it implied.  Peter is a few inches shorter than me, but is not graphically aware of it.  Or at least he does not let on that he is aware of it.  His precocious head is topped with an unkept nest of fiery auburn fuzz, held in place by a grease-stained Mets cap that is almost as blatantly red as his hair.  His smile is comforting; his smile knows all.
 
-    + [{simdone}] ->->
+    <- common_options("", -> ret_target)
     + [{continue}] -> part2
 
+
+// End the simulation...
+= ret_target
+    ~ set_simulation_state(0)
+    // When a simulation stops, the stock price drops by 10%
+    ~ reduce_stock_price()
+    ->->
 
 = part2
 ~ location_name = "VMeeting Peter"
@@ -31,7 +38,7 @@ He dusts off his hands onto the thighs of his blue jeans, sending coughs of dirt
 
 "Yeah, I've known David since.. oh.. kindergarten, I think."
 
-"Hum." he grunts.  The mention of kindergarten has dislodged his thoughts.  Nobody likes to be reminded of a time when memories were still being developed, a time containing events that are scattered across the brain like seeds in a beanfield, each one trying to sprout more meaning than the next.  Meaning and purpose.  Anything before the first grade was without purpose.  I mean, you didn't even have your own desk.
+"Hum." he grunts.  The mention of kindergarten has dislodged his thoughts.  Nobody likes to be reminded of a time when memories were still being developed, a time containing events that are scattered across the brain like seeds in a bean field, each one trying to sprout more meaning than the next.  Meaning and purpose.  Anything before the first grade was without purpose.  I mean, you didn't even have your own desk.
 
 "Yeah, David gets around a lot.  He tell you about the games?"
 
@@ -57,7 +64,7 @@ He grins sheepishly.
 
 He pivots invitingly on his left heel, and we begin to make our slow progress to home plate, a small piece of white cardboard baking in the September sun.
 
-    + [{simdone}] ->->
+    <- common_options("", -> ret_target)
     + [{continue}] -> part3
 
 
@@ -92,4 +99,4 @@ I'm just a fucking kid.
 
 My friend David hurls a vicious curve ball through the quiet September air.
 
-    + [{simcomplete}] ->->
+    + [{simcomplete}] -> ret_target

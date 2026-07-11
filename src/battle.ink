@@ -34,9 +34,15 @@ Instead, he said "Oooh."
 
 "Jesus tits." said Tanner as he walked out the door leaving a trail of smoke.  He left to go do something dangerous in the commons.
 
-    + [{simdone}] ->->
+    <- common_options("-", -> ret_target)
     + [{continue}] -> drop
 
+// End the simulation...
+= ret_target
+    ~ set_simulation_state(0)
+    // When a simulation stops, the stock price drops by 10%
+    ~ reduce_stock_price()
+    ->->
 
 = drop
 ~ location_name = "VDropday"
@@ -66,7 +72,7 @@ Many cheers and applause followed.  John Clayton, a cadet, was given many handsh
 
 Billings sadly left the room.
 
-    + [{simdone}] ->->
+    <- common_options("-", -> ret_target)
     + [{continue}] -> nobirthday
 
 
@@ -102,7 +108,7 @@ Forest started to leave.
 
 "Over four hundred!" Billings grimaced.  He grabbed his stomach.  Finally, all the pain swelled into his head.
 
-    + [{simdone}] ->->
+    <- common_options("-", -> ret_target)
     + [{continue}] -> fourhundred
 
 
@@ -136,7 +142,7 @@ Drop technician Michael Forest left Billings alone in his room and closed the do
 
 "You're right." said Arden Billings.
 
-    + [{simdone}] ->->
+    <- common_options("-", -> ret_target)
     + [{continue}] -> act2
 
 
@@ -164,7 +170,7 @@ Billings flipped on the intercom.
 
 Billings computed launch vectors, the answers were fed carrier wave to the aerospace fighters.  The control chutes flared up.  A computer began a countdown.
 
-    + [{simdone}] ->->
+    <- common_options("-", -> ret_target)
     + [{continue}] -> countdown
 
 
@@ -200,7 +206,7 @@ Billings started counting with the computer.
 
 "Good luck...four...three...two...one...launch."
 
-    + [{simdone}] ->->
+    <- common_options("-", -> ret_target)
     + [{continue}] -> launch
 
 
@@ -244,7 +250,7 @@ Billings fell asleep in his chair.
 
 His bottle fell to the floor.
 
-    + [{simdone}] ->->
+    <- common_options("-", -> ret_target)
     + [{continue}] -> act3
 
 
@@ -294,7 +300,7 @@ Billings left.
 
 He trudged slowly down the hall.  Billings smelled the nauseous odor of Tanner's cigars as he passed the commons.
 
-    + [{simdone}] ->->
+    <- common_options("-", -> ret_target)
     + [{continue}] -> deckfive
 
 
@@ -328,7 +334,7 @@ The sparking died and the flame started to as the security unit powered down and
 
 "All right, Colonel, bridge out."
 
-    + [{simdone}] ->->
+    <- common_options("-", -> ret_target)
     + [{continue}] -> itends
 
 
@@ -353,4 +359,4 @@ A rail of bullets cut through the shower curtain above him and kicked up porcela
 
 God, how he missed sunsets.
 
-    + [{simcomplete}] ->->
+    + [{simcomplete}] -> ret_target

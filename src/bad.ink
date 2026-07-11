@@ -30,4 +30,11 @@ Mrs Gundershot rushed behind the shed at the sound of the commotion before being
 “Why must it always end with the ‘ultra-violence’ with you, Randy?”, Andrew asked, semi-jokingly.  “I understand the story had to be pruned to free more resources for ‘important’ stories, but dude, why must they all end in death?  How about something more ‘transcendent’ next time?”
 
 
-    + [Terminate Simulation] ->->
+    + [Terminate Simulation] -> ret_target
+
+// End the simulation...
+= ret_target
+    ~ set_simulation_state(0)
+    // When a simulation stops, the stock price drops by 10%
+    ~ reduce_stock_price()
+    ->->

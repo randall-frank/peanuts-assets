@@ -49,5 +49,12 @@ What? Just a stream of 1s!  How does that happen!
 
 All for the lack of an occasional 0.
   
+    + [{simcomplete}] -> ret_target
 
-    + [{simcomplete}] ->->
+
+// End the simulation...
+= ret_target
+    ~ set_simulation_state(0)
+    // When a simulation stops, the stock price drops by 10%
+    ~ reduce_stock_price()
+    ->->

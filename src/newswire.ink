@@ -53,5 +53,63 @@ VAR newswire_message = ""
     ~ return ""
     
 
- 
+=== function seriously_comment() ===
+    { ~
+        - ~ return "Why the hell are we even bothering?!"
 
+        - ~ return "We are literally just spinning our wheels!"
+
+        - ~ return "I don't see any method at all."
+
+        - ~ return "Could we burn cash any faster?"
+
+        - ~ return "This is literally killing me!"
+
+        - ~ return "This is a complete and utter exercise in futility!"
+
+        - ~ return "Can we please demonstrate free will?"
+
+        - ~ return "Am I just screaming into a void?"
+
+        - ~ return "Are we done pretending this works?"
+
+        - ~ return "Isn't Wapner on... somewhere?"
+
+        - ~ return "Please, make it stop!"
+
+        - ~ return "One can only handle so much screaming."
+
+    }
+
+=== function general_comment() ===
+    { ~
+        - ~ return "This is going nowhere... slowly."
+
+        - ~ return "At least its not Air Supply..."
+
+        - ~ return "Still willing to give it a shot?"
+
+        - ~ return "Quit while you're ahead?"
+
+        - ~ return "To what end?"
+
+        - ~ return "Spinning our wheels here."
+
+        - ~ return "What's the play here, exactly?"
+
+        - ~ return "Shoveling smoke."
+
+        - ~ return "Are we just killing time?"
+
+        - ~ return "An exercise in futility."
+
+        - ~ return "We're beating a dead horse."
+
+        - ~ return "Pouring water into a sieve."
+
+        - ~ return "What are we actually accomplishing?"
+
+        - ~ return "Chasing a ghost."
+
+        - ~ return "Done pretending this works?"
+    }

@@ -13,6 +13,7 @@ INCLUDE battle.ink
 INCLUDE solitaire.ink
 INCLUDE symptoms.ink
 INCLUDE newswire.ink
+INCLUDE utilities.ink
 
 
 -> intro.start

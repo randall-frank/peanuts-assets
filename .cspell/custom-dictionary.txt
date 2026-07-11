@@ -8,6 +8,8 @@ Brome
 Bromegrass
 CDYG
 Cephalo
+Cryptid
+cryptids
 dihydrate
 FIRECODE
 Florance

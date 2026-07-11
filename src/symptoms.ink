@@ -17,10 +17,15 @@ Grant reached for the first book on the shelf.  He ran his stubby fingers over t
 
 Grant pulled at the binding in an effort to remove it from the shelf.  It seemed to be slightly stuck.  Grant tugged at it harder, sending tiny coughs of dust into the already dank basement air.  The book shifted forward, and Grant went in with both hands.  The book slid out, and small flecks of the binding board came off in his fingers, staining them an ancient brown.
 
-
-    + [{simdone}] ->->
+    <- common_options("!", -> ret_target)
     + [{continue}] -> abook
 
+// End the simulation...
+= ret_target
+    ~ set_simulation_state(0)
+    // When a simulation stops, the stock price drops by 10%
+    ~ reduce_stock_price()
+    ->->
 
 = abook
 ~ location_name = "VThe Library"
@@ -42,7 +47,7 @@ The binding board creaked in protest, but the front cover swung open, revealing 
 
 Grant's memory was getting almost as old as the French instruction he had almost completely ignored in high school, and the text was, to him, illegible.  He did notice that it was a very peculiar dialect, and dismissed this as a side effect of the volume's age.  He continued to flip through the amber pages.
 
-    + [{simdone}] ->->
+    <- common_options("!", -> ret_target)
     + [{continue}] -> picture
 
 
@@ -72,4 +77,4 @@ Grant swallowed uncomfortably.  The drawing was hand signed and dated (with mont
 
 Grant shivered in the warm basement air.
 
-    + [{simcomplete}] ->->
+    + [{simcomplete}] -> ret_target

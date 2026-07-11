@@ -103,7 +103,6 @@ Randy took a deep breath, wanting to point out that both of the examples had pro
 = building
 ~ location_name = "LBlue Lagoon Server Control Room"
 ~ ai_build_number = ai_build_number + 1
-~ set_simulation_state(0)
 # CLEAR
 # IMAGE:
 # SBIMAGE: 

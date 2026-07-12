@@ -1,4 +1,5 @@
 # Custom Dictionary Words
+ABAL
 animatronic
 AUDIOLOOP
 avant
@@ -33,5 +34,5 @@ TCEHY
 Teuthan
 Teuthans
 Tyrannus
-ABAL
 Zardozi
+Zelle

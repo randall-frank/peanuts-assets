@@ -17,8 +17,6 @@ The kids all nod and give signs of moderate acceptance to the virus in the cohes
 
 "So you're David's friend." he says, as he steps forward.  The rest of the boys have begun to separate into tightly-knit cliques for purposes unknown to any, discussions for no one else to hear.  Todd couldn't make it to the game today.  I hope we don't get stuck with Harold on our team again.  David's friend is supposed to be pretty smart.  The speaking begins, and the kids begin to filter into the vacant lot, some of them trying on a glove, some already slamming a worn baseball repeatedly into the scratchy surface of the brown mitt.
 
-The boy's name is Peter, and we shake hands.  It is the first time I have ever shook hands with anyone within two years of my age, and actually meant the warm greeting it implied.  Peter is a few inches shorter than me, but is not graphically aware of it.  Or at least he does not let on that he is aware of it.  His precocious head is topped with an unkept nest of fiery auburn fuzz, held in place by a grease-stained Mets cap that is almost as blatantly red as his hair.  His smile is comforting; his smile knows all.
-
     <- common_options("", -> ret_target)
     + [{continue}] -> part2
 
@@ -34,6 +32,8 @@ The boy's name is Peter, and we shake hands.  It is the first time I have ever s
 ~ location_name = "VMeeting Peter"
 # CLEAR
 # SBIMAGE: locations/baseball_clip.png
+
+The boy's name is Peter, and we shake hands.  It is the first time I have ever shook hands with anyone within two years of my age, and actually meant the warm greeting it implied.  Peter is a few inches shorter than me, but is not graphically aware of it.  Or at least he does not let on that he is aware of it.  His precocious head is topped with an unkept nest of fiery auburn fuzz, held in place by a grease-stained Mets cap that is almost as blatantly red as his hair.  His smile is comforting; his smile knows all.
 
 He dusts off his hands onto the thighs of his blue jeans, sending coughs of dirt into the air.
 

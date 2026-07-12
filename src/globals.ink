@@ -75,9 +75,10 @@ VAR simulation_running = 0
 
 // player "cash" (Ͼ)
 VAR player_cryptids = 0
+VAR cryptid_exchange_rate = 30591.76
 // "ABAL" has 10 shares
 VAR shell_company_name = "Abyssal Intelligence"
-VAR shell_company_shares = 10.0
+VAR shell_company_shares = 1000000
 
 
 // State of "Project Next" 0=not started, 1=started, 2=implemented, 3=triggered
@@ -112,7 +113,7 @@ VAR debug = 0
 
 === function update_cryptids(cryptid_delta) ===
     ~ player_cryptids += cryptid_delta
-    ~ stock_ABAL = player_cryptids / shell_company_shares
+    ~ stock_ABAL = (player_cryptids * cryptid_exchange_rate)  / shell_company_shares
     ~ return
 
 === function update_stock_price(name, delta) ===

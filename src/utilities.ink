@@ -24,8 +24,8 @@
 # CLASS: head2
     Simulation complete
 
-    ~ temp c = RANDOM(400,500)
-    This simulation (mining operation) has completed. 
+    ~ temp c = RANDOM(1000,2500)
+    The simulation (crypto mining operation) has completed. 
     {c}Ͼ have been mined and transferred to "{shell_company_name}".
     ~ update_cryptids(c)
     The "{shell_company_name}" account now contains {player_cryptids}Ͼ.

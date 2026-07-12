@@ -14,18 +14,18 @@ Making Plans
 
 ~ newswire_message = newswire_item()
 
-"Dude, have a seat, we need to talk.  Make sure the recording systems are off. "  Randy continues, far more serious than normal, "This project is a disaster.  There is no way it can work the way they want."
+"Dude, grab a seat, we need to talk.  Make sure the recording systems are off. "  Randy continues, far more serious than normal, "This project is a disaster.  There is no way it can work the way they want."  He holds his head in both hands and rubs his face in frustration.
 
 "No kidding.  They have no idea what they're doing and how are we supposed to make it work?  AI?", Andrew laughs sarcastically.  
 "Every time we run a simulation, it costs so much the stock price drops.  Last time it was almost 10%.  The hole is just getting deeper."
 
-"Agreed.  Unless we can find a way out, we need to be making some contingency plans.  At least we have some resources..."
+"Agreed.  Unless we can find a way out, we need to be making some contingency plans.  At least we have some resources...", Randy trails off.
 
 "What resources?  We don't have any funds", bemoans Andrew.
 
-"Maybe no Euro, but we have the next best thing, computer time", notes Randy.
+"Maybe not in Euro, but we have the next best thing, computer time", notes Randy.
 
-"How does that help us", asks Andrew?
+"How does that help", asks Andrew?
 
 "We can run simulations on other projects", Randy explains.  "Maybe something that will make us money."
 
@@ -33,38 +33,25 @@ Making Plans
 
 "Cryptid mining", they both say in unison.
 
-"We'll need some place to store the tokens.  Preferably an external entity...  Time to start an LLC", says Randy.
+For the next half hour, they formulate a plan to redirect simulations to cryptid mining.  Randy will make the necessary code changes.  Andrew will handle the external entity.  They agree on the need for an external entity and settle on an LLC.  After some rochambeau, they agree on the name: "{shell_company_name}".  Andrew contacts his attorney and gets the legal proceeding in motion. 
+They pool their funds, about 10Ͼ and issue the standard 1,000,000 shares of stock, 500k each to Randy and Andrew.
 
-"We'll need to get an attorney", Andrew adds.  "And we'll need some seed money, nothing extravagant, maybe 1000€?"
+The whole process takes about ten minutes before {shell_company_name} ('ABAL') is listed on the exchange.
 
-"I can swing that, if you can set it up.  I've even got a name: '{shell_company_name}'"
-
-Andrew emits a hearty laugh, "I like it.  Zelle me the funds and I'll have it up and running later tonight.  Look for the symbol 'ABAL'"
-
-Randy rapidly enters some numbers into his data pad and Andrew receives the conformational beep.
-
-"Great", Randy says.  "I'll start working on the simulation redirect code right away."
-
-    ~ update_cryptids(1000)
-    + [{continue}] -> make_plans_pt2
-
-
-= make_plans_pt2
-~ location_name = "LPrivate Alcove, Deck 7"
-# CLEAR
-# IMAGE:
-# SBIMAGE:
-# AUDIOLOOP:
-# CLASS: head1
-Making Plans
-
+    ~ update_cryptids(10)
 
 "So we'll have the means, but what is the way?", Andrew ponders out loud.
 
-"I've got a couple of ideas", Randy counters.
+"I've got a couple of ideas", Randy counters.  "Nothing concrete right now, but I have a couple of possible directions."
 
     + [Burn it all to the ground.] -> project_next
     + [There's always room for a middleman.] -> outsourcing
+
+
+= do_project_next
+    ~ eg_project_next = 1
+    ~ eg_outsourcing = 0
+    -> station.building
 
 
 = project_next
@@ -77,11 +64,26 @@ Making Plans
 Project Next
 
 
-TODO
+Randy outlines the basics of Project Next, "So the Teuthans have handed us the means.  Every simulation we run is tanking CDYG?  So let's tank it into bankruptcy!"  
 
-    ~ eg_project_next = 1
+"But they keep reducing our resources, we can't win by just using the resources to mine Cryptid", Andrew exclaims.
+
+"Right, but we can best against them and hasten their demise", counters Randy.
+
+"Won't they just track our short positions and slap us with the SEC", Andrew asks?
+
+"That assumes we use a CDYG short position", Randy replies.  "What if instead we insure CDYGs debt?  When they default on the debt...  If that is still too visible, we can insure the debt of companies CDYG would bring down with them.  Suppliers, consultants, services...  Hell, I'll bet even Greenpeace would be on the list."
+
+"Perfect", Andrew crowed, "We can insure a blend of all of them. We can even use secondary short positions as a hedge."
+
     + {outsourcing == 0} [There's always room for a middleman.] -> outsourcing
-    + [Return to server control room] -> station.building
+    + {outsourcing == 1} [Let's go with Outsourcing instead.] -> do_outsourcing
+    + [Let's do it.  We'll meet again when ABAL has funding.] -> do_project_next
+
+= do_outsourcing
+    ~ eg_project_next = 0
+    ~ eg_outsourcing = 1
+    -> station.building
 
 
 = outsourcing
@@ -93,12 +95,13 @@ TODO
 # CLASS: head1
 Outsourcing
 
+Describe the Outsourcing project
 
 TODO
 
-    ~ eg_outsourcing = 1
     + {project_next == 0} [Burn it all to the ground.] -> project_next
-    + [Return to server control room] -> station.building
+    + {project_next == 1} [Let's go with Project Next instead.] -> do_project_next
+    + [Let's do it.  We'll meet again when ABAL has funding.] -> do_outsourcing
 
 
 = violence

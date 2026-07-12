@@ -111,7 +111,7 @@ Randy took a deep breath, wanting to point out that both of the examples had pro
 # AUDIOLOOP:
 
 // first level panic button pressed
-{ (stock_CDYG < 350.) and not storyline.stock_drop_level1:
+{ (stock_CDYG < 400.) and not storyline.stock_drop_level1:
     -> storyline.stock_drop_level1
 }
 
@@ -121,7 +121,7 @@ Randy took a deep breath, wanting to point out that both of the examples had pro
 }
 
 // third level panic button pressed
-{ (stock_CDYG < 150.) and not storyline.stock_drop_level3:
+{ (stock_CDYG < 100.) and not storyline.stock_drop_level3:
     -> storyline.stock_drop_level3
 }
 

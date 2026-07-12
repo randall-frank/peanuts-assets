@@ -33,6 +33,7 @@ The boy's name is Peter, and we shake hands.  It is the first time I have ever s
 = part2
 ~ location_name = "VMeeting Peter"
 # CLEAR
+# SBIMAGE: locations/baseball_clip.png
 
 He dusts off his hands onto the thighs of his blue jeans, sending coughs of dirt into the air.
 
@@ -71,7 +72,7 @@ He pivots invitingly on his left heel, and we begin to make our slow progress to
 = part3
 ~ location_name = "VChildren of Tomorrow"
 # CLEAR
-
+# SBIMAGE: locations/baseball_clip.png
 
 "Dunno." he shrugs "Just didn't feel like it, I guess."
 

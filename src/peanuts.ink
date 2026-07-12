@@ -1,6 +1,7 @@
 INCLUDE globals.ink
 // Include all of the knot files here
 INCLUDE station.ink
+INCLUDE storyline.ink
 INCLUDE mille.ink
 INCLUDE backforty.ink
 INCLUDE weight.ink

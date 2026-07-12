@@ -40,14 +40,14 @@ The workday begins with the ringing of three bells.
 # CLASS: head1
 The Call
 
-As they slide into their workstations, the station's AI, announces the start of the workday and the day's schedule.  As they settle in, they are interrupted by a single bell and a new meeting notification.  Randy and Andrew exchange glances, such meetings are never good news.  They were expected in the Radula conference room in 3 minutes, promptly.  At least it was not the Inkwell meeting room...  Last time there was an Inkwell meeting two of their colleges ended up being sent on a mission to one of the 'outer colonies' and nothing was heard from them again.  They exchanged a worried glance and made their way to the conference room.  
+As they slide into their workstations, the station's AI, announces the start of the workday and the day's schedule.  Immediately, they are interrupted by a single bell and a new meeting notification.  Randy and Andrew exchange glances, such meetings are never good news.  They were expected in the Radula conference room in 3 minutes, promptly.  At least it was not the Inkwell meeting room...  Last time there was an Inkwell meeting two of their colleges ended up being sent on a mission to one of the 'outer colonies' and nothing was heard from them again.  They exchanged a worried glance and made their way to the conference room.  
 Precisely 2 minutes and 30 seconds later, they were in the room.  There was only one other being in the room and that was a Human wearing the smart white suit with the gilded Zardozi filigree of the Greenpeace logo.  Not a good sign.  Rarely did a 'Greenie' show up unannounced.  The Human was standing by the window, looking out at the Lagoon.  His eyes followed their entrance into the room, but did not speak or otherwise acknowledge them.  The AI announces the start of the meeting as Director Kraal'goth entered the room.
     + [Join the meeting] -> themeetingA
 
 
 
 = themeetingA
-~ location_name = "LBlue Lagoon Conference Room A"
+~ location_name = "LBlue Lagoon Radula Conference Room"
 # CLEAR
 # IMAGE: items/squid1.jpg
 # SBIMAGE: items/squid4.png
@@ -66,7 +66,7 @@ Kraal looks nervously at Zyn before continuing.  At this point he pulls up a gra
     + [Here it comes...] -> themeetingB
 
 = themeetingB
-~ location_name = "LBlue Lagoon Conference Room A"
+~ location_name = "LBlue Lagoon Radula Conference Room"
 # CLEAR
 # SBIMAGE: items/squid4.png
 # AUDIOLOOP:
@@ -84,8 +84,9 @@ Randy started to answer, but never got a chance...
 "The two of you are going to build our 'Anthropic Engine'.  You will run our simulations and gather data on human reactions.  We'll give you access to additional quantum computing resources and will expect you to deliver results within the next 6 months.  We'll be monitoring your progress, closely, via weekly progress reports", Kraal finished.
     + [The meeting wraps up] -> themeetingC
 
+
 = themeetingC
-~ location_name = "LBlue Lagoon Conference Room A"
+~ location_name = "LBlue Lagoon Radula Conference Room"
 # CLEAR
 # SBIMAGE: items/squid4.png
 # AUDIOLOOP:
@@ -100,6 +101,7 @@ Andrew and Randy look at each other, a bit bewildered.  "So you want us to come 
 Randy took a deep breath, wanting to point out that both of the examples had proven disastrous for the exploited targets.  Teachers arguing they were entitled to a cut of what their students earned had led to the destruction of the entire education system (if you only teach kids enough to work in food-service, you can only get a percentage of the food-service labor profit).  Randy knew that would only make Kraal angrier and probably get him fired (which he could not afford to happen right now).  Instead, he turned to Andrew.  The two exchanged an understanding look.  Andrew pushed his Poltrona Frau back, stood and walked out the door.  The door closed behind, leaving Randy alone in the room.
     + [The Engine] -> building
 
+
 = building
 ~ location_name = "LBlue Lagoon Server Control Room"
 ~ ai_build_number = ai_build_number + 1
@@ -109,8 +111,18 @@ Randy took a deep breath, wanting to point out that both of the examples had pro
 # AUDIOLOOP:
 
 // first level panic button pressed
-{ (stock_CDYG < 250.) and not stock_drop_level1:
-    -> stock_drop_level1
+{ (stock_CDYG < 350.) and not storyline.stock_drop_level1:
+    -> storyline.stock_drop_level1
+}
+
+// second level panic button pressed
+{ (stock_CDYG < 250.) and not storyline.stock_drop_level2:
+    -> storyline.stock_drop_level2
+}
+
+// third level panic button pressed
+{ (stock_CDYG < 150.) and not storyline.stock_drop_level3:
+    -> storyline.stock_drop_level3
 }
 
 # CLASS: head1
@@ -125,11 +137,13 @@ The Anthropic Engine
 
 # CLASS: computer
 Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number: {ai_build_number}
-// if there are enough violent scenes, allow this stitch, just once
-// currently tunneled, but could be standard stitch?
-    * {violence_count>1} [Andrew looks at Randy with concern] -> violence ->
-        -> building
-    * {stock_drop_level1} [Discuss 'Project Next' with Andrew] -> proj_next
+
+    // Storyline options
+    * {violence_count>1} [Andrew looks at Randy with concern] -> storyline.violence 
+    * {storyline.stock_drop_level1} [Meet with Andrew on deck 7] -> storyline.make_plans
+
+    // if there are enough violent scenes, allow this stitch, just once
+    // currently tunneled, but could be standard stitch?
     + [Simulation seed: 107818a4{forty: (The Back Forty)}] -> forty -> 
         -> building
     + [Simulation seed: 54f37f50{mille: (Mille, Strait and Tall)}] -> mille -> 
@@ -154,108 +168,6 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
         -> building
     + [Epilogue] -> epilogue
 
-= proj_next
-# CLEAR
-# IMAGE:
-# SBIMAGE:
-# AUDIOLOOP:
-# CLASS: head1
-Project Next
-
-~ newswire_message = newswire_item()
-
-Time to play 'The Big Short', digital edition.  Can't just bet against CDYG, need to 'insure our future', betting on something sure to fail in the CDYG long tail.  In short, we need to find a way to bet against CDYG without looking like we're betting against them.
-    + [{continue}] -> building
-
-= stock_drop_level1
-~ location_name = "LBlue Lagoon Conference Room A"
-~ set_simulation_state(0)
-# CLEAR
-# IMAGE:
-# SBIMAGE: items/squid4.png
-# AUDIOLOOP:
-# CLASS: head1
-Emergency Stock Alert Meeting
-
-~ newswire_message = newswire_item()
-
-Andrew and Randy are abruptly summoned into the conference room.  Expecting another superfluous status meeting, they are a bit surprised to see that Kraal and Zyn are already there.  They both look a little unsure of themselves, a very different look from their usual cocky selves.  Zyn was disheveled, unshaven and lacking his ubiquitous white suit.  Kraal's globe water was muddy and his vestigial 10th tentacle seems to have developed (likely drug induced) Parkinson's.
-
-Kraal turned at their entrance and pointed at Andrew and Randy interrupting the private conversation he and Zyn must have been having online, "... these two are responsible.  ", long pause, "Yes, Zyn and I are dealing with them right now.  We expect to have this under control by tomorrow."  Shorter pause, "Yes, thank you Blessed Chairman J'araek, we ..." The other end of the connection must have dropped.
-
-Kraal and Zyn appear to sag even more.  They look at each other and take a moment to regain some level of composure.  
-
-Kraal's anger quickly rebounds, "You two are going to ruin everything!  What are you imbeciles doing?"
-
-Randy and Andrew look at each other, confused, but smart enough to know that Kraal is not in the mood to welcome any response from them.
-
-Zyn reads their confusion and fills in the blanks, "Have you gentlemen seen the current stock price?", he glances down, "It's down to {get_whole_number(stock_CDYG)}.{get_decimal_part(stock_CDYG)}€!", he looks up, "We have to get this under control before the stockholders start demanding answers!"
-
-Kraal continues, "This is the most most powerful AI ever developed.  Just look at how expensive it is to run!  Every one of your simulations is costing billions.  We can't afford to keep running them without turning up something to exploit!"
-
-Andrew and Randy look perplexed. 
-
-This infuriates Kraal further, "Look, any Chimpanzee can make money with it, even Zyn!"
-
-Andrew is about to say something, but a surreptitious nudge from Randy stops him. 
-    + [{continue}] -> stock_drop_level2
-
-= stock_drop_level2
-~ location_name = "LBlue Lagoon Conference Room A"
-# CLEAR
-# IMAGE:
-# SBIMAGE: items/squid4.png
-# AUDIOLOOP:
-# CLASS: head1
-Emergency Stock Alert Meeting
-
-~ newswire_message = newswire_item()
-
-"Do I have to do everything! Here, I'll show you inbred primates how it's done," Kraal hovers over the terminal, typing in 'how to make quick easy money'.
-
-# CLASS: computer
-Become an independent entrepreneur! Leverage a universally recognized portfolio of premium health, beauty, and home care products people already use every day. Instead of just earning retail profits on personal sales, the real magic happens when one mentors and builds a dedicated team of like-minded individuals, unlocking exponential residual income as everyone succeeds together. A turnkey opportunity to build a scalable asset and secure true financial independence.
-
-Kraal steps back, supremely proud of his work, "See, how can you two be so stupid?  Zyn, look into this business opportunity immediately before someone else does!  We might be able to assuage the shareholders a little while until the pair of ingrate morons figure out how to make us some real money."
-
-It takes a supreme effort by Randy and Andrew to remain stoic, but the alternative could be deadly.
-
-Kraal takes a deep 'breath', bubbles trickle to the top of his headgear, "Ok, we'll give you two another chance to prove yourselves.  Thanks to the two of you, we can't afford to waste any more resources, so we'll be cutting your CPU allocation.   Just get the job done!"
-
-A seed of a potential path out of this mess begins to form in Randy's mind.  Yes, it could work, but we'd need a little luck and need to act with expeditiously.  "Andrew, remind me to outline 'project next' for you when we get a chance", he whispered.
-    ~ cpu_cpus = cpu_cpus / 2
-    + [{continue}] -> building
-
-= violence
-~ location_name = "LEmployee Lounge"
-# CLEAR
-# SBIMAGE:
-# CLASS: head1
-An Intervention?
-
-~ newswire_message = newswire_item()
-
-Andrew looks at Randy with concern.  "You okay?" he asks.  
-
-Randy looks at him quizzically, "Yeah, I'm fine.  What's up?" 
-
-"Dude, I'm a little concerned about some of the simulations we've been running with your new code...", he trails off.
-
-A confused look drapes over Randy's face, "What do you mean?" 
-
-Andrew sighs, "Well, I've been running some simulations with your new code and the results often result in deaths.  I'm seeing a marked increase in ultra-v.  Like, really violent stuff."
-
-"Interesting.  There's nothing I've encoded into the system for that, at least not explicitly.  We should correlate with the commit logs and look for traces of that behavior."
-
-"Sounds good.  I'll check the commit logs and see what I can find, ", Andrew starts pounding out a query.
-A minute or so later Andrew face palms, "Looks like we're not the only contributors to the current context.  It looks like the ultra-violent behavior correlates with a new agent."  Again, he types furiously, "I'm going to need to look into this further.  It looks like the user 'CaptKraal' added and locked in a new agent called 'Daisy'."
-
-Randy shakes his head, "Alright, we've got to end this project before we lose control.  See what you can do to isolate and insulate Daisy's stream.  We might not be able to remove the effect, but we can certainly lessen it."
-
-Andrew agrees, "On it.  I'm introducing 'Cletus' as a nuisance  filter to the Daisy stream.  I'll also add a new agent called 'Cooter' that will monitor and report on any anomalies in the system."
-
-"Good catch man. I'm going to start looking into is we can isolate this project from the rest of the network."
-    + [{continue}] ->->
 
 = epilogue
 ~ location_name = "LBlue Lagoon Cafeteria"
@@ -269,9 +181,9 @@ A Peaceful Night's Sleep
 The waning station claxon signals the end of another work period.  Andrew and Randy fist-bump discretely in the corridor.  "How about dinner?" Andrew asks, recent events replay visibly on his brow.  "Sure!  Pod 6 cheeseburgers?" Randy suggests.  "No, I was thinking about 'real food'.  I haven't had a proper steak in quite sometime..." he trails off.
 A pair of top sirloins and a kaleidoscopic array of Old Fashioned's and Dirty Shirley's later, they wander toward the sleep pods.  "Night man" and "Dude" are the only words verbalized, but many more are exchanged in the space of a pair of conspiratorial smiles.
 Randy retraces the familiar path to '14380-e328'.  Home sweet pod.  The same one he's been using for decades.  The door slides open with a soft hum.  The interior is cool and dark, the air thick with humidity from the previous night's shower.  Randy steps inside, boots clicking on the poly resin floor.  He strips off his shirt and jacket, tossing them to the waiting attendant bot.  He climbs into the pod, pulling the synthetic plastic up.  The door slides shut with a soft hum.  Lights dim, air cools, he prepares for slumber.  A series of barely audible beeps signal the start of sleep cycle 553,245.
-    + [{continue}] -> epilogue2
+    + [{continue}] -> epilogue_pt2
 
-= epilogue2
+= epilogue_pt2
 ~ location_name = "LBlue Lagoon Sleeping pod 14380-e328"
 # AUDIOLOOP: audio/Ambiance_Nature_Rain_Calm_Leaves_Loop_Stereo.mp3
 

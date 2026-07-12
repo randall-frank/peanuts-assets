@@ -267,6 +267,10 @@ img {
   text-align: right;
 }
 
+.wt {
+  color: #ffffff;
+}
+
 /* Row Hover Effect */
 .ticker-table tbody tr:hover {
   background-color: #1c1c1c;

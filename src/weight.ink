@@ -70,7 +70,28 @@ They are interrupted by an announcement regarding the firing of the collider in 
 # CLEAR
 
 
-"I think I have an idea for how we might simplify the equations," James says, "but it will require some experimentation to see if it works."
+"Dr Drake, do you have a few minutes?  I think I have an idea for how we might simplify the equations," James says, "but it will require some experimentation to see if it works."
+
+Dr Drake nods, "One second James. "   He finishes typing an email, clicks 'send' and turns back to James.  "Ok, come on in and have a seat", he gestures at an empty chair at the table behind him.  "Please close the door behind you, thanks!"
+
+The door closes with a soft click and James takes a seat.  Simon's chair rotates to the table and the conversation begins.  James starts by outlining the general nature of the types of equations they desire.  Simon nods in general agreement. He then begins to discuss genetic algorithms and constrained re-randomization techniques.  James explains that evolutionary genetic algorithms leveraging principles such as mutation and crossover to generate new solutions from existing ones.
+Simon follows exactly where James is going, noting that naïve randomization techniques lead to a lot of wasted computation time, considering the literally quadrillions of potential equations that would need to be considered.  He also discusses how constrained, informed re-randomization can be used to limit the search space to only those solutions that are likely to be useful, based on some prior knowledge or constraints.
+While the basic technique proposed is basically brute force, it would leverage established relationships and simplifications that would make the search sparse enough to be practical.  
+The final filter would be the evaluation of proposed solutions against collected observations from astrophysics, electromagnetism, quantum mechanics, optics and nuclear testing to evaluate the predictive nature of the solution.  This would be followed by verification that the working domain of the proposed solution correspond to 'earthbound' conditions.   Nothing at 10,000,000 C or 500000 Pa or 0.99% of the speed of light, the equation must be "useful" (and by useful "exploitable" was implied).
+
+    <- common_options("-", -> ret_target)
+    + [{continue}] -> compute
+
+
+= compute
+~ location_name = "VLevel 8: Office of Dr Simon Drake"
+# CLEAR
+
+Dr Drake stands up from his desk and walks over to the window.  He looks out at the rain falling on the forest in the distance.  "I've been thinking about our conversation for some time now as well," he says, "and I think you might be onto something."  "I can outline the parameterization of the function along with a collection of constraints that can be used to inform the re-randomization.  We have tables of observations that can easily be adapted for this use and the 'useful' domain ranges are trivial."  He turns back to James, "You will need to write the code, but I doubt anyone is going to be willing to let us run the algorithm at the necessary scale.  I mean we could run it on our laptops, but it would still take literal eons to complete."
+
+
+
+
 
 
 
@@ -81,5 +102,6 @@ The discussion moves toward genetic algorithms and an absurd idea comes up.  Wha
 One day there is an interesting ping.  The algorithm found an equation! They talk about it and it is correct.  The physicist sets up an experiment and it works.  Now this one is not useful for anything, but it validates the technique.  A few days later another couple of related equations pop up.  These are a different story.  They describe how electromagnetic signals can be converted to/from gravitational waves. First, near 'instantaneous' transmission of information. Second, it can travel through things. Third, it can be done with reasonable power…  Consider instant telecommunications w/o the need for satellites?  Drones, space travel, etc Consider computer design where components need not be in the same physical case (e.g. the gravitation bus).  All memory on the entire planet can be accessed by any device with quantum access control.   
 They have no idea how to publish this (we just found it?) and decide to start a company that partners with the existing number 2 chip manufacturer to create cell phones and graphics cards, with CPUs coming afterward…   
 
+TODO
 
     + [{simcomplete}] -> ret_target

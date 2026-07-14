@@ -33,6 +33,7 @@ Humans working on the space station are articled servants of the CDYG.  They toi
 The workday begins with the ringing of three bells.  
     + [{continue}] -> work2
 
+
 = work2
 ~ location_name = "LBlue Lagoon IT"
 # CLEAR
@@ -43,7 +44,6 @@ The Call
 As they slide into their workstations, the station's AI, announces the start of the workday and the day's schedule.  Immediately, they are interrupted by a single bell and a new meeting notification.  Randy and Andrew exchange glances, such meetings are never good news.  They were expected in the Radula conference room in 3 minutes, promptly.  At least it was not the Inkwell meeting room...  Last time there was an Inkwell meeting two of their colleges ended up being sent on a mission to one of the 'outer colonies' and nothing was heard from them again.  They exchanged a worried glance and made their way to the conference room.  
 Precisely 2 minutes and 30 seconds later, they were in the room.  There was only one other being in the room and that was a Human wearing the smart white suit with the gilded Zardozi filigree of the Greenpeace logo.  Not a good sign.  Rarely did a 'Greenie' show up unannounced.  The Human was standing by the window, looking out at the Lagoon.  His eyes followed their entrance into the room, but did not speak or otherwise acknowledge them.  The AI announces the start of the meeting as Director Kraal'goth entered the room.
     + [Join the meeting] -> themeetingA
-
 
 
 = themeetingA
@@ -64,6 +64,7 @@ The Meeting
 For the next 10 minutes, Kraal'goth began to describe the history and 'achievements' of CephaloDynamics.  He spoke of their 'innovative' technology and how it was used to make the world a better place for all (remaining) humans, conveniently leaving out the fact that there were less than 2 billion humans left on Earth.  The majority of them were living in subsistence, not to mention the fact that CephaloDynamics had effectively enslaved and exploited them.  Greenie listened with a mixture of boredom and disgust, while Randy and Andrew nodded along, trying to appear interested.
 Kraal looks nervously at Zyn before continuing.  At this point he pulls up a graph, showing the profits of CephaloDynamics over the past 5 years.  The graph stands in stark contrast to their public story.  Kraal paged though a collection of sidebar slides that 'explain' the numbers.  The Earth's environment has been improving.  The oceans once again, 'clean'.  Removing billions of people and effectively replacing the oceans provided a much needed shock to the system and it had been responding.  Water shipments were 'drying up', along with profits.  
     + [Here it comes...] -> themeetingB
+
 
 = themeetingB
 ~ location_name = "LBlue Lagoon Radula Conference Room"
@@ -132,15 +133,26 @@ The Anthropic Engine
 
 {simulation_count>0:"{~Hmm...|Should we be proud or terrified?|What was that?|Did we learn...anything?|So, the mice were hunchback?}" sighed Randy, "That was {~interesting|disappointing|curious|confusing}.  Let's see.  I'm going to {~upgrade Python|merge in latest CVE changes|enable debug mode|review the chain of thought|install updated drivers|clear the RAG cache|nuke the site from orbit|pray to a different God|switch to a higher precision model} and fire off a rebuild."|Two weeks (and maybe 30hrs of sleep) later...}
 
-"Ok, the new build is...3.2.1.  Finished!  Let's bring iteration {ai_build_number} online", Randy called out to Andrew.  The room was filled with the hum of servers and the occasional beep as systems checked themselves.  He walked over to a large monitor on the wall, which displayed a grid of servers.  The wall of blinking LEDs never stopped, a constant reminder that the Anthropic Engine was always running. 
+"Ok, the new build is... 3.2.1.  Finished!  Let's bring iteration {ai_build_number} online", Randy called out to Andrew.  The room was filled with the hum of servers and the occasional beep as systems checked themselves.  He walked over to a large monitor on the wall, which displayed a grid of servers.  The wall of blinking LEDs never stopped, a constant reminder that the Anthropic Engine was always running. 
 "{ai_build_number} should be up and running now", Andrew replied, "Give it a new seed and let's see if that make any difference."  Randy clicked on one of the login nodes and brought up its status page.
 
 # CLASS: computer
 Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number: {ai_build_number}
 
-    // Storyline options
+    // General options
     * {violence_count>1} [Andrew looks at Randy with concern] -> storyline.violence 
+
+    // Storylines begin
     * {storyline.stock_drop_level1} [Meet with Andrew on deck 7] -> storyline.make_plans
+
+    // Project Next storyline
+    * {(eg_project_next == 1) and (player_cryptids > 1000)} [Project Next: Status meeting with Andrew] -> storyline.project_next_2
+
+    // Outsourcing storyline
+    * {eg_outsourcing == 1} [Outsourcing: Status meeting with Andrew] -> storyline.outsourcing_2
+    * {(eg_outsourcing == 2) and storyline.stock_drop_level2} [Outsourcing: Make The Pitch] -> storyline.outsourcing_3
+    * {eg_outsourcing == 3} [Outsourcing: Meeting with Zyn] -> storyline.outsourcing_4
+    * {eg_outsourcing == 4} [Free men deserve a good dinner] -> epilogue
 
     // if there are enough violent scenes, allow this stitch, just once
     // currently tunneled, but could be standard stitch?
@@ -182,6 +194,7 @@ The waning station claxon signals the end of another work period.  Andrew and Ra
 A pair of top sirloins and a kaleidoscopic array of Old Fashioned's and Dirty Shirley's later, they wander toward the sleep pods.  "Night man" and "Dude" are the only words verbalized, but many more are exchanged in the space of a pair of conspiratorial smiles.
 Randy retraces the familiar path to '14380-e328'.  Home sweet pod.  The same one he's been using for decades.  The door slides open with a soft hum.  The interior is cool and dark, the air thick with humidity from the previous night's shower.  Randy steps inside, boots clicking on the poly resin floor.  He strips off his shirt and jacket, tossing them to the waiting attendant bot.  He climbs into the pod, pulling the synthetic plastic up.  The door slides shut with a soft hum.  Lights dim, air cools, he prepares for slumber.  A series of barely audible beeps signal the start of sleep cycle 553,245.
     + [{continue}] -> epilogue_pt2
+
 
 = epilogue_pt2
 ~ location_name = "LBlue Lagoon Sleeping pod 14380-e328"

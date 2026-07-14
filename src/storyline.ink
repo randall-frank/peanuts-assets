@@ -76,15 +76,52 @@ Randy outlines the basics of Project Next, "So the Teuthans have handed us the m
 
 "Perfect", Andrew crowed, "We can insure a blend of all of them. We can even use secondary short positions as a hedge."
 
-    + {outsourcing == 0} [There's always room for a middleman.] -> outsourcing
-    + {outsourcing == 1} [Let's go with Outsourcing instead.] -> do_outsourcing
     + [Let's do it.  We'll meet again when ABAL has funding.] -> do_project_next
+    + {outsourcing == 0} [There is another option?] -> outsourcing
+    + {outsourcing == 1} [Let's go with 'Outsourcing' instead.] -> do_outsourcing
+
+
+= project_next_2
+~ location_name = "LPrivate Alcove, Deck 7"
+# CLEAR
+# IMAGE:
+# SBIMAGE:
+# AUDIOLOOP:
+# CLASS: head1
+Project Next: Buying Insurance
+
+    ~ temp v = player_cryptids * cryptid_exchange_rate
+
+# HTML: <a href="./abyssal.html" class="simple-a" target="_blank" rel="noopener noreferrer">Abyssal Intelligence</a>
+Andrew begins with a brief status report, "Ok, everything is proceeding according to plan.  HTML is now a fully functional shell company.  It has accumulated {player_cryptids}Ͼ, or about {get_whole_number(v)}€.  We have a few more things to iron out, but overall we're on track."
+
+Time to buy the insurance positions and enable higher burn rates ("looping stories")
+
+    ~ eg_project_next = 2
+    + [{continue}] -> station.building
+
+
+= project_next_3
+~ location_name = "LPrivate Alcove, Deck 7"
+# CLEAR
+# IMAGE:
+# SBIMAGE:
+# AUDIOLOOP:
+# CLASS: head1
+Project Next: The Crash
+
+CDYG has crashed, we are fired (and everyone else) - keep our staplers...
+
+Ping from broker about settling there positions...
+
+    ~ eg_project_next = 2
+    + [{continue}] -> station.epilogue
+
 
 = do_outsourcing
     ~ eg_project_next = 0
     ~ eg_outsourcing = 1
     -> station.building
-
 
 = outsourcing
 ~ location_name = "LPrivate Alcove, Deck 7"
@@ -95,13 +132,71 @@ Randy outlines the basics of Project Next, "So the Teuthans have handed us the m
 # CLASS: head1
 Outsourcing
 
-Describe the Outsourcing project
+Describe the Outsourcing project.  Andrew will being the analytics stage...
 
-TODO
-
-    + {project_next == 0} [Burn it all to the ground.] -> project_next
-    + {project_next == 1} [Let's go with Project Next instead.] -> do_project_next
     + [Let's do it.  We'll meet again when ABAL has funding.] -> do_outsourcing
+    + {project_next == 0} [There is another option?] -> project_next
+    + {project_next == 1} [Let's go with 'Project Next' instead.] -> do_project_next
+
+
+= outsourcing_2
+~ location_name = "LPrivate Alcove, Deck 7"
+# CLEAR
+# IMAGE:
+# SBIMAGE:
+# AUDIOLOOP:
+# CLASS: head1
+Outsourcing: Analytics 
+
+    ~ temp v = player_cryptids * cryptid_exchange_rate
+
+# HTML: <a href="./abyssal.html" class="simple-a" target="_blank" rel="noopener noreferrer">Abyssal Intelligence</a>
+Andrew begins with a brief status report, "Ok, everything is proceeding according to plan.  HTML is now a fully functional shell company.  It has accumulated {player_cryptids}Ͼ, or about {get_whole_number(v)}€.  We have a few more things to iron out, but overall we're on track."
+
+Discussion of common query costs analysis by Andrew (e.g. drop "please", handle it ourselves, just agree...)
+
+    ~ eg_outsourcing = 2
+    + [{continue}] -> station.building
+
+
+= outsourcing_3
+~ location_name = "LPrivate Alcove, Deck 7"
+# CLEAR
+# IMAGE:
+# SBIMAGE:
+# AUDIOLOOP:
+# CLASS: head1
+Outsourcing: The Pitch
+
+    ~ temp v = player_cryptids * cryptid_exchange_rate
+
+# HTML: <a href="./abyssal.html" class="simple-a" target="_blank" rel="noopener noreferrer">Abyssal Intelligence</a>
+Andrew begins with a brief status report, "Ok, everything is proceeding according to plan.  HTML is now a fully functional shell company.  It has accumulated {player_cryptids}Ͼ, or about {get_whole_number(v)}€.  We have a few more things to iron out, but overall we're on track."
+
+Make the pitch for the move to the new system...
+
+    ~ eg_outsourcing = 3
+    + [{continue}] -> station.building
+
+
+= outsourcing_4
+~ location_name = "LPrivate Alcove, Deck 7"
+# CLEAR
+# IMAGE:
+# SBIMAGE:
+# AUDIOLOOP:
+# CLASS: head1
+Outsourcing: The Out
+
+    ~ temp v = player_cryptids * cryptid_exchange_rate
+
+# HTML: <a href="./abyssal.html" class="simple-a" target="_blank" rel="noopener noreferrer">Abyssal Intelligence</a>
+Andrew begins with a brief status report, "Ok, everything is proceeding according to plan.  HTML is now a fully functional shell company.  It has accumulated {player_cryptids}Ͼ, or about {get_whole_number(v)}€.  We have a few more things to iron out, but overall we're on track."
+
+Buy our way out of indentured servitude.  Sell ABAL to Greenpeace.
+
+    ~ eg_outsourcing = 4
+    + [{continue}] -> station.building
 
 
 = violence
@@ -233,4 +328,5 @@ Andrew and Randy are abruptly summoned into the conference room.
 
 TODO
 
+    * {eg_project_next == 2} [We're fired...] -> storyline.project_next_3
     + [{continue}] -> station.building

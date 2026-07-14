@@ -111,6 +111,13 @@ a {
     text-transform: uppercase;
 }
 
+.simple-a {
+    color:#ccffcc;  /* #00ffcc; */
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: none;
+}
+
 a:hover {
     color: #fff;
     text-shadow: 0 0 10px #00ffcc;

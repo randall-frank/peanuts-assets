@@ -41,9 +41,8 @@ Consider potential endings:
     Randy and Andrew tank the company, but secretly bank on the loss via 3rd party.  In this scenario, they
     need to reduce the stock price to nothing.  So, they can plan for this via "proj_next" options:
         1) talk about it (proj_next)
-        2) investigate it
-        3) increase the burn rate by "looping stories???"
-        4) triggers stock_drop_level3 ending
+        2) when enough (1k) tokens have been harvested... Buy the insurance and allow for increasing the burn rate by "looping stories???"
+        3) triggers by stock_drop_level3 ending: cash in...
 
     These options follow the proj_next dialog arc.
 
@@ -67,10 +66,10 @@ Consider potential endings:
     Option shows up after stock_drop_level2 when there is an option for Andrew to "start a pitch".
         ? should "start a pitch" come from the proj_next discussions????  e.g. there are multiple
         paths that start from the first "proj_next" discussion.   
-        1) discuss (proj_next)
+        1) talk about it (outsourcing)
         2) Andrew analysis of real-world requests...  99% can avoid calling AI at all.
-        3) Incorporation of their company with website/faux (AI generated) quotes
-        4) "the pitch" option ? start of stock_drop_level2 
+        3) "the pitch" option ? start of stock_drop_level2
+        4) Buy our way out of our contracts
 
 
 The Mission Statement

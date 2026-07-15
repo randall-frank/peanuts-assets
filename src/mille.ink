@@ -13,9 +13,9 @@ Mille Barnes steps out of the Port Authority Bus Terminal and heads up to 44th. 
 She'd been there before to review some kind of experimental, four-hour-long interpretive dance piece involving live animals and body painting.  Just the kind of venue to host tonight's master work: "The Entropy of Dust", a tragedy in four acts.  The press sheet describes it as a "interpretation of self-reflexive avant-garde".  What?   Mille had been warned of the first ninety minutes describing the molecular decay of a single piece of drywall.  It is the kind of play that wins awards for 'bravery' because no one has actually sat through it twice.
 Well, this evening should fill notebooks and generate self-serving conversation for scholastic types Mille mused sarcastically.  As long as she can get a solid 500 words to her editor, Keri, by Friday...  
 The soulless ricotta and marinara slice is handed to her.  A solitary, darkening basil leaf wilts in silence on top.  The vendor hands her the diet coke and she briefly considers emptying the contents of the flask discretely hid in her jacket lining into it.  A habit she inherited from her first mentor on this job.  "Sometimes, it's the only way to push through a particularly unpleasant show," he had said.  She'd adopted his practice and it had honestly come in handy more times than she was willing to admit.   If not during the show, afterward, trying to put an impression on paper. No, she was still too professional to start the show under undo influence.
-    
-    <- common_options("Not sure I want to see this show.", -> ret_target)
-    + [{continue}] -> walk
+    <- common_options("Not sure I want to see this show.", -> ret_target, -> walk)
+    -> DONE   // suppress compiler warning...
+
 
 // End the simulation...
 = ret_target
@@ -23,6 +23,7 @@ The soulless ricotta and marinara slice is handed to her.  A solitary, darkening
     // When a simulation stops, the stock price drops by 10%
     ~ reduce_stock_price()
     ->->
+
 
 = walk
 ~ location_name = "VThe Brickwork Collective"
@@ -32,10 +33,8 @@ The soulless ricotta and marinara slice is handed to her.  A solitary, darkening
 Finishing up "dinner", Mille heads up to the theater, passing by a street vendor selling fresh fruit and vegetables.  That would been a much better choice than the "slice" if you can call it that.  The air is cool and crisp as she walks along the sidewalk.  Not a long walk, but it passes by several high-end restaurants, full of the latest fashions and trends.  
 Mille is dressed in casual street wear, not the latest designer fashions.  Haughty patrons dining street-side are not impressed by her choice. Prada, Gucci, Hermès and other badges decorate their questionably human forms, judging her with averted glances, raised eyebrows and head turning.  The air is thick with perfume, cologne and alcohol.  Raised voices brag about lavish dinners, expensive wines and exclusive tickets to over-hyped plays.
 Mille is not particularly bothered by their disdain.  She has seen it all before, but it does get old, best to ignore it.  The run-down Brickwork frontage is a stark contrast to the opulence just down the street. She is here to do business, not socialize.  There is never a line at the Brickwork, she enters the theater and heads straight for the ticket booth.
-
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> tickets
-
+    <- common_options("-", -> ret_target, -> tickets)
+    -> DONE   // suppress compiler warning...
 
 = tickets
 ~ location_name = "VThe Theater of Broken Dreams"
@@ -52,9 +51,9 @@ Lawrence chuckles, "Mille, I know what they're making you watch tonight. They sh
 Mille heads into the theater.  As expected, an untold number of seating opportunities present themselves. The theater is empty... ish.  A smattering of folks in the center section look generally excited about being here.  A quick glance sorts them into the classic categories.  'Friends, lovers, lover wannabes', blind to the world around them.  The rest are just here for specific actors.  Likewise with the 'Family' attendees, they are there for support, but with confused, midwestern politeness.  This is not what they expected for an NYC theatrical experience, but they fully support their loved ones and will stoically soldier through.  
 On the far right, a class of NYU theater students and their professor are packed into a couple of rows.  All have discrete ear buds, writing utensils and notebooks at the ready.  The professor is sub-vocalizing a narrative to them and most are distracted, taking notes.  They are focused on their own little worlds, not really paying attention to what is going on around them, obvious to their being observed and judged by the other attendees.
 A smattering of voyeurs are scattered around the theater. Some are just here for the experience, to see what happens next.  Couples discretely cuddle in dark corners.  A couple of 'working professionals' and their Johns make their way to the balcony.  Two or three homeless folks keep to themselves, warming themselves in the climate controlled theater with a boost from the stereotypical bottle of Cisco wine in a brown paper bag. All in all, the expected audience for an event like this, a cross section of the human experience on display. The audience would make a far more interesting story than the play, sighed Mille.  But no one is paying for that story.  
+    <- common_options("-", -> ret_target, -> jake)
+    -> DONE   // suppress compiler warning...
 
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> jake
 
 = jake
 ~ location_name = "VFinding Jake"
@@ -72,9 +71,9 @@ Mille watches him for a moment.  He has no idea, she thinks, as all those years 
 She opens her notebook, title and dates the page, then stalls.  This is life?  This is what it takes to make a living as a writer?  First semester, head full of high school achievements and dreams.  There she is, accepted into the lauded NYU writers program. Taking classes from world class legends like Doc Holloway...
 The room lights suddenly drop and stage lights come up.  A middle age man steps out from behind the curtain.   He is dressed in a suit that looks like it was last cleaned by a cat, "Welcome ladies and gentleman", pause for dramatic effect.  
 The already quiet audience falls silent as he continues, "we have a special treat for you tonight.  Mikael Koskinen's latest work 'The Entropy of Dust', an self-reflexive exploration of the trajectory of the being."
+    <- common_options("-", -> ret_target, -> act_one)
+    -> DONE   // suppress compiler warning...
 
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> act_one
 
 = act_one
 ~ location_name = "VEntropy of Dust: Act One"
@@ -96,9 +95,9 @@ Gray clouds tapestry the hidden sky.<br>Whispers stirs in the canopy.<br>Woods a
 Mille looks over to the professor who has begun exuberantly gesturing, seeming genuinely passionate.  She thinks back to her own time at NYU.  She had been so sure that she would be able to write something that would bring that level of emotion to people...
 
 "The past, the future.  Death and rebirth.  Circles, circles within circles...", as the wet stain spreads to envelope the entire gray surface.  The green tights brigade hustle the table off the stage as Paul Bunyan trails off and the lighting lowers. 
+    <- common_options("!", -> ret_target, -> act_two)
+    -> DONE   // suppress compiler warning...
 
-    <- common_options("!", -> ret_target)
-    + [{continue}] -> act_two
 
 = act_two
 ~ location_name = "VEntropy of Dust: Act Two"
@@ -112,9 +111,9 @@ Mille harkens back to second (or was it third?) grade.  She spent the summer wri
 Change of scenery on stage.  After a chaotic shuffle of furniture a courtroom scene emerges.  On trial is Green's "The Elegant Universe" a masterpiece of modern literature.  The prosecution argue from the bunch of gibberish perspective, while the defense makes claims about the reflection of the godhead as revealed in string harmonics. The judge protests the lack of solid evidence on both sides.  The jury seems split down the middle.  
 
 Mille's head swims as the judge looks over both sides, then asks Mille to read her story.  She stands up and reads "The Girl Who Flew".  She reads from her notebook, a small spiral bound thing with lined paper. The pages are filled with a story of adventure.  A story about a girl who discovers she can fly.  She had written it over and over again, each time trying to make it better.  She even drew pictures for it.  The heroine has long brown hair and green eyes.  She wears a red cape and a white t-shirt with the words "I Can Fly" written on it.  Mille's favorite part is when she discovers she can fly over the ocean, soaring above the waves. 
+    <- common_options("-", -> ret_target, -> act_three)
+    -> DONE   // suppress compiler warning...
 
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> act_three
 
 = act_three
 ~ location_name = "VEntropy of Dust: Act Three"
@@ -133,10 +132,8 @@ Finally, Mille and Jake made their way out.  "I'll be praising Caesar", Mille sa
 Jake responds, "Yeah... yeah...  I'll be sure to give it a read.  Take care Mille."
 "You too Jake", Mille says as they part ways.
 They exchange waves and head in opposite directions.  
-
-
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> denouement
+    <- common_options("-", -> ret_target, -> denouement)
+    -> DONE   // suppress compiler warning...
 
 
 = denouement
@@ -154,5 +151,4 @@ The panel truck missile flashes into Mille's vision as she considered possible t
 
 # CLASS: computer
 Entropy of dust,<br>Boredom drags me to my grave,<br>Final breath is drawn.
-
     + [{simcomplete}] -> ret_target

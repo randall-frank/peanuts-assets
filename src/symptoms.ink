@@ -16,9 +16,8 @@ Grant reached for the first book on the shelf.  He ran his stubby fingers over t
 "Michel Laronde?" he whispered to himself.  His grandfather would have known the author, or at least in a remote sense: most of the books had been given to him, directly and indirectly, by the authors themselves.  Now the aged volumes rested in taut organization on an aching wooden shelf in his basement.  Grant had obtained the keys by order of his grandfather's will, and had been intrigued by the fact that the keys had rested in a safety deposit box from the time when his grandfather had been committed to Elderbrook up to his death two days ago.  The house had remained uninhabited for a total of fourteen years.
 
 Grant pulled at the binding in an effort to remove it from the shelf.  It seemed to be slightly stuck.  Grant tugged at it harder, sending tiny coughs of dust into the already dank basement air.  The book shifted forward, and Grant went in with both hands.  The book slid out, and small flecks of the binding board came off in his fingers, staining them an ancient brown.
-
-    <- common_options("!", -> ret_target)
-    + [{continue}] -> abook
+    <- common_options("!", -> ret_target, -> abook)
+    -> DONE   // suppress compiler warning...
 
 // End the simulation...
 = ret_target
@@ -26,6 +25,7 @@ Grant pulled at the binding in an effort to remove it from the shelf.  It seemed
     // When a simulation stops, the stock price drops by 10%
     ~ reduce_stock_price()
     ->->
+
 
 = abook
 ~ location_name = "VThe Library"
@@ -46,10 +46,8 @@ He opened the book.
 The binding board creaked in protest, but the front cover swung open, revealing an elaborate cloth engraving which coated the other side of the cover as well as the first page.  It was old, and smelled faintly of sulphur. Grant flipped the first cloth-backed page and entered the paper bulk of the material, a yellowing, fragile collection of printed sheaths.  The title was repeated, and the text began.
 
 Grant's memory was getting almost as old as the French instruction he had almost completely ignored in high school, and the text was, to him, illegible.  He did notice that it was a very peculiar dialect, and dismissed this as a side effect of the volume's age.  He continued to flip through the amber pages.
-
-    <- common_options("!", -> ret_target)
-    + [{continue}] -> picture
-
+    <- common_options("!", -> ret_target, -> picture)
+    -> DONE   // suppress compiler warning...
 
 = picture
 ~ location_name = "VA Picture is Worth 1000 Words"
@@ -76,5 +74,4 @@ Grant swallowed uncomfortably.  The drawing was hand signed and dated (with mont
 "Monsingor." said Grant.  M. Gastron was an early French priest.  Drawing from memory.
 
 Grant shivered in the warm basement air.
-
     + [{simcomplete}] -> ret_target

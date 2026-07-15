@@ -26,9 +26,9 @@ James ponders this a bit, "Ok, I'll bite.  What kind of effects might we be miss
 Simon had never been asked that question directly, "Great question.  Hmm, let's start with something simple.  We have fancy equations we can't prove about the relationship between gravity and electromagnetism.  We know that they're related, but none of the proposed models can be easily exploited without building the "world's largest" machine of some type or another.  Big enough to bankrupt all but the top two or three economies!"
 
 James has seen Simon run off the rails before, but he's also seen him come back with something useful.  "So what do you think?  Is there any way we could exploit these relationships?"
+    <- common_options("-", -> ret_target, -> conference_room)
+    -> DONE   // suppress compiler warning...
 
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> conference_room
 
 // End the simulation...
 = ret_target
@@ -36,6 +36,7 @@ James has seen Simon run off the rails before, but he's also seen him come back 
     // When a simulation stops, the stock price drops by 10%
     ~ reduce_stock_price()
     ->->
+
 
 = conference_room
 ~ location_name = "VLevel 5: East End Conference Room"
@@ -60,15 +61,13 @@ They are interrupted by an announcement regarding the firing of the collider in 
 "Well, business calls.  Thanks for the patches James.  I'll get them reviewed tonight and hopefully be able to use the new hyper-scalar code launch system sometime tomorrow. Thanks for listening to the ravings of a frustrated old physicist!"  Simon stands up and heads towards the door.
 
 "No problem Dr Drake!  Let me know if you run into any issues.  I'm headed home for the evening and you've given me some interesting ideas I need to mull over.  Good night!"
-
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> genetic_algorithms
+    <- common_options("-", -> ret_target, -> genetic_algorithms)
+    -> DONE   // suppress compiler warning...
 
 
 = genetic_algorithms
 ~ location_name = "VLevel 8: Office of Dr Simon Drake"
 # CLEAR
-
 
 "Dr Drake, do you have a few minutes?  I think I have an idea for how we might simplify the equations," James says, "but it will require some experimentation to see if it works."
 
@@ -78,9 +77,8 @@ The door closes with a soft click and James takes a seat.  Simon's chair rotates
 Simon follows exactly where James is going, noting that naïve randomization techniques lead to a lot of wasted computation time, considering the literally quadrillions of potential equations that would need to be considered.  He also discusses how constrained, informed re-randomization can be used to limit the search space to only those solutions that are likely to be useful, based on some prior knowledge or constraints.
 While the basic technique proposed is basically brute force, it would leverage established relationships and simplifications that would make the search sparse enough to be practical.  
 The final filter would be the evaluation of proposed solutions against collected observations from astrophysics, electromagnetism, quantum mechanics, optics and nuclear testing to evaluate the predictive nature of the solution.  This would be followed by verification that the working domain of the proposed solution correspond to 'earthbound' conditions.   Nothing at 10,000,000 C or 500000 Pa or 0.99% of the speed of light, the equation must be "useful" (and by useful "exploitable" was implied).
-
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> compute
+    <- common_options("-", -> ret_target, -> compute)
+    -> DONE   // suppress compiler warning...
 
 
 = compute
@@ -89,15 +87,28 @@ The final filter would be the evaluation of proposed solutions against collected
 
 Dr Drake stands up from his desk and walks over to the window.  He looks out at the rain falling on the forest in the distance.  "I've been thinking about our conversation for some time now as well," he says, "and I think you might be onto something."  "I can outline the parameterization of the function along with a collection of constraints that can be used to inform the re-randomization.  We have tables of observations that can easily be adapted for this use and the 'useful' domain ranges are trivial."  He turns back to James, "You will need to write the code, but I doubt anyone is going to be willing to let us run the algorithm at the necessary scale.  I mean we could run it on our laptops, but it would still take literal eons to complete."
 
+"Leave that last one up to me", said James.  "This task footprint is small, even a single CPU.  It's more like crypto mining than a large simulation.  It just has a lot of states that can be independently tested."
+
+"Yes, it can be a series of small computational packets, but there are a lot of packets," said Dr Drake.  
+
+"And the packets can be sequenced from a packet ID and a fast invalidation check that applies pre-determined re-randomization skips. The 'sparsity filter'", counters James.
+
+"Ok, so you are proposing something closer to Folding@home", asks Simon?
+
+"For the problem partitioning, yes," says James.  "But instead of using people's computers all over the world, I'm planning to include a packet processor in the job launching code for the simulation itself. There are countless unused CPU cycles available as a large scale simulation starts up on 1000s of nodes."
+
+Simon's face reconfigures into a tight smirk and laughs, "Yes, yes!  One could leverage the otherwise garbage cycles missed during launch and MPI initialization.  That will work.  I'll get you the observations and constraints."
+
+"Great", laughs James, "I'll start coding up the packet processor then."
+
+Within the week, the packet processor is implemented and running on the simulation.  It's a simple thing, but it works well enough to be useful.  James hooks it into the launcher and lets it run... for months.  They both forget about it. 
+    <- common_options("-", -> ret_target, -> first_light)
+    -> DONE   // suppress compiler warning...
 
 
-
-
-
-
-
-The discussion moves toward genetic algorithms and an absurd idea comes up.  What if we just tried every equation possible?  Chop up all of the equations we know, throw them together in ways that make sense (e.g. at least dimensionally sound) and then compare them vs collections of interesting observations from every domain: nuclear testing, astrophysics, …  Finally, filter the equations to those that might actually work with “earthbound” conditions.  Not at 10,000,000 C or 5000 Pa…  i.e. useful conditions.   We'll never get anyone to fund this, but the software engineer has been working on the system that loads programs into supercomputers and while that is happening, there are trillions of cycles that are going unused.  Carve up the problem into packets and run it on GPUs before the main application spins up.  They both laugh, but he implements it and lets it run… for months.  They both forget about it. 
-
+= first_light
+~ location_name = "VLevel 8: Office of Dr Simon Drake"
+# CLEAR
 
 One day there is an interesting ping.  The algorithm found an equation! They talk about it and it is correct.  The physicist sets up an experiment and it works.  Now this one is not useful for anything, but it validates the technique.  A few days later another couple of related equations pop up.  These are a different story.  They describe how electromagnetic signals can be converted to/from gravitational waves. First, near 'instantaneous' transmission of information. Second, it can travel through things. Third, it can be done with reasonable power…  Consider instant telecommunications w/o the need for satellites?  Drones, space travel, etc Consider computer design where components need not be in the same physical case (e.g. the gravitation bus).  All memory on the entire planet can be accessed by any device with quantum access control.   
 They have no idea how to publish this (we just found it?) and decide to start a company that partners with the existing number 2 chip manufacturer to create cell phones and graphics cards, with CPUs coming afterward…   

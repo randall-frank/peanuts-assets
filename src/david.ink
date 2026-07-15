@@ -16,10 +16,8 @@ David's Friend
 The kids all nod and give signs of moderate acceptance to the virus in the cohesive bondage of sixth grade boys trying too hard to be men.  I am the New Kid.  I am David's friend.  One of them, whose name I do not know, continues to stare at me.  No, that's not right: stare through me.  I am instantly charmed by his ability to sort out the hundreds of personas piled on him, his ability to pick out one kid among a baker's dozen and try to understand what he thinks. Especially when he's the New Kid.
 
 "So you're David's friend." he says, as he steps forward.  The rest of the boys have begun to separate into tightly-knit cliques for purposes unknown to any, discussions for no one else to hear.  Todd couldn't make it to the game today.  I hope we don't get stuck with Harold on our team again.  David's friend is supposed to be pretty smart.  The speaking begins, and the kids begin to filter into the vacant lot, some of them trying on a glove, some already slamming a worn baseball repeatedly into the scratchy surface of the brown mitt.
-
-    <- common_options("", -> ret_target)
-    + [{continue}] -> part2
-
+    <- common_options("", -> ret_target, -> part2)
+    -> DONE   // suppress compiler warning...
 
 // End the simulation...
 = ret_target
@@ -64,10 +62,8 @@ He grins sheepishly.
 "Yeah, but how come you didn't go in?"
 
 He pivots invitingly on his left heel, and we begin to make our slow progress to home plate, a small piece of white cardboard baking in the September sun.
-
-    <- common_options("", -> ret_target)
-    + [{continue}] -> part3
-
+    <- common_options("", -> ret_target, ->part3)
+    -> DONE   // suppress compiler warning...
 
 = part3
 ~ location_name = "VChildren of Tomorrow"
@@ -99,5 +95,4 @@ I'm not Albert Einstein.
 I'm just a fucking kid.
 
 My friend David hurls a vicious curve ball through the quiet September air.
-
     + [{simcomplete}] -> ret_target

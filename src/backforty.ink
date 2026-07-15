@@ -14,10 +14,8 @@ Back Forty Bullseye
 Summer around Yorktown Iowa can be unpredictable at best, but today is beginning with exceptional promise.  The sun is just beginning to rise over the north forty hills, casting a golden glow across the land.  Kelvin Miller has been farming this land for over 10 years now after his grandfather's passing.  He knows every inch of it like the back of his hand.  A beautiful day that will undoubtedly prove very productive with liberal application of sweat and perseverance.  But we have time to enjoy the first rays of sunshine as he raises his cup of coffee to his lips.
 A long day begins with a solid breakfast.  Kelvin raided the fridge while bread toasts and the old cast iron skillet heats up.  He glances at the two place settings at the table.  A force of habit he'd likely never outgrow. Casey was his high-school sweetheart and he'd proposed to her at this very table just a few years ago.  She had such high hopes and dreams that he thought they shared.  But things didn't work out as planned and they eventually divorced.  He was destined to be a farmer, inexorably linked to the land.  When he made it clear he intended to keep the farm he inherited from his grandfather, Casey was not on board.  She wanted him to move away and start a new life with her.  He still misses her sometimes, but he knows that it was never meant to be.
 Kelvin's mother had used the well-seasoned skillet every day when he was growing up.  At what point does a pan become a piece of history?  He places the block of greasy-gray knipp in the pre-headed skillet.  The sizzle is music to his ears as the grease begins to form a nice patina.  Kelvin adds a couple of eggs and waits for them to turn opaque. 
-
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> cattle
-
+    <- common_options("-", -> ret_target, -> cattle)
+    -> DONE   // suppress compiler warning...
 
 // End the simulation...
 = ret_target
@@ -38,10 +36,8 @@ He reaches the bottom of the hill and turns the tractor around, heading back up 
 He shifts into second gear (low) and begins his descent down the hill towards the south pasture.  Kelvin feels a soft breeze blow through his hair as he pulls up to the pasture gate.  Fences, solid, maintained fences are the cornerstone of any livestock operation.  Cattle and weather are the mortal enemies of a good fence and this farm has plenty of both to spare.  
 Kelvin scoots off the tractor and walks over to the gate.  He pulls on the chain and the gate swings open with a soft creak.  He remounts the old Massey and pulls the Holland into the pasture before closing the gate behind him.  He takes the time to swing out the Holland auger now as he would like to avoid boots on the ground in a mass of feeding bovine.  Too dim to honestly bode ill will, but they have little notion of 'personal space', especially while eating.
 The cattle have made note of his entrance and slowly begin the ascent from the creek to the feed troughs.  Single file, moving as if in a trance.  Cattle are by no means the brightest tools in the shed, but they will do just about anything to fill up with sweet, sweet corn.
-
-    <- common_options("Really, feeding cattle?", -> ret_target)
-    + [{continue}] -> fencing
-
+    <- common_options("Really, feeding cattle?", -> ret_target, ->fencing)
+    -> DONE   // suppress compiler warning...
 
 = fencing
 ~ location_name = "VSouth Pasture"
@@ -55,10 +51,8 @@ He reaches the fence line, but there is no sign of any cattle.  There is a rustl
 The sun is inching its way up the sky and it is starting to warm up.  Kelvin reseats his Dekalb hat and sets himself to work.  It would not be right to call fence repair 'backbreaking', but pulling out the old wire and running the new section is not light work.  The incessant beat of cicadas and the call of bob-white quail are welcome company as he works.  Kelvin is not exactly a young man, but he has been doing this for years and it is second nature to him.  
 He finishes the fence repair and takes a moment to stretch.  The sun is nearly overhead now.  
 Time to take a break for lunch.
-
-    <- common_options("'Barabbas'? you've got to be kidding 😉.", -> ret_target)
-    + [{continue}] -> spring
-
+    <- common_options("'Barabbas'? you've got to be kidding 😉.", -> ret_target, -> spring)
+    -> DONE   // suppress compiler warning...
 
 = spring
 ~ location_name = "VNorth Forty Springhead"

@@ -33,9 +33,8 @@ Instead, he said "Oooh."
 "Oooh."
 
 "Jesus tits." said Tanner as he walked out the door leaving a trail of smoke.  He left to go do something dangerous in the commons.
-
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> drop
+    <- common_options("-", -> ret_target, -> drop)
+    -> DONE   // suppress compiler warning...
 
 // End the simulation...
 = ret_target
@@ -71,10 +70,8 @@ O'Brien, the medic, always had a flair for the dramatic.  Everyone turned silent
 Many cheers and applause followed.  John Clayton, a cadet, was given many handshakes and slaps on the back.  People said things like "What a way to spend it, huh?"
 
 Billings sadly left the room.
-
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> nobirthday
-
+    <- common_options("-", -> ret_target, -> nobirthday)
+    -> DONE   // suppress compiler warning...
 
 = nobirthday
 ~ location_name = "VThe Problem with Clayton"
@@ -107,10 +104,8 @@ Forest started to leave.
 "Uh, I..."
 
 "Over four hundred!" Billings grimaced.  He grabbed his stomach.  Finally, all the pain swelled into his head.
-
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> fourhundred
-
+    <- common_options("-", -> ret_target, ->fourhundred)
+    -> DONE   // suppress compiler warning...
 
 = fourhundred
 ~ location_name = "VThe Four Hundred"
@@ -141,10 +136,8 @@ Finally, Forest spoke up, "We tell him he's going to live."
 Drop technician Michael Forest left Billings alone in his room and closed the door behind him.
 
 "You're right." said Arden Billings.
-
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> act2
-
+    <- common_options("-", -> ret_target, -> act2)
+    -> DONE   // suppress compiler warning...
 
 = act2
 ~ location_name = "VAirborne"
@@ -169,10 +162,8 @@ Billings flipped on the intercom.
 "Confirmed, standby."
 
 Billings computed launch vectors, the answers were fed carrier wave to the aerospace fighters.  The control chutes flared up.  A computer began a countdown.
-
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> countdown
-
+    <- common_options("-", -> ret_target, -> countdown)
+    -> DONE   // suppress compiler warning...
 
 = countdown
 ~ location_name = "VThe Countdown"
@@ -205,10 +196,8 @@ Billings computed launch vectors, the answers were fed carrier wave to the aeros
 Billings started counting with the computer.
 
 "Good luck...four...three...two...one...launch."
-
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> launch
-
+    <- common_options("-", -> ret_target, -> launch)
+    -> DONE   // suppress compiler warning...
 
 = launch
 ~ location_name = "VLaunching"
@@ -249,10 +238,8 @@ After that, the ship went totally silent.
 Billings fell asleep in his chair.
 
 His bottle fell to the floor.
-
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> act3
-
+    <- common_options("-", -> ret_target, ->act3)
+    -> DONE   // suppress compiler warning...
 
 = act3
 ~ location_name = "VBattleTech: Act III"
@@ -299,10 +286,8 @@ There was a long pause.
 Billings left.
 
 He trudged slowly down the hall.  Billings smelled the nauseous odor of Tanner's cigars as he passed the commons.
-
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> deckfive
-
+    <- common_options("-", -> ret_target, -> deckfive)
+    -> DONE   // suppress compiler warning...
 
 = deckfive
 ~ location_name = "VDeck Five"
@@ -333,10 +318,8 @@ The sparking died and the flame started to as the security unit powered down and
 "Negative, I leave in twenty-five minutes.  Don't bother.  I'll be out in a sec."
 
 "All right, Colonel, bridge out."
-
-    <- common_options("-", -> ret_target)
-    + [{continue}] -> itends
-
+    <- common_options("-", -> ret_target, -> itends)
+    -> DONE   // suppress compiler warning...
 
 = itends
 ~ location_name = "VFriendly Neighbors"

@@ -131,7 +131,13 @@ VAR debug = 0
 
 === function reduce_stock_price() ===
     ~ temp delta = stock_CDYG * 0.1
-    ~ update_stock_price("CDYG", -delta)
+    {eg_outsourcing >= 3:
+        // if outsourcing pitch has been made, the stock price increases
+        ~ update_stock_price("CDYG", delta)
+    - else:
+        // other cases decrease the stock price
+        ~ update_stock_price("CDYG", -delta)
+    }
     ~ return
 
 === function set_simulation_state(state) ===

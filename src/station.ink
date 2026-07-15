@@ -149,9 +149,9 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
     * {(eg_project_next == 1) and (player_cryptids > 1000)} [Project Next: Status meeting with Andrew] -> storyline.project_next_2
 
     // Outsourcing storyline
-    * {eg_outsourcing == 1} [Outsourcing: Status meeting with Andrew] -> storyline.outsourcing_2
-    * {(eg_outsourcing == 2) and storyline.stock_drop_level2} [Outsourcing: Make The Pitch] -> storyline.outsourcing_3
-    * {eg_outsourcing == 3} [Outsourcing: Meeting with Zyn] -> storyline.outsourcing_4
+    * {eg_outsourcing == 1} [Query analytics meeting with Andrew] -> storyline.outsourcing_2
+    * {(eg_outsourcing == 2) and storyline.stock_drop_level2} [Make the Outsourcing pitch] -> storyline.outsourcing_3
+    * {(eg_outsourcing == 3) and (stock_CDYG > 350.)} [Zyn is waiting to talk with you] -> storyline.outsourcing_4
     * {eg_outsourcing == 4} [Free men deserve a good dinner] -> epilogue
 
     // if there are enough violent scenes, allow this stitch, just once

@@ -132,9 +132,19 @@ Ping from broker about settling there positions...
 # CLASS: head1
 Outsourcing
 
-Describe the Outsourcing project.  Andrew will being the analytics stage...
+Randy outlines the basics of Outsourcing, "We've been spending a lot of time with the AI recently..."
 
-    + [Let's do it.  We'll meet again when ABAL has funding.] -> do_outsourcing
+"Yes", Andrew says, "go on."
+
+"Well, as you know they are pretty expensive, especially for a lot of the things people ask."  Randy takes a deep breath and continues with more commitment, "People are asking it to do simple, math. To get movie tickets, to order food...  even to convert unit systems.  These are ludicrously expensive for an AI to execute.  I get the feeling that a quarter of their use is simple stupidity.  Maybe half of their use is laziness.  Another 20% are insecure folks just looking for confirmation and support.  Basically, they just want a 'yes man'."
+
+"Ok, I might argue with the percentages, but I get your point", Andrew says.  "Sometimes folks just need a calculator, a redirect to another ready-made webapp and yeah, they just need a supportive friend.  That leaves very little 'real AI' work...  Maybe a few percent?  I think I can guess where you're going.  Fronting an AI with something, perhaps even a human, handling the junk queries could save a lot of money."
+
+"Even simple query rework can help", Randy continues, "Even just removing the 'pleasantries', 'please', 'thanks', etc could reduce the number of tokens used.  I'm thinking we set up a company for this and convince Kraal to switch providers to our company.  We might even be in a situation where we could help steer the CephaloDynamics direction!"
+
+"Well", Andrew ponders a bit, "I'm not sure I'd go that far, but I agree on the general assertions and direction.  Let's make sure our assumptions are correct first.  I can monitor the queries for some time and see how accurate our assumptions are."
+
+    + [Let's do it.  We'll meet again when we have the numbers.] -> do_outsourcing
     + {project_next == 0} [There is another option?] -> project_next
     + {project_next == 1} [Let's go with 'Project Next' instead.] -> do_project_next
 
@@ -151,10 +161,20 @@ Outsourcing: Analytics
     ~ temp v = player_cryptids * cryptid_exchange_rate
 
 # HTML: <a href="./abyssal.html" class="simple-a" target="_blank" rel="noopener noreferrer">Abyssal Intelligence</a>
-Andrew begins with a brief status report, "Ok, everything is proceeding according to plan.  HTML is now a fully functional shell company.  It has accumulated {player_cryptids}Ͼ, or about {get_whole_number(v)}€.  We have a few more things to iron out, but overall we're on track."
+Andrew begins with a brief status report, "First, on the LLC front, everything is proceeding according to plan.  HTML is now a fully functional shell company.  It has accumulated {player_cryptids}Ͼ, or about {get_whole_number(v)}€.  We have a few more things to iron out, but overall we're on track."
 
-Discussion of common query costs analysis by Andrew (e.g. drop "please", handle it ourselves, just agree...)
+"Second", he continued with a big smile, "Here are the results of the AI query analytics:"
 
+# CLASS: computer
+QUERY_ANALYSIS
+
+"So, a bit more than half the queries could be handled by code, another 30% by a mechanical turk.  Less than 10% would need to be handled by a full AI", Randy asked?
+
+"Yep, that's about right", Andrew replied.  "I did some analysis of the 'mechanical turk' costs and the simple API redirection.  It looks like we could provide the service at maybe 40% of what our current AI costs."
+
+"Perfect!", Randy exclaimed.  "I vote we should charge CephaloDynamics half price and skim off the extra 10% into {shell_company_name} for a rainy day."
+
+"And I second it.  Let's get this done!" Andrew agreed.
     ~ eg_outsourcing = 2
     + [{continue}] -> station.building
 
@@ -188,13 +208,39 @@ Make the pitch for the move to the new system...
 # CLASS: head1
 Outsourcing: The Out
 
-    ~ temp v = player_cryptids * cryptid_exchange_rate
+"Gentlemen", began Zyn.
 
-# HTML: <a href="./abyssal.html" class="simple-a" target="_blank" rel="noopener noreferrer">Abyssal Intelligence</a>
-Andrew begins with a brief status report, "Ok, everything is proceeding according to plan.  HTML is now a fully functional shell company.  It has accumulated {player_cryptids}Ͼ, or about {get_whole_number(v)}€.  We have a few more things to iron out, but overall we're on track."
+"Zyn", Randy and Andrew respond warily.
 
-Buy our way out of indentured servitude.  Sell ABAL to Greenpeace.
+"Quite the enterprise you two have going here with {shell_company_name}", Zyn waits for them to respond.
 
+Randy and Andrew feign ignorance.
+
+"Come, come now.  It did not take a genius to figure it out.  The AI price drop was substantial as you asserted to Kraal and CephaloDynamics appears to have turned a corner while {shell_company_name}'s crypto assets continues to grow.  I figured I should get to know our new partner in more detail.  It turns out that Dr. Zephyr has been dead for years and Dr. Nova is in the sociological sciences."
+
+"That doesn't means it's us", Randy blurted out.  "Could be anyone!"
+
+Zyn snickers, "Ask the AI to tell you a joke sometime.  'Why does a chicken coup have four doors?' ring a bell?"
+
+Randy silently mouths 'Because if it had two it would be a chicken sedan!'.
+
+"And ask it for movie recommendations sometime.  I didn't know that 'Rubber' and 'Naked Lunch' were such pieces of cinematic relevance.  When I cross referenced them with people's streaming histories...  Well, let's just say very few people watch those films regularly", coos Zyn. "I did enjoy them by the way."
+
+"Ok, ok, ABAL is us", Randy admitted, "we just needed a way to keep CephaloDynamics afloat and if we could make a few bucks.  Are you going to turn us in?"
+
+"Turn you in?", Zyn laughed, "Are you kidding me?  I'd like to make you an offer!"
+
+"What kind of 'offer' do you have in mind?", Andrew croaked guardedly.
+
+"Why I, Greenpeace, would like to buy ABAL lock stock and barrel", Zyn explained. "We'll pay three times the market price for the million shares and we'll pay off your CephaloDynamics contracts." 
+
+"Why would you want to buy ABAL?", Andrew asked incredulously.
+
+"Simple, for control, plain and simple." Zyn continued, "The Teuthans are idiots, as you know and they've been running this company into the ground.  They have become addicted to this AI that seems to have all the right answers for them, at the right price.  We intend to feed them what we want them to hear and do and, just like you, skim a little off the top.  What do you guys think? Think hard, as this might be the best offer you ever get."
+
+"Counter-offer", says Andrew. "One point five times the market for 80 percent of the ABAL shares and you'll buy our contracts out. You'll have control over ABAL and we'll continue to have a bit of the revenue stream."
+
+"Done.", says Zyn.  He extends his hands and they shake on it, even as the paperwork is automatically generated and sits in Randy and Andrew's inboxes.
     ~ eg_outsourcing = 4
     + [{continue}] -> station.building
 

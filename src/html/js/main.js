@@ -250,6 +250,7 @@ function post_location_change(story) {
             var paragraphElement = document.createElement('p');
             // Inject # HTML tag into the paragraph text verbatim
             paragraphText = paragraphText.replace("HTML", HTML_text);
+            paragraphText = paragraphText.replace("QUERY_ANALYSIS", query_analysis());
             HTML_text = '';
             // fill in the <p> text            
             paragraphElement.innerHTML = paragraphText;
@@ -551,7 +552,25 @@ function post_location_change(story) {
 
 })(storyContent);
 
+function query_analysis() {
+    s = `
+<pre style="font-size: 1.4em">
+Number of queries analyzed: 745,349,536
 
+Query type     Fraction     Potential handler
+----------     --------     -----------------
+"Ordering"         8.4%     Redirect to extant APIs
+"Calculator"      12.5%     Math engine tunnel
+"Lazy users"      26.3%     Direct web search
+"Idiocracy"       10.5%     Simple placation
+"Loneliness"      17.2%     Better handled by human
+"Confirmation"    18.8%     Better handled by human
+"Complex query"    3.2%     Redirect to full AI
+"Other"            3.1%     Redirect to cheap AI
+</pre>
+`
+    return s;
+}
 
 function attribution(parent) {
     let attr = document.createElement('div');

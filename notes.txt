@@ -68,8 +68,23 @@ Consider potential endings:
         paths that start from the first "proj_next" discussion.   
         1) talk about it (outsourcing)
         2) Andrew analysis of real-world requests...  99% can avoid calling AI at all.
-        3) "the pitch" option ? start of stock_drop_level2
-        4) Buy our way out of our contracts
+        3) "the pitch" option - triggers at stock_drop_level2
+        4) Buy our way out of our contracts (Zyn) - triggers when the stock raises over 280
+
+
+Number of queries analyzed: 745,349,536
+
+Query type     Fraction     Potential handler
+----------     --------     -----------------
+"Ordering"         8.4%     Redirect to extant APIs
+"Calculator"      12.5%     Math engine tunnel
+"Lazy users"      26.3%     Direct web search
+"Idiocracy"       10.5%     Simple placation
+"Loneliness"      17.2%     Better handled by human
+"Confirmation"    18.8%     Better handled by human
+"Complex query"    3.2%     Redirect to full AI
+"Other"            3.1%     Redirect to cheap AI
+
 
 
 The Mission Statement

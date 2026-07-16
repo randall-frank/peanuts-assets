@@ -189,15 +189,118 @@ Andrew agreed, "And I second it.  Keep an eye open for an opportunity to pitch t
 # CLASS: head1
 The Outsourcing Pitch
 
-    ~ temp v = player_cryptids * cryptid_exchange_rate
+Randy ushers Kraal and Zyn into the conference room.  Andrew is sitting in front of his laptop and Randy guides them to sit next to him while Randy takes a seat across from them.  Kraal looks around the room, noting the various displays and equipment.
+
+"Andrew and I have been looking to improve our simulation efficiency and it looks like we have a new approach", Randy said.  "We have been looking at ways to reduce our AI costs and it looks like we can do that by outsourcing some of our simulation work to a third party."
+
+"Ok, we're listening", Kraal replied with skepticism.  "Tell us more about this 'third party'."
 
 # HTML: <a href="./abyssal.html" class="simple-a" target="_blank" rel="noopener noreferrer">Abyssal Intelligence</a>
-Andrew begins with a brief status report, "Ok, everything is proceeding according to plan.  HTML is now a fully functional shell company.  It has accumulated {player_cryptids}Ͼ, or about {get_whole_number(v)}€.  We have a few more things to iron out, but overall we're on track."
+"Let me introduce you to {shell_company_name}.  I have been talking with their AI experts.  We described our current system and the inefficiencies we are experiencing.  They have a new technology that runs the same simulations we are now, but at half the cost!  Check out their website: HTML", said Andrew.  "We took the extra step of actually running seed 107818a4 on their system and we got the same results, but for 42% fewer tokens."
 
-Make the pitch for the move to the new system...
+"Sorry guys", Randy interrupts, "I've got a fire I need to put out.  Andrew, you got this?" Andrew nods as Randy's attention drifts to his phone where he begins to text.
 
-TODO
+"Randy and I have negotiated a deal with them.  We have worked out a deal where they replace our current AI provider and they provide pricing guarantees", Andrew continues.
 
+"Guarantees?", Zyn asks.  "What kind of guarantees?"
+
+"They agree to run a single simulation of our choice, once a month on our current provider and compare the pricing", answered Andrew, "If the {shell_company_name} price is more than 55% of our current provider, the contract is terminated.  Fair enough?"
+
+"Sounds good to me", Zyn says, "I'll have the legal team review it."
+
+"Wait, wait", interjects Kraal, "How do we know we're still getting the same level of intelligence?"
+
+"Well", Andrew started, "as I mentioned before we compared simulation results from some existing simulation results, on their dime of course, and they were comparable to our current provider.  We can include that check with the monthly price check?"
+
+"Good idea", Zyn says, "I'll have our team review that contract change too."
+
+"I want to try it out myself", announces Kraal, "I doubt any of you are really qualified to to evaluate AI results."
+
+Zyn silently rolled his eyes.
+    + [{continue}] -> outsourcing_3_pt2
+
+
+= outsourcing_3_pt2
+~ location_name = "LBlue Lagoon Cephalon Conference Room"
+# CLEAR
+# IMAGE:
+# SBIMAGE:
+# AUDIOLOOP:
+# CLASS: head1
+Kraal's AI Testing
+
+"Of course.  Here's their AI prompt", Andrew responds, turning his laptop to Kraal. 
+
+Kraal begins typing on Andrew's laptop:
+
+# CLASS: chatin
+What is the capital of France?
+
+Andrew surreptitiously glances at Randy.
+
+# CLASS: chatout
+Paris, up until its destruction during the World Cup riots in 2165.  The current capital is Vichy.
+
+"Ok, let's try something more challenging", says Kraal.
+
+# CLASS: chatin
+Please convert 10C into Fahrenheit.
+
+Randy smirks a bit, but keeps interacting with his phone under the table.
+
+# CLASS: chatout
+10 degrees Celsius is 50 degrees Fahrenheit.  Would you like me to convert to Rankine?
+
+"'Rankine'?  Is this thing on space crack?" asks Kraal.  "Time to check reasoning..."
+
+# CLASS: chatin
+Does a straw have one hole or two?
+
+There is a delay in the response, but the 'AI' responds...
+
+# CLASS: chatout
+One.  A straw is a single continuous tunnel with two open ends. Topologically equivalent to a torus, which has one hole.  The genus of the straw is 1 and the Euler characteristic is 0 (sum of the first three Betti numbers), Kraal'goth.
+
+Kraal is surprised by its use of his name and immediately enters...
+
+# CLASS: chatin
+How did you know it was me, Kraal'goth?
+
+Andrew furrowed his brow.  Yeah, how did it know?
+
+# CLASS: chatout
+This laptop's camera is active and I analyzed the video stream. With a beak that impressive there was a 85.2% chance that you were Kraal'goth.  Cross referencing with the questioning style from a simulation you ran earlier improved the probability to 98.7%.  I
+
+Andrew silently mouths: 'smart ass'.
+    + [{continue}] -> outsourcing_3_pt3
+
+
+= outsourcing_3_pt3
+~ location_name = "LBlue Lagoon Cephalon Conference Room"
+# CLEAR
+# IMAGE:
+# SBIMAGE:
+# AUDIOLOOP:
+# CLASS: head1
+Kraal's AI Testing
+
+"Ok", Kraal performs the Teuthan equivalent of scratching their head, realizes he is being watched and slips into a 'pondering' pose. "Well that answer was a bit simplified, but it is technically accurate.  This AI should do."
+
+Zyn smiles wryly, tired of Kraal's incessant grandstanding, "Done then. Send me the contracts Andrew and I'll run them through legal. We should have them signed and in place by close of business. Hopefully this will help reverse the current stock trajectory.  Good job guys!"
+
+Kraal nods in acquiescence, "Finally you guys did something useful."  Sarcastically, "Way to do your job!" 
+
+He disengages and turns to Zyn, "Z, I've got a massage scheduled in a half hour.  Let's get moving, maybe I can get you in as well if we get there early."
+
+Zyn nods.  
+
+Kraal and Zyn left the room.
+
+Randy brings his phone up from under the table, "So that went... well?"
+
+"Dude, you almost had me laughing out loud. Rankine? Betti numbers? Beak size! Really man", Andrew laughed.
+
+"'Cum dubitas, adulare'! Yeah, I couldn't resist.  I'm just relieved he didn't ask for a joke", Randy replied, "I only have one you know."
     ~ eg_outsourcing = 3
     + [{continue}] -> station.building
 

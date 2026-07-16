@@ -7,21 +7,19 @@ Got some cool ideas that we need to capture/integrate?  Here you go.
 Have a slick line that has become a moral imperative to add?  Here you go.
 
 
-News Ticker:
-at the top of simulation "dispatch" can generate
-
 Collect state/notes during the simulation to display in the "dispatch" area.
 
 
-"Review" stitches based on state/notes...
+Phrases I'd like to include in the story:
 
-"Nolite Te Bastardes Carborundorum"
+"Nolite Te Bastardes Carborundorum" - don't let the bastard grind you down...
 New characters, a tall young man from Minnesota with a grumpy/cranky Tamagotchi. 
 Existential Fear
 Diminished Dopamine Response
-Years between Davy and Goliath and Truckasaurus
+Years between Davy & Goliath and Truckasaurus
 It doesn't need diesel, it needs Earl Grey
 Cum dubitas, adulare - when in doubt, flatter
+"What's the only thing standing between a child and a happy and fulfilling life? YOU! The answer is you!"
 
 
 - add the monitor agent can detect changes by the boss.

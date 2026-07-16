@@ -64,7 +64,6 @@ The Meeting
 For the next 10 minutes, Kraal'goth began to describe the history and 'achievements' of CephaloDynamics.  He spoke of their 'innovative' technology and how it was used to make the world a better place for all (remaining) humans, conveniently leaving out the fact that there were less than 2 billion humans left on Earth.  The majority of them were living in subsistence, not to mention the fact that CephaloDynamics had effectively enslaved and exploited them.  Greenie listened with a mixture of boredom and disgust, while Randy and Andrew nodded along, trying to appear interested. 
     + [Here it comes...] -> themeetingB
 
-
 = themeetingB
 ~ location_name = "LBlue Lagoon Radula Conference Room"
 # CLEAR

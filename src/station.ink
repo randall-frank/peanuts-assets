@@ -151,33 +151,33 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
     // Outsourcing storyline
     * {eg_outsourcing == 1} [Query analytics meeting with Andrew] -> storyline.outsourcing_2
     * {(eg_outsourcing == 2) and storyline.stock_drop_level2} [Make the Outsourcing pitch] -> storyline.outsourcing_3
-    * {(eg_outsourcing == 3) and (stock_CDYG > 350.)} [Zyn is waiting to talk with you] -> storyline.outsourcing_4
+    * {(eg_outsourcing == 3) and (stock_CDYG > 350.)} [Zyn waits in the Cephalon conference room] -> storyline.outsourcing_4
     * {eg_outsourcing == 4} [Free men deserve a good dinner] -> epilogue
 
-    // if there are enough violent scenes, allow this stitch, just once
-    // currently tunneled, but could be standard stitch?
     + [Simulation seed: 107818a4{forty: (The Back Forty)}] -> forty -> 
         -> building
     + [Simulation seed: 54f37f50{mille: (Mille, Strait and Tall)}] -> mille -> 
         -> building
-    + [Simulation seed: 07cd5541{weight: (The Weight of Gravity)}] -> weight -> 
-        -> building
-    + [Simulation seed: abdef192{zero: (Zero, my Hero)}] -> zero -> 
-        -> building
-    + [Simulation seed: 822b39fb{bad: (Bad to the Bone)}] -> bad -> 
-        -> building
-    + [Simulation seed: 99587d72{cruising: (Cruising Altitude)}] -> cruising -> 
-        -> building
-    + [Simulation seed: 678d2c77{ubermom: (Uber-Mom)}] -> ubermom -> 
+    + [Simulation seed: ad1e89cf{solitaire: (Solitaire)}] -> solitaire -> 
         -> building
     + [Simulation seed: 8796d7bb{david: (David's Friend)}] -> david ->  
         -> building
-    + [Simulation seed: 13991734{battle: (BattleTech)}] -> battle -> 
-        -> building
     + [Simulation seed: cd3cae13{symptoms: (Symptoms)}] -> symptoms -> 
         -> building
-    + [Simulation seed: ad1e89cf{solitaire: (Solitaire)}] -> solitaire -> 
+    + [Simulation seed: 07cd5541{weight: (The Weight of Gravity)}] -> weight -> 
         -> building
+    
+    + {storyline.stock_drop_level2} [Simulation seed: abdef192{zero: (Zero, my Hero)}] -> zero ->
+        -> building
+    + {storyline.stock_drop_level2} [Simulation seed: 822b39fb{bad: (Bad to the Bone)}] -> bad ->
+        -> building
+    + {storyline.stock_drop_level2} [Simulation seed: 99587d72{cruising: (Cruising Altitude)}] -> cruising -> 
+        -> building
+    + {storyline.stock_drop_level2} [Simulation seed: 678d2c77{ubermom: (Uber-Mom)}] -> ubermom -> 
+        -> building
+    + {storyline.stock_drop_level2} [Simulation seed: 13991734{battle: (BattleTech)}] -> battle -> 
+        -> building
+
     + [Epilogue] -> epilogue
 
 

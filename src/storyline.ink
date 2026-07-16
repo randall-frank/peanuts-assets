@@ -61,7 +61,7 @@ The whole process takes about ten minutes before {shell_company_name} ('ABAL') i
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-Project Next
+"Project Next"
 
 
 Randy outlines the basics of Project Next, "So the Teuthans have handed us the means.  Every simulation we run is tanking CDYG?  So let's tank it into bankruptcy!"  
@@ -123,6 +123,7 @@ Ping from broker about settling there positions...
     ~ eg_outsourcing = 1
     -> station.building
 
+
 = outsourcing
 ~ location_name = "LPrivate Alcove, Deck 7"
 # CLEAR
@@ -130,7 +131,7 @@ Ping from broker about settling there positions...
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-Outsourcing
+"Outsourcing"
 
 Randy outlines the basics of Outsourcing, "We've been spending a lot of time with the AI recently..."
 
@@ -156,7 +157,7 @@ Randy outlines the basics of Outsourcing, "We've been spending a lot of time wit
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-Outsourcing: Analytics 
+AI Query Analytics
 
     ~ temp v = player_cryptids * cryptid_exchange_rate
 
@@ -174,19 +175,19 @@ QUERY_ANALYSIS
 
 "Perfect!", Randy exclaimed.  "I vote we should charge CephaloDynamics half price and skim off the extra 10% into {shell_company_name} for a rainy day."
 
-"And I second it.  Let's get this done!" Andrew agreed.
+Andrew agreed, "And I second it.  Keep an eye open for an opportunity to pitch this to Kraal.  Let's get this done!" 
     ~ eg_outsourcing = 2
     + [{continue}] -> station.building
 
 
 = outsourcing_3
-~ location_name = "LPrivate Alcove, Deck 7"
+~ location_name = "LBlue Lagoon Cephalon Conference Room"
 # CLEAR
 # IMAGE:
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-Outsourcing: The Pitch
+The Outsourcing Pitch
 
     ~ temp v = player_cryptids * cryptid_exchange_rate
 
@@ -195,18 +196,20 @@ Andrew begins with a brief status report, "Ok, everything is proceeding accordin
 
 Make the pitch for the move to the new system...
 
+TODO
+
     ~ eg_outsourcing = 3
     + [{continue}] -> station.building
 
 
 = outsourcing_4
-~ location_name = "LPrivate Alcove, Deck 7"
+~ location_name = "LBlue Lagoon Cephalon Conference Room"
 # CLEAR
 # IMAGE:
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-Outsourcing: The Out
+The Out in Outsourcing
 
 "Gentlemen", began Zyn.
 
@@ -351,10 +354,17 @@ Emergency Level 2 Stock Alert Meeting
 
 ~ newswire_message = newswire_item()
 
-Andrew and Randy are abruptly summoned into the conference room.
+Andrew and Randy are abruptly summoned into the conference room.  A "Level 2" stock alert?  CDYG had been sliding, perhaps a bit too far for someone's comfort.  They take their standard seats (after checking to make sure their seats were... 'safe'). {eg_outsourcing == 2: "Maybe we can pitch the ABAL solution if we get a chance", noted Randy.}
 
-TODO
+The door opened suddenly and the two fell silent as Kraal and Zyn entered the room. The two shuffled slowly into the room, Kraal with a scowl on his face and Zyn looking like he had just rolled out of bed.  One of Kraal's dorsal arms looks like it had been clipped?  Zyn's eyes were red rimmed.  His flushed skin and enlarged pupils made him look like he'd taken too much of "something", or maybe not enough?  In any case, they'd been through a gauntlet and there was a good chance Andrew and Randy could bear the brunt of their anger.
+No, not anger, more like despair.  They had the look of two men in danger of drowning, more lot mortal fear than anger. {eg_outsourcing: Perhaps they would be open to a silver bullet?}
 
+Kraal started in a booming voice, "I can't believe it!  You two have spent...  almost a billion euro and for what?  Simulations of the human condition? {forty:Midwestern farmers handling goats?} {mille:Failed writers getting hit by trucks?} {david:Kids playing baseball?} {solitaire:Convicts in space?} Absolutely nothing!  You've wasted our time, our resources..." 
+
+His voice trailed off as he ran out of bluster.  Zyn tapped Kraal's dry tentacle on the table.  Almost like he cared.  "Look, you've both watched the ticker.  We've just come from a meeting with Chairman J'araek.  He make it very clear that he is giving this project one more chance.  If we can't turn project 'Titanic', his words not mine, around, we'll all be out of a job", Zyn paused a second to let it sink in. "Our resources have been cut again, but we still have a chance."
+Kraal's eyes narrowed, "I don't like this.  I don't like it at all."  He turned to Andrew and Randy, "I have a new collection of simulation seeds.  I have been assured that these are the best we have."
+    ~ cpu_cpus = cpu_cpus / 2
+    + {eg_outsourcing == 2} [We might be able to reduce simulation expenses] -> storyline.outsourcing_3
     + [{continue}] -> station.building
 
 
@@ -370,7 +380,7 @@ Emergency Level 3 Stock Alert Meeting
 
 ~ newswire_message = newswire_item()
 
-Andrew and Randy are abruptly summoned into the conference room.
+Andrew and Randy are abruptly summoned into the conference room.  This is getting way too familiar...  Something different this time... Inkwell, not Radula?  This can't be a good thing.
 
 TODO
 

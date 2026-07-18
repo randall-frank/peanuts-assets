@@ -22,7 +22,7 @@ var init_system_info = {
 }
 
 var init_social_info = {
-    'patrons': 78234,
+    'followers': 78234,
     'subs': 1300000,
     'likes': 2300000000    
 }
@@ -674,7 +674,7 @@ function updateStateFromInk() {
     sidebar_info.system_info.procs = theStory.variablesState["cpu_procs"];
     sidebar_info.system_info.util = theStory.variablesState["cpu_util"];
     // Social state
-    sidebar_info.social_info.patrons = theStory.variablesState["social_patrons"];
+    sidebar_info.social_info.followers = theStory.variablesState["social_followers"];
     sidebar_info.social_info.subs = theStory.variablesState["social_subs"];
     sidebar_info.social_info.likes = theStory.variablesState["social_likes"];
 }
@@ -717,7 +717,7 @@ function initStatusSidebar() {
         compactDisplay: 'short' // Uses 'K', 'M', etc. Use 'long' for 'thousand', 'million'
     });
     
-    let patrons = formatter.format(sidebar_info.social_info['patrons']);
+    let followers = formatter.format(sidebar_info.social_info['followers']);
     let subs = formatter.format(sidebar_info.social_info['subs']);
     let likes = formatter.format(sidebar_info.social_info['likes']);
 
@@ -725,16 +725,16 @@ function initStatusSidebar() {
     s = `
         <ul class="fa-ul" style="margin-left: 0px">
             <li class="li-gap">
-                <span class="fa-li"><i class="fa-solid fa-star" style="color: yellow;"></i> </span>
-                <span id='social_patrons'>${patrons}</span> Patrons
-            </li>
-            <li class="li-gap">
                 <span class="fa-li"><i class="fa-solid fa-bell" style="color: yellow;"></i> </span>
-                <span id='social_subs'>${subs}</span> Subscribers
+                <span id='social_subs'>${subs}</span> <i class="fa-brands fa-square-youtube" title="YouTube"></i> Subscribers
             </li>
             <li class="li-gap">
                 <span class="fa-li"><i class="fa-solid fa-heart" style="color: red;"></i> </span>
-                <span id='social_likes'>${likes}</span> Likes
+                <span id='social_likes'>${likes}</span> <i class="fa-brands fa-x-twitter" title="Twitter"></i> Likes
+            </li>
+            <li class="li-gap" id="social_followers_li">
+                <span class="fa-li"><i class="fa-solid fa-star" style="color: yellow;"></i> </span>
+                <span id='social_followers'>${followers}</span> <i class="fa-brands fa-octopus-deploy fa-beat" style="--fa-animation-duration: 2s;" title="InkStream™"></i> Followers
             </li>
         </ul>
     `
@@ -800,7 +800,7 @@ function random_fraction(num, frac, bias) {
 
 function add_random_sidebar() {
     sidebar_info.social_info.likes += random_fraction(sidebar_info.social_info.likes, 0.02, 0.05);
-    sidebar_info.social_info.patrons += random_fraction(sidebar_info.social_info.patrons, 0.005, 0.0);
+    sidebar_info.social_info.followers += random_fraction(sidebar_info.social_info.followers, 0.005, 0.0);
     sidebar_info.social_info.subs += random_fraction(sidebar_info.social_info.subs, 0.01, 0.02);
 
     sidebar_info.system_info.procs += random_fraction(sidebar_info.system_info.procs, 0.01, 0.0);
@@ -851,12 +851,18 @@ function update_social(info) {
         notation: 'compact',
         compactDisplay: 'short' // Uses 'K', 'M', etc. Use 'long' for 'thousand', 'million'
     });
-    let patrons = formatter.format(info['patrons']);
     let subs = formatter.format(info['subs']);
     let likes = formatter.format(info['likes']);
-    document.getElementById("social_patrons").innerHTML = patrons;
+    let followers = formatter.format(info['followers']);
     document.getElementById("social_subs").innerHTML = subs;
     document.getElementById("social_likes").innerHTML = likes;
+    document.getElementById("social_followers").innerHTML = followers;
+    const follow_li = document.getElementById('social_followers_li');
+    if (followers > 0) {
+        follow_li.style.display = 'list-item';
+    } else {
+        follow_li.style.display = 'none';
+    }
 }
 
 function update_system(info) {

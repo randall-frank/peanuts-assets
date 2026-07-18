@@ -43,9 +43,8 @@ The whole process takes about ten minutes before {shell_company_name} ('ABAL') i
 "So we'll have the means, but what is the way?", Andrew ponders out loud.
 
 "I've got a couple of ideas", Randy counters.  "Nothing concrete right now, but I have a couple of possible directions."
-
-    + [Burn it all to the ground.] -> project_next
-    + [There's always room for a middleman.] -> outsourcing
+    + [Burn it all to the ground] -> project_next
+    + [There's always room for a middleman] -> outsourcing
 
 
 = do_project_next
@@ -75,7 +74,6 @@ Randy outlines the basics of Project Next, "So the Teuthans have handed us the m
 "That assumes we use a CDYG short position", Randy replies.  "What if instead we insure CDYGs debt?  When they default on the debt...  If that is still too visible, we can insure the debt of companies CDYG would bring down with them.  Suppliers, consultants, services...  Hell, I'll bet even Greenpeace would be on the list."
 
 "Perfect", Andrew crowed, "We can insure a blend of all of them. We can even use secondary short positions as a hedge."
-
     + [Let's do it.  We'll meet again when ABAL has funding.] -> do_project_next
     + {outsourcing == 0} [There is another option?] -> outsourcing
     + {outsourcing == 1} [Let's go with 'Outsourcing' instead.] -> do_outsourcing
@@ -89,6 +87,8 @@ Randy outlines the basics of Project Next, "So the Teuthans have handed us the m
 # AUDIOLOOP:
 # CLASS: head1
 Project Next: Buying Insurance
+
+TODO
 
     ~ temp v = player_cryptids * cryptid_exchange_rate
 
@@ -110,10 +110,11 @@ Time to buy the insurance positions and enable higher burn rates ("looping stori
 # CLASS: head1
 Project Next: The Crash
 
+TODO 
+
 CDYG has crashed, we are fired (and everyone else) - keep our staplers...
 
-Ping from broker about settling there positions...
-
+Ping from broker about settling their positions...
     ~ eg_project_next = 2
     + [{continue}] -> station.epilogue
 
@@ -144,7 +145,6 @@ Randy outlines the basics of Outsourcing, "We've been spending a lot of time wit
 "Even simple query rework can help", Randy continues, "Even just removing the 'pleasantries', 'please', 'thanks', etc could reduce the number of tokens used.  I'm thinking we set up a company for this and convince Kraal to switch providers to our company.  We might even be in a situation where we could help steer the CephaloDynamics direction!"
 
 "Well", Andrew ponders a bit, "I'm not sure I'd go that far, but I agree on the general assertions and direction.  Let's make sure our assumptions are correct first.  I can monitor the queries for some time and see how accurate our assumptions are."
-
     + [Let's do it.  We'll meet again when we have the numbers.] -> do_outsourcing
     + {project_next == 0} [There is another option?] -> project_next
     + {project_next == 1} [Let's go with 'Project Next' instead.] -> do_project_next
@@ -339,6 +339,17 @@ Randy silently mouths 'Because if it had two it would be a chicken sedan!'.
 "What kind of 'offer' do you have in mind?", Andrew croaked guardedly.
 
 "Why I, Greenpeace, would like to buy ABAL lock stock and barrel", Zyn explained. "We'll pay three times the market price for the million shares and we'll pay off your CephaloDynamics contracts." 
+    + [{continue}] -> outsourcing_4_pt2
+
+
+= outsourcing_4_pt2
+~ location_name = "LBlue Lagoon Cephalon Conference Room"
+# CLEAR
+# IMAGE:
+# SBIMAGE:
+# AUDIOLOOP:
+# CLASS: head1
+The Out in Outsourcing
 
 "Why would you want to buy ABAL?", Andrew asked incredulously.
 
@@ -346,9 +357,83 @@ Randy silently mouths 'Because if it had two it would be a chicken sedan!'.
 
 "Counter-offer", says Andrew. "One point five times the market for 80 percent of the ABAL shares and you'll buy our contracts out. You'll have control over ABAL and we'll continue to have a bit of the revenue stream."
 
-"Done.", says Zyn.  He extends his hands and they shake on it, even as the paperwork is automatically generated and sits in Randy and Andrew's inboxes.
+"Done. Pleasure doing business with you", says Zyn.  He extends his hands and they shake on it, even as the paperwork is automatically generated and sits in Randy and Andrew's inboxes.  Zyn stands up, smiles and nods as he walks out of the room.
+
+"Any reason we should continue working here", asked Randy?
+
+"The contracts check out. They're all signed and registered", Andrew marveled at modern automated business processes.  "We appear to be set for life... So no, there is no reason to continue working here.  I'm sending my resignation... now."
+
+"I'm sending mine too", Randy said.  He turned to Andrew and shook his hand. 
+
+"Say, who did you leave running the AI", asked Andrew?
+
+Randy laughed out loud, "You remember 'Eliza'?  Surprising how far version 234.2.1 can take you."
+
+"How does that make you feel?", Andrew joined him in laughter.
     ~ eg_outsourcing = 4
+    + [Free men deserve a good dinner] -> station.epilogue
+
+
+= do_fishbowl
+    ~ eg_project_next = 0
+    ~ eg_outsourcing = 0
+    ~ eg_fishbowl = 1
+    -> station.building
+
+
+= fishbowl
+~ location_name = "LPrivate Alcove, Deck 7"
+# CLEAR
+# IMAGE:
+# SBIMAGE:
+# AUDIOLOOP:
+# CLASS: head1
+"The Idiocracy Solution"
+
+Randy outlines the basics of The Idiocracy Solution, "
+
+Pick up "Duke's of Hazzard" IP rights.
+
+# HTML: <i class="fa-brands fa-octopus-deploy fa-beat" style="--fa-animation-duration: 2s;"></i> 
+Set up: InkStream HTML
+
+TODO
+
+    + [Let's set up a media channel.] -> do_fishbowl
+
+
+= fishbowl_2
+~ location_name = "LPrivate Alcove, Deck 7"
+# CLEAR
+# IMAGE:
+# SBIMAGE:
+# AUDIOLOOP:
+# CLASS: head1
+Idiocracy Progress
+
+TODO
+
+progress/planning - fishbowl review option - generating blipverts 
+
+    ~ eg_fishbowl = 2
     + [{continue}] -> station.building
+
+
+= fishbowl_3
+~ location_name = "LPrivate Alcove, Deck 7"
+# CLEAR
+# IMAGE:
+# SBIMAGE:
+# AUDIOLOOP:
+# CLASS: head1
+Idiocracy Buy Out
+
+TODO
+
+Sell the media stream to Greenpeace
+
+    ~ eg_fishbowl = 3
+    + [Free men deserve a good dinner] -> station.epilogue
 
 
 = violence
@@ -460,9 +545,9 @@ Emergency Level 2 Stock Alert Meeting
 Andrew and Randy are abruptly summoned into the conference room.  A "Level 2" stock alert?  CDYG had been sliding, perhaps a bit too far for someone's comfort.  They take their standard seats (after checking to make sure their seats were... 'safe'). {eg_outsourcing == 2: "Maybe we can pitch the ABAL solution if we get a chance", noted Randy.}
 
 The door opened suddenly and the two fell silent as Kraal and Zyn entered the room. The two shuffled slowly into the room, Kraal with a scowl on his face and Zyn looking like he had just rolled out of bed.  One of Kraal's dorsal arms looks like it had been clipped?  Zyn's eyes were red rimmed.  His flushed skin and enlarged pupils made him look like he'd taken too much of "something", or maybe not enough?  In any case, they'd been through a gauntlet and there was a good chance Andrew and Randy could bear the brunt of their anger.
-No, not anger, more like despair.  They had the look of two men in danger of drowning, more lot mortal fear than anger. {eg_outsourcing: Perhaps they would be open to a silver bullet?}
+No, not anger, more like despair.  They had the look of two men in danger of drowning, more lot mortal fear than anger. {eg_outsourcing == 2: Perhaps they would be open to a silver bullet?}
 
-Kraal started in a booming voice, "I can't believe it!  You two have spent...  almost a billion euro and for what?  Simulations of the human condition? {forty:Midwestern farmers handling goats?} {mille:Failed writers getting hit by trucks?} {david:Kids playing baseball?} {solitaire:Convicts in space?} Absolutely nothing!  You've wasted our time, our resources..." 
+Kraal started in a booming voice, "I can't believe it!  You two have spent...  almost a billion euro and for what?  Simulations of the human condition? {forty: Midwestern farmers handling goats?} {mille: Failed writers getting hit by trucks?} {david: Kids playing baseball?} {solitaire: Convicts in space?} Absolutely nothing!  You've wasted our time, our resources..." 
 
 His voice trailed off as he ran out of bluster.  Zyn tapped Kraal's dry tentacle on the table.  Almost like he cared.  "Look, you've both watched the ticker.  We've just come from a meeting with Chairman J'araek.  He make it very clear that he is giving this project one more chance.  If we can't turn project 'Titanic', his words not mine, around, we'll all be out of a job", Zyn paused a second to let it sink in. "Our resources have been cut again, but we still have a chance."
 Kraal's eyes narrowed, "I don't like this.  I don't like it at all."  He turned to Andrew and Randy, "I have a new collection of simulation seeds.  I have been assured that these are the best we have."
@@ -487,5 +572,13 @@ Andrew and Randy are abruptly summoned into the conference room.  This is gettin
 
 TODO
 
-    * {eg_project_next == 2} [We're fired...] -> storyline.project_next_3
-    + [{continue}] -> station.building
+Project is canceled.
+Kraal is sent back to Europa
+Zyn goes back to corporate
+
+    Andrew and Randy go back to the IT 
+
+// The grind ending
+    + {eg_project_next == 0} [Back to the grind.] -> station.epilogue
+// The insurance pays off
+    + {eg_project_next == 2} [Sometimes insurance pays off] -> storyline.project_next_3

@@ -73,6 +73,9 @@ VAR violence_count = 0
 // Is a simulation running
 VAR simulation_running = 0
 
+// Number of examples of "idiot" behavior in simulations
+VAR idiot_count = 0
+
 // player "cash" (Ͼ)
 VAR player_cryptids = 0
 VAR cryptid_exchange_rate = 30591.76
@@ -87,6 +90,9 @@ VAR eg_project_next = 0
 // State of "Outsourcing" 0=not started, 1=started, 2=pitch option enabled, 3=pitched
 VAR eg_outsourcing = 0
 
+// State of "fishbowl" 0=not started, 1=started, 2=streaming service, 3=blipverts, 4(+followers)=Zyn can buy us out
+VAR eg_fishbowl = 0
+
 
 // Stock prices (center point for JS updates)
 VAR stock_CDYG = 512.0
@@ -100,9 +106,10 @@ VAR cpu_procs = 1400000
 VAR cpu_util = 10.0
 
 // CPU status
-VAR social_patrons = 78234
 VAR social_subs = 623455
 VAR social_likes = 2300000
+// display is hidden until it is > 0
+VAR social_followers = 0
 
 // debug can be set to any value via '?dev=x'
 // This enables shortcuts {debug} that speed development

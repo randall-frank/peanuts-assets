@@ -26,11 +26,7 @@ Cum dubitas, adulare - when in doubt, flatter
 
 Main changes:
 
-1) only 3-4 stories available initially
-2) only bill for stories that are run to the end (add an option to "run to end and ignore" or to 
-        "generate crypto", what is the "crypto" in the future)
-3) add more seeds with each "intervention" - there is one already stock_drop_level1, need 
-   stock_drop_level2 and stock_drop_level3 ending
+Outsourcing - not increase to 350, rather to current + 30%???
 
 
 Consider potential endings:
@@ -93,15 +89,27 @@ and we’ve stopped asking questions." – VP of Operations, Global Sync-Tech.
 It just works, and the silence from our previous competitors is… notable." – Chief Information Officer, Neo-Industrial Partners.
 
 
-3) Detect the AI is a "reality tunnel" then use to adjust their own reality - project to cook up our own seed...
 
-"Idiocracy Solution"
+"Idiocracy Solution aka ‘the fishbowl’"
     After some specific seeds are run (??? which ones ???) at stock_drop_level3, the "Idiocracy" option
     comes available.   In it, we paint the Dukes of Hazard Death Spiral to Zyn, who stands to exert even
     more control over the Teuthans on the backs of humans.  Greenpeace independently buys up old IP and
     creates "free streaming" sites where they feed this stuff 24/7 with AI generated "blip-verts" or 
     small changes in endings, etc.   Lather, rinse, repeat.  Andrew and Randy serve to monitor and
     report back to Greenpeace...
+
+
+Plan:
+
+    0) When running simulations, keep track of “idiotsploitation”  (idiot_count)
+    1) When we have N examples, Set up streaming service and start buying IP based on stories (eg_fishbowl = 1)
+    2) progress/planning - fishbowl review option - generating blipverts (eg_fishbowl = 2) Syndication of blipverts
+    3) When the service gets big enough or level intervention level3, Zyn will come to us
+
+“Losing” ending…
+
+* Lather, rinse, repeat -> once we hit 3rd drop if nothing is in play, the project is canceled - no more simulations - Bosses are "fired*
+
 
 
 Lock up a simulation - runs forever...

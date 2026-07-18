@@ -121,7 +121,7 @@ Randy took a deep breath, wanting to point out that both of the examples had pro
 }
 
 // third level panic button pressed
-{ (stock_CDYG < 100.) and not storyline.stock_drop_level3:
+{ (stock_CDYG < 125.) and not storyline.stock_drop_level3:
     -> storyline.stock_drop_level3
 }
 
@@ -142,16 +142,22 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
     * {violence_count>1} [Andrew looks at Randy with concern] -> storyline.violence 
 
     // Storylines begin
-    * {storyline.stock_drop_level1} [Meet with Andrew on deck 7] -> storyline.make_plans
+    * {storyline.stock_drop_level1} [Discuss potential projects with Andrew on deck 7] -> storyline.make_plans
 
     // Project Next storyline
     * {(eg_project_next == 1) and (player_cryptids > 1000)} [Project Next: Status meeting with Andrew] -> storyline.project_next_2
 
+
     // Outsourcing storyline
     * {eg_outsourcing == 1} [Query analytics meeting with Andrew] -> storyline.outsourcing_2
     * {(eg_outsourcing == 2) and storyline.stock_drop_level2} [Make the Outsourcing pitch] -> storyline.outsourcing_3
-    * {(eg_outsourcing == 3) and (stock_CDYG > 350.)} [Zyn waits in the Cephalon conference room] -> storyline.outsourcing_4
-    * {eg_outsourcing == 4} [Free men deserve a good dinner] -> epilogue
+    * {(eg_outsourcing == 3) and (stock_CDYG > 350.)} [Zyn requests your presence in the Cephalon conference room] -> storyline.outsourcing_4
+
+
+    // Fishbowl storyline
+    * {(eg_fishbowl == 1) and (idiot_count > 2)} [Discuss "Idiocracy" progress with Andrew] -> storyline.fishbowl_2
+    * {(eg_fishbowl == 2) and (social_followers > 1000000000)} [Zyn requests your presence in the Cephalon conference room] -> storyline.fishbowl_3
+
 
     + [Simulation seed: 107818a4{forty: (The Back Forty)}] -> forty -> 
         -> building
@@ -177,8 +183,6 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
     + {storyline.stock_drop_level2} [Simulation seed: 13991734{battle: (BattleTech)}] -> battle -> 
         -> building
 
-    + [Epilogue] -> epilogue
-
 
 = epilogue
 ~ location_name = "LBlue Lagoon Cafeteria"
@@ -189,8 +193,11 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
 # CLASS: head1
 A Peaceful Night's Sleep
 
-The waning station claxon signals the end of another work period.  Andrew and Randy fist-bump discretely in the corridor.  "How about dinner?" Andrew asks, recent events replay visibly on his brow.  "Sure!  Pod 6 cheeseburgers?" Randy suggests.  "No, I was thinking about 'real food'.  I haven't had a proper steak in quite sometime..." he trails off.
-A pair of top sirloins and a kaleidoscopic array of Old Fashioned's and Dirty Shirley's later, they wander toward the sleep pods.  "Night man" and "Dude" are the only words verbalized, but many more are exchanged in the space of a pair of conspiratorial smiles.
+The waning station claxon signals the end of another work period.  
+ {eg_project_next or eg_outsourcing or eg_fishbowl:
+    - Andrew and Randy fist-bump discretely in the corridor.  "How about dinner?" Andrew asks, recent events replay visibly on his brow.  "Sure!  Pod 6 cheeseburgers?" Randy suggests.  "No, I was thinking about 'real food'.  I haven't had a proper steak in quite sometime..." he trails off.
+    A pair of top sirloins and a kaleidoscopic array of Old Fashioned's and Dirty Shirley's later, they wander toward the sleep pods.  "Night man" and "Dude" are the only words verbalized, but many more are exchanged in the space of a pair of conspiratorial smiles. 
+}
 Randy retraces the familiar path to '14380-e328'.  Home sweet pod.  The same one he's been using for decades.  The door slides open with a soft hum.  The interior is cool and dark, the air thick with humidity from the previous night's shower.  Randy steps inside, boots clicking on the poly resin floor.  He strips off his shirt and jacket, tossing them to the waiting attendant bot.  He climbs into the pod, pulling the synthetic plastic up.  The door slides shut with a soft hum.  Lights dim, air cools, he prepares for slumber.  A series of barely audible beeps signal the start of sleep cycle 553,245.
     + [{continue}] -> epilogue_pt2
 
@@ -201,5 +208,9 @@ Randy retraces the familiar path to '14380-e328'.  Home sweet pod.  The same one
 
 Randy's eyes begin to close as he drifts off.  Once again, the odor of the primeval pines... The soft patter of raindrops softly falling on the leaf-covered forest floor...  The world went strangely silent, even the soft rain ceased.  A tepid step on the decomposing leaves resulted in a wet scrunch as leaves impress into the damp soil.  That soil, so rich and dark...  The result of years of microorganisms, insects and worms.  Worms, toiling soundlessly underfoot, converting dead leaves into rich soil.  The worms, backbones of regeneration, rebirth and... evolution.  The lowly, vital worms... 
 Eyes flutter under still closed eyelids.  The camera pulls in, past the still disconnected pod speaker wires to Randy's face as he reaches up and wipes cold raindrops from his forehead and cheek.
+
+The temperature is 20C.
+# CLASS: chatout
+20 degrees Celsius is 68 degrees Fahrenheit.  Would you like me to convert to Rankine?
     + [The End] -> intro.end
 

@@ -101,18 +101,48 @@ Simon's face reconfigures into a tight smirk and laughs, "Yes, yes!  One could l
 
 "Great", laughs James, "I'll start coding up the packet processor then."
 
-Within the week, the packet processor is implemented and running on the simulation.  It's a simple thing, but it works well enough to be useful.  James hooks it into the launcher and lets it run... for months.  They both forget about it. 
+Within the week, the packet processor is implemented and running on the simulation.  It's a simple thing, but it works well enough to be useful.  Project LamarckPhysics is up and running! James hooks it into the simulation launching code and lets it run... for months.   
+
+They both forget about it. 
     <- common_options("-", -> ret_target, -> first_light)
     -> DONE   // suppress compiler warning...
 
 
 = first_light
+~ location_name = "VLevel 7: Office of James Ward"
+# CLEAR
+
+James came in a little early this Thursday.  He wanted to get some real work in before a collection of mandatory status and training meetings.  He had been working late and was still a little tired.  Walking through the pile of unopened emails, one stood out:
+
+# CLASS: computer
+LamarckPhysics Alert: (2753hrs) Qualified Equation(s) Found!
+
+LamarckPhysics... LamarckPhysics... James' eyes widened.  Over 100 days of computation, but it had found... something.  He was almost afraid to open the email.  The email itself was underwhelming, it simply contained two equation seed numbers:
+
+# CLASS: computer
+Validated seeds:<br>605102D1134FF1E663B2088607DB21D2F4E00802D4F762912936D27BC0A23707<br>0D9859BFF347C89DF8CB168F62281B36A5D6835B2B9720EAD2646AA43BF55857
+
+James excitedly brought up the LamarckPhysics prompt and copy/pasted the first seed into the prompt.  An equation was displayed:
+
+# CLASS: formula
+∇²ψ_G = α (E² + B²) / ∮ ∂ₜ 𝜏_Q
+
+Hmm, James had no idea what that meant.  He hit the print screen button, grabbed the still warm paper and headed off to find Simon.
+
+    <- common_options("-", -> ret_target, -> first_light_pt2)
+    -> DONE   // suppress compiler warning...
+
+
+= first_light_pt2
 ~ location_name = "VLevel 8: Office of Dr Simon Drake"
 # CLEAR
+
+James stops just short of barging in.
+
+TODO
 
 One day there is an interesting ping.  The algorithm found an equation! They talk about it and it is correct.  The physicist sets up an experiment and it works.  Now this one is not useful for anything, but it validates the technique.  A few days later another couple of related equations pop up.  These are a different story.  They describe how electromagnetic signals can be converted to/from gravitational waves. First, near 'instantaneous' transmission of information. Second, it can travel through things. Third, it can be done with reasonable power…  Consider instant telecommunications w/o the need for satellites?  Drones, space travel, etc Consider computer design where components need not be in the same physical case (e.g. the gravitation bus).  All memory on the entire planet can be accessed by any device with quantum access control.   
 They have no idea how to publish this (we just found it?) and decide to start a company that partners with the existing number 2 chip manufacturer to create cell phones and graphics cards, with CPUs coming afterward…   
 
-TODO
 
     + [{simcomplete}] -> ret_target

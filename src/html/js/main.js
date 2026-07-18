@@ -1,6 +1,8 @@
 var old_url = window.location.href;
 var peanuts_allow_cookies = false;
 
+init_data_title_tooltips();
+
 var baseline_stock_info = {
     'CDYG': { 'price': 512.0, 'change': 1.45 },
     'GOOG': { 'price': 89.70, 'change': -0.55 },
@@ -31,6 +33,59 @@ var sidebar_info = {
     'stock_info': init_stock_info,
     'system_info': init_system_info,
     'social_info': init_social_info
+}
+
+function init_data_title_tooltips() {
+    let activeTooltipElement = null;
+
+    const clearTooltipPosition = (element) => {
+        if (!element) return;
+        element.style.removeProperty('--tooltip-left');
+        element.style.removeProperty('--tooltip-top');
+    };
+
+    const updateTooltipPosition = (element, event) => {
+        if (!element) return;
+        element.style.setProperty('--tooltip-left', `${event.clientX + 12}px`);
+        element.style.setProperty('--tooltip-top', `${event.clientY}px`);
+    };
+
+    document.addEventListener('mousemove', (event) => {
+        const target = event.target instanceof Element ? event.target : null;
+        const tooltipElement = target ? target.closest('[data-title]') : null;
+
+        if (!tooltipElement) {
+            if (activeTooltipElement) {
+                clearTooltipPosition(activeTooltipElement);
+                activeTooltipElement = null;
+            }
+            return;
+        }
+
+        if (activeTooltipElement !== tooltipElement) {
+            if (activeTooltipElement) {
+                clearTooltipPosition(activeTooltipElement);
+            }
+            activeTooltipElement = tooltipElement;
+        }
+
+        updateTooltipPosition(tooltipElement, event);
+    });
+
+    document.addEventListener('mouseout', (event) => {
+        const target = event.target instanceof Element ? event.target : null;
+        const tooltipElement = target ? target.closest('[data-title]') : null;
+        if (!tooltipElement) return;
+
+        const relatedTarget = event.relatedTarget instanceof Element ? event.relatedTarget : null;
+        const isLeavingToChild = relatedTarget && tooltipElement.contains(relatedTarget);
+        if (isLeavingToChild) return;
+
+        clearTooltipPosition(tooltipElement);
+        if (activeTooltipElement === tooltipElement) {
+            activeTooltipElement = null;
+        }
+    });
 }
 
 function post_location_change(story) {
@@ -679,6 +734,21 @@ function updateStateFromInk() {
     sidebar_info.social_info.likes = theStory.variablesState["social_likes"];
 }
 
+function stock_title(symbol) {
+    if (symbol == "CDYG") {
+        return "CephaloDynamics Global";
+    }
+    if (symbol == "GOOG") {
+        return "Google Inc.";
+    }
+    if (symbol == "TCEHY") {
+        return "Tencent Holdings";
+    }
+    if (symbol == "ABAL") {
+        return "Abyssal Intelligence";
+    }
+    return symbol;
+}
 function initStatusSidebar() {
     let stockTickerContainer = document.querySelector('#stockticker');
     let s = `
@@ -698,9 +768,10 @@ function initStatusSidebar() {
         let info = stockChangeInfo(change);
         let cname = info[0];
         let pfx = info[1];
+        let title = stock_title(key);
         s += `
             <tr class="${cname}" id="${key}_row">
-                <td class="ticker-symbol">${key}</td>
+                <td class="ticker-symbol" data-title="${title}">${key}</td>
                 <td class="price">${price.toFixed(2)}</td>
                 <td class="pct-change">${pfx}${price.toFixed(2)}</td>
             </tr>
@@ -726,15 +797,15 @@ function initStatusSidebar() {
         <ul class="fa-ul" style="margin-left: 0px">
             <li class="li-gap">
                 <span class="fa-li"><i class="fa-solid fa-bell" style="color: yellow;"></i> </span>
-                <span id='social_subs'>${subs}</span> <i class="fa-brands fa-square-youtube" title="YouTube"></i> Subscribers
+                <span id='social_subs'>${subs}</span> <i class="fa-brands fa-square-youtube" data-title="YouTube"></i> Subscribers
             </li>
             <li class="li-gap">
                 <span class="fa-li"><i class="fa-solid fa-heart" style="color: red;"></i> </span>
-                <span id='social_likes'>${likes}</span> <i class="fa-brands fa-x-twitter" title="Twitter"></i> Likes
+                <span id='social_likes'>${likes}</span> <i class="fa-brands fa-x-twitter" data-title="Twitter"></i> Likes
             </li>
             <li class="li-gap" id="social_followers_li">
                 <span class="fa-li"><i class="fa-solid fa-star" style="color: yellow;"></i> </span>
-                <span id='social_followers'>${followers}</span> <i class="fa-brands fa-octopus-deploy fa-beat" style="--fa-animation-duration: 2s;" title="InkStream™"></i> Followers
+                <span id='social_followers'>${followers}</span> <i class="fa-brands fa-octopus-deploy fa-beat" style="--fa-animation-duration: 2s;" data-title="InkStream™"></i> Followers
             </li>
         </ul>
     `

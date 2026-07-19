@@ -4,6 +4,7 @@ animatronic
 AUDIOLOOP
 avant
 Bigsby
+Blipverts
 Bomba
 Brome
 Bromegrass
@@ -17,6 +18,7 @@ dihydrate
 dropship
 FIRECODE
 Florance
+Fonzie
 Greenie
 hardcut
 Hazzard

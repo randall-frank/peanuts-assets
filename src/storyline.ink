@@ -385,18 +385,20 @@ Randy laughed out loud, "You remember 'Eliza'?  Surprising how far version 234.2
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-"The Idiocracy Solution"
+"The Idiocracy Solution (aka the 'fishbowl')"
 
-Andrew outlines the basics of The Idiocracy Solution, "
+TODO
+
+Andrew outlines the basics of The Idiocracy Solution as it applies to the Teuthans.  Start calling them 'fishbowl's (physical resemblance and a strained shooting fish in a bowl metaphor)
 
 Pick up "Duke's of Hazzard" IP rights.
 
 # HTML: <i class="fa-brands fa-octopus-deploy fa-beat" style="--fa-animation-duration: 2s;"></i> 
 Set up: InkStream HTML
 
-TODO
 
-    + [Let's set up a media channel.] -> do_fishbowl
+Project "Fishbowl" has begun!
+    + [Let's set up a media service: InkStream.] -> do_fishbowl
 
 
 = fishbowl_2
@@ -406,12 +408,35 @@ TODO
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-Idiocracy Progress
+Progress on "Project Fishbowl"
 
-TODO
+~ temp n = INT(social_followers)
 
-progress/planning - fishbowl review option - generating blipverts 
+Andrew waits for Randy to sit, but can hardly contain himself, "InkStream has over {n} followers and is growing fast!  Over 90% of them are Teuthans. We have also been able to secure some key IP partnerships with other organizations.  It turns out there are a lot of old 4:3 TV shows out there that can be had for pennies.  We've even started using free 'starter' AI cycles to generate new content for these old shows. There is a whole new season of "The Dukes of Hazzard" coming exclusively to InkStream."
 
+Andrew slows down, "It's time to hyper charge our efforts.  Do you remember 'Blipverts'?"
+
+Randy looked a little puzzled, "You mean that fictional technology from Max Headroom?"
+
+"Yep, it kind of made it back into mainstream with 'Fight Club', if you remember the film splicing", Andrew continued.
+
+Randy lets out a deep gut laugh and smiles, "Yeah, I remember. 'It's only after we've lost everything that we're free to do anything.' "
+
+"Well, I think we're at that point now," says Andrew.  "It is pretty easy to guess with over 99% probability who is watching a stream."
+
+"Go on," says Randy, starting to anticipate where this is going, "Exactly what are you proposing?"
+
+"You know that Teuthan optic nerves act like a matched filter for specific electromagnetic wavelengths and patterns of motion.  Likewise, their hearing is sensitive at lower frequencies and can act more like 'sonar' to a degree."
+
+"Due to their evolution on Europa", says Randy.
+
+"Exactly," says Andrew.  "So, we use that to our advantage.  I've been experimenting with subliminal 'Blipverts' constructed from specific patterns and frequencies that Teuthans are naturally attuned to, but are basically undetectable by humans senses.  Just to be safe, we only embed them in streams being seen by Teuthans.  The cherry on top, we can fine tune streams to specific viewers on the fly.  Their own browsers will be doing the injection making it entirely ephemeral.  If anyone looks later, the stream they see will be clean."
+
+"So then we hit them with 'eat more spaghetti' until they explode, that kind of thing?", asks Randy.
+
+"Skip that, let's swing for the fences.  Let's convince them that Fonzie is the messiah.  That Jessica Fletcher IS a serial killer.  That you CAN win friends with salad."  Andrew goes for the jugular, "Let's render them blubbering idiots."
+
+"Ah, the 'Idiocracy' approach," says Randy.  "I like it.  Time to rule in Hell!  Let the Blipverts begin."
     ~ eg_fishbowl = 2
     + [{continue}] -> station.building
 
@@ -519,10 +544,15 @@ Kraal steps back, supremely proud of his work, "See, how can you two be so stupi
 
 It takes a supreme effort by Randy and Andrew to remain stoic, but the alternative could be deadly.
 
-Kraal takes a deep 'breath', bubbles trickle to the top of his headgear, "Ok, we'll give you two another chance to prove yourselves.  Thanks to the two of you, we can't afford to waste any more resources, so we'll be cutting your CPU allocation.   Just get the job done!"
+Kraal continues ranting, "I mean we're not asking you to be geniuses.  We can buy as much intelligence as we need.  We just need you two to push the buttons to get it started!"
 
-A seed of a potential path out of this mess begins to form in Randy's mind.  Yes, it could work, but we'd need a little luck and need to act with expeditiously.  "Andrew, meet me in the deck 7 private alcoves when you get a chance.  We need to talks about making some plans", he whispered.
-    ~ cpu_cpus = cpu_cpus / 2
+Somewhere, deep in Andrew's being, something was beginning to stir.
+
+Kraal takes a deep 'breath', bubbles trickle to the top of his 'fishbowl' headgear, "Ok, we'll give you two another chance to prove yourselves. Just get the job done!"
+
+The seed of a potential path out of this mess begins to form in Randy's mind.  Yes, it could work, but we'd need a little luck and to act with expeditiously.  "Andrew, meet me in the deck 7 private alcoves when you get a chance.  We need to talks about making some plans", he whispered as they walked out of the meeting.
+    ~ idiot_count += 1
+    ~ cpu_cpus = cpu_cpus * 0.75
     + [{continue}] -> station.building
 
 

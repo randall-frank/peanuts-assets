@@ -21,8 +21,24 @@ Overview
    :align: center
 
 
-Peanuts, Pickles and Propaganda is a work of interactive fiction.
-It is written in a modified copy of the `Ink <https://www.inklestudios.com/ink/>`_ framework.
+Peanuts, Pickles and Propaganda is a work of interactive fiction created for fun and 
+presented for your amusement by Randall Frank and Andrew Florance.
+It is written using a modified copy of the `Ink <https://www.inklestudios.com/ink/>`_ framework.
+
+How this came about
+~~~~~~~~~~~~~~~~~~~
+
+This story had been sloshing around in various forms for several years. Having finished the Heresy games, we started looking for a new interactive fiction project that was not so closely tied to the T.I.M.E Stories structure.  Peanuts started as a varied collection of semi-humorous short story ideas. Gradually, an overarching story emerged, and this is the result.
+
+What is it exactly?
+~~~~~~~~~~~~~~~~~~~
+
+There are four distinct endings to the story, depending on paths one choses to take.  Unlike games like Heresy, there are no "fetch quests" or "puzzles" to solve. Peanuts is at its core, a collection of short stories and we encourage readers to dabble a bit in all of them. 
+
+General Comments
+~~~~~~~~~~~~~~~~
+
+Please note that Peanuts is largely a work of satire, and we hope one reads it in that light. While still being entirely fictional, there is not an insignificant amount autobiographical material here, so if one were looking to see what makes us tick (e.g. if you don't know my favorite joke by the end, you might want to try a different ending).  Finally, we do enjoy a good non-sequitur and obscure references to people and things. We assure you that all of them are safe to look up.
 
 Building
 --------
@@ -133,7 +149,7 @@ basically a snapshot of the current ink engine instance, taken just before the c
 knot is displayed.  Note: all fields can be multiple digits in length, so '0.3.12' is valid.
 
 Any time there is a change to the overall state structure (e.g. a new knot/stich is
-added or a new item/variable is introduced), one much bump the x or y portion of the
+added or a new item/variable is introduced), one must bump the x or y portion of the
 semantic version.  The save file loader will allow files that differ only in the 'z' digits
 to be loaded w/o warning.  So change like spelling, text revisions, etc should only update
 the 'z' field to retain backward compatibility with old save files.

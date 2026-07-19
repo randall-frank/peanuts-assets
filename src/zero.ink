@@ -51,6 +51,7 @@ All for the lack of an occasional 0.
 
 TODO
 
+~ idiot_count += 1
     + [{simcomplete}] -> ret_target
 
 

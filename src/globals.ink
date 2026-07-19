@@ -75,6 +75,8 @@ VAR simulation_running = 0
 
 // Number of examples of "idiot" behavior in simulations
 VAR idiot_count = 0
+VAR idiot_follower_rate_m = 0.5
+VAR idiot_follower_rate_b = 10000
 
 // player "cash" (Ͼ)
 VAR player_cryptids = 0
@@ -110,6 +112,7 @@ VAR social_subs = 623455
 VAR social_likes = 2300000
 // display is hidden until it is > 0
 VAR social_followers = 0
+VAR social_follower_threshold = 10000000
 
 // debug can be set to any value via '?dev=x'
 // This enables shortcuts {debug} that speed development
@@ -117,6 +120,17 @@ VAR debug = 0
 
 
 // Utility functions
+
+=== function update_followers() ===
+    // streamed ip
+    {eg_fishbowl < 1:
+        ~ return
+    }
+    ~ social_followers += RANDOM(INT(idiot_follower_rate_b*0.9), INT(idiot_follower_rate_b*1.1))
+    {eg_fishbowl > 1:
+        ~ social_followers += INT(social_followers*idiot_follower_rate_m*idiot_count)
+    }
+    ~ return
 
 === function update_cryptids(cryptid_delta) ===
     ~ player_cryptids += cryptid_delta

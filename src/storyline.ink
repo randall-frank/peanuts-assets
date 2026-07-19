@@ -42,9 +42,9 @@ The whole process takes about ten minutes before {shell_company_name} ('ABAL') i
 
 "So we'll have the means, but what is the way?", Andrew ponders out loud.
 
-"I've got a couple of ideas", Randy counters.  "Nothing concrete right now, but I have a couple of possible directions."
-    + [Burn it all to the ground] -> project_next
-    + [There's always room for a middleman] -> outsourcing
+"I've got a couple of ideas", Randy counters.  "They kind of pursue different directions."
+    + [Burn it all to the ground!] -> project_next
+    + [The house keeps the vig.] -> outsourcing
 
 
 = do_project_next
@@ -61,7 +61,6 @@ The whole process takes about ten minutes before {shell_company_name} ('ABAL') i
 # AUDIOLOOP:
 # CLASS: head1
 "Project Next"
-
 
 Randy outlines the basics of Project Next, "So the Teuthans have handed us the means.  Every simulation we run is tanking CDYG?  So let's tank it into bankruptcy!"  
 
@@ -375,8 +374,6 @@ Randy laughed out loud, "You remember 'Eliza'?  Surprising how far version 234.2
 
 
 = do_fishbowl
-    ~ eg_project_next = 0
-    ~ eg_outsourcing = 0
     ~ eg_fishbowl = 1
     -> station.building
 
@@ -390,7 +387,7 @@ Randy laughed out loud, "You remember 'Eliza'?  Surprising how far version 234.2
 # CLASS: head1
 "The Idiocracy Solution"
 
-Randy outlines the basics of The Idiocracy Solution, "
+Andrew outlines the basics of The Idiocracy Solution, "
 
 Pick up "Duke's of Hazzard" IP rights.
 

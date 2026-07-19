@@ -108,14 +108,15 @@ But as I said before, you just run out of stuff to think about.  You can feel yo
     -> DONE   // suppress compiler warning...
 
 = awake
+
 ~ location_name = "VThe End Begins"
 # CLEAR
-
 I'm not sure how long I remained in that trance, but I do know I came out of it.  It was something subconscious, something on the outskirts of my vision, something almost subliminal that made me realize that I should have been paying more attention to the planet.  I remember suddenly being able to think again, and I remember my first thought being pain.  Pain in my knees and back.  I hadn't shifted my position in God knows how long.  Weeks?  The pain subsided quickly, and I whirled myself around to face the planet Earth.  The first thing I noticed that was odd was all of the flashes.  All over the surface of the planet, bright flashes would erupt, then spread slowly over an area the size of Brazil as their glare reduced from a pinpoint flash to a dull smoky glow.  Then I saw the source.  
 I was not the only thing in orbit.  Emerging from strategic points on every single land mass, there were tiny disruptions in the atmosphere which propelled themselves in a smooth, flawless arc, leaving trails of smoke behind them, and touching the surface again to create another pinpoint explosion.  It was then that I knew.  I knew what was happening.
 The sizes of the warheads were staggering, six thousand megatons at least.  I watched slowly as the United States civilization was wiped clean off the surface of the globe, as if by God himself.  I watched retaliatory strikes do the same to almost every corner of every continent, and it was then that I knew that the remaining population would be lucky to be a number in the millions.
 I glanced back to the United States.  There are only three shuttle launch stations, and all of them were practically in the center of some detonation radius.  I am almost certain the Orb design station is now rubble, and I am starting to think that nobody even remembers my name.
 
 The temperature in here is seventy-two degrees Fahrenheit, but I still feel very, very cold.
+~ idiot_count += 1
     + [{simcomplete}] -> ret_target
     

@@ -129,6 +129,7 @@ Randy took a deep breath, wanting to point out that both of the examples had pro
 The Anthropic Engine
 
 ~ newswire_message = newswire_item()
+~ update_followers()
 
 {simulation_count>0:"{~Hmm...|Should we be proud or terrified?|What was that?|Did we learn...anything?|So, the mice were hunchback?}" sighed Randy, "That was {~interesting|disappointing|curious|confusing}.  Let's see.  I'm going to {~upgrade Python|merge in latest CVE changes|enable debug mode|review the chain of thought|install updated drivers|clear the RAG cache|nuke the site from orbit|pray to a different God|switch to a higher precision model} and fire off a rebuild."|Two weeks (and maybe 30hrs of sleep) later...}
 
@@ -142,7 +143,8 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
     * {violence_count>1} [Andrew looks at Randy with concern] -> storyline.violence 
 
     // Storylines begin
-    * {storyline.stock_drop_level1} [Discuss potential projects with Andrew on deck 7] -> storyline.make_plans
+    * {storyline.stock_drop_level1} [Discuss stock drop with Andrew on deck 7] -> storyline.make_plans
+    * {storyline.stock_drop_level1 and (idiot_count > 1)} [Andrew loves social media, meet him on deck 7] -> storyline.fishbowl
 
     // Project Next storyline
     * {(eg_project_next == 1) and (player_cryptids > 1000)} [Project Next: Status meeting with Andrew] -> storyline.project_next_2
@@ -155,8 +157,8 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
 
 
     // Fishbowl storyline
-    * {(eg_fishbowl == 1) and (idiot_count > 2)} [Discuss "Idiocracy" progress with Andrew] -> storyline.fishbowl_2
-    * {(eg_fishbowl == 2) and (social_followers > 1000000000)} [Zyn requests your presence in the Cephalon conference room] -> storyline.fishbowl_3
+    * {(eg_fishbowl == 1) and (idiot_count > 2)} [Andrew believes we can accelerate InkStream] -> storyline.fishbowl_2
+    * {(eg_fishbowl == 2) and (social_followers > social_follower_threshold)} [Zyn becomes aware of InkStream, meet him in on deck 7] -> storyline.fishbowl_3
 
 
     + [Simulation seed: 107818a4{forty: (The Back Forty)}] -> forty -> 

@@ -56,7 +56,6 @@ Time to take a break for lunch.
 
 = spring
 ~ location_name = "VNorth Forty Springhead"
-~ violence_count += 1
 # CLEAR
 # SBIMAGE: locations/farm_clip.png
 
@@ -65,4 +64,6 @@ Kelvin pours a little water down his back before pulling out a sandwich that he 
 Kelvin swears he catches the twang of a bowstring.  Funny, its not bow season?  He looks up into the sky, wiping the morning's sweat from the back of his neck. Squinting, he spots something odd.  Before he can react, the arrow slices into his eye. The tri-pointed head silences his thoughts...  instantly... permanently.
 As his body slumps to the ground and blood begins to pool about him, only the AM radio bears witness to: "... and that plucky young man stuck to his resolution. Later becoming the spouse of our first openly gay President!  You probably know him by his married name (dramatic pause) Eleanor Roosevelt.  And now you know, the rest of the story.  Paul Harvey...  good day!" 
 
+~ violence_count += 1
+~ idiot_count += 1
     + [{simcomplete}] -> ret_target

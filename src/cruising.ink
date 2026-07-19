@@ -30,7 +30,7 @@ A loose wheel on the pilot's ergonomic chair finally pops off during a subtle tu
 Pilot hits the "up" button on their motorized standing desk to stretch. The motor jams in the "up" position, slowly lifting the controls out of their reach while the plane remains in a steady descent.
 
 TODO
-
+~ idiot_count += 1
     + [Terminate Simulation] -> ret_target
 
 // End the simulation...

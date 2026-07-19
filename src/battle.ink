@@ -323,7 +323,6 @@ The sparking died and the flame started to as the security unit powered down and
 
 = itends
 ~ location_name = "VFriendly Neighbors"
-~ violence_count += 1
 # CLEAR
 
 Billing slid open the door and stepped in.  He never remembered his stateroom smelling this bad.  Billings closed the door and stepped into the bathroom long enough to start the shower.  He went back into his room to strip off his clothes ans his sidearm.  His right shoulder was very stiff.  He swung it around for a while, then stepped over the pile of clothes and into the shower.
@@ -342,4 +341,5 @@ A rail of bullets cut through the shower curtain above him and kicked up porcela
 
 God, how he missed sunsets.
 
+~ violence_count += 1
     + [{simcomplete}] -> ret_target

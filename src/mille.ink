@@ -138,7 +138,6 @@ They exchange waves and head in opposite directions.
 
 = denouement
 ~ location_name = "VDénouement"
-~ violence_count += 1
 # CLEAR
 
 Elvis Christian (a.k.a. "The King") had been trucking for over 20 years until that day.  The day he walked into the Jersey Tasty Freeze and got into an argument.  A Coors-infused, heated dispute over the proper ingredients of frozen custard.  He didn't mean to push the server, but it happened.  She fell and ended up paralyzed.  His life in tatters.  10 years later, Elvis is an ex-con, released on parole with ill-conceived dreams of revenge sitting cozily on the chip of his expansive shoulder.
@@ -151,4 +150,7 @@ The panel truck missile flashes into Mille's vision as she considered possible t
 
 # CLASS: computer
 Entropy of dust,<br>Boredom drags me to my grave,<br>Final breath is drawn.
+
+~ violence_count += 1
+~ idiot_count += 1
     + [{simcomplete}] -> ret_target

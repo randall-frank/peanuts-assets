@@ -739,7 +739,7 @@ function stock_title(symbol) {
         return "CephaloDynamics Global";
     }
     if (symbol == "GOOG") {
-        return "Google Inc.";
+        return "Alphabet Inc";
     }
     if (symbol == "TCEHY") {
         return "Tencent Holdings";
@@ -797,15 +797,18 @@ function initStatusSidebar() {
         <ul class="fa-ul" style="margin-left: 0px">
             <li class="li-gap">
                 <span class="fa-li"><i class="fa-solid fa-bell" style="color: yellow;"></i> </span>
-                <span id='social_subs'>${subs}</span> <i class="fa-brands fa-square-youtube" data-title="YouTube"></i> Subscribers
+                <span id='social_subs' data-title="YouTube">${subs}</span> 
+                <i class="fa-brands fa-square-youtube"></i> Subscribers
             </li>
             <li class="li-gap">
                 <span class="fa-li"><i class="fa-solid fa-heart" style="color: red;"></i> </span>
-                <span id='social_likes'>${likes}</span> <i class="fa-brands fa-x-twitter" data-title="Twitter"></i> Likes
+                <span id='social_likes' data-title="Twitter">${likes}</span> 
+                <i class="fa-brands fa-x-twitter"></i> Likes
             </li>
             <li class="li-gap" id="social_followers_li">
                 <span class="fa-li"><i class="fa-solid fa-star" style="color: yellow;"></i> </span>
-                <span id='social_followers'>${followers}</span> <i class="fa-brands fa-octopus-deploy fa-beat" style="--fa-animation-duration: 2s;" data-title="InkStream™"></i> Followers
+                <span id='social_followers' data-title="InkStream™">${followers}</span> 
+                <i class="fa-brands fa-octopus-deploy fa-beat" style="--fa-animation-duration: 2s;"></i> Followers
             </li>
         </ul>
     `
@@ -929,7 +932,7 @@ function update_social(info) {
     document.getElementById("social_likes").innerHTML = likes;
     document.getElementById("social_followers").innerHTML = followers;
     const follow_li = document.getElementById('social_followers_li');
-    if (followers > 0) {
+    if (info['followers'] > 0) {
         follow_li.style.display = 'list-item';
     } else {
         follow_li.style.display = 'none';

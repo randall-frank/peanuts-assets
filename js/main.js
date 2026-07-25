@@ -160,26 +160,29 @@ function post_location_change(story) {
         
         // IMAGEHEIGHT specification for the IMAGE option
         var IMAGE_height = null;
+        
+        // IMAGEMAXHEIGHT specification for the IMAGE option
+        var IMAGE_max_height = null;
 
         // Record location changes (this is actually the previous location and is only working in debug mode)
         post_location_change(story);
 
         scrollToTop();
 
-        while(story.canContinue) {
+        while (story.canContinue) {
             var paragraphText = story.Continue();
 
             var tags = story.currentTags;
 
             // Any special tags included with this line
             var customClasses = [];
-            for(var i=0; i<tags.length; i++) {
+            for (var i = 0; i < tags.length; i++) {
                 var tag = tags[i];
 
                 // Detect tags of the form "X: Y". Currently used for IMAGE and CLASS but could be
                 // customized to be used for other things too.
                 var splitTag = splitPropertyTag(tag);
-				splitTag.property = splitTag.property.toUpperCase();
+                splitTag.property = splitTag.property.toUpperCase();
 
                 // AUDIO: src
                 if (splitTag && splitTag.property == "AUDIO") {
@@ -207,21 +210,21 @@ function post_location_change(story) {
                     }
                     imageElement.classList.add("sbimage");
                     imageContainer.appendChild(imageElement);
-/*
- * This really slows things down in tunnels.  Not sure why yet.
- *
-                    imageElement.onload = () => {
-                        // console.log(`scrollingto ${previousBottomEdge}`)
-                        scrollDown(previousBottomEdge);
-                        glitch.glitch(".glitch",  
-                            { 
-                                intensity: 0.2,
-                                layers: 7,
-                                shake: false,
-                                glitchTimeSpan: {start: 0.25, end: 0.4}
-                            });
-                    }
-*/
+                    /*
+                     * This really slows things down in tunnels.  Not sure why yet.
+                     *
+                                        imageElement.onload = () => {
+                                            // console.log(`scrollingto ${previousBottomEdge}`)
+                                            scrollDown(previousBottomEdge);
+                                            glitch.glitch(".glitch",  
+                                                { 
+                                                    intensity: 0.2,
+                                                    layers: 7,
+                                                    shake: false,
+                                                    glitchTimeSpan: {start: 0.25, end: 0.4}
+                                                });
+                                        }
+                    */
                     showAfter(delay, imageElement);
                     delay += 200.0;
                 }
@@ -229,14 +232,25 @@ function post_location_change(story) {
                 else if (splitTag && splitTag.property == "IMAGEHEIGHT") {
                     IMAGE_height = splitTag.val;
                 }
+                // IMAGEMAXHEIGHT: height   (inline image maximum height)
+                else if (splitTag && splitTag.property == "IMAGEMAXHEIGHT") {
+                    IMAGE_max_height = splitTag.val;
+                }
                 // IMAGE: src   (inline image)
-                else if( splitTag && splitTag.property == "IMAGE" ) {
+                else if (splitTag && splitTag.property == "IMAGE") {
                     var imageElement = document.createElement('img');
                     imageElement.src = splitTag.val;
                     if (IMAGE_height != null) {
                         imageElement.style.height = IMAGE_height + 'px';
                         imageElement.style.width = 'auto';
                         IMAGE_height = null;
+                    }
+                    if (IMAGE_max_height != null) {
+                        imageElement.style.maxHeight = IMAGE_max_height + 'px';
+                        imageElement.style.width = 'auto';
+                        imageElement.style.maxWidth = '100%';
+                        imageElement.style.display = 'block';
+                        IMAGE_max_height = null;
                     }
                     storyContainer.appendChild(imageElement);
 
@@ -247,19 +261,19 @@ function post_location_change(story) {
 
                     showAfter(delay, imageElement);
                     delay += 200.0;
-                }            
+                }
                 // LINK: url
-                else if( splitTag && splitTag.property == "LINK" ) {
+                else if (splitTag && splitTag.property == "LINK") {
                     window.location.href = splitTag.val;
                 }
 
                 // LINKOPEN: url
-                else if( splitTag && splitTag.property == "LINKOPEN" ) {
+                else if (splitTag && splitTag.property == "LINKOPEN") {
                     window.open(splitTag.val);
                 }
 
                 // HTML: text
-                else if( splitTag && splitTag.property == "HTML" ) {
+                else if (splitTag && splitTag.property == "HTML") {
                     HTML_text = splitTag.val.replace("<ss>", "//");
                 }
                     
@@ -271,18 +285,18 @@ function post_location_change(story) {
                 }
                     
                 // BACKGROUND: src
-                else if( splitTag && splitTag.property == "BACKGROUND" ) {
-                    outerScrollContainer.style.backgroundImage = 'url('+splitTag.val+')';
+                else if (splitTag && splitTag.property == "BACKGROUND") {
+                    outerScrollContainer.style.backgroundImage = 'url(' + splitTag.val + ')';
                 }
 
                 // CLASS: className
-                else if( splitTag && splitTag.property == "CLASS" ) {
+                else if (splitTag && splitTag.property == "CLASS") {
                     customClasses.push(splitTag.val);
                 }
                     
                 // CLEAR - removes all existing content.
                 // RESTART - clears everything and restarts the story from the beginning
-                else if( tag == "CLEAR" || tag == "RESTART" ) {
+                else if (tag == "CLEAR" || tag == "RESTART") {
                     removeAll("p");
                     removeAll("img");
                     // Removes the "# COMBO" block
@@ -291,7 +305,7 @@ function post_location_change(story) {
                     // Comment out this line if you want to leave the header visible when clearing
                     setVisible(".header", false);
 
-                    if( tag == "RESTART" ) {
+                    if (tag == "RESTART") {
                         restart(false);
                     }
                 }
@@ -300,7 +314,7 @@ function post_location_change(story) {
             // Check if paragraphText is empty
             if (paragraphText.trim().length === 0) {
                 continue; // Skip empty paragraphs
-		    }
+            }
 
             var paragraphElement = document.createElement('p');
             // Inject # HTML tag into the paragraph text verbatim
@@ -311,10 +325,13 @@ function post_location_change(story) {
             paragraphElement.innerHTML = paragraphText;
             storyContainer.appendChild(paragraphElement);
             
-                        // Add any custom classes derived from ink tags
-            for(var i=0; i<customClasses.length; i++)
+            // Add any custom classes derived from ink tags
+            for (var i = 0; i < customClasses.length; i++)
                 paragraphElement.classList.add(customClasses[i]);
-
+            if (customClasses.length == 0) {
+                paragraphElement.classList.add("storytext");
+            }
+            
             // Fade in paragraph after a short delay
             showAfter(delay, paragraphElement);
             delay += 200.0;

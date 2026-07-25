@@ -14,6 +14,7 @@ import shutil
 import stat
 import subprocess
 import requests
+from ghp_import import ghp_import
 
 try:
     import git
@@ -300,6 +301,18 @@ default_channel = os.environ.get("DISCORD_CHANNEL_ID", "")
 default_auth = os.environ.get("DISCORD_CHANNEL_AUTH", "")
 
 
+def gh_pages(commit_str: str = "Update pages") -> None:
+    """
+    Deploy the current build directory to GitHub Pages.
+    :return: None
+    """
+    # Check if we are in a git repository
+    if not os.path.exists(".git"):
+        log.error("Not in a git repository")
+    build()
+    ghp_import('build', push=True, mesg=commit_str)
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -333,7 +346,11 @@ if __name__ == "__main__":
                               help="Do not automatically open a web browser tab to the server.")
 
     release_parser = cmd_parsers.add_parser("release", help="Rebuild & generate a tarball of 'build' directory")
-
+    
+    gh_pages_parser = cmd_parsers.add_parser("ghpages", help="Rebuild & push 'build' directory to 'gh_pages' branch")
+    gh_pages_parser.add_argument("--ghmsg", help=f"Commit message. default:'Release version:{__version__}'", 
+                                 default=f"Release version:{__version__}")
+   
     args = parser.parse_args()
 
     # Set up logging
@@ -354,6 +371,13 @@ if __name__ == "__main__":
         clean(remove_cli_tools=True)
     elif args.cmd == "serve":
         serve(port=args.port, nobrowser=args.nobrowser)
+    elif args.cmd == "ghpages":
+        gh_pages(commit_str=args.ghmsg)
+    else:
+        print(f"Unknown command: {args.cmd}")
+        parser.print_help()
+        exit(-1)
+
     
     log.info("Operation complete")
     

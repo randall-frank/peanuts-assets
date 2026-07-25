@@ -106,10 +106,18 @@ and the tools will be downloaded into the directory `ink_tools`.
 - release
 
   - This will first execute a `build` operation, then create a zip file of the
-    contents of the `build` directory.  It will generate a file named: `peanuts_vX.Y.Z.zip` where X.Y.Z is the current build version from version.txt.  The resulting
-    zip file can be served to run the game.  It can be used on platforms like
+    contents of the `build` directory.  It will generate a file named: `peanuts_vX.Y.Z.zip` 
+    where X.Y.Z is the current build version from version.txt.  The resulting
+    zip file can be served to view the story.  It can be used on platforms like
     `itch.io <https://itch.io>`_.
 
+- ghpages [--ghmsg 'commit message']
+
+  - ghpages will first execute a `build` operation. It will then push the contents of
+    the `build` directory to the `gh-pages` branch of the current git repository.  This 
+    will make the story available on GitHub Pages.  The `--ghmsg` option allows you to 
+    specify a commit message for the push.  The default is the current version number 
+    of the story.
 
 Running
 ~~~~~~~

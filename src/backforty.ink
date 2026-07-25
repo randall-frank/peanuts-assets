@@ -8,7 +8,7 @@
 # CLEAR
 # CLASS: head1
 Back Forty Bullseye
-
+# IMAGEMAXHEIGHT: 480
 # IMAGE: locations/farm.png
 
 Summer around Yorktown Iowa can be unpredictable at best, but today is beginning with exceptional promise.  The sun is just beginning to rise over the north forty hills, casting a golden glow across the land.  Kelvin Miller has been farming this land for over 10 years now after his grandfather's passing.  He knows every inch of it like the back of his hand.  A beautiful day that will undoubtedly prove very productive with liberal application of sweat and perseverance.  But we have time to enjoy the first rays of sunshine as he raises his cup of coffee to his lips.

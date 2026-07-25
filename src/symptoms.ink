@@ -8,7 +8,7 @@
 # CLEAR
 # CLASS: head1
 Symptoms
-
+# IMAGEMAXHEIGHT: 480
 # IMAGE: locations/library.png
 
 Grant reached for the first book on the shelf.  He ran his stubby fingers over the coarse binding and felt the months of thought that went into its creation and the years of indulgence it provided afterwards.  It was a small book, mostly a dull brown, with alternating sun-bleached red stripes along the binding.  The title was in French.  The author he did not recognize.
@@ -30,7 +30,7 @@ Grant pulled at the binding in an effort to remove it from the shelf.  It seemed
 = abook
 ~ location_name = "VThe Library"
 # CLEAR
-
+# IMAGEMAXHEIGHT: 480
 # IMAGE: locations/library.png
 
 The cover was plain.  The blatantly French title emblazoned the upper third in set gold print, and Laronde's name appeared under it.

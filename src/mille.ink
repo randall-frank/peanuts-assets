@@ -28,6 +28,7 @@ The soulless ricotta and marinara slice is handed to her.  A solitary, darkening
 = walk
 ~ location_name = "VThe Brickwork Collective"
 # CLEAR
+# IMAGEMAXHEIGHT: 480
 # IMAGE: locations/brickwork.png
 
 Finishing up "dinner", Mille heads up to the theater, passing by a street vendor selling fresh fruit and vegetables.  That would been a much better choice than the "slice" if you can call it that.  The air is cool and crisp as she walks along the sidewalk.  Not a long walk, but it passes by several high-end restaurants, full of the latest fashions and trends.  

@@ -8,7 +8,7 @@
 # CLEAR
 # CLASS: head1
 David's Friend
-
+# IMAGEMAXHEIGHT: 480
 # IMAGE: locations/baseball.png
 
 "And this," says Brian, waving an unclenched yet unweilding hand in my direction, "is David's friend."

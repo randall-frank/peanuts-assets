@@ -49,6 +49,7 @@ Precisely 2 minutes and 30 seconds later, they were in the room.  There was only
 = themeetingA
 ~ location_name = "LBlue Lagoon Radula Conference Room"
 # CLEAR
+# IMAGEMAXHEIGHT: 480
 # IMAGE: items/squid1.jpg
 # SBIMAGE: items/squid4.png
 # AUDIOLOOP:

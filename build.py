@@ -32,27 +32,6 @@ with open("version.txt", "r") as f:
     
 # Get the current time/date
 __version_date__ = datetime.datetime.now().isoformat(timespec='minutes', sep=" ") 
-    
-"""
-Command line build tool:
-
-python build.py [operation] [options]
-
-Operations:
-
-clean
-build
-release
-serve [--port port] [--nobrowser]
-
-Note:
-
-The 'inklecate' tool needs to be in the search path
-and executable.  If it is not in the search path,
-set PEANUTS_INKLECATE to the complete pathname to the
-executable.
-
-"""
 
 
 def build_story_js() -> None:

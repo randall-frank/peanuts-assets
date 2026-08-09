@@ -214,14 +214,15 @@ James sighs, "I guess I never thought about it like that before.  We're just a s
 
 Simon smiles, "That's right.  I think we should approach this slowly.  Work up some prototypes with an eye toward getting more resources and going public.  We'll need some folks with deep pockets to build devices at scale and to protect our interests, but that is for another day."
 
-
-Postulate about aliens...
-
-
-
 James chose to walk back home.  He needed the time to think and plan.  The crisp spring air heightened his senses and seemed to sharpen his thinking.
 
 He pulled out his phone and brought up his trading app.  Slowly he picked through his portfolio and began selling.  Funny how one's perspective can change so quickly.
+
+    + [{simcomplete}] -> ret_target
+
+
+
+Postulate about aliens...
 
 
 This might not be chance??? or entity... 
@@ -230,20 +231,13 @@ This might not be chance??? or entity...
 Injection x.y.z - status has changed, waiting for them ...
 
 
-
-
-
-
-
-
-
 TODO
 
 One day there is an interesting ping.  The algorithm found an equation! They talk about it and it is correct.  The physicist sets up an experiment and it works.  Now this one is not useful for anything, but it validates the technique.  A few days later another couple of related equations pop up.  These are a different story.  They describe how electromagnetic signals can be converted to/from gravitational waves. First, near 'instantaneous' transmission of information. Second, it can travel through things. Third, it can be done with reasonable power…  Consider instant telecommunications w/o the need for satellites?  Drones, space travel, etc Consider computer design where components need not be in the same physical case (e.g. the gravitation bus).  All memory on the entire planet can be accessed by any device with quantum access control.   
 They have no idea how to publish this (we just found it?) and decide to start a company that partners with the existing number 2 chip manufacturer to create cell phones and graphics cards, with CPUs coming afterward…   
 
 
-In physics, \(\alpha _{s}\) (alpha-s) represents the strong coupling constant, which dictates the strength of the strong force—the fundamental interaction holding quarks together inside protons, neutrons, and other hadron
+In physics, \(\alpha _s\) (alpha-s) represents the strong coupling constant, which dictates the strength of the strong force—the fundamental interaction holding quarks together inside protons, neutrons, and other hadron
 
 
 High-Energy QCD vs. Low-Energy Hadronic Physics
@@ -256,6 +250,3 @@ You find a clean analytical shortcut through the strong coupling constant \alpha
 
 **Matter Synthesis & Transmutation:** Being able to manipulate the strong force analytically means you can turn lead into gold, or carbon into programmable ultra-dense materials, with the stroke of a pen.
 
-
-
-    + [{simcomplete}] -> ret_target

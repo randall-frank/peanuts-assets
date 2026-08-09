@@ -27,6 +27,10 @@ INCLUDE utilities.ink
 # AUDIOLOOP: audio/I5%20-%20Silence%20Among%20the%20Stars.mp3
 # CLASS: head1
 Peanuts, Pickles and Propaganda
+# CLASS: head2
+Warning: This build is a work in progress.  
+# CLASS: head2
+While playable, the story is not yet complete.
 # IMAGE: locations/splash.png
 # CLASS: head2
 Copyright © STORY_YEAR Randall Frank & Andrew Florance

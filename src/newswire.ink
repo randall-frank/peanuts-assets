@@ -85,7 +85,7 @@ VAR newswire_message = ""
     { ~
         - ~ return "This is going nowhere... slowly."
 
-        - ~ return "At least its not Air Supply..."
+        - ~ return "At least it's not Air Supply..."
 
         - ~ return "Still willing to give it a shot?"
 

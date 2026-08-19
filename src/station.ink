@@ -41,7 +41,7 @@ The workday begins with the ringing of three bells.
 # CLASS: head1
 The Call
 
-As they slide into their workstations, the station's AI, announces the start of the workday and the day's schedule.  Immediately, they are interrupted by a single bell and a new meeting notification.  Randy and Andrew exchange glances, such meetings are never good news.  They were expected in the Radula conference room in 3 minutes, promptly.  At least it was not the Inkwell meeting room...  Last time there was an Inkwell meeting, two of their colleagues ended up being sent on a mission to one of the 'outer colonies' and nothing was heard from them again.  They exchanged a worried glance and made their way to the conference room.  
+As they slide into their workstations, the station's AI announces the start of the workday and the day's schedule.  Immediately, they are interrupted by a single bell and a new meeting notification.  Randy and Andrew exchange glances, such meetings are never good news.  They were expected in the Radula conference room in 3 minutes, promptly.  At least it was not the Inkwell meeting room...  Last time there was an Inkwell meeting, two of their colleagues ended up being sent on a mission to one of the 'outer colonies' and nothing was heard from them again.  They exchanged a worried glance and made their way to the conference room.
 Precisely 2 minutes and 30 seconds later, they were in the room.  There was only one other being in the room and that was a Human wearing the smart white suit with the gilded Zardozi filigree of the Greenpeace logo.  Not a good sign.  Rarely did a 'Greenie' show up unannounced.  The Human was standing by the window, looking out at the Lagoon.  His eyes followed their entrance into the room, but did not speak or otherwise acknowledge them.  The AI announces the start of the meeting as Director Kraal'goth entered the room.
     + [Join the meeting] -> themeetingA
 
@@ -135,7 +135,7 @@ The Anthropic Engine
 {simulation_count>0:"{~Hmm...|Should we be proud or terrified?|What was that?|Did we learn...anything?|So, the mice were hunchback?}" sighed Randy, "That was {~interesting|disappointing|curious|confusing}.  Let's see.  I'm going to {~upgrade Python|merge in latest CVE changes|enable debug mode|review the chain of thought|install updated drivers|clear the RAG cache|nuke the site from orbit|pray to a different God|switch to a higher precision model} and fire off a rebuild."|Two weeks (and maybe 30hrs of sleep) later...}
 
 "Ok, the new build is... 3.2.1.  Finished!  Let's bring iteration {ai_build_number} online", Randy called out to Andrew.  The room was filled with the hum of servers and the occasional beep as systems checked themselves.  He walked over to a large monitor on the wall, which displayed a grid of servers.  The wall of blinking LEDs never stopped, a constant reminder that the Anthropic Engine was always running. 
-"{ai_build_number} should be up and running now", Andrew replied, "Give it a new seed and let's see if that make any difference."  Randy clicked on one of the login nodes and brought up its status page.
+"{ai_build_number} should be up and running now", Andrew replied, "Give it a new seed and let's see if that makes any difference."  Randy clicked on one of the login nodes and brought up its status page.
 
 # CLASS: computer
 Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number: {ai_build_number}

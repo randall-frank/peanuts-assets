@@ -53,7 +53,7 @@ Today was drop-day.  They has spent months planning it and two weeks in an Overl
 
 In a small compartment in this Overlord laid Arden Billings, vomiting into a sink.
 
-"Shit." he said again.  It was the only word he had ever used this morning besides "Oooh."  He remembered how much he loved the sunset.  He plopped his pistol into its holster and stepped into the commons. He was greeted by a standing ovation from ten cadets and four officers, all eating what was supposed to be breakfast.  There were many cheers and shouts of "allright" and "its about time".
+"Shit." he said again.  It was the only word he had ever used this morning besides "Oooh."  He remembered how much he loved the sunset.  He plopped his pistol into its holster and stepped into the commons. He was greeted by a standing ovation from ten cadets and four officers, all eating what was supposed to be breakfast.  There were many cheers and shouts of "alright" and "it's about time".
 
 Billings told them all to fuck off.
 

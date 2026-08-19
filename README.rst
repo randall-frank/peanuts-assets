@@ -33,7 +33,7 @@ This story had been sloshing around in various forms for several years. Having f
 What is it exactly?
 ~~~~~~~~~~~~~~~~~~~
 
-There are four distinct endings to the story, depending on paths one choses to take.  Unlike games like Heresy, there are no "fetch quests" or "puzzles" to solve. Peanuts is at its core, a collection of short stories and we encourage readers to dabble a bit in all of them. 
+There are four distinct endings to the story, depending on paths one chooses to take.  Unlike games like Heresy, there are no "fetch quests" or "puzzles" to solve. Peanuts is, at its core, a collection of short stories and we encourage readers to dabble a bit in all of them.
 
 General Comments
 ~~~~~~~~~~~~~~~~
@@ -68,10 +68,10 @@ dependencies:
 To build the web-based version of the story, the 
 `Inklecate <https://github.com/inkle/ink/releases>`_ compiler needs to be
 available.  The `build.py` script will attempt to download the
-compiler from github when building the story.   
+compiler from GitHub when building the story.
 
-If you have a locally installed inklecate compuled, it can be used by 
-setting the environmental variable *PEANUTS_INKLECATE* to the complete 
+If you have a locally installed Inklecate compiler, it can be used by
+setting the environment variable *PEANUTS_INKLECATE* to the complete
 pathname of the executable.
 A Powershell example if you downloaded the CLI tools yourself:
 
@@ -94,7 +94,7 @@ and the tools will be downloaded into the directory `ink_tools`.
 
   - rebuild the entire `build` directory. This does a `clean` followed by copying
     the contents of the `src/html` and `src/media` directories into `build`.  Finally,
-    it does a `build` which regenerates the story Javascript file.
+    it does a `build` which regenerates the story JavaScript file.
 
 - serve [--port {portnumber}] [--nobrowser]
 
@@ -156,10 +156,10 @@ in the source code.  This version number is also stored in game 'save' files, wh
 basically a snapshot of the current ink engine instance, taken just before the current
 knot is displayed.  Note: all fields can be multiple digits in length, so '0.3.12' is valid.
 
-Any time there is a change to the overall state structure (e.g. a new knot/stich is
+Any time there is a change to the overall state structure (e.g. a new knot/stitch is
 added or a new item/variable is introduced), one must bump the x or y portion of the
 semantic version.  The save file loader will allow files that differ only in the 'z' digits
-to be loaded w/o warning.  So change like spelling, text revisions, etc should only update
+to be loaded without warning.  So changes like spelling and text revisions should only update
 the 'z' field to retain backward compatibility with old save files.
 
 License

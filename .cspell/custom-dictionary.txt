@@ -42,9 +42,11 @@ Radula
 SBIMAGE
 Soylent
 TCEHY
+telepresence
 Teuthan
 Teuthans
 Tyrannus
+UFCL
 Whaddya
 Zardozi
 Zelle

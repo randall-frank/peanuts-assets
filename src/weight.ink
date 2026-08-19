@@ -147,23 +147,23 @@ Dr Drake looks up from his desk, "James, come on in.  I'm just finishing the wri
 
 "Well, we got a pair of hits."  James hands the two equations to Simon.
 
-Dr Drake takes the page and examines it closely, "Well, this second one is really just a restating of the symmetry effect, but this first one..."  He turns back to his computer and begins typing, "... interesting ...  maybe ...  but why?"  He stops still, bringing his hand to his mouth, thinking deeply.  After a long delay he leans back, "James ... the algorithm came up with this equation?"
+Dr Drake takes the page and examines it closely, "Well, this second one is really just a restating of the symmetry effect, but this first one..."  He turns back to his computer and begins typing, "... interesting ...  maybe ...  but why?"  He stops still, bringing his hand up to rub his chin, thinking deeply.  After a delay he leans back and looks at James, "James ... the algorithm came up with this equation?"
 
 "Yes Dr Drake."
 
-Simon take a deep breath, "This is... I don't know what to say.  I mean, we've been working on this for years and would have come up with it.  If this equation holds..."  He looks back at James, "Have you shared this with anyone else?"
+Simon take a deep breath, turning to the equation, "This is... I don't know what to say.  I mean, we've been working on this for years and would have never have come up with this.  If this equation holds..."  He looks back at James, "Have you shared this with anyone else?"
 
 "No, just you Dr Drake.  Is the equation important?"
 
-Simon breaths deeply, "Ok James, I need some time to verify some things, but I think we may have something here. Potentially something big if my rough math is right.  Here's what we are going to do.  I'm going to do a little more analysis and set up a physical test.  I'm thinking we need to continue this conversation outside of UFCL."
+Simon exhales through pursed lips, "Ok James, I need some time to verify some things, but I think we may have something here. Potentially something big if my rough math is right.  Here's what we are going to do.  I'm going to do a little more analysis and set up a physical test.  We should probably continue this conversation outside of UFCL."
 
 "Outside of the lab?", asked James.
 
-"Yes, James.  We need to be able to discuss this without any restrictions or oversight.  Give me about a week and I'll get back to you with my findings.  In the meantime, do you have an LLC?"
+"Yes, James.  We need to be able to discuss this more openly, in a private setting.  Give me about a week and I'll get back to you with my findings.  In the meantime, do you have an LLC?"
 
 "An LLC?", James asks incredulously, "... I do have one from my old consulting business before I joined the lab."
 
-"Yes, that's perfect.  We may need to use that as a vehicle to continue our work.  Look James, I know this is a lot to take in right now, but if this says what I think it says and it tests out, we might have to be careful."   Dr Drake senses the tension and changes his tone, "Don't get too excited James. It is equally likely that this is nothing.  I'm just being careful just in case.  I have your gmail, I will ping you when I am more sure of things, ok?"
+"Yes, that's perfect.  It may come in handy as we explore the potential IP implications.  Look James, I know this is a lot to take in right now, but if this says what I think it says and tests out, we might have to be careful."   Dr Drake senses the tension and changes his tone, "Don't get too excited James. It is equally likely that this is nothing.  I'm just being careful just in case.  I have your gmail, I will ping you when I am more confident, ok?"
 
 "... Ok." James says, "... You have my cell number, text me when you are ready to talk."
 
@@ -178,29 +178,37 @@ Simon breaths deeply, "Ok James, I need some time to verify some things, but I t
 The text comes eight days later.
 
 # CLASS: computer
-Meet me at my house on Saturday around 10AM.  335 Lincoln Ave NE.
+I'va come to some conclusions.  Please meet me at my house on Saturday around 10AM.  335 Lincoln Ave NE.
 
-James pulls up at 9:55 and heads to the door.  A haggard, but excited Dr Drake beckons him in.  They head to the basement to his office and home laboratory.  He hands James a wire-wrapped communications device.  Little more than an earbud wired to a breadboard, but there is an odd looking transducer that James does not recognize.  It looks to be hand milled, but he cannot identify the material.  Simon gestures for him to put it on, which he does slowly, taking care not to touch any bare wires or break press-fit connections.
+James pulls up at 9:55 and heads to the door.  A haggard, but excited Dr Drake beckons him in.  They head to the basement which serves as his office and home laboratory.  He hands James a wire-wrapped device.  It looks like a "communications" device?  It is little more than an earbud wired to a breadboard, but there is an odd looking transducer that James does not recognize.  It looks to be hand milled, but he cannot identify the material.  Simon gestures for him to put it on, which he does slowly, taking care not to touch any bare wires or break press-fit connections.
 
-"Mr Ward, come here, I want to see you." crackles in his ear as Simon smiles ear to ear.
+"Mr Ward, come here, I want to see you." crackles in Jame's ear as Simon speaks into an identical device smiling ear to ear.  James looks up in surprise. 
 
-"It was that or 'one small step'... ", laughed Simon.  
+"It was that or 'one small step'... ", laughs Simon.  
 
 "So this is...", began James.
 
-"A gradational telephone", Simon interjects.  "It needs a better name, I liked 'Aetherdrop' or 'Barycentric Intercom', but I'm sure they'll call it the 'Gravitophone'. "
+"A 'gradational telephone'.", Simon interjects.  "It needs a better name, I liked 'Aetherdrop' or 'Barycentric Intercom', but I'm sure they'll call it the 'Gravitophone'. "
 
 "So the equation works?" James asks.
 
-"Yes, and it's far better than I could even imagine", Simon says.  "Not only does the phone work at effectively any distance, it works instantaneously.  No lag, no delay."
+"Yes, and it's far better than I imagined", Simon says.  "Not only does the phone work at effectively any distance, through any block of matter, it works instantaneously.  No lag, no delay."
 
-The realization hits James hard and fast, "So this means that we can communicate with anyone anywhere in the universe?  No satellites, no transmission delays?"
+    <- common_options("-", -> ret_target, -> the_test2)
+    -> DONE   // suppress compiler warning...
 
-Simon responds, "Well maybe not the universe, but certainly within our solar system.  It is even more powerful than that.  Basically, it allows for an 'atomic gravitational singularity' whose electromagnetic reflection can be modified and measured using traditional circuitry.  Your 'phone' has two such singularities in it, transmit and receive.  Think more like 'shared memory' between any two devices anywhere in our solar system."
 
-James has to sit down and think for a few seconds, "so no more wires?  How much bandwidth?"
+= the_test2
+~ location_name = "VDr Simon Drake's home office/lab"
+# CLEAR
 
-"You catch on quick James", Simon quips.  "Bandwidth is limited by the design of the readout circuitry, not the tangled singularities.  Your prototype is probably only a few megabits per second, but with some tweaking and optimization, we could be looking at terabytes per second or even petabytes per second as we go parallel.  So yeah, your graphics card will be located in the arctic and it can display to any screen, anywhere on earth."
+The realization hits James hard and fast, "So this means that we can communicate with anyone, anywhere?  No satellites, no transmission delays?"
+
+Simon responds, "Well maybe not in the entire universe, but certainly within our solar system.  It is even more powerful than that.  Basically, it allows for an 'atomic gravitational singularity' whose electromagnetic deflection can be modified and measured using traditional circuitry.  Your 'phone' has two such singularities in it, transmit and receive.  Think more like 'shared memory' between any two devices anywhere in our solar system."
+
+James sits down, thinking for a few seconds, "no more wires?  How much bandwidth?"
+
+"You catch on quick James", Simon quips.  "Bandwidth is limited by the design of the readout circuitry, not the tangled singularities.  Your prototype is probably only a few megabits per second, but with some tweaking and optimization, we could be looking at terabytes per second or even petabytes per second as we go parallel.  So yeah, your graphics card could be located in the arctic and it can display to any screen, anywhere on earth."
 
 The implications begin to hit James like bricks, "No more cell phone towers and transmission satellites.  Real-time telepresence.  Robotic exploration.  Massive distributed datacenters.  Plenty of downsides as well.  Security concerns, privacy issues, outright warfare..."
 
@@ -208,45 +216,87 @@ Simon nods in agreement, "You missed what might be the biggest danger."
 
 "Oh?"
 
-"Economic collapse." Simon paused for effect, "Think of it James.  Overnight, tens of thousands of business models are obsolete.  Trillions of dollars of assets become worthless overnight.  The world economy could crash and burn in a matter of weeks or months.  And that's assuming the governments don't start fighting over control of this technology.  On top of that, we don't even understand the physics behind this equation."
+"Economic collapse." Simon paused for effect, "Think of it James.  Overnight, tens of thousands of business models are obsolete.  Trillions of dollars of assets become worthless overnight.  The world economy could crash and burn in a matter of months.  And that's assuming the governments don't start fighting over control of this technology.  On top of that, we don't even understand the physics behind this equation."
 
 James sighs, "I guess I never thought about it like that before.  We're just a small team here and could easily be brushed aside...  But we do have the equation and it is not going away."
 
 Simon smiles, "That's right.  I think we should approach this slowly.  Work up some prototypes with an eye toward getting more resources and going public.  We'll need some folks with deep pockets to build devices at scale and to protect our interests, but that is for another day."
 
+They discussed options and potential for several hours before hunger interrupts.  
+
+    <- common_options("-", -> ret_target, -> the_test3)
+    -> DONE   // suppress compiler warning...
+
+
+= the_test3
+~ location_name = "VDr Simon Drake's home kitchen"
+# CLEAR
+
+Microwave burritos and ice cold lawnmower beer later, they agreed there was a lot of work to do, but they would not finish it tonight.  Work was translated into action lists and action lists were prioritized. James and Simon both agreed to meet again after sleeping on it and make adjustments.
+
+Simon suddenly remembered the second question he was going to ask, "James, is LamarckPhysics still running?"
+
+James was taken a little aback, "Uh, yeah.  Yes it is still running."
+ 
+"Still considering the same set of potential equations?", asked Simon.
+
+"I guess so.  The parameters have not changed.  It would be interesting to see if it comes up with variations of the same equations or something new.", James replied.
+
+"We need to get it working on a new problem.  Are you familiar with 'Perturbative Quantum Chromodynamics' and 'Effective Field Theory'? ", Simon begins.
+
+Way over James' head, "Sorry, I have no idea what you are talking about.  I'm not a physicist."
+
+"Basically, we're looking for a shortcut mapping αₛ between frameworks.  This would allow us to calculate quark-gluon interactions directly at low energies and", Simon continues.
+
+"Not following you doc...", interjected James, "please simplify for me."
+
+Simon realizes he is rambling, "Uh, yeah.  Ok, chrysopoeia!"  A confused look and shaking head from James.  Simon tries again, "Alchemy, transmutation of lead into gold.  If we can link these two frameworks via a simple equation, we can begin talk about changing atomic numbers without the help of a big bang."
+
+"... Ok ...", James concedes.  "I'm not following, but if you have equation fragments, data examples the desired operational limits, I can set LamarckPhysics to it.   I have no idea if it will come up with anything, but I can start it looking." 
+
+"That's all I can ask", Simon says.  He hands James a USB stick. "I've already written down the details."
+
+"I can probably get it started tonight. Top of my action list", James instinctively yawned.
+
+They were both exhausted and decided to call it a night.
+
 James chose to walk back home.  He needed the time to think and plan.  The crisp spring air heightened his senses and seemed to sharpen his thinking.
 
 He pulled out his phone and brought up his trading app.  Slowly he picked through his portfolio and began selling.  Funny how one's perspective can change so quickly.
 
+    <- common_options("-", -> ret_target, -> first_contact)
+    -> DONE   // suppress compiler warning...
+
+
+= first_contact
+~ location_name = "VProxima Centauri b: First Contact Research Station"
+# CLEAR
+
+Kx'ari digests the tele-probe output, slowly shaking their head.  They detach the neural connection cable and propels themselves down the central tube to central control.  "Xylok, the initial results from the Sol Earth are now available."
+
+Xylok detaches and acknowledges Kx'ari, "Earth ... Earth ...  We remember, first contact seeding operation, correct?"
+
+"Yes. Similar to the Gliese 12 b operation.  The planet atmosphere is in danger of catastrophic failure.  3I/ATLAS is likely to strip it in the next 200 of their 'years'.  It was agreed to begin to accelerate their evolution via scientific seeding", replied Kx'ari.
+
+"There has been much success with the Exocatalyst Initiative in the past", acknowledged Xylok.  "Some half-dozen new contacts have been achieved this way.  Several species were even spared extinction."
+
+"Earth has been seeded with the first few information payloads.  Biological and atomic payloads have been sent.  These were exploited almost immediately by Earthlings.  The next payload in the series is communication.  It was sent and nearly instantly exploited", noted Kx'ari.
+
+"Excellent Kx'ari!  We are prepared to receive their first communication"?, asked Xylok.
+
+"Of course, but we are prepared for first contact.  But there is a concern."
+
+"The nature of that concern?" asked Xylok.
+
+"Well, the Earthlings immediately began to try to guess solutions to trans-QCD/Hadronic Physics", sighed Kx'ari.
+
+Xylok responded, "So, another potential Skithrax event?" 
+
+"Yes, I'm afraid.  Earthlings may prove far too immature for first contact.  We are preparing protocol XB/1EA, if they prove a danger to themselves or others", remarked Kx'ari.
+
+"Very well Kx'ari.  Continue the Exocatalyst protocol and provide them the desired information, but invoke XB/1EA at the first sign of danger", ordered Xylok.
+
+Kx'ari floated back to their station.  The information would be transmitted to Earth shortly.  In the meantime, a fleet was dispatched to watch and if necessary, extirpate and cauterize. 
+
     + [{simcomplete}] -> ret_target
-
-
-
-Postulate about aliens...
-
-
-This might not be chance??? or entity... 
-
-
-Injection x.y.z - status has changed, waiting for them ...
-
-
-TODO
-
-One day there is an interesting ping.  The algorithm found an equation! They talk about it and it is correct.  The physicist sets up an experiment and it works.  Now this one is not useful for anything, but it validates the technique.  A few days later another couple of related equations pop up.  These are a different story.  They describe how electromagnetic signals can be converted to/from gravitational waves. First, near 'instantaneous' transmission of information. Second, it can travel through things. Third, it can be done with reasonable power…  Consider instant telecommunications w/o the need for satellites?  Drones, space travel, etc Consider computer design where components need not be in the same physical case (e.g. the gravitation bus).  All memory on the entire planet can be accessed by any device with quantum access control.   
-They have no idea how to publish this (we just found it?) and decide to start a company that partners with the existing number 2 chip manufacturer to create cell phones and graphics cards, with CPUs coming afterward…   
-
-
-In physics, \(\alpha _s\) (alpha-s) represents the strong coupling constant, which dictates the strength of the strong force—the fundamental interaction holding quarks together inside protons, neutrons, and other hadron
-
-
-High-Energy QCD vs. Low-Energy Hadronic Physics
-
-The Pair: Perturbative Quantum Chromodynamics (Feynman diagram expansion) vs. Effective Field Theories / Lattice QCD
-
-alpha-s
-
-You find a clean analytical shortcut through the strong coupling constant \alpha_s, allowing you to calculate quark-gluon interactions directly at low energies without needing massive supercomputing grids.
-
-**Matter Synthesis & Transmutation:** Being able to manipulate the strong force analytically means you can turn lead into gold, or carbon into programmable ultra-dense materials, with the stroke of a pen.
 

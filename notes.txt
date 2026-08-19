@@ -99,13 +99,12 @@ It just works, and the silence from our previous competitors is… notable." –
     report back to Greenpeace...
 
 Increase the idiot_count:
-    backforty
+    backforty 
     mille
     solitaire
     cruising
     ubermom
     zero
-
 
 Plan:
 
@@ -117,6 +116,25 @@ Plan:
 “Losing” ending…
 
 * Lather, rinse, repeat -> once we hit 3rd drop if nothing is in play, the project is canceled - no more simulations - Bosses are "fired*
+
+
+
+Stories that are "done"
+
+backforty
+mille
+weight - %90
+battletech
+david
+solitaire
+symptoms
+
+TODO:
+
+badtothebone
+cruising altitude
+ubermom
+zeromyhero
 
 
 

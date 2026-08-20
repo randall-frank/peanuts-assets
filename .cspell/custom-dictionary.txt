@@ -1,5 +1,6 @@
 # Custom Dictionary Words
 ABAL
+Aetherdrop
 animatronic
 AUDIOLOOP
 avant
@@ -11,15 +12,21 @@ Bromegrass
 CDYG
 Cephalo
 Cephalon
+Chromodynamics
+chrysopoeia
 comlink
 Cryptid
 cryptids
 dihydrate
 dropship
+Exocatalyst
 FIRECODE
 Florance
 Fonzie
+Gliese
+Gravitophone
 Greenie
+Gundershot
 hardcut
 Hazzard
 hebben
@@ -40,6 +47,7 @@ optocoupling
 Poltrona
 Radula
 SBIMAGE
+Skithrax
 Soylent
 TCEHY
 telepresence
@@ -48,5 +56,6 @@ Teuthans
 Tyrannus
 UFCL
 Whaddya
+Xylok
 Zardozi
 Zelle

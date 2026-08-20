@@ -177,7 +177,7 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
     
     + {storyline.stock_drop_level2} [Simulation seed: abdef192{zero: (Zero, my Hero)}] -> zero ->
         -> building
-    + {storyline.stock_drop_level2} [Simulation seed: 822b39fb{bad: (Bad to the Bone)}] -> bad ->
+    + {storyline.stock_drop_level2+1} [Simulation seed: 822b39fb{bad: (Bad to the Bone)}] -> bad ->
         -> building
     + {storyline.stock_drop_level2} [Simulation seed: 99587d72{cruising: (Cruising Altitude)}] -> cruising -> 
         -> building

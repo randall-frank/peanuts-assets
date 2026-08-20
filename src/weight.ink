@@ -128,7 +128,6 @@ James excitedly brought up the LamarckPhysics prompt and copy/pasted the first s
 ∇²ψ_G = α (E² + B²) / ∮ ∂ₜ 𝜏_Q
 
 Hmm, James had no idea what that meant.  He hit the print screen button, grabbed the still warm paper and headed off to find Simon.
-
     <- common_options("-", -> ret_target, -> first_light_pt2)
     -> DONE   // suppress compiler warning...
 
@@ -137,21 +136,21 @@ Hmm, James had no idea what that meant.  He hit the print screen button, grabbed
 ~ location_name = "VLevel 8: Office of Dr Simon Drake"
 # CLEAR
 
-James stops just short of barging into Simon's office and quietly knocks on the door frame.
+James, thinks twice, stops just short of barging into Simon's office and quietly knocks on the door frame.
 
 Dr Drake looks up from his desk, "James, come on in.  I'm just finishing the writeup of the latest optocoupling simulations.  We can probably get this published in Physical Review.  What's up?"
 
-"Do you remember the LamarckPhysics project?", James begins.
+"Do you remember our LamarckPhysics project?", James begins.
 
 "Yes..."
 
-"Well, we got a pair of hits."  James hands the two equations to Simon.
+"Well, we got a pair of hits."  
 
-Dr Drake takes the page and examines it closely, "Well, this second one is really just a restating of the symmetry effect, but this first one..."  He turns back to his computer and begins typing, "... interesting ...  maybe ...  but why?"  He stops still, bringing his hand up to rub his chin, thinking deeply.  After a delay he leans back and looks at James, "James ... the algorithm came up with this equation?"
+James hands the two equations to Simon.  Dr Drake takes the page and examines it closely, "Well, the second one is really just a restating of the symmetry effect, but this first one..."  He turns back to his computer and begins typing, "... interesting ...  maybe ...  but why?"  He stops still, bringing his hand up to rub his chin, thinking deeply.  After a delay he leans back and looks at James, "James ... the algorithm came up with this equation?"
 
 "Yes Dr Drake."
 
-Simon take a deep breath, turning to the equation, "This is... I don't know what to say.  I mean, we've been working on this for years and would have never have come up with this.  If this equation holds..."  He looks back at James, "Have you shared this with anyone else?"
+Simon take a deep breath, turning to the equation, "This is... I don't know what to say.  I mean, we've been working on this for years and would have never have come up with this.  If this equation holds..."  Lost in thought he murmurs, nearly in-audibly, to himself, "ten thousand monkeys and a couple months..."  Interrupting himself, he looks back at James, "Have you shared this with anyone else?"
 
 "No, just you Dr Drake.  Is the equation important?"
 
@@ -272,6 +271,8 @@ He pulled out his phone and brought up his trading app.  Slowly he picked throug
 ~ location_name = "VProxima Centauri b: First Contact Research Station"
 # CLEAR
 
+# STICKYCLASS: orangetext
+
 Kx'ari digests the tele-probe output, slowly shaking their head.  They detach the neural connection cable and propels themselves down the central tube to central control.  "Xylok, the initial results from the Sol Earth are now available."
 
 Xylok detaches and acknowledges Kx'ari, "Earth ... Earth ...  We remember, first contact seeding operation, correct?"
@@ -292,11 +293,14 @@ Xylok detaches and acknowledges Kx'ari, "Earth ... Earth ...  We remember, first
 
 Xylok responded, "So, another potential Skithrax event?" 
 
+Kx'ari recalled the Skithrax.  Similar situation, planet in danger, species at risk, attempt to accelerate evolution to save them.  They were sent a solution for matter transmutation, hoping to help them deal with a resource challenged home planet.  Within a month, half the planet had been converted into a radioactive transuranic powerhouse and the other half into what the Skithrax perceived as 'precious materials'.  Ultimately, the acceleration doomed the Skithrax. Both they and their home world no longer exist. 
+
 "Yes, I'm afraid.  Earthlings may prove far too immature for first contact.  We are preparing protocol XB/1EA, if they prove a danger to themselves or others", remarked Kx'ari.
 
 "Very well Kx'ari.  Continue the Exocatalyst protocol and provide them the desired information, but invoke XB/1EA at the first sign of danger", ordered Xylok.
 
 Kx'ari floated back to their station.  The information would be transmitted to Earth shortly.  In the meantime, a fleet was dispatched to watch and if necessary, extirpate and cauterize. 
 
+# STICKYCLASS:
     + [{simcomplete}] -> ret_target
 

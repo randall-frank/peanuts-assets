@@ -164,6 +164,8 @@ function post_location_change(story) {
         // IMAGEMAXHEIGHT specification for the IMAGE option
         var IMAGE_max_height = null;
 
+        var stickyClass = '';
+
         // Record location changes (this is actually the previous location and is only working in debug mode)
         post_location_change(story);
 
@@ -293,6 +295,11 @@ function post_location_change(story) {
                 else if (splitTag && splitTag.property == "CLASS") {
                     customClasses.push(splitTag.val);
                 }
+                
+                // STICKYCLASS: className
+                else if (splitTag && splitTag.property == "STICKYCLASS") {
+                    stickyClass = splitTag.val;
+                }
                     
                 // CLEAR - removes all existing content.
                 // RESTART - clears everything and restarts the story from the beginning
@@ -330,6 +337,9 @@ function post_location_change(story) {
                 paragraphElement.classList.add(customClasses[i]);
             if (customClasses.length == 0) {
                 paragraphElement.classList.add("storytext");
+            }
+            if (stickyClass) {
+                paragraphElement.classList.add(stickyClass);
             }
             
             // Fade in paragraph after a short delay
@@ -653,7 +663,7 @@ function attribution(parent) {
 <p>This project draws on the inspiration and efforts of a number of folks.
 We would like to acknowledge them here and thank them all for their contributions.</p>
 <p></p>
-<h2>The Writers and Developers</h2>
+<h2>Writers/Developers</h2>
 <p></p>
 <table class="devs"><tbody>
 <tr>
@@ -666,7 +676,7 @@ We would like to acknowledge them here and thank them all for their contribution
 </tr>
 </tbody></table>
 <p></p>
-<h2>The Beta Testers</h2>
+<h2>Beta Testers</h2>
 <ul>
 <li>Marina Galvagni</li>
 </ul>

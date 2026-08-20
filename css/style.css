@@ -66,6 +66,10 @@ h2, .head2 {
     font-size: 1.3em;
 }
 
+.orangetext {
+  color:#ffa42c;
+}
+
 /************ computer text ****************/
 .computer {
     font-family: 'Courier New', monospace;

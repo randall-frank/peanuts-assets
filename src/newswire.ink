@@ -26,6 +26,8 @@ VAR newswire_message = ""
 // not present, the item will not be clickable.  If they are, then if {varname} is 1 then
 // a link to {stitchname} will be included.  In the core ink, one calls newswire_item() to
 // post a note that a new message could be displayed.  The core will do so every N (3) calls.
+// Note: if stitchname ends with .html or .html, it will be treated as a URL and the link will
+// be opened in another tab.  For example:  /abyssal.html  will open the AI page
 
 === function newswire_items() ===
     VAR s = ""
@@ -81,7 +83,20 @@ VAR newswire_message = ""
     ~ s += "CS/VFM technology is making a comeback with today's youth. The tech first debuted at the 1967 World's Fair and was hailed as, “the most important communications technology since Gutenberg.” Until that time all of human history and technology was transmitted orally."
     ~ s += "[,]"
 
+    ~ s += conditional_newswire_items()
     ~ return s
+
+
+=== function conditional_newswire_items() ===
+    VAR t = ""
+
+    ~ t += "Drowning in AI confusion?  Abyssal Intelligence can help.  We specialize in customizing adaptive AI workflows to meet your business needs.  Let us help you realize your AI vision, today!"
+    ~ t += "[stock_ABAL,/abyssal.html]"
+
+    ~ t += "This is a test item.  It should appear sometime after the first 'violent' simulation and the link should redirect to the 'intervention' stitch."
+    ~ t += "[violence_count,storyline.violence]"
+
+    ~ return t
 
 
 === function seriously_comment() ===

@@ -137,11 +137,15 @@ function post_location_change(story) {
     // Check for "dev" mode
     story.variablesState.debug = checkDebugMode();
 
+    // Make continueStory accessible from newswire callbacks
+    continueStoryNewswire = continueStory;
     // Reset the list of newswire items
     resetNewswire();
     
     // Set initial save point
     savePoint = story.state.toJson();
+
+    continueStoryNewswire = continueStory;
 
     continueStory(true);
 
@@ -215,21 +219,6 @@ function post_location_change(story) {
                     }
                     imageElement.classList.add("sbimage");
                     imageContainer.appendChild(imageElement);
-                    /*
-                     * This really slows things down in tunnels.  Not sure why yet.
-                     *
-                                        imageElement.onload = () => {
-                                            // console.log(`scrollingto ${previousBottomEdge}`)
-                                            scrollDown(previousBottomEdge);
-                                            glitch.glitch(".glitch",  
-                                                { 
-                                                    intensity: 0.2,
-                                                    layers: 7,
-                                                    shake: false,
-                                                    glitchTimeSpan: {start: 0.25, end: 0.4}
-                                                });
-                                        }
-                    */
                     showAfter(delay, imageElement);
                     delay += 200.0;
                 }

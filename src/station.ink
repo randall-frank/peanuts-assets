@@ -175,15 +175,15 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
     + [Simulation seed: 07cd5541{weight: (The Weight of Gravity)}] -> weight -> 
         -> building
     
-    + {storyline.stock_drop_level2} [Simulation seed: abdef192{zero: (Zero, my Hero)}] -> zero ->
+    + {storyline.stock_drop_level2+debug} [Simulation seed: abdef192{zero: (Zero, my Hero)}] -> zero ->
         -> building
-    + {storyline.stock_drop_level2+1} [Simulation seed: 822b39fb{bad: (Bad to the Bone)}] -> bad ->
+    + {storyline.stock_drop_level2+debug} [Simulation seed: 822b39fb{bad: (Bad to the Bone)}] -> bad ->
         -> building
-    + {storyline.stock_drop_level2} [Simulation seed: 99587d72{cruising: (Cruising Altitude)}] -> cruising -> 
+    + {storyline.stock_drop_level2+debug} [Simulation seed: 99587d72{cruising: (Cruising Altitude)}] -> cruising -> 
         -> building
-    + {storyline.stock_drop_level2} [Simulation seed: 678d2c77{ubermom: (Uber-Mom)}] -> ubermom -> 
+    + {storyline.stock_drop_level2+debug} [Simulation seed: 678d2c77{ubermom: (Uber-Mom)}] -> ubermom -> 
         -> building
-    + {storyline.stock_drop_level2} [Simulation seed: 13991734{battle: (BattleTech)}] -> battle -> 
+    + {storyline.stock_drop_level2+debug} [Simulation seed: 13991734{battle: (BattleTech)}] -> battle -> 
         -> building
 
 

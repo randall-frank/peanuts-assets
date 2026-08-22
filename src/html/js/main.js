@@ -137,6 +137,9 @@ function post_location_change(story) {
     // Check for "dev" mode
     story.variablesState.debug = checkDebugMode();
 
+    // Reset the list of newswire items
+    resetNewswire();
+    
     // Set initial save point
     savePoint = story.state.toJson();
 
@@ -877,18 +880,6 @@ function updateStatusSidebar() {
     update_social(sidebar_info.social_info);
     update_system(sidebar_info.system_info);
     update_stock(sidebar_info.stock_info);
-}
-
-function updateNewswire() {
-    const newswire = theStory.variablesState["newswire_message"];
-    theStory.variablesState["newswire_message"] = "";
-    document.getElementById('newswire').textContent = "Blue Lagoon Newsflash: " + newswire;
-    const newswireContainer = document.getElementById('newswire_container');
-    if (newswire) {
-        newswireContainer.style.display = 'block';
-    } else {
-        newswireContainer.style.display = 'none';
-    }
 }
 
 function random_norm(bias) {

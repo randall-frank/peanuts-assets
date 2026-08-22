@@ -129,11 +129,15 @@ david
 solitaire
 symptoms
 
+
+WORKING:
+
+badtothebone - randy
+ubermom - andrew
+
 TODO:
 
-badtothebone
 cruising altitude
-ubermom
 zeromyhero
 
 
@@ -184,3 +188,5 @@ Benboncan_Four-Bells.wav by Jackalgirl -- https://freesound.org/s/683748/ -- Lic
     The Inkwell: A secured, confidential briefing room used for sensitive transmissions and tactical planning.
     The Radula: A versatile conference area designed for brainstorming sessions and collaborative projects. 
     The Chromatophore: A dynamic meeting space equipped with holographic displays that shift colors based on the station's status.
+
+

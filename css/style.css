@@ -100,7 +100,7 @@ h2, .head2 {
 
 .newswire {
   	border: 1px solid;
-  	  border-radius: 5px;
+  	border-radius: 5px;
 	  padding: 10px;
 	  margin: 10px 0;
 
@@ -109,6 +109,20 @@ h2, .head2 {
     font-size: 1.2em;
     border-color: #ffff00;
 	  background-color: #35350b; 
+}
+
+.newswire-button {
+  	border: 2px solid;
+    margin-top: 0.5em;
+    display: block;
+    margin-left: auto;
+  	border-radius: 5px;
+    font-family: 'Share Tech Mono', monospace;
+    color: #fffecc;
+    font-weight: bold;
+    font-size: 1em;
+    border-color: #858548;
+	  background-color: #4d4d1d; 
 }
 
 .locationerror {

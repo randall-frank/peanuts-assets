@@ -91,7 +91,7 @@ VAR newswire_message = ""
     VAR t = ""
 
     ~ t += "Drowning in AI confusion?  Abyssal Intelligence can help.  We specialize in customizing adaptive AI workflows to meet your business needs.  Let us help you realize your AI vision, today!"
-    ~ t += "[stock_ABAL,/abyssal.html]"
+    ~ t += "[ABAL_running,/abyssal.html]"
 
     ~ t += "This is a test item.  It should appear sometime after the first 'violent' simulation and the link should redirect to the 'intervention' stitch."
     ~ t += "[violence_count,storyline.violence]"

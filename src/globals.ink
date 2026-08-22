@@ -102,6 +102,8 @@ VAR stock_GOOG = 89.70
 VAR stock_TCEHY = 12.10
 VAR stock_ABAL = 0.0
 
+VAR ABAL_running = 0
+
 // CPU status
 VAR cpu_cpus = 238234
 VAR cpu_procs = 1400000
@@ -135,6 +137,9 @@ VAR debug = 0
 === function update_cryptids(cryptid_delta) ===
     ~ player_cryptids += cryptid_delta
     ~ stock_ABAL = (player_cryptids * cryptid_exchange_rate)  / shell_company_shares
+    {player_cryptids > 5:
+        ~ ABAL_running = 1
+    }
     ~ return
 
 === function update_stock_price(name, delta) ===

@@ -50,6 +50,7 @@ The whole process takes about ten minutes before {shell_company_name} ('ABAL') i
 = do_project_next
     ~ eg_project_next = 1
     ~ eg_outsourcing = 0
+    ~ ABAL_running = 1
     -> station.building
 
 
@@ -121,6 +122,7 @@ Ping from broker about settling their positions...
 = do_outsourcing
     ~ eg_project_next = 0
     ~ eg_outsourcing = 1
+    ~ ABAL_running = 1
     -> station.building
 
 

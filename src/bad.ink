@@ -24,7 +24,6 @@ She caught a glimpse of the corrections facility van coming up the drive, as it 
 Oh Arthur, she could see him there, standing there in his parade uniform.  So fit.  So handsome.  The war machine had 'borrowed' him from her, pressing him into service for the European campaign. He'd been gone for what?  Three, maybe four very lonely years for Mrs Gundershot.  Her Arthur was lucky.  After chasing the Germans back to Berlin, he was one of the tragically few to return.  But he was back and they could start the family existing previously only in their letters...
 
 A blast from the horn brought her rapidly back to the present. The day's 'pupils' (as she put it) have arrived. She donned her Chore Coat and stuffed leather gauntlets into the pockets.  Finally, she stepped into a worn set of Wellies and headed out the door. 
-
     <- common_options("Hmm, copping a music video?", -> ret_target, ->drake)
     -> DONE   // suppress compiler warning...
 
@@ -79,7 +78,6 @@ Gaz, Fran and Ste all knew the drill, "Got it Mrs G."  They produced their shear
 Mrs Gundershot, "Ste, would you please help me stake the tomatoes topside?  I'd like to keep the fruit off the ground as much as possible."
 
 "Yes ma'am, Mrs G." Ste replied, following her back up the stairs.
-
     <- common_options("", -> ret_target, ->garden)
     -> DONE   // suppress compiler warning...
 
@@ -94,7 +92,7 @@ The garden has has been worked daily for decades.  Mostly vegetables with some t
 
 As the finished the row, Mrs G stood up to stretch her back a bit, wiping her hands on her work apron.  A break in the clouds exposes a few rays of sunlight.  She smiles, letting the sunlight warm her face.  Her hand finds the piece of paper Karl had slipped her earlier.  She unfolds the page and begins to read.
 
-It is James Drake's rap sheet.  She scans it in silence. The life of a troubled young man is revealed.  Running with the bad crowd from a young age.  Petty theft and fighting leads to a series of bad choices, and a life spiraling out of control.  She sighs, shaking her head.  In and out of institutions from he late teens, he developed a serious drinking addiction and graduated to more serious crimes.  She shakes her head again, wondering how he could have ended up here.
+It is James Drake's rap sheet.  She scans it in silence. The life of a troubled young man outlined in simple black ink on the off-white vegetable fiber mat.  Running with the bad crowd from a young age.  Petty theft and fighting leads to a series of bad choices, and a life spiraling out of control.  She sighs, shaking her head.  In and out of institutions from he late teens, he developed a serious drinking addiction and graduated to more serious crimes.  She shakes her head again, wondering how he could have ended up here.
     <- common_options("", -> ret_target, ->garden_2)
     -> DONE   // suppress compiler warning...
 
@@ -119,13 +117,13 @@ For a second, she considered several courses of action.  After a long pause, she
 
 "Yes, ma'am of course.  What do you need?"
 
-"Constable Brable passed me Mr Drake's sheet."
+"Constable Brable passed me James' sheet."
 
 Ste's gaze turned downward, understanding the implication, "I'm sorry ma'am.  I'll take care of it."
 
 "Thank-you Ste."  She reached out and placed a hand on his shoulder.  "I know you will."
 
-Ste patted her hand, "You can count on me."  He turned and walked back toward the shed.
+Ste patted her hand, "You can count on me."  He turned and strode to the shed, determinism in his step.
 
 Mrs Gundershot took a deep breath and headed back into the house.
     <- common_options("", -> ret_target, ->break)
@@ -136,7 +134,7 @@ Mrs Gundershot took a deep breath and headed back into the house.
 ~ location_name = "VGundershot Home"
 # CLEAR
 
-Mrs Gundershot's feet had swollen uncomfortably and it was time for tea.  She put the kettle on, and sat down to wait.  As the kettle screamed, her mind drifted back...
+Mrs Gundershot's feet had swollen uncomfortably and it was time for tea.  She put the kettle on, and sat down to get off her feet.  As the kettle came up to speed, her mind drifted back...
 
 Margaret and Arthur Gundershot welcomed their first and only child, Anne.  It was like living in a fairy tale.  They doted over little Anne and watched her grow into a beautiful, successful young woman.   
 
@@ -145,6 +143,8 @@ It is shocking how quickly things change.  The day is forever etched into Margre
 She still remembers the Wolseley 6/80 rolling slowly into the driveway.  Two officers and Vicar Thomas nervously emerged from the car.  They started with apologies... they always do when shepherding bad news.  The rest, a blur. 
 
 They recount details, drunk driver, high speed collision, sliding off the road...  Anne was dead.  Arthur was dead.  Her house, empty.  Her world forever changed.  Margaret was determined to pick up the pieces and carry on.  She had been the mother.  She had been the wife.  Now she is the survivor.  Now, she is the one.
+
+The kettle screamed, snapping Mrs Gundershot from her trance.  She poured herself a cup of tea, prepared a bag of the finest Shere muggle for constable Brable along with a bouquet of marigolds and antirrhinums for his wife Susan. 
     <- common_options("", -> ret_target, ->deadjames)
     -> DONE   // suppress compiler warning...
 
@@ -153,18 +153,11 @@ They recount details, drunk driver, high speed collision, sliding off the road..
 ~ location_name = "VGundershot Garden"
 # CLEAR
 
-Mrs Gundershot rushed behind the shed at the sound of the commotion before being stopped by Gaz. He put a hand out, "James took an unfortunate spill Mrs G. Tripped over some rock we were moving and accidentally face-planted into an up-turned rake. We'll have to break the news of his escape to Brable, I'm sure he'll be heartbroken.""  She put a hand on his shoulder, "Thank you Gary.  You know what to do. I think the soil around the Begonias in the southwest corner could use a little attention."
+Mrs Gundershot rushed from the house and headed toward the back of the shed at the sound of the commotion before being stopped by Gaz.  He put a hand out, "James took an unfortunate spill Mrs G. Tripped over some rock we were moving and accidentally face-planted into an up-turned rake.  We'll have to break the news of his escape to Brable, I'm sure he'll be heartbroken."  She put a hand on his shoulder, "Thank you Gary.  You know what to do.  I think the soil around the Begonias in the southwest corner could use a little attention."
 
-"Yes Mrs G.  We’ll get right on it.  Sorry for the inconvenience ma'am. It was shaping up to be a glorious day."  
+"Yes Mrs G.  We'll get right on it.  Sorry for the inconvenience ma'am. It was shaping up to be a glorious day."  
 
 "Yes it was Gary, but there are just some weeds that must be pulled."
-
-TODO
-
-Do we need to bring back the officer to pick up the men?
-
-She can hand him an unmarked bag...
-
 // End the simulation...
 ~ violence_count += 1
     + [Terminate Simulation] -> ret_target

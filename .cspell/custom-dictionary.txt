@@ -50,6 +50,7 @@ optocoupling
 Poltrona
 Radula
 SBIMAGE
+Shere
 Skithrax
 skunky
 Soylent

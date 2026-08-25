@@ -15,7 +15,7 @@
 # CLASS: head1
 Bad to the Bone (aka The Widow's Acre)
 
-# IMAGE: locations/badtothebone.jpg
+# IMAGE: locations/badtothebone.png
 
 Mrs Gundershot sat quietly sipping her morning tea. She was reading one of those 'tabloid rags'.  What was it today?  "The Morning Hammer"?  "The Standard"?  "The Daily Shocker"?  Not important, she just needed her morning dose of levity and mock angst.  
 

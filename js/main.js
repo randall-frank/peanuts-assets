@@ -345,7 +345,7 @@ function post_location_change(story) {
 
             var choiceDiv = document.createElement('div');
             choiceDiv.classList.add("choice");
-            choiceDiv.innerHTML = `<a href="#">${choice.text}</a>`;
+            choiceDiv.innerHTML = `<a>${choice.text}</a>`;
             choiceDiv.addEventListener("click", (e) => {
 
                 // Stop any playing audio item.

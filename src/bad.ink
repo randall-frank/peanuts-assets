@@ -63,13 +63,13 @@ The little shed at the edge of the garden was perhaps a bit larger than others i
 
 The floor was covered with a heavy tarp and the walls lined with shelves of tools and work garments.  The air was filled with the musky scent of soil and aging cut grass.  The five of them stepped into the shed. Mrs Gundershot motioned to Fran, who pulled the light chain and closed the door behind them.  The door locked with a soft click as as the glowing filaments of the bare bulb flickered into existence.  She then flipped up the tarp, exposing a locked door in the floor. 
 
-Mrs Gundershot reached for the chain around her neck, pulling it over her head.  The lock key dangled from the end of the chain as she handed it to Gaz.  He took the chain and unlocked the door.  He handed the chain back as he swung the door open, revealing stairs leading into a unexpectedly large underground room.
+Mrs Gundershot reached for the chain around her neck, pulling it over her head.  The lock key dangled from the end of the chain as she handed it to Gaz.  He took the chain and unlocked the door.  He handed the chain back as he swung the door open, revealing stairs leading into a unexpected underground room.
 
 "Whoa!", breathed James.  "What's going on here?"
 
 "This is the 'Herbary' James. ", answered Mrs Gundershot, leading them all down into the cellar.
 
-The room is filled with planter boxes, each growing a dozen or so mature cannabis plants.  Hanging above each box, a red-blue growing lamp leaving the room bathed in glowing violet. The scent of damp earth and skunky cannabis permeates the moist, thick air.   James just stared, open mouthed.
+The room is filled with a half dozen planter boxes, each growing a dozen or so mature cannabis plants.  Hanging above each box, a red-blue growing lamp leaving the room bathed in glowing violet. The scent of damp earth and skunky cannabis permeates the moist, thick air.   James just stared, open mouthed.
 
 "Yes, James, the finest in Shere, maybe in Surrey.", Mrs Gundershot continued.  "We're getting close to a harvest and we need to start collecting the leaves to dry.  That's today's main task, start the harvest."
 
@@ -78,6 +78,42 @@ Gaz, Fran and Ste all knew the drill, "Got it Mrs G."  They produced their shear
 Mrs Gundershot, "Ste, would you please help me stake the tomatoes topside?  I'd like to keep the fruit off the ground as much as possible."
 
 "Yes ma'am, Mrs G." Ste replied, following her back up the stairs.
+    <- common_options("", -> ret_target, ->herbary)
+    -> DONE   // suppress compiler warning...
+
+
+
+= herbary
+~ location_name = "VGarden Herbary"
+# CLEAR
+
+James remained with Fran and Gaz in the herbary after Mrs G and Ste headed back to the garden.  Fran suggested James collect the cuttings and place them in the drying racks in the back of the room.  James complied, but could not stop talking...
+
+"This is a great setup, a bit small, but there is a lot of potential."
+
+Fran and Gaz exchanged non-committal glances.
+
+James continued, "You guys can't see it?  This setup might produce a few bags a month, but we could expand these walls and probably quadruple this operation."
+
+"Mrs G is happy with the scale of this operation.  No need to expand", noted Fran.
+
+"That old biddy must be getting rich.  How much of a cut are we getting?  I'm not a charity case.", James asked.
+
+"Mrs G does not sell any of the product.  She gives it away, to people who need it", said Gaz.
+
+"What!", exclaimed James.  "My teds could move this product all over Surrey.  We could be making a fortune!  That old bat is an idiot!"
+
+Fran and Gaz looked horrified.  Gaz stopped cutting and stepped up to James, Fran was at his side, "James, will not speak about Mrs G like that.  That woman is a saint.  If you only knew..." 
+
+Fran cut him off, "James, this operation will not be expanding and, like Gaz, I will not tolerate you speaking ill of Mrs Gundershot!  There are motivations and history at play that you do not comprehend.  Just shut up and get back to work."
+
+"Ok, ok, I get it", James backpedaled. "But I do think there is a golden goose here.  Even if we just smuggled a bit past the Brable idiot, it would take the edge of long nights in the nick."
+
+"Not going to happen James.  Just forget about it", snapped Gaz, his thoughts drifting to his mother's chemotherapy treatments that Mrs G was always there for before locking eyes with Fran.
+
+Fran read his gaze, recognizing the threat Mr Drake represented.  The glance reminded Fran of his uncle Karl's multiple sclerosis diagnosis he had shared with Mrs G.  She was sympathetic and had become good friends with Karl, visiting him often. 
+
+ James acquiesced, getting back to work, but schemes rolled visibly over his furrowed brow.  The tension level abated a bit as the three men fell into silent labor. 
     <- common_options("", -> ret_target, ->garden)
     -> DONE   // suppress compiler warning...
 

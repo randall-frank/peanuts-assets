@@ -67,7 +67,7 @@ Mrs Gundershot reached for the chain around her neck, pulling it over her head. 
 
 "Whoa!", breathed James.  "What's going on here?"
 
-"This is the 'Herbary' James. ", answered Mrs Gundershot, leading them all down into the cellar.
+"This is the 'herbary' James. ", answered Mrs Gundershot, leading them all down into the cellar.
 
 The room is filled with a half dozen planter boxes, each growing a dozen or so mature cannabis plants.  Hanging above each box, a red-blue growing lamp leaving the room bathed in glowing violet. The scent of damp earth and skunky cannabis permeates the moist, thick air.   James just stared, open mouthed.
 
@@ -87,33 +87,35 @@ Mrs Gundershot, "Ste, would you please help me stake the tomatoes topside?  I'd 
 ~ location_name = "VGarden Herbary"
 # CLEAR
 
-James remained with Fran and Gaz in the herbary after Mrs G and Ste headed back to the garden.  Fran suggested James collect the cuttings and place them in the drying racks in the back of the room.  James complied, but could not stop talking...
+James remained with Fran and Gaz in the herbary after Mrs G and Ste headed back to the garden.  Fran suggested James collect the cuttings and place them in the drying racks in the back of the room.  
 
-"This is a great setup, a bit small, but there is a lot of potential."
+James complied, but could not stop talking, "This is a great setup, a bit small, but there is a lot of potential."
 
 Fran and Gaz exchanged non-committal glances.
 
 James continued, "You guys can't see it?  This setup might produce a few bags a month, but we could expand these walls and probably quadruple this operation."
 
-"Mrs G is happy with the scale of this operation.  No need to expand", noted Fran.
+"Mrs G is happy with the scale of this operation.  No need to expand", blandly noted Fran.
 
-"That old biddy must be getting rich.  How much of a cut are we getting?  I'm not a charity case.", James asked.
+"Still, that old biddy must be getting rich.  How much of a cut do we getting?  I'm not a charity case", James asked.
 
-"Mrs G does not sell any of the product.  She gives it away, to people who need it", said Gaz.
+"Mrs G does not sell any of the product", said Gaz.  
+
+"She gives it away, to people who need it", added Fran.
 
 "What!", exclaimed James.  "My teds could move this product all over Surrey.  We could be making a fortune!  That old bat is an idiot!"
 
-Fran and Gaz looked horrified.  Gaz stopped cutting and stepped up to James, Fran was at his side, "James, will not speak about Mrs G like that.  That woman is a saint.  If you only knew..." 
+Fran and Gaz looked horrified.  Gaz stopped cutting and stepped up to James, Fran at his side, "James, you will not speak about Mrs G like that.  That woman is a saint.  If you only knew..." 
 
-Fran cut him off, "James, this operation will not be expanding and, like Gaz, I will not tolerate you speaking ill of Mrs Gundershot!  There are motivations and history at play that you do not comprehend.  Just shut up and get back to work."
+Fran cut him off, "James, this operation will not be expanding and, like Gaz, I will not tolerate you speaking ill of Mrs Gundershot!  Motivation and history is at play that you do not comprehend.  Just shut up and get back to work."
 
 "Ok, ok, I get it", James backpedaled. "But I do think there is a golden goose here.  Even if we just smuggled a bit past the Brable idiot, it would take the edge of long nights in the nick."
 
-"Not going to happen James.  Just forget about it", snapped Gaz, his thoughts drifting to his mother's chemotherapy treatments that Mrs G was always there for before locking eyes with Fran.
+"Not going to happen James.  Just forget about it", snapped Gaz, his thoughts drifting to his mother's chemotherapy treatments, before locking eyes with Fran. Mrs G had always there for his mum.
 
-Fran read his gaze, recognizing the threat Mr Drake represented.  The glance reminded Fran of his uncle Karl's multiple sclerosis diagnosis he had shared with Mrs G.  She was sympathetic and had become good friends with Karl, visiting him often. 
+Fran read his gaze, recognizing the threat Mr Drake represented.  The glance reminded Fran of his uncle Robert's multiple sclerosis diagnosis. He had shared with Mrs G, she was sympathetic and had become good friends with Robert, visiting him often. 
 
- James acquiesced, getting back to work, but schemes rolled visibly over his furrowed brow.  The tension level abated a bit as the three men fell into silent labor. 
+ James acquiesced, getting back to work.  Schemes rolled visibly over his furrowed brow as he idly applied himself.  The tension level abated a bit as the three men fell into uneasy, silent labor. 
     <- common_options("", -> ret_target, ->garden)
     -> DONE   // suppress compiler warning...
 
@@ -128,7 +130,7 @@ The garden has has been worked daily for decades.  Mostly vegetables with some t
 
 As the finished the row, Mrs G stood up to stretch her back a bit, wiping her hands on her work apron.  A break in the clouds exposes a few rays of sunlight.  She smiles, letting the sunlight warm her face.  Her hand finds the piece of paper Karl had slipped her earlier.  She unfolds the page and begins to read.
 
-It is James Drake's rap sheet.  She scans it in silence. The life of a troubled young man outlined in simple black ink on the off-white vegetable fiber mat.  Running with the bad crowd from a young age.  Petty theft and fighting leads to a series of bad choices, and a life spiraling out of control.  She sighs, shaking her head.  In and out of institutions from he late teens, he developed a serious drinking addiction and graduated to more serious crimes.  She shakes her head again, wondering how he could have ended up here.
+James Drake's rap sheet.  She scans it in silence. The life of a troubled young man, outlined in simple black ink on off-white vegetable fiber mat.  Running with the bad crowd from a young age.  Petty theft and bar fights lead to a series of bad choices.  A life spiraling out of control.  She sighs, shaking her head.  In and out of institutions from his late teens, he developed a serious drinking addiction and graduated to more serious crimes.  She shakes her head again, wondering how he could have ended up here.
     <- common_options("", -> ret_target, ->garden_2)
     -> DONE   // suppress compiler warning...
 
@@ -136,12 +138,13 @@ It is James Drake's rap sheet.  She scans it in silence. The life of a troubled 
 = garden_2
 ~ location_name = "VGundershot Garden"
 # CLEAR
+# SBIMAGE: locations/garden_clip.jpg
 
 "You ok Mrs G?" Ste asks, looking over his shoulder.
 
-After being released from his third stint in the clink, he went on a serious bender.  While driving back to Guildford, he fell asleep, crossing the centerline and crashed head-on into one Mary Patrice Brown.  She was on her way back from visiting her elderly parents and was killed instantly.  The police found James passed out on the side of the road, thrown from his vehicle in the impact.  He was charged with vehicular manslaughter and sentenced to 5 years in prison.  
+After being released from his third stint in the clink, James had gone on a serious bender.  Driving back to Guildford, he fell asleep, crossed the centerline and crashed head-on into a car driven by one Mary Patrice Brown.  She was on her way home from visiting her elderly parents and was killed instantly.  Police found James passed out on the side of the road, thrown from his vehicle in the impact.  He was charged with vehicular manslaughter and sentenced to 5 years in prison.  
 
-Gravity lead a tear along a grimy path on her well worn face.  She imagined Ms Brown, driving home without a care in the world. Window down, singing along "... If she finds that I've been 'round to see you ...".   
+Gravity dragged a tear along a grimy path on Mrs G's well worn face.  She imagined Ms Brown, driving home without a care in the world.  Window down, singing along "... If she finds that I've been 'round to see you ...".  Recognition, panic, crash, death.  The song continued playing in her head, a haunting echo of a life cut short.  
 
 "Mrs G!?" A concerned Ste stops working, "Are you alright?"
 
@@ -149,17 +152,17 @@ Mrs Gundershot looks up, her trance broken.  She sniffed and wiped her face, lea
 
 "You should take a break ma'am.  I can finish this work.  Do you need me to call someone for you?"
 
-For a second, she considered several courses of action.  After a long pause, she straightens, "Yes Ste.  I think I will take a tea break. "  Another second, she adds, "Ste, I have to ask for your help."
+For a second, she considered several courses of action.  After a long pause, she straightens, "Yes Ste.  I think I will take a tea break. "  Another second, she reluctantly added, "Ste, I need to ask for your help..."
 
 "Yes, ma'am of course.  What do you need?"
 
-"Constable Brable passed me James' sheet."
+"Constable Brable passed me James' sheet", Mrs G responded.
 
-Ste's gaze turned downward, understanding the implication, "I'm sorry ma'am.  I'll take care of it."
+Ste's gaze slowly turned downward, understanding the implication, "I'm sorry ma'am.  I'll take care of it."
 
-"Thank-you Ste."  She reached out and placed a hand on his shoulder.  "I know you will."
+"Thank-you Ste."  She reached out and placed a hand on his shoulder, "I know you will."
 
-Ste patted her hand, "You can count on me."  He turned and strode to the shed, determinism in his step.
+Ste patted her hand, "You can count on me."  He turned and strode to the shed, determined in his step.
 
 Mrs Gundershot took a deep breath and headed back into the house.
     <- common_options("", -> ret_target, ->break)
@@ -169,6 +172,7 @@ Mrs Gundershot took a deep breath and headed back into the house.
 = break
 ~ location_name = "VGundershot Home"
 # CLEAR
+# SBIMAGE:
 
 Mrs Gundershot's feet had swollen uncomfortably and it was time for tea.  She put the kettle on, and sat down to get off her feet.  As the kettle came up to speed, her mind drifted back...
 
@@ -180,7 +184,7 @@ She still remembers the Wolseley 6/80 rolling slowly into the driveway.  Two off
 
 They recount details, drunk driver, high speed collision, sliding off the road...  Anne was dead.  Arthur was dead.  Her house, empty.  Her world forever changed.  Margaret was determined to pick up the pieces and carry on.  She had been the mother.  She had been the wife.  Now she is the survivor.  Now, she is the one.
 
-The kettle screamed, snapping Mrs Gundershot from her trance.  She poured herself a cup of tea, prepared a bag of the finest Shere muggle for constable Brable along with a bouquet of marigolds and antirrhinums for his wife Susan. 
+The kettle screamed, snapping Mrs Gundershot from her trance.  She poured herself a cup of tea and prepared a bag of the finest Shere muggle along with a garden bouquet. 
     <- common_options("", -> ret_target, ->deadjames)
     -> DONE   // suppress compiler warning...
 
@@ -188,12 +192,51 @@ The kettle screamed, snapping Mrs Gundershot from her trance.  She poured hersel
 = deadjames
 ~ location_name = "VGundershot Garden"
 # CLEAR
+# SBIMAGE: locations/garden_clip.jpg
 
-Mrs Gundershot rushed from the house and headed toward the back of the shed at the sound of the commotion before being stopped by Gaz.  He put a hand out, "James took an unfortunate spill Mrs G. Tripped over some rock we were moving and accidentally face-planted into an up-turned rake.  We'll have to break the news of his escape to Brable, I'm sure he'll be heartbroken."  She put a hand on his shoulder, "Thank you Gary.  You know what to do.  I think the soil around the Begonias in the southwest corner could use a little attention."
+Mrs Gundershot rushed from the house and headed toward the back of the shed at the sound of commotion before being Gaz stepped out from behind the shed and stepped toward her.  He put a hand out, stopping her, "James took an unfortunate spill Mrs G. Tripped over some rock we were moving and accidentally face-planted onto an up-turned rake.  We'll break the news of his escape to Brable, I'm sure he'll be heartbroken."  
+
+She put a hand on his shoulder, "Thank you Gary.  You know what to do.  I think the soil around the Begonias in the southwest corner could use a little attention."
 
 "Yes Mrs G.  We'll get right on it.  Sorry for the inconvenience ma'am. It was shaping up to be a glorious day."  
 
 "Yes it was Gary, but there are just some weeds that must be pulled."
+
+Mrs Gundershot never enjoyed making such calls, but it was her role, her responsibility.  She gave Gaz a smile, mouthing "Thank you" as she turned and headed back to the house to call constable Brable.
+    <- common_options("", -> ret_target, ->constable)
+    -> DONE   // suppress compiler warning...
+
+
+= constable
+~ location_name = "VGundershot Home"
+# CLEAR
+# SBIMAGE:
+
+It took constable Brable and deputy Evans almost forty-five minutes to arrive.  They rounded up Gaz, Ste and Fran, grilling them about James' escape.  Gaz, Ste and Fran all stood there stoically as they were read the riot act about 'letting him run'.  
+
+Questions followed rapid fire, "You knew he was planning this?", "Did you help him?", "Why didn't you stop him?", etc.  While Evans asked the questions, Brable 'searched' the garden and shed, returning having found nothing.
+
+"Looks like he just jumped the back fence, grabbed new garb from local clotheslines and ran off", Brable mused.  "Nothing here to suggest he had any help."  Glancing at his watch, "He's probably halfway to London by now."  Turning to Mrs Gundershot, "I believe you are safe Margret.  I can't see him coming back here for you.  This isn't the first time he's tried to escape you know.  Almost got away with it back a year or so ago, on another work-release gig.  We caught him them, we'll get him now."  
+
+"I hope so Karl", sighed Mrs Gundershot.  "I just hope he doesn't hurt anyone else."
+
+Karl nodded and turned back to Evans, "Gather up the boys and we'll head back.  I'll call the station and let them know we're on our way."  "A lot of paperwork, a lot of paperwork...", he mumbled as the others left, leaving he and Margret alone.
+
+Margaret looked accusingly at Karl, "You passed me his sheet on purpose."
+
+"Yes, Margaret, I did.  I'm sorry about that, but James had caught wind of things and could have caused ... problems", he sighed.  "He tried to get Gaz and Ste to help him strong arm you.  Obviously that would never happen."   
+
+Margaret unfolded her arms, "I understand Karl, but I'd appreciate having a discussion beforehand in the future. I don't like putting the boys in these situations." 
+
+Karl nodded, "Of course Margaret, never like this again."
+
+"Thank you", said Margaret.  She picked up the bag and the bouquet of marigolds and antirrhinums from the table, handing them to Karl, "How is Susan doing?  Is her glaucoma improving?  She might enjoy these."
+
+Karl managed a little smile as he accepted them, "Still day by day I'm afraid.  Your gifts are the highlight of her days.  Thank you so much."
+
+As he turned to leave, "You are an angel Margaret, you know that."  He stepped out the door, not waiting for an answer.
+
+An 'angel' thought Margaret, not hardly.  Angels share the duality of burdens, but Raphael or Raguel?  And who has the right to decide?
 // End the simulation...
 ~ violence_count += 1
     + [Terminate Simulation] -> ret_target

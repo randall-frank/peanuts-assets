@@ -416,7 +416,7 @@ Progress on "Project Fishbowl"
 
 Andrew waits for Randy to sit, but can hardly contain himself, "InkStream has over {n} followers and is growing fast!  Over 90% of them are Teuthans. We have also been able to secure some key IP partnerships with other organizations.  It turns out there are a lot of old 4:3 TV shows out there that can be had for pennies.  We've even started using free 'starter' AI cycles to generate new content for these old shows. There is a whole new season of "The Dukes of Hazzard" coming exclusively to InkStream."
 
-Andrew slows down, "It's time to hyper charge our efforts.  Do you remember 'Blipverts'?"
+Andrew slows down, "It's time to accelerate our efforts.  Do you remember 'Blipverts'?"
 
 Randy looked a little puzzled, "You mean that fictional technology from Max Headroom?"
 
@@ -450,12 +450,35 @@ Randy lets out a deep gut laugh and smiles, "Yeah, I remember. 'It's only after 
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-Idiocracy Buy Out
+The Sell Out
 
-TODO
+Andrew and Randy approach the alcove door.  It spirals open as their personal trackers come within range and are cross-referenced to the meeting attendee list.
 
-Sell the media stream to Greenpeace
+The room is dimly lit, the silhouette of Zyn can be seen seated in the most comfortable seat in the room, stiff as a board. He is watching an episode of the Beverly Hillbillies on his tablet.  "...How do you like yer possum, Lowell, fallin' off the bones tender or with a little fight left in it?..."  Zyn cracked the first smile Andrew and Randy have ever seen.  He swiped to close the device, set it down and gestured that they take a seat.
 
+"{social_followers} followers on InkStream in what, two weeks?", Zyn asks.  "and my analytics show that 90% of them are Teuthans spending over 8 hours a day on the platform."
+
+"The numbers are pretty fluid, but those seem pretty accurate", stammered Andrew.  "Do your numbers report advertising revenue and advertizer ROAS as well?"
+
+"Yes, both very impressive, but not why I'm here talking to you", Zyn continues. 
+
+Andrew and Randy exchange confused looks.  A pregnant pause later Randy asks, "Ok, I'll bite.  Just why are we speaking then?"
+
+Zyn upturns his tablet and brings up a two dimensional frequency plot illustrating dynamic audio and visual frequency distributions of the Hillbillies episode streaming on InkStream.  "This...", Zyn says as an odd sequence of spikes pop up and disappear from the plot, "...is why we are talking.  I had to log in with a Teuthan ID to see it.  Your secret sauce gentlemen, nano-impressions?  What did they used to call it 'blipverts'?"
+
+"Tuned specifically to the viewer.  Today at the 'species' level, tomorrow, the 'individual'.  Generated directly by their own display systems", bragged Andrew.  "It has proven far more effective than we imagined.  But why are you interested?"
+
+"That should be obvious gentlemen", Zyn paused.  
+
+For a moment Randy questioned Zyn's repeated us of 'gentlemen' and reacquainted himself with the exits from the room.  
+
+Zyn noticed his discomfort, "Relax.  I'm here to buy it from you."  Eyebrows raise from Randy and Andrew as Zyn continues, "We, Greenpeace, have been at the beck and call of Teuthan imbeciles for decades.  InkStream represents a mechanism for us to turn the tables.  Some fine tuning of the micro-burst assets, but yes, we can right an historical wrong.  We are prepared to make you an offer of life-altering scale to hand us the keys and just walk away."
+
+It is surprising how quickly a deal can be consummated when both parties share aligned purpose.  In twenty minutes, binding documents are digitally inked and access keys exchanged.  Faster than buying apples. 
+
+Zyn rises, proffers his hand and the deal is complete, "Thank-you gentlemen.  I honestly wish you both all the best."  He turns and heads out the door, "Enjoy your new freedom!  I know we will."
+
+Andrew and Randy, excited, but a little disoriented wait for him to leave before allowing tension to drain and blood pressure to reach homeostatic levels.  They head out into the bright light of the corridor.
     ~ eg_fishbowl = 3
     + [Free men deserve a good dinner] -> station.epilogue
 

@@ -159,7 +159,7 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
 
     // Fishbowl storyline
     * {(eg_fishbowl == 1) and (idiot_count > 2)} [Andrew believes we can accelerate InkStream] -> storyline.fishbowl_2
-    * {(eg_fishbowl == 2) and (social_followers > social_follower_threshold)} [Zyn becomes aware of InkStream, meet him in on deck 7] -> storyline.fishbowl_3
+    * {(eg_fishbowl == 2) and (social_followers > social_follower_threshold)} [Zyn becomes aware of InkStream and wants to meet on deck 7] -> storyline.fishbowl_3
 
 
     + [Simulation seed: 107818a4{forty: (The Back Forty)}] -> forty -> 

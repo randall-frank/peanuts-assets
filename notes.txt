@@ -138,13 +138,16 @@ TODO:
 
 cruising altitude
 zeromyhero
-
+storyline.ink - some bits are incomplete
+    project_next_2 - insure the company indirectly w/payout when it collapses
+    project_next_3 - company collapses, we are fired.  get the insurance payout (end)
+    fishbowl - set up InkStream, outline the Idiocracy approach
+    stock_drop_level3 - Stock drops so low that things are canceled.  can be (end)
 
 
 Lock up a simulation - runs forever...
 Re-entrant simulation... 
 AI is actually real - tunneling other realities
-- 
 
 
 Ships bell - 

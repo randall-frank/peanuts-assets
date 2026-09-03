@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+    color-scheme: dark;
+    --paper: #101216;
+    --ink: #f3f0e8;
+    --muted: #a8a49c;
+    --line: #34373e;
+    --coral: #ff705d;
+    --blue: #6c9bff;
+    --yellow: #f4c84d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.app-shell {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 38px;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 86px;
+    border-bottom: 1px solid var(--line);
+}
+
+.wordmark {
+    color: var(--ink);
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: -.08em;
+    text-decoration: none;
+}
+
+.wordmark i {
+    color: var(--coral);
+    font-size: .9em;
+    margin-right: 7px;
+}
+
+.wordmark span {
+    color: var(--coral);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    margin-left: 90px;
+}
+
+nav a,
+.login-trigger {
+    color: var(--ink);
+    font-size: .78rem;
+    text-decoration: none;
+}
+
+.login-trigger {
+    border: 1px solid var(--ink);
+    border-radius: 99px;
+    background: transparent;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.login-trigger span {
+    margin-left: 7px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 270px;
+    align-items: end;
+    gap: 50px;
+    min-height: 390px;
+    padding: 88px 0 72px;
+    border-bottom: 1px solid var(--line);
+}
+
+.kicker {
+    color: var(--coral);
+    font-family: 'DM Mono', monospace;
+    font-size: .68rem;
+    letter-spacing: .12em;
+    margin: 0 0 16px;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: clamp(3.4rem, 7vw, 6.5rem);
+    letter-spacing: -.08em;
+    line-height: .89;
+    margin-bottom: 28px;
+}
+
+h1 em {
+    color: var(--blue);
+    font-style: normal;
+}
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: -.06em;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: .95rem;
+    margin: 0 0 5px;
+}
+
+.intro-text {
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 440px;
+}
+
+.text-link {
+    color: var(--ink);
+    display: inline-block;
+    font-size: .83rem;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.text-link span {
+    color: var(--coral);
+    font-size: 1.3rem;
+    margin-left: 9px;
+    vertical-align: -2px;
+}
+
+.signal-card {
+    border-left: 2px solid var(--coral);
+    padding: 12px 0 15px 20px;
+}
+
+.signal-top,
+.signal-card>span {
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: .66rem;
+}
+
+.live-dot {
+    background: var(--coral);
+    border-radius: 50%;
+    display: inline-block;
+    height: 7px;
+    margin-right: 6px;
+    width: 7px;
+}
+
+.signal-card strong {
+    display: block;
+    font-size: 2.25rem;
+    letter-spacing: -.07em;
+    margin: 18px 0 2px;
+}
+
+.signal-bars {
+    align-items: end;
+    display: flex;
+    gap: 4px;
+    height: 28px;
+    margin-top: 19px;
+}
+
+.signal-bars i {
+    background: var(--blue);
+    display: block;
+    height: 30%;
+    width: 8px;
+}
+
+.signal-bars i:nth-child(2n) {
+    height: 75%;
+}
+
+.signal-bars i:nth-child(3n) {
+    height: 50%;
+}
+
+.content-section {
+    padding: 75px 0 60px;
+}
+
+.section-head {
+    align-items: end;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.section-note,
+.room-count {
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: .66rem;
+    text-transform: uppercase;
+}
+
+.show-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr 1fr;
+    gap: 20px;
+}
+
+.poster-image {
+    width: 100%;
+    height: auto;
+}
+
+.poster {
+    border: 0;
+    cursor: pointer;
+    display: inline-grid;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.poster::after {
+    background: rgba(14, 17, 25, .16);
+    content: '';
+    inset: 0;
+    position: absolute;
+    transition: background .2s;
+}
+
+.poster:hover::after {
+    background: rgba(14, 17, 25, .02);
+}
+
+.poster-beverly {
+    background: linear-gradient(135deg, #db6550 0 43%, #efc24d 43% 100%);
+}
+
+.poster-dukes {
+    background: linear-gradient(140deg, #1b4e9b 0 46%, #eb8b45 46% 69%, #f4cf63 69%);
+}
+
+.poster-happy {
+    background: linear-gradient(135deg, #f0bf4e 0 42%, #e85d4b 42% 72%, #2e62c5 72%);
+}
+
+.poster-stamp,
+.poster-title,
+.play-icon {
+    position: absolute;
+    z-index: 1;
+}
+
+.poster-stamp {
+    color: rgba(255, 255, 255, .88);
+    font-family: 'DM Mono', monospace;
+    font-size: .6rem;
+    left: 19px;
+    letter-spacing: .1em;
+    top: 18px;
+}
+
+.poster-title {
+    bottom: 23px;
+    color: white;
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -.08em;
+    line-height: .9;
+    left: 19px;
+}
+
+.play-icon {
+    background: white;
+    border-radius: 50%;
+    color: var(--coral);
+    font-size: .8rem;
+    padding: 14px 15px 14px 16px;
+    right: 18px;
+    top: 18px;
+}
+
+.show-meta {
+    align-items: start;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 0;
+}
+
+.show-meta p,
+.show-meta small {
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: .66rem;
+    margin: 0;
+}
+
+.viewer-count {
+    color: var(--coral);
+    font-family: 'DM Mono', monospace;
+    font-size: .65rem;
+}
+
+.lower-grid {
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 70px;
+    padding: 65px 0 90px;
+}
+
+.room-row {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    cursor: pointer;
+    display: grid;
+    gap: 14px;
+    grid-template-columns: 38px 1fr 20px;
+    padding: 17px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.room-row strong,
+.room-row small,
+.schedule-item strong,
+.schedule-item small {
+    display: block;
+}
+
+.room-row small,
+.schedule-item small {
+    color: var(--muted);
+    font-size: .72rem;
+    margin-top: 4px;
+}
+
+.room-avatar {
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    font-family: 'DM Mono', monospace;
+    font-size: .6rem;
+    height: 38px;
+    justify-content: center;
+    width: 38px;
+}
+
+.avatar-red {
+    background: var(--coral);
+}
+
+.avatar-blue {
+    background: var(--blue);
+}
+
+.avatar-yellow {
+    background: var(--yellow);
+    color: var(--ink);
+}
+
+.room-arrow {
+    color: var(--coral);
+    font-size: 1.25rem;
+}
+
+.schedule-panel {
+    border-left: 1px solid var(--line);
+    padding-left: 36px;
+}
+
+.schedule-item {
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 65px 1fr auto;
+    padding: 17px 0;
+}
+
+.schedule-item time {
+    color: var(--coral);
+    font-family: 'DM Mono', monospace;
+    font-size: .75rem;
+}
+
+.schedule-item b {
+    color: var(--blue);
+    font-family: 'DM Mono', monospace;
+    font-size: .6rem;
+}
+
+footer {
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 0;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: .61rem;
+}
+
+.modal-backdrop {
+    align-items: center;
+    background: rgba(24, 26, 33, .58);
+    display: flex;
+    inset: 0;
+    justify-content: center;
+    padding: 20px;
+    position: fixed;
+    z-index: 5;
+}
+
+.modal-backdrop[hidden],
+.toast[hidden] {
+    display: none;
+}
+
+.modal {
+    background: var(--paper);
+    max-width: 430px;
+    padding: 42px;
+    position: relative;
+    width: 100%;
+}
+
+.modal h2 {
+    margin-bottom: 12px;
+}
+
+.modal-copy {
+    color: var(--muted);
+    font-size: .85rem;
+    line-height: 1.5;
+}
+
+.modal-close {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.7rem;
+    position: absolute;
+    right: 17px;
+    top: 12px;
+}
+
+form {
+    display: grid;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+label {
+    font-family: 'DM Mono', monospace;
+    font-size: .65rem;
+    text-transform: uppercase;
+}
+
+input {
+    background: transparent;
+    border: 1px solid var(--line);
+    padding: 12px;
+}
+
+.submit-button {
+    background: var(--blue);
+    border: 0;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 13px;
+    text-align: left;
+}
+
+.submit-button span {
+    float: right;
+}
+
+.create-account {
+    background: transparent;
+    border: 0;
+    color: var(--ink);
+    cursor: pointer;
+    font-size: .75rem;
+    margin-top: 20px;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.form-message {
+    color: var(--coral);
+    font-size: .78rem;
+    line-height: 1.4;
+    margin: 18px 0 0;
+}
+
+.toast {
+    background: rgba(0, 0, 0, 1.0);
+    bottom: 22px;
+    color: white;
+    left: 50%;
+    max-width: 530px;
+    padding: 17px 22px;
+    position: fixed;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    z-index: 4;
+}
+
+@media (max-width: 760px) {
+    .app-shell {
+        padding: 0 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 58px 0;
+    }
+
+    .signal-card {
+        max-width: 280px;
+    }
+
+    .show-grid,
+    .lower-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .poster {
+        height: 300px;
+    }
+
+    .lower-grid {
+        gap: 55px;
+    }
+
+    .schedule-panel {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+        padding: 45px 0 0;
+    }
+
+    footer {
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

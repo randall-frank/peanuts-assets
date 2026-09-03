@@ -94,7 +94,7 @@ VAR newswire_message = ""
     ~ t += "[ABAL_running,/abyssal.html]"
 
     ~ t += "See what's playing tonight on InkStream!  Everything funny, all the time."
-    ~ t += "[social_followers,/inkstream.html?viewers=12345678]"
+    ~ t += "[social_followers,/inkstream.html?viewers=]"
 
     ~ t += "This is a test item.  It should appear sometime after the first 'violent' simulation and the link should redirect to the 'intervention' stitch."
     ~ t += "[violence_count,storyline.violence]"

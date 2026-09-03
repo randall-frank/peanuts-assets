@@ -54,8 +54,12 @@ function updateNewswire() {
 function handleNewswireClick() {
     const newswireContainer = document.getElementById('newswire_container');
     const stitch = newswireContainer.getAttribute('data-stitch'); 
-    if (stitch.endsWith('.html') || stitch.endsWith('.htm')) {
-        window.open(stitch, '_blank')
+    if (stitch.endsWith('.html') || stitch.endsWith('.htm') || stitch.endsWith('?viewers=')) {
+        let url = stitch;
+        if (stitch.endsWith("?viewers=")) {
+            url += theStory.variablesState["social_followers"].toString();
+        }
+        window.open(url, '_blank')
     } else {
         theStory.ChoosePathString(stitch);
         continueStoryNewswire();

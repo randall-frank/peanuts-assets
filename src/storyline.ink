@@ -381,26 +381,41 @@ Randy laughed out loud, "You remember 'Eliza'?  Surprising how far version 234.2
 
 
 = fishbowl
-~ location_name = "LPrivate Alcove, Deck 7"
+~ location_name = "LCafeteria, Deck 5"
 # CLEAR
 # IMAGE:
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-"The Idiocracy Solution (aka the 'fishbowl')"
+The Idiocracy Solution (aka 'Project InkStream')
 
-TODO
+Andrew slides into the seat across from Randy in the main cafeteria.  He has opted for the hydroponic kelp tartare.  As the putrid oder, loved by Teuthans everywhere, reaches his nose his stomach revolts.  He covers the dish with a plastic plate and pushes the tray off to the side.  Looks like another liquid lunch as he pops a couple of protein tabs, washing it down with a Dublin Dr Pepper.  
 
-Andrew outlines the basics of The Idiocracy Solution as it applies to the Teuthans.  Start calling them 'fishbowl's (physical resemblance and a strained shooting fish in a bowl metaphor)
+He looks over at Randy who has opted for simple steamed buns which he slowly dredges through an amalgam of oyster sauce and wasabi.  "You remember our discussion about insanity and how its redefinition serves as the backbone of society through the ages?", Andrew asks.
 
-Pick up "Duke's of Hazzard" IP rights.
+"You mean the societal trajectory, extending from the raw chaotic crucible of the 'Idiocracy' effect?", Randy offers through a mouthful of bun.
+
+"Yes, I've been thinking about algorithmically biased social media platforms", offers Andrew, "and their potential for short-term exploitation of specific audiences, down to individually modeled target entities."
+
+Randy catches the general notion and sensing the potential, returns his partially eaten bun to the tray, "You have my full attention.  What do you have in mind?"
+
+Andrew starts his elevator speech, "You know how the Teuthans can't get enough of 1980's sitcoms?"
+
+"How could I not?  I swear if I hear dixie one more time!!!"
+
+"Well, I did a little legwork researching Teuthan YouTube habits.  Did you know they spend 90% of their free time watching these things?  And it turns out that the IP rights to these gems can be had for a song and a handshake?"  Andrew pauses for a moment, giving Randy time to digest the implications, "I'd like to start a social media service that centers around such content.  I call it 'InkStream'.  The platform will stream this content directly into their homes and offer a 'premium' service for more exclusive content and enhanced chat features based customized AI feedback."
+
+Randy is warming up to the concept, "But won't we need both data and AI servers?  That could get expensive to operate."
+
+"I'm planning to leverage their own hardware.  A distributed asymmetric cluster, running directly on their personal devices, customizing the content with locally generated AI feedback.  I think it could be a huge hit."
+
+Randy is onboard, excitement building, "Nice, I've been trying to come up with a way to turn the tables on the squid-brains, this could be a great vehicle.  Sort of an idiocy accelerator.  How do we get started?"
 
 # HTML: <i class="fa-brands fa-octopus-deploy fa-beat" style="--fa-animation-duration: 2s;"></i> 
-Set up: InkStream HTML
+And they are off and running.  Andrew starts up InkStream HTML™ with gumptious hutzpah while Randy quietly acquires the rights to the "Duke's of Hazzard", "Beverly Hillbillies" and "Green Acres" with plans for the "A-Team" and "Mc Hale's Navy" to follow. 
 
-
-Project "Fishbowl" has begun!
-    + [Let's set up a media service: InkStream.] -> do_fishbowl
+The result is an immediate sensation.  Busy Teuthans are served up a steady diet of the most ridiculous content imaginable.  Squid brains are particularly susceptible to such drivel.  Andrew has the foresight to include little puzzle games viewers can play while ingesting the stream.  The idea is to track viewers ability to think critically and make rational decisions.  The results are then fed back into the stream manipulation algorithms.  The Idiocracy Solution begins to take flight...
+     + [Project 'InkStream' is a reality] -> do_fishbowl
 
 
 = fishbowl_2
@@ -410,7 +425,7 @@ Project "Fishbowl" has begun!
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-Progress on "Project Fishbowl"
+Progress on "Project InkStream"
 
 ~ temp n = INT(social_followers)
 

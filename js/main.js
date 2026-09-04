@@ -789,7 +789,7 @@ function initStatusSidebar() {
         let pfx = info[1];
         let title = stock_title(key);
         s += `
-            <tr class="${cname}" id="${key}_row">
+            <tr class="${cname} clickable-row" id="${key}_row" data-href="${key}">
                 <td class="ticker-symbol" data-title="${title}">${key}</td>
                 <td class="price">${price.toFixed(2)}</td>
                 <td class="pct-change">${pfx}${price.toFixed(2)}</td>
@@ -814,17 +814,17 @@ function initStatusSidebar() {
     let socialContainer = document.querySelector('#social'); 
     s = `
         <ul class="fa-ul" style="margin-left: 0px">
-            <li class="li-gap">
+            <li class="li-gap clickable-li" id="social_subs_li" data-href="youtube">
                 <span class="fa-li"><i class="fa-solid fa-bell" style="color: yellow;"></i> </span>
                 <span id='social_subs' data-title="YouTube">${subs}</span> 
                 <i class="fa-brands fa-square-youtube"></i> Subscribers
             </li>
-            <li class="li-gap">
+            <li class="li-gap clickable-li" id="social_likes_li" data-href="twitter">
                 <span class="fa-li"><i class="fa-solid fa-heart" style="color: red;"></i> </span>
                 <span id='social_likes' data-title="Twitter">${likes}</span> 
                 <i class="fa-brands fa-x-twitter"></i> Likes
             </li>
-            <li class="li-gap" id="social_followers_li">
+            <li class="li-gap clickable-li" id="social_followers_li" data-href="inkstream">
                 <span class="fa-li"><i class="fa-solid fa-star" style="color: yellow;"></i> </span>
                 <span id='social_followers' data-title="InkStream™">${followers}</span> 
                 <i class="fa-brands fa-octopus-deploy fa-beat" style="--fa-animation-duration: 2s;"></i> Followers
@@ -855,6 +855,39 @@ function initStatusSidebar() {
         </ul>
     `
     systemStatusContainer.innerHTML = s;
+
+    // Tie in clickable <tr> and <li> tags
+    const rows = document.querySelectorAll('.clickable-row');
+    rows.forEach(row => {
+        // Make it visually look clickable
+        row.style.cursor = 'pointer'; 
+        row.addEventListener('click', function(event) {
+            // Get the target URL from the data-href attribute
+            const tgt = this.getAttribute('data-href');
+            // '_blank' forces the browser to open the link in a new tab
+            if (tgt === "TCEHY") window.open("https://www.tencent.com/", '_blank'); 
+            if (tgt === "GOOG") window.open("https://about.google/", '_blank'); 
+            if (tgt === "CDYG") window.open("/cdyg.html", '_blank'); 
+            if (tgt === "ABAL") window.open("/abyssal.html", '_blank'); 
+        });
+    });
+    const items = document.querySelectorAll('.clickable-li');
+    items.forEach(item => {
+        // Make it visually look clickable
+        item.style.cursor = 'pointer'; 
+        item.addEventListener('click', function(event) {
+            // Get the target URL from the data-href attribute
+            const tgt = this.getAttribute('data-href');
+            // '_blank' forces the browser to open the link in a new tab
+            if (tgt === "twitter") window.open("https://about.x.com/", '_blank'); 
+            if (tgt === "youtube") window.open("https://about.youtube/", '_blank'); 
+            if (tgt === "inkstream") {
+                const url = "/inkstream.html?viewers=" + theStory.variablesState["social_followers"].toString();
+                window.open(url, '_blank');
+            }
+        });
+    });
+    
     periodicStatusUpdate();
 }
 

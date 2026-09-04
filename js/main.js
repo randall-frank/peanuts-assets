@@ -867,8 +867,8 @@ function initStatusSidebar() {
             // '_blank' forces the browser to open the link in a new tab
             if (tgt === "TCEHY") window.open("https://www.tencent.com/", '_blank'); 
             if (tgt === "GOOG") window.open("https://about.google/", '_blank'); 
-            if (tgt === "CDYG") window.open("/cdyg.html", '_blank'); 
-            if (tgt === "ABAL") window.open("/abyssal.html", '_blank'); 
+            if (tgt === "CDYG") window.open("./cdyg.html", '_blank'); 
+            if (tgt === "ABAL") window.open("./abyssal.html", '_blank'); 
         });
     });
     const items = document.querySelectorAll('.clickable-li');
@@ -882,7 +882,7 @@ function initStatusSidebar() {
             if (tgt === "twitter") window.open("https://about.x.com/", '_blank'); 
             if (tgt === "youtube") window.open("https://about.youtube/", '_blank'); 
             if (tgt === "inkstream") {
-                const url = "/inkstream.html?viewers=" + theStory.variablesState["social_followers"].toString();
+                const url = "./inkstream.html?viewers=" + theStory.variablesState["social_followers"].toString();
                 window.open(url, '_blank');
             }
         });

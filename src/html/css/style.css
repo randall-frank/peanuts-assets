@@ -123,6 +123,7 @@ h2, .head2 {
     font-size: 1em;
     border-color: #858548;
 	  background-color: #4d4d1d; 
+    cursor: pointer;
 }
 
 .locationerror {

@@ -27,7 +27,7 @@ VAR newswire_message = ""
 // a link to {stitchname} will be included.  In the core ink, one calls newswire_item() to
 // post a note that a new message could be displayed.  The core will do so every N (3) calls.
 // Note: if stitchname ends with .html or .html, it will be treated as a URL and the link will
-// be opened in another tab.  For example:  /abyssal.html  will open the AI page
+// be opened in another tab.  For example:  ./abyssal.html  will open the AI page
 
 === function newswire_items() ===
     VAR s = ""
@@ -91,10 +91,10 @@ VAR newswire_message = ""
     VAR t = ""
 
     ~ t += "Drowning in AI confusion?  Abyssal Intelligence can help.  We specialize in customizing adaptive AI workflows to meet your business needs.  Let us help you realize your AI vision, today!"
-    ~ t += "[ABAL_running,/abyssal.html]"
+    ~ t += "[ABAL_running,./abyssal.html]"
 
     ~ t += "See what's playing tonight on InkStream!  Everything funny, all the time."
-    ~ t += "[social_followers,/inkstream.html?viewers=]"
+    ~ t += "[social_followers,./inkstream.html?viewers=]"
 
     ~ t += "This is a test item.  It should appear sometime after the first 'violent' simulation and the link should redirect to the 'intervention' stitch."
     ~ t += "[violence_count,storyline.violence]"

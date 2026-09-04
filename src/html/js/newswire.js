@@ -41,7 +41,7 @@ function updateNewswire() {
     if (theItem === null) return;  // no items available to display
     // Display the item
     let html = "Blue Lagoon Newsflash: " + theItem.text;
-    // theItem.stitch = "/abyssal.html";
+    // theItem.stitch = "./abyssal.html";
     // theItem.stitch = "storyline.make_plans";
     if (theItem.stitch) {
         html += "<br><button class='newswire-button' type='button' onclick='handleNewswireClick()'>Learn more...</button>";

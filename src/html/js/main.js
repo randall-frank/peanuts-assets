@@ -867,7 +867,7 @@ function initStatusSidebar() {
             // '_blank' forces the browser to open the link in a new tab
             if (tgt === "TCEHY") window.open("https://www.tencent.com/", '_blank'); 
             if (tgt === "GOOG") window.open("https://about.google/", '_blank'); 
-            if (tgt === "CDYG") window.open("/abyssal.html", '_blank'); 
+            if (tgt === "CDYG") window.open("/cdyg.html", '_blank'); 
             if (tgt === "ABAL") window.open("/abyssal.html", '_blank'); 
         });
     });

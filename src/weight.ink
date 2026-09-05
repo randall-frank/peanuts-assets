@@ -50,7 +50,7 @@ James nods, taking notes.
 
 James looks up from his notes, "And we run experiments to see if the model simplifications are valid?"
 
-"Ah", Simon's eyes brighten for the first time in their conversion.  "We've already made a great number of observations from a variety of experiments and interstellar sensors.  You are basically correct except we've already run the experiments! We can begin by ensuring the simplified models agree with extant experimental observations.  In particular, the observations that remain unexplained by existing models."
+"Ah", Simon's eyes brighten for the first time in their conversation.  "We've already made a great number of observations from a variety of experiments and interstellar sensors.  You are basically correct except we've already run the experiments! We can begin by ensuring the simplified models agree with extant experimental observations.  In particular, the observations that remain unexplained by existing models."
 
 "Hmm", James says thoughtfully, "So you are looking for a simplified, exploitable model that integrates gravity and electromagnetic forces?"
 
@@ -273,7 +273,9 @@ He pulled out his phone and brought up his trading app.  Slowly he picked throug
 
 # STICKYCLASS: orangetext
 
-Kx'ari digests the tele-probe output, slowly shaking their head.  They detach the neural connection cable and propels themselves down the central tube to central control.  "Xylok, the initial results from the Sol Earth are now available."
+# STICKYCLASS: orangetext
+
+Kx'ari digests the tele-probe output, slowly shaking their head.  They detach the neural connection cable and propel themselves down the central tube to central control.  "Xylok, the initial results from the Sol Earth are now available."
 
 Xylok detaches and acknowledges Kx'ari, "Earth ... Earth ...  We remember, first contact seeding operation, correct?"
 

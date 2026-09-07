@@ -1,9 +1,8 @@
 import argparse
 import datetime
 from functools import partial
-import json
 import threading
-import tomllib
+import glob
 import webbrowser
 import zipfile
 from http.server import SimpleHTTPRequestHandler, HTTPServer
@@ -32,6 +31,86 @@ with open("version.txt", "r") as f:
     
 # Get the current time/date
 __version_date__ = datetime.datetime.now().isoformat(timespec='minutes', sep=" ") 
+
+
+def pluralize(word: str, count: int) -> str:
+    """Return the word or the word with an 's' added if count is not 1
+
+    :param word: The word to pluralize if needed
+    :type word: str
+    :param count: The count of the word, used to determine if plural
+    :type count: int
+    :return: The word with an 's' added if count is not 1
+    :rtype: str
+    """
+    return word if count == 1 else f"{word}s"
+
+def replace_output_quotes(src_dir: str = "src", save: bool = False) -> int:
+    """Replace literal quote pairs in Ink source with curly quotes.
+
+    Ink removes the quotes from a line when the whole line is quoted, so those
+    quotes are syntax.  Quotes in narrative text are emitted as text and are
+    safe to replace.  Ink code is skipped because its string literals are
+    required by the language rather than displayed to the player.
+
+    :param src_dir: Directory to scan recursively for ``.ink`` files.
+    :type src_dir: str
+    :param save: If ``True``, apply the changes to the files.  If ``False``, only count
+    :type save: bool
+    :return: Number of files changed.
+    :rtype: int
+    """
+    code_prefixes = (
+        "~", "VAR ", "CONST ", "LIST ", "INCLUDE ", "EXTERNAL ",
+        "TEMP ", "RETURN ", "->", "//", "#", "<-", "-", "{"
+    )
+    changed_files = 0
+
+    for path in glob.glob(os.path.join(src_dir, '*.ink')):
+        original = ""
+        with open(path, "r", encoding="utf-8") as f:
+            original = f.read()
+        updated_lines = []
+        changed = False
+
+        for line in original.splitlines(keepends=True):
+            content = line.rstrip("\r\n")
+            stripped = content.lstrip()
+            if not stripped or stripped.startswith(code_prefixes):
+                updated_lines.append(line)
+                continue
+
+            quote_positions = [
+                index for index, character in enumerate(content)
+                if character == '"' and (index == 0 or content[index - 1] != "\\")
+            ]
+            if len(quote_positions) % 2 or (
+                stripped.startswith('"') and stripped.endswith('"')
+            ):
+                updated_lines.append(line)
+                continue
+
+            replacements = {}
+            for pair_index in range(0, len(quote_positions), 2):
+                replacements[quote_positions[pair_index]] = "\u201c"
+                replacements[quote_positions[pair_index + 1]] = "\u201d"
+            updated = "".join(
+                replacements.get(index, character)
+                for index, character in enumerate(content)
+            ) + line[len(content):]
+            if updated != line:
+                log.debug(f"Replacing quotes from:\n{line.strip()}\nto:\n{updated.strip()}")
+            changed = changed or updated != line
+            updated_lines.append(updated)
+
+        if changed:
+            log.info(f"Updating file: {path}")
+            if save:
+                with open(path, "w", encoding="utf-8") as f:
+                    original = f.write("".join(updated_lines))
+            changed_files += 1
+
+    return changed_files
 
 
 def build_story_js() -> None:
@@ -316,6 +395,9 @@ if __name__ == "__main__":
 
     clean_parser = cmd_parsers.add_parser("clean", help="Remove all build directory contents")
 
+    quote_parser = cmd_parsers.add_parser("smartquotes", help="Replace output quote pairs in Ink source")
+    quote_parser.add_argument("--apply", default=False, action="store_true", help="If set, save the change to source files")
+    
     discord_parser = cmd_parsers.add_parser("discord", help="Send a message to a discord server")
     discord_parser.add_argument("--message", required=True, help="The message to send")
 
@@ -348,6 +430,9 @@ if __name__ == "__main__":
         release()
     elif args.cmd == "clean":
         clean(remove_cli_tools=True)
+    elif args.cmd == "smartquotes":
+        changed_files = replace_output_quotes()
+        log.info(f"Updated quotes in {changed_files} Ink {pluralize('file',changed_files)}")
     elif args.cmd == "serve":
         serve(port=args.port, nobrowser=args.nobrowser)
     elif args.cmd == "ghpages":

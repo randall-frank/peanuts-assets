@@ -13,19 +13,19 @@ James watched as the code tests finished...  Success!  James sighed deeply and f
 
 James submitted the code pull request and went to get some coffee before heading back to his desk.  Dr Simon Drake had been pushing him to get this code out so that they could start running simulations on the new hardware and he happened to be getting a coffee as well. The two had worked together on this project and James had been working under Dr Drake's direction for several months now.  Simon was a grizzled old physicist, and James had always admired his work ethic and dedication to science.  Simon seems a bit down today however.
 
-"Simon, what's up?" James asked as he joined Simon at the coffee machine.
+“Simon, what's up?” James asked as he joined Simon at the coffee machine.
 
 "Nothing much," Simon replied with a sigh. "I've been reviewing our group's progress or more importantly, the lack thereof.  The gravity calculations are still off by a significant amount.  I'm beginning to question the basic physics we're using.  It has to be a quantum effect, but there is so much we don't understand about those interactions."
 
-James nodded thoughtfully. "It's frustrating when you feel like you're missing something fundamental.  I've been reviewing the code and I think there might be an issue with how we're handling the matrix inversion.  It could be that our assumptions about the initial conditions are off."  
+James nodded thoughtfully. “It's frustrating when you feel like you're missing something fundamental.  I've been reviewing the code and I think there might be an issue with how we're handling the matrix inversion.  It could be that our assumptions about the initial conditions are off.”  
 
 "I mean we have quantum encrypted communication, but we're still routing them in the electromagnetic spectrum, broadcasting through satellites.  Quantum breakthroughs have otherwise had almost no impact outside of niche mass power generation or mutually assured destruction scenarios", Simon lamented. "We know that there are some strange things happening with the neutrinos.  They seem to be interacting with matter in ways that don't quite fit our models.  And then there's dark matter and dark energy.  We still can't even provide concrete proof that they even exist."
 
-James ponders this a bit, "Ok, I'll bite.  What kind of effects might we be missing?"
+James ponders this a bit, “Ok, I'll bite.  What kind of effects might we be missing?”
 
-Simon had never been asked that question directly, "Great question.  Hmm, let's start with something simple.  We have fancy equations we can't prove about the relationship between gravity and electromagnetism.  We know that they're related, but none of the proposed models can be easily exploited without building the "world's largest" machine of some type or another.  Big enough to bankrupt all but the top two or three economies!"
+Simon had never been asked that question directly, “Great question.  Hmm, let's start with something simple.  We have fancy equations we can't prove about the relationship between gravity and electromagnetism.  We know that they're related, but none of the proposed models can be easily exploited without building the ”world's largest“ machine of some type or another.  Big enough to bankrupt all but the top two or three economies!”
 
-James has seen Simon run off the rails before, but he's also seen him come back with something useful.  "So what do you think?  Is there any way we could exploit these relationships?"
+James has seen Simon run off the rails before, but he's also seen him come back with something useful.  “So what do you think?  Is there any way we could exploit these relationships?”
     <- common_options("-", -> ret_target, -> conference_room)
     -> DONE   // suppress compiler warning...
 
@@ -46,9 +46,9 @@ Simon and James are getting some looks.  As the conversation begins to intrude o
 
 "We have collections of valid equations," Simon says, "but there are two obstacles we must overcome."
 James nods, taking notes.
-"First, we need to simplify the equations.  In their current form, we rely on numerical approximations that require super-computer class resources to solve.  Second, the equations need to apply in conditions that we can easily reproduce in a laboratory on the surface of Earth.  Solutions that only work under fusion level heat and pressure conditions are not particularly useful", Simon notes.
+“First, we need to simplify the equations.  In their current form, we rely on numerical approximations that require super-computer class resources to solve.  Second, the equations need to apply in conditions that we can easily reproduce in a laboratory on the surface of Earth.  Solutions that only work under fusion level heat and pressure conditions are not particularly useful”, Simon notes.
 
-James looks up from his notes, "And we run experiments to see if the model simplifications are valid?"
+James looks up from his notes, “And we run experiments to see if the model simplifications are valid?”
 
 "Ah", Simon's eyes brighten for the first time in their conversation.  "We've already made a great number of observations from a variety of experiments and interstellar sensors.  You are basically correct except we've already run the experiments! We can begin by ensuring the simplified models agree with extant experimental observations.  In particular, the observations that remain unexplained by existing models."
 
@@ -58,7 +58,7 @@ James looks up from his notes, "And we run experiments to see if the model simpl
 
 They are interrupted by an announcement regarding the firing of the collider in the next fifteen minutes.  All active personal are to be at their stations.
 
-"Well, business calls.  Thanks for the patches James.  I'll get them reviewed tonight and hopefully be able to use the new hyper-scalar code launch system sometime tomorrow. Thanks for listening to the ravings of a frustrated old physicist!"  Simon stands up and heads towards the door.
+“Well, business calls.  Thanks for the patches James.  I'll get them reviewed tonight and hopefully be able to use the new hyper-scalar code launch system sometime tomorrow. Thanks for listening to the ravings of a frustrated old physicist!”  Simon stands up and heads towards the door.
 
 "No problem Dr Drake!  Let me know if you run into any issues.  I'm headed home for the evening and you've given me some interesting ideas I need to mull over.  Good night!"
     <- common_options("-", -> ret_target, -> genetic_algorithms)
@@ -71,12 +71,12 @@ They are interrupted by an announcement regarding the firing of the collider in 
 
 "Dr Drake, do you have a few minutes?  I think I have an idea for how we might simplify the equations," James says, "but it will require some experimentation to see if it works."
 
-Dr Drake nods, "One second James. "   He finishes typing an email, clicks 'send' and turns back to James.  "Ok, come on in and have a seat", he gestures at an empty chair at the table behind him.  "Please close the door behind you, thanks!"
+Dr Drake nods, “One second James. ”   He finishes typing an email, clicks 'send' and turns back to James.  “Ok, come on in and have a seat”, he gestures at an empty chair at the table behind him.  “Please close the door behind you, thanks!”
 
 The door closes with a soft click and James takes a seat.  Simon's chair rotates to the table and the conversation begins.  James starts by outlining the general nature of the types of equations they desire.  Simon nods in general agreement. He then begins to discuss genetic algorithms and constrained re-randomization techniques.  James explains that evolutionary genetic algorithms leveraging principles such as mutation and crossover to generate new solutions from existing ones.
 Simon follows exactly where James is going, noting that naïve randomization techniques lead to a lot of wasted computation time, considering the literally quadrillions of potential equations that would need to be considered.  He also discusses how constrained, informed re-randomization can be used to limit the search space to only those solutions that are likely to be useful, based on some prior knowledge or constraints.
 While the basic technique proposed is basically brute force, it would leverage established relationships and simplifications that would make the search sparse enough to be practical.  
-The final filter would be the evaluation of proposed solutions against collected observations from astrophysics, electromagnetism, quantum mechanics, optics and nuclear testing to evaluate the predictive nature of the solution.  This would be followed by verification that the working domain of the proposed solution correspond to 'earthbound' conditions.   Nothing at 10,000,000 C or 500000 Pa or 0.99% of the speed of light, the equation must be "useful" (and by useful "exploitable" was implied).
+The final filter would be the evaluation of proposed solutions against collected observations from astrophysics, electromagnetism, quantum mechanics, optics and nuclear testing to evaluate the predictive nature of the solution.  This would be followed by verification that the working domain of the proposed solution correspond to 'earthbound' conditions.   Nothing at 10,000,000 C or 500000 Pa or 0.99% of the speed of light, the equation must be 'useful' (and by useful 'exploitable' was implied).
     <- common_options("-", -> ret_target, -> compute)
     -> DONE   // suppress compiler warning...
 
@@ -85,19 +85,19 @@ The final filter would be the evaluation of proposed solutions against collected
 ~ location_name = "VLevel 8: Office of Dr Simon Drake"
 # CLEAR
 
-Dr Drake stands up from his desk and walks over to the window.  He looks out at the rain falling on the forest in the distance.  "I've been thinking about our conversation for some time now as well," he says, "and I think you might be onto something."  "I can outline the parameterization of the function along with a collection of constraints that can be used to inform the re-randomization.  We have tables of observations that can easily be adapted for this use and the 'useful' domain ranges are trivial."  He turns back to James, "You will need to write the code, but I doubt anyone is going to be willing to let us run the algorithm at the necessary scale.  I mean we could run it on our laptops, but it would still take literal eons to complete."
+Dr Drake stands up from his desk and walks over to the window.  He looks out at the rain falling on the forest in the distance.  “I've been thinking about our conversation for some time now as well,” he says, “and I think you might be onto something.”  “I can outline the parameterization of the function along with a collection of constraints that can be used to inform the re-randomization.  We have tables of observations that can easily be adapted for this use and the 'useful' domain ranges are trivial.”  He turns back to James, “You will need to write the code, but I doubt anyone is going to be willing to let us run the algorithm at the necessary scale.  I mean we could run it on our laptops, but it would still take literal eons to complete.”
 
 "Leave that last one up to me", said James.  "This task footprint is small, even a single CPU.  It's more like crypto mining than a large simulation.  It just has a lot of states that can be independently tested."
 
-"Yes, it can be a series of small computational packets, but there are a lot of packets," said Dr Drake.  
+“Yes, it can be a series of small computational packets, but there are a lot of packets,” said Dr Drake.  
 
-"And the packets can be sequenced from a packet ID and a fast invalidation check that applies pre-determined re-randomization skips. The 'sparsity filter'", counters James.
+“And the packets can be sequenced from a packet ID and a fast invalidation check that applies pre-determined re-randomization skips. The 'sparsity filter'”, counters James.
 
-"Ok, so you are proposing something closer to Folding@home", asks Simon?
+“Ok, so you are proposing something closer to Folding@home”, asks Simon?
 
 "For the problem partitioning, yes," says James.  "But instead of using people's computers all over the world, I'm planning to include a packet processor in the job launching code for the simulation itself. There are countless unused CPU cycles available as a large scale simulation starts up on 1000s of nodes."
 
-Simon's face reconfigures into a tight smirk and laughs, "Yes, yes!  One could leverage the otherwise garbage cycles missed during launch and MPI initialization.  That will work.  I'll get you the observations and constraints."
+Simon's face reconfigures into a tight smirk and laughs, “Yes, yes!  One could leverage the otherwise garbage cycles missed during launch and MPI initialization.  That will work.  I'll get you the observations and constraints.”
 
 "Great", laughs James, "I'll start coding up the packet processor then."
 
@@ -138,25 +138,25 @@ Hmm, James had no idea what that meant.  He hit the print screen button, grabbed
 
 James, thinks twice, stops just short of barging into Simon's office and quietly knocks on the door frame.
 
-Dr Drake looks up from his desk, "James, come on in.  I'm just finishing the writeup of the latest optocoupling simulations.  We can probably get this published in Physical Review.  What's up?"
+Dr Drake looks up from his desk, “James, come on in.  I'm just finishing the writeup of the latest optocoupling simulations.  We can probably get this published in Physical Review.  What's up?”
 
-"Do you remember our LamarckPhysics project?", James begins.
+“Do you remember our LamarckPhysics project?”, James begins.
 
 "Yes..."
 
-"Well, we got a pair of hits."  
+“Well, we got a pair of hits.”  
 
-James hands the two equations to Simon.  Dr Drake takes the page and examines it closely, "Well, the second one is really just a restating of the symmetry effect, but this first one..."  He turns back to his computer and begins typing, "... interesting ...  maybe ...  but why?"  He stops still, bringing his hand up to rub his chin, thinking deeply.  After a delay he leans back and looks at James, "James ... the algorithm came up with this equation?"
+James hands the two equations to Simon.  Dr Drake takes the page and examines it closely, “Well, the second one is really just a restating of the symmetry effect, but this first one...”  He turns back to his computer and begins typing, “... interesting ...  maybe ...  but why?”  He stops still, bringing his hand up to rub his chin, thinking deeply.  After a delay he leans back and looks at James, “James ... the algorithm came up with this equation?”
 
 "Yes Dr Drake."
 
-Simon take a deep breath, turning to the equation, "This is... I don't know what to say.  I mean, we've been working on this for years and would have never have come up with this.  If this equation holds..."  Lost in thought he murmurs, nearly in-audibly, to himself, "ten thousand monkeys and a couple months..."  Interrupting himself, he looks back at James, "Have you shared this with anyone else?"
+Simon take a deep breath, turning to the equation, “This is... I don't know what to say.  I mean, we've been working on this for years and would have never have come up with this.  If this equation holds...”  Lost in thought he murmurs, nearly in-audibly, to himself, “ten thousand monkeys and a couple months...”  Interrupting himself, he looks back at James, “Have you shared this with anyone else?”
 
 "No, just you Dr Drake.  Is the equation important?"
 
-Simon exhales through pursed lips, "Ok James, I need some time to verify some things, but I think we may have something here. Potentially something big if my rough math is right.  Here's what we are going to do.  I'm going to do a little more analysis and set up a physical test.  We should probably continue this conversation outside of UFCL."
+Simon exhales through pursed lips, “Ok James, I need some time to verify some things, but I think we may have something here. Potentially something big if my rough math is right.  Here's what we are going to do.  I'm going to do a little more analysis and set up a physical test.  We should probably continue this conversation outside of UFCL.”
 
-"Outside of the lab?", asked James.
+“Outside of the lab?”, asked James.
 
 "Yes, James.  We need to be able to discuss this more openly, in a private setting.  Give me about a week and I'll get back to you with my findings.  In the meantime, do you have an LLC?"
 
@@ -179,17 +179,17 @@ The text comes eight days later.
 # CLASS: computer
 I'va come to some conclusions.  Please meet me at my house on Saturday around 10AM.  335 Lincoln Ave NE.
 
-James pulls up at 9:55 and heads to the door.  A haggard, but excited Dr Drake beckons him in.  They head to the basement which serves as his office and home laboratory.  He hands James a wire-wrapped device.  It looks like a "communications" device?  It is little more than an earbud wired to a breadboard, but there is an odd looking transducer that James does not recognize.  It looks to be hand milled, but he cannot identify the material.  Simon gestures for him to put it on, which he does slowly, taking care not to touch any bare wires or break press-fit connections.
+James pulls up at 9:55 and heads to the door.  A haggard, but excited Dr Drake beckons him in.  They head to the basement which serves as his office and home laboratory.  He hands James a wire-wrapped device.  It looks like a “communications” device?  It is little more than an earbud wired to a breadboard, but there is an odd looking transducer that James does not recognize.  It looks to be hand milled, but he cannot identify the material.  Simon gestures for him to put it on, which he does slowly, taking care not to touch any bare wires or break press-fit connections.
 
-"Mr Ward, come here, I want to see you." crackles in Jame's ear as Simon speaks into an identical device smiling ear to ear.  James looks up in surprise. 
+“Mr Ward, come here, I want to see you.” crackles in Jame's ear as Simon speaks into an identical device smiling ear to ear.  James looks up in surprise. 
 
-"It was that or 'one small step'... ", laughs Simon.  
+“It was that or 'one small step'... ”, laughs Simon.  
 
-"So this is...", began James.
+“So this is...”, began James.
 
 "A 'gradational telephone'.", Simon interjects.  "It needs a better name, I liked 'Aetherdrop' or 'Barycentric Intercom', but I'm sure they'll call it the 'Gravitophone'. "
 
-"So the equation works?" James asks.
+“So the equation works?” James asks.
 
 "Yes, and it's far better than I imagined", Simon says.  "Not only does the phone work at effectively any distance, through any block of matter, it works instantaneously.  No lag, no delay."
 
@@ -201,25 +201,25 @@ James pulls up at 9:55 and heads to the door.  A haggard, but excited Dr Drake b
 ~ location_name = "VDr Simon Drake's home office/lab"
 # CLEAR
 
-The realization hits James hard and fast, "So this means that we can communicate with anyone, anywhere?  No satellites, no transmission delays?"
+The realization hits James hard and fast, “So this means that we can communicate with anyone, anywhere?  No satellites, no transmission delays?”
 
-Simon responds, "Well maybe not in the entire universe, but certainly within our solar system.  It is even more powerful than that.  Basically, it allows for an 'atomic gravitational singularity' whose electromagnetic deflection can be modified and measured using traditional circuitry.  Your 'phone' has two such singularities in it, transmit and receive.  Think more like 'shared memory' between any two devices anywhere in our solar system."
+Simon responds, “Well maybe not in the entire universe, but certainly within our solar system.  It is even more powerful than that.  Basically, it allows for an 'atomic gravitational singularity' whose electromagnetic deflection can be modified and measured using traditional circuitry.  Your 'phone' has two such singularities in it, transmit and receive.  Think more like 'shared memory' between any two devices anywhere in our solar system.”
 
-James sits down, thinking for a few seconds, "no more wires?  How much bandwidth?"
+James sits down, thinking for a few seconds, “no more wires?  How much bandwidth?”
 
 "You catch on quick James", Simon quips.  "Bandwidth is limited by the design of the readout circuitry, not the tangled singularities.  Your prototype is probably only a few megabits per second, but with some tweaking and optimization, we could be looking at terabytes per second or even petabytes per second as we go parallel.  So yeah, your graphics card could be located in the arctic and it can display to any screen, anywhere on earth."
 
-The implications begin to hit James like bricks, "No more cell phone towers and transmission satellites.  Real-time telepresence.  Robotic exploration.  Massive distributed datacenters.  Plenty of downsides as well.  Security concerns, privacy issues, outright warfare..."
+The implications begin to hit James like bricks, “No more cell phone towers and transmission satellites.  Real-time telepresence.  Robotic exploration.  Massive distributed datacenters.  Plenty of downsides as well.  Security concerns, privacy issues, outright warfare...”
 
-Simon nods in agreement, "You missed what might be the biggest danger."
+Simon nods in agreement, “You missed what might be the biggest danger.”
 
 "Oh?"
 
 "Economic collapse." Simon paused for effect, "Think of it James.  Overnight, tens of thousands of business models are obsolete.  Trillions of dollars of assets become worthless overnight.  The world economy could crash and burn in a matter of months.  And that's assuming the governments don't start fighting over control of this technology.  On top of that, we don't even understand the physics behind this equation."
 
-James sighs, "I guess I never thought about it like that before.  We're just a small team here and could easily be brushed aside...  But we do have the equation and it is not going away."
+James sighs, “I guess I never thought about it like that before.  We're just a small team here and could easily be brushed aside...  But we do have the equation and it is not going away.”
 
-Simon smiles, "That's right.  I think we should approach this slowly.  Work up some prototypes with an eye toward getting more resources and going public.  We'll need some folks with deep pockets to build devices at scale and to protect our interests, but that is for another day."
+Simon smiles, “That's right.  I think we should approach this slowly.  Work up some prototypes with an eye toward getting more resources and going public.  We'll need some folks with deep pockets to build devices at scale and to protect our interests, but that is for another day.”
 
 They discussed options and potential for several hours before hunger interrupts.  
 
@@ -233,29 +233,29 @@ They discussed options and potential for several hours before hunger interrupts.
 
 Microwave burritos and ice cold lawnmower beer later, they agreed there was a lot of work to do, but they would not finish it tonight.  Work was translated into action lists and action lists were prioritized. James and Simon both agreed to meet again after sleeping on it and make adjustments.
 
-Simon suddenly remembered the second question he was going to ask, "James, is LamarckPhysics still running?"
+Simon suddenly remembered the second question he was going to ask, “James, is LamarckPhysics still running?”
 
-James was taken a little aback, "Uh, yeah.  Yes it is still running."
+James was taken a little aback, “Uh, yeah.  Yes it is still running.”
  
-"Still considering the same set of potential equations?", asked Simon.
+“Still considering the same set of potential equations?”, asked Simon.
 
-"I guess so.  The parameters have not changed.  It would be interesting to see if it comes up with variations of the same equations or something new.", James replied.
+“I guess so.  The parameters have not changed.  It would be interesting to see if it comes up with variations of the same equations or something new.”, James replied.
 
-"We need to get it working on a new problem.  Are you familiar with 'Perturbative Quantum Chromodynamics' and 'Effective Field Theory'? ", Simon begins.
+“We need to get it working on a new problem.  Are you familiar with 'Perturbative Quantum Chromodynamics' and 'Effective Field Theory'? ”, Simon begins.
 
-Way over James' head, "Sorry, I have no idea what you are talking about.  I'm not a physicist."
+Way over James' head, “Sorry, I have no idea what you are talking about.  I'm not a physicist.”
 
-"Basically, we're looking for a shortcut mapping αₛ between frameworks.  This would allow us to calculate quark-gluon interactions directly at low energies and", Simon continues.
+“Basically, we're looking for a shortcut mapping αₛ between frameworks.  This would allow us to calculate quark-gluon interactions directly at low energies and”, Simon continues.
 
 "Not following you doc...", interjected James, "please simplify for me."
 
-Simon realizes he is rambling, "Uh, yeah.  Ok, chrysopoeia!"  A confused look and shaking head from James.  Simon tries again, "Alchemy, transmutation of lead into gold.  If we can link these two frameworks via a simple equation, we can begin talk about changing atomic numbers without the help of a big bang."
+Simon realizes he is rambling, “Uh, yeah.  Ok, chrysopoeia!”  A confused look and shaking head from James.  Simon tries again, “Alchemy, transmutation of lead into gold.  If we can link these two frameworks via a simple equation, we can begin talk about changing atomic numbers without the help of a big bang.”
 
-"... Ok ...", James concedes.  "I'm not following, but if you have equation fragments, data examples the desired operational limits, I can set LamarckPhysics to it.   I have no idea if it will come up with anything, but I can start it looking." 
+“... Ok ...”, James concedes.  “I'm not following, but if you have equation fragments, data examples the desired operational limits, I can set LamarckPhysics to it.   I have no idea if it will come up with anything, but I can start it looking.” 
 
 "That's all I can ask", Simon says.  He hands James a USB stick. "I've already written down the details."
 
-"I can probably get it started tonight. Top of my action list", James instinctively yawned.
+“I can probably get it started tonight. Top of my action list”, James instinctively yawned.
 
 They were both exhausted and decided to call it a night.
 
@@ -275,31 +275,31 @@ He pulled out his phone and brought up his trading app.  Slowly he picked throug
 
 # STICKYCLASS: orangetext
 
-Kx'ari digests the tele-probe output, slowly shaking their head.  They detach the neural connection cable and propel themselves down the central tube to central control.  "Xylok, the initial results from the Sol Earth are now available."
+Kx'ari digests the tele-probe output, slowly shaking their head.  They detach the neural connection cable and propel themselves down the central tube to central control.  “Xylok, the initial results from the Sol Earth are now available.”
 
-Xylok detaches and acknowledges Kx'ari, "Earth ... Earth ...  We remember, first contact seeding operation, correct?"
+Xylok detaches and acknowledges Kx'ari, “Earth ... Earth ...  We remember, first contact seeding operation, correct?”
 
-"Yes. Similar to the Gliese 12 b operation.  The planet atmosphere is in danger of catastrophic failure.  3I/ATLAS is likely to strip it in the next 200 of their 'years'.  It was agreed to begin to accelerate their evolution via scientific seeding", replied Kx'ari.
+“Yes. Similar to the Gliese 12 b operation.  The planet atmosphere is in danger of catastrophic failure.  3I/ATLAS is likely to strip it in the next 200 of their 'years'.  It was agreed to begin to accelerate their evolution via scientific seeding”, replied Kx'ari.
 
 "There has been much success with the Exocatalyst Initiative in the past", acknowledged Xylok.  "Some half-dozen new contacts have been achieved this way.  Several species were even spared extinction."
 
-"Earth has been seeded with the first few information payloads.  Biological and atomic payloads have been sent.  These were exploited almost immediately by Earthlings.  The next payload in the series is communication.  It was sent and nearly instantly exploited", noted Kx'ari.
+“Earth has been seeded with the first few information payloads.  Biological and atomic payloads have been sent.  These were exploited almost immediately by Earthlings.  The next payload in the series is communication.  It was sent and nearly instantly exploited”, noted Kx'ari.
 
-"Excellent Kx'ari!  We are prepared to receive their first communication"?, asked Xylok.
+“Excellent Kx'ari!  We are prepared to receive their first communication”?, asked Xylok.
 
 "Of course, but we are prepared for first contact.  But there is a concern."
 
-"The nature of that concern?" asked Xylok.
+“The nature of that concern?” asked Xylok.
 
-"Well, the Earthlings immediately began to try to guess solutions to trans-QCD/Hadronic Physics", sighed Kx'ari.
+“Well, the Earthlings immediately began to try to guess solutions to trans-QCD/Hadronic Physics”, sighed Kx'ari.
 
-Xylok responded, "So, another potential Skithrax event?" 
+Xylok responded, “So, another potential Skithrax event?” 
 
 Kx'ari recalled the Skithrax.  Similar situation, planet in danger, species at risk, attempt to accelerate evolution to save them.  They were sent a solution for matter transmutation, hoping to help them deal with a resource challenged home planet.  Within a month, half the planet had been converted into a radioactive transuranic powerhouse and the other half into what the Skithrax perceived as 'precious materials'.  Ultimately, the acceleration doomed the Skithrax. Both they and their home world no longer exist. 
 
-"Yes, I'm afraid.  Earthlings may prove far too immature for first contact.  We are preparing protocol XB/1EA, if they prove a danger to themselves or others", remarked Kx'ari.
+“Yes, I'm afraid.  Earthlings may prove far too immature for first contact.  We are preparing protocol XB/1EA, if they prove a danger to themselves or others”, remarked Kx'ari.
 
-"Very well Kx'ari.  Continue the Exocatalyst protocol and provide them the desired information, but invoke XB/1EA at the first sign of danger", ordered Xylok.
+“Very well Kx'ari.  Continue the Exocatalyst protocol and provide them the desired information, but invoke XB/1EA at the first sign of danger”, ordered Xylok.
 
 Kx'ari floated back to their station.  The information would be transmitted to Earth shortly.  In the meantime, a fleet was dispatched to watch and if necessary, extirpate and cauterize. 
 

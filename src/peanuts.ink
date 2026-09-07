@@ -50,7 +50,7 @@ Peanuts, Pickles and Propaganda is a work of fiction. Names, characters, busines
 # CLASS: head1
 From Whence the Name
 
-"Peanuts, Pickles and Propaganda" is a curious name, where did it come from?  Well, the answer is honestly simple and has nothing to do with the story.  One afternoon, Randy had stopped writing and headed to the kitchen for lunch.  Nothing in the refrigerator looked good, so he grabbed a jar of pickles (Mt. Olive Sweet Petite if you are keeping score) and paired them with salt in the form of peanuts (blistered, salt and pepper, the brand name is unfortunately lost to time).  He picked up his 'lunch', wandered into the reading room and turned on the television (aka Propaganda machine).  The rest as they say is history.
+“Peanuts, Pickles and Propaganda” is a curious name, where did it come from?  Well, the answer is honestly simple and has nothing to do with the story.  One afternoon, Randy had stopped writing and headed to the kitchen for lunch.  Nothing in the refrigerator looked good, so he grabbed a jar of pickles (Mt. Olive Sweet Petite if you are keeping score) and paired them with salt in the form of peanuts (blistered, salt and pepper, the brand name is unfortunately lost to time).  He picked up his 'lunch', wandered into the reading room and turned on the television (aka Propaganda machine).  The rest as they say is history.
 
 # ATTRIBUTION
     + [Back] -> start

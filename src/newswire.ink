@@ -53,7 +53,7 @@ VAR newswire_message = ""
     ~ s += "Vampire League representatives condemned the introduction of Soylent Green to the school lunch program. Asked for their position on the matter they replied, “It's just not right. What was wrong with fresh rat?”"
     ~ s += "[,]"
 
-    ~ s += "Teuthans File Class-Action Lawsuit Against SpaceX: 'Stop Dropping Your Rusty Submarines in Our Living Rooms!'"
+    ~ s += "Teuthans File Class-Action Lawsuit Against SpaceX: “Stop Dropping Your Rusty Submarines in Our Living Rooms!”"
     ~ s += "[,]"
 
     ~ s += "Residents of North Korea celebrate the new bridge connecting Pyongyang and Tokyo. International observers notes that as of 0400 GMT, forward battalions of the 조선인민군 have reached mile 37 of the bridge. Spokesperson Kim Rodman exclaims, “Our exalted leader has once more demonstrated his extraordinary vision. Let the boots of friendship trample all before us!”"

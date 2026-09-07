@@ -12,7 +12,7 @@ BattleTech
 
 'Shit' was the first word Billings thought of.  He could sense that his eyes were well fogged over and could barely open them.  Every muscle in his body hurt, his head pounded, and his stomach felt as if a moose had gone through it.  Most physicians would classify this as a viral infection or some sort of deadly disease.  Billings called it a 'hangover'.
 
-"Ooof." he said.  He went back to sleep.
+“Ooof.” he said.  He went back to sleep.
 
 Colonel Arden Billings was 31 years old.  He had been ripping the hell out of his body since he was 25.  Whether it was walking into an ambush to draw enemy fire or large quantities of alcohol, every day he found himself wishing he could take one in the head and get the whole damn thing over with.
 
@@ -26,13 +26,13 @@ If Billings has his way, he would have instantly recovered from his sickness, le
 
 Billings didn't do that.
 
-Instead, he said "Oooh."
+Instead, he said “Oooh.”
 
 "C'mon, big guy, we got a planet to raid.  You're the last one up, got it?"
 
 "Oooh."
 
-"Jesus tits." said Tanner as he walked out the door leaving a trail of smoke.  He left to go do something dangerous in the commons.
+“Jesus tits.” said Tanner as he walked out the door leaving a trail of smoke.  He left to go do something dangerous in the commons.
     <- common_options("-", -> ret_target, -> drop)
     -> DONE   // suppress compiler warning...
 
@@ -47,13 +47,13 @@ Instead, he said "Oooh."
 ~ location_name = "VDropday"
 # CLEAR
 
-"Oooh." said Billings again.  It was his favorite noise.  He made the final decision to fall out of bed.  Drop vectors, wind resistance factors, and pain shot through his head as he worked his way to the bathroom.  Billings did things in the morning by priority.  Whatever was most important to him came first.  Today, taking several pills came before a shower, and loading his Branton-Hills .55 caliber semi-automatic pistol came in third.
+“Oooh.” said Billings again.  It was his favorite noise.  He made the final decision to fall out of bed.  Drop vectors, wind resistance factors, and pain shot through his head as he worked his way to the bathroom.  Billings did things in the morning by priority.  Whatever was most important to him came first.  Today, taking several pills came before a shower, and loading his Branton-Hills .55 caliber semi-automatic pistol came in third.
 
 Today was drop-day.  They has spent months planning it and two weeks in an Overlord waiting to get there.  All the waiting would soon be over.
 
 In a small compartment in this Overlord laid Arden Billings, vomiting into a sink.
 
-"Shit." he said again.  It was the only word he had ever used this morning besides "Oooh."  He remembered how much he loved the sunset.  He plopped his pistol into its holster and stepped into the commons. He was greeted by a standing ovation from ten cadets and four officers, all eating what was supposed to be breakfast.  There were many cheers and shouts of "alright" and "it's about time".
+“Shit.” he said again.  It was the only word he had ever used this morning besides “Oooh.”  He remembered how much he loved the sunset.  He plopped his pistol into its holster and stepped into the commons. He was greeted by a standing ovation from ten cadets and four officers, all eating what was supposed to be breakfast.  There were many cheers and shouts of “alright” and “it's about time”.
 
 Billings told them all to fuck off.
 
@@ -67,7 +67,7 @@ O'Brien, the medic, always had a flair for the dramatic.  Everyone turned silent
 
 "I have an important announcement to make - today is Clayton's birthday!"
 
-Many cheers and applause followed.  John Clayton, a cadet, was given many handshakes and slaps on the back.  People said things like "What a way to spend it, huh?"
+Many cheers and applause followed.  John Clayton, a cadet, was given many handshakes and slaps on the back.  People said things like “What a way to spend it, huh?”
 
 Billings sadly left the room.
     <- common_options("-", -> ret_target, -> nobirthday)
@@ -91,7 +91,7 @@ Forest started to leave.
 
 "What's the problem, Colonel?  It's Clayton, isn't it."
 
-"Yes and no." Billings began speaking slowly.
+“Yes and no.” Billings began speaking slowly.
 
 "What do you mean?"
 
@@ -99,11 +99,11 @@ Forest started to leave.
 
 "About."
 
-"Forest, do you have any idea how many cadets Ive lost in the course of that time?" images began to swell in Billings' mind.
+“Forest, do you have any idea how many cadets Ive lost in the course of that time?” images began to swell in Billings' mind.
 
 "Uh, I..."
 
-"Over four hundred!" Billings grimaced.  He grabbed his stomach.  Finally, all the pain swelled into his head.
+“Over four hundred!” Billings grimaced.  He grabbed his stomach.  Finally, all the pain swelled into his head.
     <- common_options("-", -> ret_target, ->fourhundred)
     -> DONE   // suppress compiler warning...
 
@@ -131,11 +131,11 @@ He held his face in his hands and sobbed once quietly.
 
 They sat in silence for a long time.
 
-Finally, Forest spoke up, "We tell him he's going to live."
+Finally, Forest spoke up, “We tell him he's going to live.”
 
 Drop technician Michael Forest left Billings alone in his room and closed the door behind him.
 
-"You're right." said Arden Billings.
+“You're right.” said Arden Billings.
     <- common_options("-", -> ret_target, -> act2)
     -> DONE   // suppress compiler warning...
 
@@ -253,11 +253,11 @@ Billings awoke with a start.  His foot kicked the now empty bottle of whiskey.  
 
 "You okay, Colonel?  We're about on schedule."
 
-"What time is it?" Billings rubbed his eyes.
+“What time is it?” Billings rubbed his eyes.
 
 "14:20"
 
-"Shit... Gimme time to shower.  Prime the mechs.  You can fly voice MIU, can't you?" he stood up.
+“Shit... Gimme time to shower.  Prime the mechs.  You can fly voice MIU, can't you?” he stood up.
 
 "Sure."
 
@@ -303,7 +303,7 @@ He trudged slowly down the hall.  Billings smelled the nauseous odor of Tanner's
 
 "Okay, see you in drop bay."
 
-"Later." said Billings as he watched O'Brien walk down the hall.  Billings continued his trek.  He stepped in front of his door, and the security camera above it signaled a green light to indicate that it recognized Billings surgical implant.  But the door didn't open.  Billings wrinkled his forehead as he grabbed the manual release.
+“Later.” said Billings as he watched O'Brien walk down the hall.  Billings continued his trek.  He stepped in front of his door, and the security camera above it signaled a green light to indicate that it recognized Billings surgical implant.  But the door didn't open.  Billings wrinkled his forehead as he grabbed the manual release.
 
 No sooner had Billings touched it when the control unit erupted in sparks, sending Billings reeling to the other wall in surprise.  An alarm went off.  Billings reached for a fire extinguisher as he intercomed to the bridge.
 

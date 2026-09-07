@@ -27,7 +27,7 @@ The play here is that if our IT folks decide to stop this story, there is a “s
 Potential “accidents”:
 The pilot spills a sugary soda on their desk. The optical sensor on the mouse gets sticky, causing the cursor (and the plane) to spin in a slow, agonizing circle while the pilot frantically tries to scrape off the residue with a paperclip.
 A loose wheel on the pilot's ergonomic chair finally pops off during a subtle turn. The pilot tips backward, their hands reflexively grabbing the joystick for balance, pulling the airliner into a vertical climb.
-Pilot hits the "up" button on their motorized standing desk to stretch. The motor jams in the "up" position, slowly lifting the controls out of their reach while the plane remains in a steady descent.
+Pilot hits the “up” button on their motorized standing desk to stretch. The motor jams in the “up” position, slowly lifting the controls out of their reach while the plane remains in a steady descent.
 
 TODO
 ~ idiot_count += 1

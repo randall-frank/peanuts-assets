@@ -26,10 +26,10 @@ Aboard the Magellan, things are going swimmingly. All the initial testing and th
 
 (change of perspective)
 
-"... right between the sound machine..." plays in the background as I catch the latest YouTube "funny cats" short from the comfort of my BarcaLounger (0.9843823e-182). Man, kinda running out of states here.  Am I going to have to use the algorithm again?  What if I just sent (1.0)?  Nothing seemed to happen.  I'll just drop in a 1.0 once in awhile, saves quantum state.
+“... right between the sound machine...” plays in the background as I catch the latest YouTube “funny cats” short from the comfort of my BarcaLounger (0.9843823e-182). Man, kinda running out of states here.  Am I going to have to use the algorithm again?  What if I just sent (1.0)?  Nothing seemed to happen.  I'll just drop in a 1.0 once in awhile, saves quantum state.
 
 (change of perspective)
-Hiccup in the ship's path.  Hazard lights flash.  "Seems like some quantum deviation Captain"... 
+Hiccup in the ship's path.  Hazard lights flash.  “Seems like some quantum deviation Captain”... 
 
 (ship banter about still being in an acceptable flight window, but it is starting to look like a problem with random number generation)  Running diagnostics…
 

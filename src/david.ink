@@ -15,7 +15,7 @@ David's Friend
 
 The kids all nod and give signs of moderate acceptance to the virus in the cohesive bondage of sixth grade boys trying too hard to be men.  I am the New Kid.  I am David's friend.  One of them, whose name I do not know, continues to stare at me.  No, that's not right: stare through me.  I am instantly charmed by his ability to sort out the hundreds of personas piled on him, his ability to pick out one kid among a baker's dozen and try to understand what he thinks. Especially when he's the New Kid.
 
-"So you're David's friend." he says, as he steps forward.  The rest of the boys have begun to separate into tightly-knit cliques for purposes unknown to any, discussions for no one else to hear.  Todd couldn't make it to the game today.  I hope we don't get stuck with Harold on our team again.  David's friend is supposed to be pretty smart.  The speaking begins, and the kids begin to filter into the vacant lot, some of them trying on a glove, some already slamming a worn baseball repeatedly into the scratchy surface of the brown mitt.
+“So you're David's friend.” he says, as he steps forward.  The rest of the boys have begun to separate into tightly-knit cliques for purposes unknown to any, discussions for no one else to hear.  Todd couldn't make it to the game today.  I hope we don't get stuck with Harold on our team again.  David's friend is supposed to be pretty smart.  The speaking begins, and the kids begin to filter into the vacant lot, some of them trying on a glove, some already slamming a worn baseball repeatedly into the scratchy surface of the brown mitt.
     <- common_options("", -> ret_target, -> part2)
     -> DONE   // suppress compiler warning...
 
@@ -37,7 +37,7 @@ He dusts off his hands onto the thighs of his blue jeans, sending coughs of dirt
 
 "Yeah, I've known David since.. oh.. kindergarten, I think."
 
-"Hum." he grunts.  The mention of kindergarten has dislodged his thoughts.  Nobody likes to be reminded of a time when memories were still being developed, a time containing events that are scattered across the brain like seeds in a bean field, each one trying to sprout more meaning than the next.  Meaning and purpose.  Anything before the first grade was without purpose.  I mean, you didn't even have your own desk.
+“Hum.” he grunts.  The mention of kindergarten has dislodged his thoughts.  Nobody likes to be reminded of a time when memories were still being developed, a time containing events that are scattered across the brain like seeds in a bean field, each one trying to sprout more meaning than the next.  Meaning and purpose.  Anything before the first grade was without purpose.  I mean, you didn't even have your own desk.
 
 "Yeah, David gets around a lot.  He tell you about the games?"
 
@@ -47,15 +47,15 @@ He grins sheepishly.
 
 "Don't sweat it.  Most of these guys have shit for brains anyway.  You really in ELP?"
 
-"Yeah." I scrape my right foot into the soft soil below it.  ELP.  The whiz kids.  The geniuses.  The future of tomorrow.  The social outcasts.
+“Yeah.” I scrape my right foot into the soft soil below it.  ELP.  The whiz kids.  The geniuses.  The future of tomorrow.  The social outcasts.
 
-"I had a chance to get into that once."  He casts a gaze towards a distant patch of weeds.  I believe he is pondering third base.
+“I had a chance to get into that once.”  He casts a gaze towards a distant patch of weeds.  I believe he is pondering third base.
 
 "Really?"
 
 "Yeah, my mom was all shits and giggles.  Babbling about what a smart boy I was, how wonderful it is to have such a great kid.  You get that too?"
 
-"All the time."  That was the truth.
+“All the time.”  That was the truth.
 
 "Can't stand it anymore."
 

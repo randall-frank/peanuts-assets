@@ -11,7 +11,7 @@ Monday Morning Blues
 
 Awareness came slowly.  Eyes twitch.  Muscles begin that familiar slow, cautious stretch.  As senses sharpen, the soft patter of raindrops on fallen leaves comes into focus.  A hundred years ago, a relaxing walk under the lush green canopy of a mature North Carolina forest.  Has it been over a hundred years already?  One 'benefit' of being an indentured Teuthan employee, they will keep their 'help' around until the contract is complete.  At this point Randy was not so sure sleeping in a pod every night was really worth extended life expectancy.
 The continued, escalating patter of rain swept such thoughts away... One could almost smell fresh pine needles mixing in with wet leaves and earthy decay...  It has been so long since he'd been on Earth...  Eyes fully open and a string of green digits come into view.  8:30 Earth Common Time (ECT)!  Crap, Andrew and I are scheduled in a half hour.  No time for a physical breakfast, have to make due with a shot and a shower.  Third time in the last week, I'm slipping... fast...  
-What's the deal with that alarm not waking me properly!  Don't get me wrong, waking up to the sounds of a memory is great, but it's going to get me in trouble.  "Dude" (yeah, Randy named his human computer interface 'Dude'), "wake me with lighting and physical shaking until further notice.  No more forest rain."  "Done", replied the digital agent interface.  Randy ripped the sleeping pod speaker cables from the wall, as he rolled unceremoniously onto the floor.  That should put an end to the "There Will Come Soft Rains" mornings.
+What's the deal with that alarm not waking me properly!  Don't get me wrong, waking up to the sounds of a memory is great, but it's going to get me in trouble.  “Dude” (yeah, Randy named his human computer interface 'Dude'), “wake me with lighting and physical shaking until further notice.  No more forest rain.”  “Done”, replied the digital agent interface.  Randy ripped the sleeping pod speaker cables from the wall, as he rolled unceremoniously onto the floor.  That should put an end to the “There Will Come Soft Rains” mornings.
 He slips a bit too comfortably into the Blue Lagoon IT department overalls, allows his agents to check his vitals and inject a nutrient cocktail 'breakfast'.  The door status light turns green and he steps into the antiseptic blue-white LED lit corridor as Andrew shuffles into view.  The two exchange semi-verbal grunts and furtive nods before they turn to make their way toward the IT department.
     + [Off to work we go...] -> work
 
@@ -58,10 +58,10 @@ The Meeting
 
 ~ newswire_message = newswire_item()
 
-"Woop-woop-woop! Do-do-do-do-do-doooo!", Kraal'goth blubbered as he floated into the room.  Greenpeace subtly shakes his head.  That entrance is forever too old. 
-"Gentleman", nodding toward Greenie. "Ladies", he turns to Andrew and Randy, "we have a serious matter we need to discuss."  "Randy, Andrew, this is...", he hesitates...
+“Woop-woop-woop! Do-do-do-do-do-doooo!”, Kraal'goth blubbered as he floated into the room.  Greenpeace subtly shakes his head.  That entrance is forever too old. 
+“Gentleman”, nodding toward Greenie. “Ladies”, he turns to Andrew and Randy, “we have a serious matter we need to discuss.”  “Randy, Andrew, this is...”, he hesitates...
 "Zyn", the Greenie turns and takes a seat, adopting a dour expression.  "Let's get on with it."
-"Zyn. Yes! yes.", continued Kraal'goth, his previous certainty muted. 
+“Zyn. Yes! yes.”, continued Kraal'goth, his previous certainty muted. 
 For the next 10 minutes, Kraal'goth began to describe the history and 'achievements' of CephaloDynamics.  He spoke of their 'innovative' technology and how it was used to make the world a better place for all (remaining) humans, conveniently leaving out the fact that there were less than 2 billion humans left on Earth.  The majority of them were living in subsistence, not to mention the fact that CephaloDynamics had effectively enslaved and exploited them.  Greenie listened with a mixture of boredom and disgust, while Randy and Andrew nodded along, trying to appear interested. 
     + [Here it comes...] -> themeetingB
 
@@ -77,12 +77,12 @@ The Meeting
 
 Kraal looks nervously at Zyn before continuing.  At this point he pulls up a graph, showing the profits of CephaloDynamics over the past 5 years.  The graph stands in stark contrast to their public story.  Kraal paged though a collection of sidebar slides that 'explain' the numbers.  The Earth's environment has been improving.  The oceans once again, 'clean'.  Removing billions of people and effectively replacing the oceans provided a much needed shock to the system and it had been responding.  Water shipments were 'drying up', along with profits. 
 The company would not be thriving for long.  They had staved off a decline by cutting costs and shifting into 'finance', but the next set of numbers were telling.  They had invested heavily in real-estate, but humans with no resources were not 'paying rent'.  They had invested in 'new' places, like the Blue Lagoon, and the Red Desert. But again, nothing humanly affordable.  The company was running out of options. They were losing money on every deal they made.
-Kraal began blaming humans for their lack of 'intelligence' ruining their investments and presenting a danger to the Teuthan lifestyle...  Zyn frowned and cut him off, "Look, the Teuthans are...  idiots.  They have no idea how even basic business works.  Last month they spent a little over 2 Trillion € in a attempt to revive 'Happy Days' using a 'new' technology called 'AI'.  A complete failure.  They lost over a Trillion in that attempt.  Turns out they did not even own the IP!"  "In any case, they're in hot water and are looking for a silver bullet."  "That's where you come in...", he added dryly.  
-"Yes, that's where you come in", said Kraal.  "We're starting project Janus to help us understand human reactions and explore new opportunities using simulation", he continued.  "Andrew, you are an AI expert, correct?"  
+Kraal began blaming humans for their lack of 'intelligence' ruining their investments and presenting a danger to the Teuthan lifestyle...  Zyn frowned and cut him off, “Look, the Teuthans are...  idiots.  They have no idea how even basic business works.  Last month they spent a little over 2 Trillion € in a attempt to revive 'Happy Days' using a 'new' technology called 'AI'.  A complete failure.  They lost over a Trillion in that attempt.  Turns out they did not even own the IP!”  “In any case, they're in hot water and are looking for a silver bullet.”  “That's where you come in...”, he added dryly.  
+“Yes, that's where you come in”, said Kraal.  “We're starting project Janus to help us understand human reactions and explore new opportunities using simulation”, he continued.  “Andrew, you are an AI expert, correct?”  
 "umm, yes?" replied Andrew, "I have been running the AI automation project in the IT department for the last decade or so, but I'm not a simulation..."
 "Great", interjected Kraal!  "And I have been informed that Randy has done some work on simulations?"
 Randy started to answer, but never got a chance...
-"The two of you are going to build our 'Anthropic Engine'.  You will run our simulations and gather data on human reactions.  We'll give you access to additional quantum computing resources and will expect you to deliver results within the next 6 months.  We'll be monitoring your progress, closely, via weekly progress reports", Kraal finished.
+“The two of you are going to build our 'Anthropic Engine'.  You will run our simulations and gather data on human reactions.  We'll give you access to additional quantum computing resources and will expect you to deliver results within the next 6 months.  We'll be monitoring your progress, closely, via weekly progress reports”, Kraal finished.
     + [The meeting wraps up] -> themeetingC
 
 
@@ -96,9 +96,9 @@ The Meeting
 
 ~ newswire_message = newswire_item()
 
-Andrew and Randy look at each other, a bit bewildered.  "So you want us to come up with a new revenue stream for CephaloDynamics?  By simulating human behavior?  And you want us to do it in just 6 months?", Andrew asked.
-"Yes", Kraal replied. "We need to find a new way to exploit the human condition and generate revenue for CephaloDynamics.  You know, something like the American Indians or the 'learned knowledge' tax from the 20th century.  We'll be using your simulations to identify new markets and opportunities", Kraal explained.  "You will be working on this project full-time.  If you succeed, we will allow you out of your contracts...  2 years early, fully pensioned.  If you fail, well there are two openings on the 'outer colonies'",  Kraal smirked.  Zyn just stared through Randy and Andrew.
-"Well, that's about it", Kraal straightened and moved to the door.  "I'll be expecting your progress reports next week. Woop-woop-woop! Do-do-do-do-do-doooo!", Kraal said as he left.
+Andrew and Randy look at each other, a bit bewildered.  “So you want us to come up with a new revenue stream for CephaloDynamics?  By simulating human behavior?  And you want us to do it in just 6 months?”, Andrew asked.
+“Yes”, Kraal replied. “We need to find a new way to exploit the human condition and generate revenue for CephaloDynamics.  You know, something like the American Indians or the 'learned knowledge' tax from the 20th century.  We'll be using your simulations to identify new markets and opportunities”, Kraal explained.  “You will be working on this project full-time.  If you succeed, we will allow you out of your contracts...  2 years early, fully pensioned.  If you fail, well there are two openings on the 'outer colonies'”,  Kraal smirked.  Zyn just stared through Randy and Andrew.
+“Well, that's about it”, Kraal straightened and moved to the door.  “I'll be expecting your progress reports next week. Woop-woop-woop! Do-do-do-do-do-doooo!”, Kraal said as he left.
 Randy took a deep breath, wanting to point out that both of the examples had proven disastrous for the exploited targets.  Teachers arguing they were entitled to a cut of what their students earned had led to the destruction of the entire education system (if you only teach kids enough to work in food-service, you can only get a percentage of the food-service labor profit).  Randy knew that would only make Kraal angrier and probably get him fired (which he could not afford to happen right now).  Instead, he turned to Andrew.  The two exchanged an understanding look.  Andrew pushed his Poltrona Frau back, stood and walked out the door.  The door closed behind, leaving Randy alone in the room.
     + [The Engine] -> building
 
@@ -134,8 +134,8 @@ The Anthropic Engine
 
 {simulation_count>0:"{~Hmm...|Should we be proud or terrified?|What was that?|Did we learn...anything?|So, the mice were hunchback?}" sighed Randy, "That was {~interesting|disappointing|curious|confusing}.  Let's see.  I'm going to {~upgrade Python|merge in latest CVE changes|enable debug mode|review the chain of thought|install updated drivers|clear the RAG cache|nuke the site from orbit|pray to a different God|switch to a higher precision model} and fire off a rebuild."|Two weeks (and maybe 30hrs of sleep) later...}
 
-"Ok, the new build is... 3.2.1.  Finished!  Let's bring iteration {ai_build_number} online", Randy called out to Andrew.  The room was filled with the hum of servers and the occasional beep as systems checked themselves.  He walked over to a large monitor on the wall, which displayed a grid of servers.  The wall of blinking LEDs never stopped, a constant reminder that the Anthropic Engine was always running. 
-"{ai_build_number} should be up and running now", Andrew replied, "Give it a new seed and let's see if that makes any difference."  Randy clicked on one of the login nodes and brought up its status page.
+“Ok, the new build is... 3.2.1.  Finished!  Let's bring iteration {ai_build_number} online”, Randy called out to Andrew.  The room was filled with the hum of servers and the occasional beep as systems checked themselves.  He walked over to a large monitor on the wall, which displayed a grid of servers.  The wall of blinking LEDs never stopped, a constant reminder that the Anthropic Engine was always running. 
+“{ai_build_number} should be up and running now”, Andrew replied, “Give it a new seed and let's see if that makes any difference.”  Randy clicked on one of the login nodes and brought up its status page.
 
 # CLASS: computer
 Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number: {ai_build_number}
@@ -199,7 +199,7 @@ A Peaceful Night's Sleep
 The waning station claxon signals the end of another work period.  
  {eg_project_next or eg_outsourcing or eg_fishbowl:
     - Andrew and Randy fist-bump discretely in the corridor.  "How about dinner?" Andrew asks, recent events replay visibly on his brow.  "Sure!  Pod 6 cheeseburgers?" Randy suggests.  "No, I was thinking about 'real food'.  I haven't had a proper steak in quite sometime..." he trails off.
-    A pair of top sirloins and a kaleidoscopic array of Old Fashioned's and Dirty Shirley's later, they wander toward the sleep pods.  "Night man" and "Dude" are the only words verbalized, but many more are exchanged in the space of a pair of conspiratorial smiles. 
+    A pair of top sirloins and a kaleidoscopic array of Old Fashioned's and Dirty Shirley's later, they wander toward the sleep pods.  “Night man” and “Dude” are the only words verbalized, but many more are exchanged in the space of a pair of conspiratorial smiles. 
 }
 Randy retraces the familiar path to '14380-e328'.  Home sweet pod.  The same one he's been using for decades.  The door slides open with a soft hum.  The interior is cool and dark, the air thick with humidity from the previous night's shower.  Randy steps inside, boots clicking on the poly resin floor.  He strips off his shirt and jacket, tossing them to the waiting attendant bot.  He climbs into the pod, pulling the synthetic plastic up.  The door slides shut with a soft hum.  Lights dim, air cools, he prepares for slumber.  A series of barely audible beeps signal the start of sleep cycle 553,245.
     + [{continue}] -> epilogue_pt2

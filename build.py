@@ -62,7 +62,7 @@ def replace_output_quotes(src_dir: str = "src", save: bool = False) -> int:
     """
     code_prefixes = (
         "~", "VAR ", "CONST ", "LIST ", "INCLUDE ", "EXTERNAL ",
-        "TEMP ", "RETURN ", "->", "//", "#", "<-", "-", "{"
+        "TEMP ", "RETURN ", "->", "//", "#", "<-", "-", "{", "*"
     )
     changed_files = 0
 
@@ -431,7 +431,7 @@ if __name__ == "__main__":
     elif args.cmd == "clean":
         clean(remove_cli_tools=True)
     elif args.cmd == "smartquotes":
-        changed_files = replace_output_quotes()
+        changed_files = replace_output_quotes(save=args.apply)
         log.info(f"Updated quotes in {changed_files} Ink {pluralize('file',changed_files)}")
     elif args.cmd == "serve":
         serve(port=args.port, nobrowser=args.nobrowser)

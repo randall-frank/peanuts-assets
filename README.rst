@@ -119,6 +119,14 @@ and the tools will be downloaded into the directory `ink_tools`.
     specify a commit message for the push.  The default is the current version number 
     of the story.
 
+- smartquotes [--apply]
+
+  - smartquotes will scan the ink files for the use of standard ascii double
+    quotes.  It can convert them into smart quote pairs if the `--apply` option is
+    supplied.  `--verbose smartquotes` can be used to review the changes without
+    applying them.
+
+
 Running
 ~~~~~~~
 

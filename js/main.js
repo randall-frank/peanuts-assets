@@ -668,9 +668,10 @@ We would like to acknowledge them here and thank them all for their contribution
 </tr>
 </tbody></table>
 <p></p>
-<h2>Beta Testers</h2>
+<h2>Beta Testers/Proof Readers</h2>
 <ul>
 <li>Marina Galvagni</li>
+<li>Andrew Sasak</li>
 </ul>
 <p></p>
 <h2>Imagery used with attribution</h2>

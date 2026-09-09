@@ -94,7 +94,7 @@ Randy looks up and wrinkles his nose as Andrew enters, “Good lord dude!  What 
 
 “Don't dis it until you try it”, Andrew blows the steam toward Randy, “If Red Bull made soup, this would be it!”
 
-Randy just shrugs, “Just point it away from me.  I'll stick with taco poke.”
+Randy just shrugs, “Just point it away from me.  I'll stick with peanuts and pickles.”
 
 Andrew politely slurps, “Ok man.  Whatcha got?  Do we have a list of bets we need to place?”
 
@@ -112,7 +112,7 @@ Andrew laughed out loud, "I like the way you think, Randy.  We can start 120 day
 
 Andrew finished his soup, “Remind me never to go into any business that competes with you.  You want to start running superfluous simulations or should I?”
 
-Randy finished what looked to Andrew as a peanut butter and pickles sandwich, “Just promise me you'll lay off that soup dude!”
+Randy finished what looked to Andrew like a peanut butter and pickles sandwich, “I got it. Just promise me you'll lay off that soup dude!”
 
 Andrew flashes him a cheeky smile and a thumbs up as he heads back into the corridor.
     ~ eg_project_shortink = 2

@@ -2,9 +2,9 @@
 ===  common_options(ret_text, -> ret_target, -> next_target)
     ~ temp text = ret_text
 
-    // crypto mining is valid if project next is in play or 
+    // crypto mining is valid if project short ink is in play or 
     // outsourcing is in play (but the pitch has not happened)
-    {eg_project_next or ((eg_outsourcing > 1) and (eg_outsourcing < 3)):
+    {eg_project_shortink or ((eg_outsourcing > 1) and (eg_outsourcing < 3)):
         + [Redirect simulation to Cryptid mining] -> crypto_output(ret_target)
     }
 

@@ -31,7 +31,7 @@ Outsourcing - not increase to 350, rather to current + 30%???
 
 Consider potential endings:
 
-"Project Next"
+"Project Short Ink"
     Randy and Andrew tank the company, but secretly bank on the loss via 3rd party.  In this scenario, they
     need to reduce the stock price to nothing.  So, they can plan for this via "proj_next" options:
         1) talk about it (proj_next)
@@ -139,8 +139,7 @@ TODO:
 cruising altitude
 zeromyhero
 storyline.ink - some bits are incomplete
-    project_next_2 - insure the company indirectly w/payout when it collapses
-    project_next_3 - company collapses, we are fired.  get the insurance payout (end)
+    project_shortink_3 - company collapses, we are fired.  get the insurance payout (end)
     stock_drop_level3 - Stock drops so low that things are canceled.  can be (end)
 
 

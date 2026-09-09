@@ -5,6 +5,7 @@ animatronic
 AUDIOLOOP
 avant
 Bigsby
+bioluminescent
 Blipverts
 Bomba
 Brable
@@ -55,6 +56,7 @@ Raguel
 ROAS
 SBIMAGE
 Shere
+shortink
 Skithrax
 skunky
 Soylent
@@ -67,6 +69,7 @@ Tyrannus
 UFCL
 Wapner
 Whaddya
+Whatcha
 Wolseley
 Xylok
 Zardozi

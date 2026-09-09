@@ -43,27 +43,27 @@ The whole process takes about ten minutes before {shell_company_name} ('ABAL') i
 “So we'll have the means, but what is the way?”, Andrew ponders out loud.
 
 "I've got a couple of ideas", Randy counters.  "They kind of pursue different directions."
-    + [Burn it all to the ground!] -> project_next
+    + [Burn it all to the ground!] -> project_shortink
     + [The house keeps the vig.] -> outsourcing
 
 
-= do_project_next
-    ~ eg_project_next = 1
+= do_project_shortink
+    ~ eg_project_shortink = 1
     ~ eg_outsourcing = 0
     ~ ABAL_running = 1
     -> station.building
 
 
-= project_next
-~ location_name = "LPrivate Alcove, Deck 7"
+= project_shortink
+~ location_name = "LChromatophore Conference Room, Deck 5"
 # CLEAR
 # IMAGE:
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-"Project Next"
+"Project Short Ink"
 
-Randy outlines the basics of Project Next, “So the Teuthans have handed us the means.  Every simulation we run is tanking CDYG?  So let's tank it into bankruptcy!”  
+Randy outlines the basics of Project Short Ink, “So the Teuthans have handed us the means.  Every simulation we run is tanking CDYG?  So let's tank it into bankruptcy!”  
 
 “But they keep reducing our resources, we can't win by just using the resources to mine Cryptid”, Andrew exclaims.
 
@@ -71,56 +71,74 @@ Randy outlines the basics of Project Next, “So the Teuthans have handed us the
 
 “Won't they just track our short positions and slap us with the SEC”, Andrew asks?
 
-"That assumes we use a CDYG short position", Randy replies.  "What if instead we insure CDYGs debt?  When they default on the debt...  If that is still too visible, we can insure the debt of companies CDYG would bring down with them.  Suppliers, consultants, services...  Hell, I'll bet even Greenpeace would be on the list."
+“That assumes we use a CDYG short position”, Randy replies.  “What if instead we insure CDYGs partners and debt?  When they default on the debt...  If that is still too visible, we can insure the debt of companies CDYG would bring down with them.  Suppliers, consultants, services...  Hell, I'll bet even Greenpeace might be on the list.”
 
-"Perfect", Andrew crowed, "We can insure a blend of all of them. We can even use secondary short positions as a hedge."
-    + [Let's do it.  We'll meet again when ABAL has funding.] -> do_project_next
+“Perfect”, Andrew crowed, “We can insure a blend of all of them. We can even use secondary short positions as a hedge.”
+    + [Let's do it.  We'll meet again when ABAL has funding.] -> do_project_shortink
     + {outsourcing == 0} [There is another option?] -> outsourcing
     + {outsourcing == 1} [Let's go with 'Outsourcing' instead.] -> do_outsourcing
 
 
-= project_next_2
-~ location_name = "LPrivate Alcove, Deck 7"
+= project_shortink_2
+~ location_name = "LChromatophore Conference Room, Deck 5"
 # CLEAR
 # IMAGE:
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-Project Next: Buying Insurance
+Project Short Ink: Establishing Positions
 
-TODO
+Andrew strides into the aft conference room carrying a bowl of bioluminescent consommé.  The steaming broth glows faintly in the lowered light. It is infused with deep-sea mineral extracts. A delight for cephalopods, it gives humans a salty, highly caffeinated kick, but it reeks.
 
-    ~ temp v = player_cryptids * cryptid_exchange_rate
+Randy looks up and wrinkles his nose as Andrew enters, “Good lord dude!  What is that stuff?  Wait, never mind, I don't want to know.”
 
-# HTML: <a href="./abyssal.html" class="simple-a" target="_blank" rel="noopener noreferrer">Abyssal Intelligence</a>
-Andrew begins with a brief status report, “Ok, everything is proceeding according to plan.  HTML is now a fully functional shell company.  It has accumulated {player_cryptids}Ͼ, or about {get_whole_number(v)}€.  We have a few more things to iron out, but overall we're on track.”
+“Don't dis it until you try it”, Andrew blows the steam toward Randy, “If Red Bull made soup, this would be it!”
 
-Time to buy the insurance positions and enable higher burn rates (“looping stories”)
+Randy just shrugs, “Just point it away from me.  I'll stick with taco poke.”
 
-    ~ eg_project_next = 2
+Andrew politely slurps, “Ok man.  Whatcha got?  Do we have a list of bets we need to place?”
+
+“Ok", Randy begins, “I've got some solid targets.  First the obvious, Interplanetary Insurance Underwriters.  These guys have insured all of CDYG and it turns out they're holding probably 30% of their corporate debt.  Plus, they'll insure any bet, so the play is a simple credit default swap.”
+
+“Nice!”, Andrew says, “I'll buy some via Abyssal Intelligence, it will look like natural corporate diligence. What else?”
+
+“The other angle will be CDYG corporate partners”, Randy says, “Folks with critically narrow business concerns that tie them directly to CDYG. There are probably more, but let's start with Earth Orbital Receiving and Planetary Municipal & Agricultural.”
+
+"hmm, who are they exactly", asks Andrew. "I've never heard of them."
+
+"Thus, perfect targets", chuckles Randy.  "Earth Orbital Receiving builds bespoke systems that capture the 'icebergs' from Europa and converts them into 'rain'.  PM&A holds the water contracts for the folks on earth who are buying the water.  90% of their contracts are through CDYG.  If CDYG goes down, they'll struggle greatly to meet their contractual obligations.  They'll be cooked.”
+
+Andrew laughed out loud, "I like the way you think, Randy.  We can start 120 day shorting those companies this afternoon.”
+
+Andrew finished his soup, “Remind me never to go into any business that competes with you.  You want to start running superfluous simulations or should I?”
+
+Randy finished what looked to Andrew as a peanut butter and pickles sandwich, “Just promise me you'll lay off that soup dude!”
+
+Andrew flashes him a cheeky smile and a thumbs up as he heads back into the corridor.
+    ~ eg_project_shortink = 2
     + [{continue}] -> station.building
 
 
-= project_next_3
-~ location_name = "LPrivate Alcove, Deck 7"
+= project_shortink_3
+~ location_name = "LChromatophore Conference Room, Deck 5"
 # CLEAR
 # IMAGE:
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-Project Next: The Crash
+Project Short Ink: The Crash
 
 TODO 
 
 CDYG has crashed, we are fired (and everyone else) - keep our staplers...
 
 Ping from broker about settling their positions...
-    ~ eg_project_next = 2
+    ~ eg_project_shortink = 2
     + [{continue}] -> station.epilogue
 
 
 = do_outsourcing
-    ~ eg_project_next = 0
+    ~ eg_project_shortink = 0
     ~ eg_outsourcing = 1
     ~ ABAL_running = 1
     -> station.building
@@ -147,8 +165,8 @@ Randy outlines the basics of Outsourcing, “We've been spending a lot of time w
 
 "Well", Andrew ponders a bit, "I'm not sure I'd go that far, but I agree on the general assertions and direction.  Let's make sure our assumptions are correct first.  I can monitor the queries for some time and see how accurate our assumptions are."
     + [Let's do it.  We'll meet again when we have the numbers.] -> do_outsourcing
-    + {project_next == 0} [There is another option?] -> project_next
-    + {project_next == 1} [Let's go with 'Project Next' instead.] -> do_project_next
+    + {project_shortink == 0} [There is another option?] -> project_shortink
+    + {project_shortink == 1} [Let's go with 'Project Short Ink' instead.] -> do_project_shortink
 
 
 = outsourcing_2
@@ -646,6 +664,6 @@ Zyn goes back to corporate
     Andrew and Randy go back to the IT 
 
 // The grind ending
-    + {eg_project_next == 0} [Back to the grind.] -> station.epilogue
+    + {eg_project_shortink == 0} [Back to the grind.] -> station.epilogue
 // The insurance pays off
-    + {eg_project_next == 2} [Sometimes insurance pays off] -> storyline.project_next_3
+    + {eg_project_shortink == 2} [Sometimes insurance pays off] -> storyline.project_shortink_3

@@ -147,8 +147,8 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
     * {storyline.stock_drop_level1} [Discuss stock drop with Andrew] -> storyline.make_plans
     * {storyline.stock_drop_level1 and (idiot_count > 1)} [Discuss Andrew's social media exploitation idea] -> storyline.fishbowl
 
-    // Project Next storyline
-    * {(eg_project_next == 1) and (player_cryptids > 1000)} [Project Next: Status meeting with Andrew] -> storyline.project_next_2
+    // Project Short Ink storyline
+    * {(eg_project_shortink == 1) and (player_cryptids > 1000)} [Project Short Ink: Status meeting with Andrew] -> storyline.project_shortink_2
 
 
     // Outsourcing storyline
@@ -197,7 +197,7 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
 A Peaceful Night's Sleep
 
 The waning station claxon signals the end of another work period.  
- {eg_project_next or eg_outsourcing or eg_fishbowl:
+ {eg_project_shortink or eg_outsourcing or eg_fishbowl:
     - Andrew and Randy fist-bump discretely in the corridor.  "How about dinner?" Andrew asks, recent events replay visibly on his brow.  "Sure!  Pod 6 cheeseburgers?" Randy suggests.  "No, I was thinking about 'real food'.  I haven't had a proper steak in quite sometime..." he trails off.
     A pair of top sirloins and a kaleidoscopic array of Old Fashioned's and Dirty Shirley's later, they wander toward the sleep pods.  “Night man” and “Dude” are the only words verbalized, but many more are exchanged in the space of a pair of conspiratorial smiles. 
 }

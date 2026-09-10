@@ -45,6 +45,7 @@ def pluralize(word: str, count: int) -> str:
     """
     return word if count == 1 else f"{word}s"
 
+
 def replace_output_quotes(src_dir: str = "src", save: bool = False) -> int:
     """Replace literal quote pairs in Ink source with curly quotes.
 

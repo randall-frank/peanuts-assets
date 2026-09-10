@@ -139,7 +139,6 @@ TODO:
 cruising altitude
 zeromyhero
 storyline.ink - some bits are incomplete
-    project_shortink_3 - company collapses, we are fired.  get the insurance payout (end)
     stock_drop_level3 - Stock drops so low that things are canceled.  can be (end)
 
 

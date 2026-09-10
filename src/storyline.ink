@@ -61,7 +61,7 @@ The whole process takes about ten minutes before {shell_company_name} ('ABAL') i
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-"Project Short Ink"
+Project “Short Ink”
 
 Randy outlines the basics of Project Short Ink, “So the Teuthans have handed us the means.  Every simulation we run is tanking CDYG?  So let's tank it into bankruptcy!”  
 
@@ -86,7 +86,7 @@ Randy outlines the basics of Project Short Ink, “So the Teuthans have handed u
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-Project Short Ink: Establishing Positions
+Project “Short Ink”: Establishing Positions
 
 Andrew strides into the aft conference room carrying a bowl of bioluminescent consommé.  The steaming broth glows faintly in the lowered light. It is infused with deep-sea mineral extracts. A delight for cephalopods, it gives humans a salty, highly caffeinated kick, but it reeks.
 
@@ -98,23 +98,21 @@ Randy just shrugs, “Just point it away from me.  I'll stick with peanuts and p
 
 Andrew politely slurps, “Ok man.  Whatcha got?  Do we have a list of bets we need to place?”
 
-“Ok", Randy begins, “I've got some solid targets.  First the obvious, Interplanetary Insurance Underwriters.  These guys have insured all of CDYG and it turns out they're holding probably 30% of their corporate debt.  Plus, they'll insure any bet, so the play is a simple credit default swap.”
+“Ok", Randy begins, “I've got some solid targets.  First the obvious, Interplanetary Insurance Underwriters (IIU).  These guys have insured all of CDYG and it turns out they're holding probably 30% of their corporate debt.  Plus, they'll insure any bet we might want to make, so the play is to buy credit default swaps and short IIU.”
 
-“Nice!”, Andrew says, “I'll buy some via Abyssal Intelligence, it will look like natural corporate diligence. What else?”
+“Nice!”, Andrew says, “I'll procure them via Abyssal Intelligence, it will even look like natural corporate diligence. What else?”
 
-“The other angle will be CDYG corporate partners”, Randy says, “Folks with critically narrow business concerns that tie them directly to CDYG. There are probably more, but let's start with Earth Orbital Receiving and Planetary Municipal & Agricultural.”
+“Another angle will be CDYG coopetitors”, Randy says, “Generally supply chain partners who are in a position to exploit any weakness in CDYG. There are probably more, but let's start with Earth Orbital Receiving (EOS) and Planetary Municipal & Agricultural (PM&A).”
 
-"hmm, who are they exactly", asks Andrew. "I've never heard of them."
+“hmm, who are they exactly”, asks Andrew. “I've never heard of them.”
 
-"Thus, perfect targets", chuckles Randy.  "Earth Orbital Receiving builds bespoke systems that capture the 'icebergs' from Europa and converts them into 'rain'.  PM&A holds the water contracts for the folks on earth who are buying the water.  90% of their contracts are through CDYG.  If CDYG goes down, they'll struggle greatly to meet their contractual obligations.  They'll be cooked.”
+Randy chuckles, "Unknowns, perfect targets for Short Ink. Earth Orbital Receiving builds bespoke hardware that captures the 'icebergs' from Europa and converts them into terrestrial 'rain'.  Basically, they do all the work.  They've been shackled by historical contracts that prevent them from directly competing, but they are cash flush and in a position to buy and deliver on unfilled CDYG contracts.  PM&A holds the Earth bound side of those water contracts.  95% of said contracts are through CDYG.  If CDYG were to default on any of them, it opens the door for an alliance with EOR, cutting out the CDYG middle-man.  Something they're both more than willing to exploit.”
 
-Andrew laughed out loud, "I like the way you think, Randy.  We can start 120 day shorting those companies this afternoon.”
+Andrew laughed out loud, “I like the way you think, Randy.  Abyssal Intelligence will begin acquiring positions in those companies this afternoon.”  Andrew finished his soup, “Remind me never to go into any business that competes with you.  That just leaves us with a company to run into the ground.  You want to start running superfluous simulations or should I?”
 
-Andrew finished his soup, “Remind me never to go into any business that competes with you.  You want to start running superfluous simulations or should I?”
+Randy finished what looked to Andrew like a peanut butter and pickle sandwich, “I got it. Just promise me you'll lay off that soup dude!”
 
-Randy finished what looked to Andrew like a peanut butter and pickles sandwich, “I got it. Just promise me you'll lay off that soup dude!”
-
-Andrew flashes him a cheeky smile and a thumbs up as he heads back into the corridor.
+Andrew flashes him a cheeky smile along with a hearty thumbs up as he heads back into the corridor.
     ~ eg_project_shortink = 2
     + [{continue}] -> station.building
 
@@ -126,13 +124,37 @@ Andrew flashes him a cheeky smile and a thumbs up as he heads back into the corr
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-Project Short Ink: The Crash
+Project “Short Ink”: The Crash
 
-TODO 
+Randy and Andrew meet up again in the Chromatophore.  Randy brought hummus and pickled olives, Andrew taco poke.
 
-CDYG has crashed, we are fired (and everyone else) - keep our staplers...
+Randy looked over the blend of octopus seaweed and soy, “Much better dude!  Where did you get that?”
 
-Ping from broker about settling their positions...
+“The cafe on Deck 3 has a 'make your own poke' station”, replied Andrew.  
+
+“I've got to check that one out”, said Randy, “Did you check out your new EOS employee contract?”
+
+“Yeah, actually quite a bit better than CDYG.  We actually get vacation on Earth!”, noted Andrew. “Did you see the spike in both EOS and PM&A?  They're already up 30% and folks are talking as if 50% not being unreasonable.  Crazy good call dude.”
+
+Randy started, “So... does that mean we're...”, before getting cut off as Andrew's Abyssal Intelligence's com device began pinging ominously.  
+
+Andrew scanned the display, “The Underwriters.”  He held up a hand and took the call, “Hello...” 
+
+“This is Clara Hallowell with Interplanetary Insurance Underwriters.  May I speak with... Andrew Florance, CFO of Abyssal Intelligence?”, crackled the phone.
+
+“This is he.  What is this regarding?”, said Andrew.
+
+“I'm calling to discuss your CDYG credit default swap position.  We believe we have accurately marked your positions and would like to make an offer...”, Clara began in a practiced tone.
+
+The call continued for another 20 minutes before Andrew thanked the call and hung up.
+
+“we're rich. ”, Andrew finished Randy's interrupted query.  “Hell, crazy wealthy.  'Fuck-you money' rich.”
+
+Randy just smiled and the two of them started to laugh.
+
+“It worked, it actually worked”, exclaimed Randy.  “We should probably keep working for EOS for a bit, tonight we should celebrate.  I'm buying.”
+
+Andrew smiled deeply and followed his friend out into the corridor.
     ~ eg_project_shortink = 2
     + [{continue}] -> station.epilogue
 
@@ -405,7 +427,7 @@ Randy laughed out loud, “You remember 'Eliza'?  Surprising how far version 234
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-The Idiocracy Solution (aka 'Project InkStream')
+The Idiocracy Solution (aka “Project InkStream”)
 
 Andrew slides into the seat across from Randy in the main cafeteria.  He has opted for the hydroponic kelp tartare.  As the putrid oder, loved by Teuthans everywhere, reaches his nose his stomach revolts.  He covers the dish with a plastic plate and pushes the tray off to the side.  Looks like another liquid lunch as he pops a couple of protein tabs, washing it down with a Dublin Dr Pepper.  
 
@@ -655,13 +677,16 @@ Emergency Level 3 Stock Alert Meeting
 
 Andrew and Randy are abruptly summoned into the conference room.  This is getting way too familiar...  Something different this time... Inkwell, not Radula?  This can't be a good thing.
 
+Another angle will be CDYG coopetitors”, Randy says, “Generally supply chain partners who are in a position to exploit any weakness in CDYG. There are probably more, but let's start with Earth Orbital Receiving (EOS) and Planetary Municipal & Agricultural (PM&A).
+
 TODO
 
 Project is canceled.
+CDYG is bought by EOS who announces they will be fulfilling open PM&A contracts, passing on their new-found efficiency.
 Kraal is sent back to Europa
 Zyn goes back to corporate
 
-    Andrew and Randy go back to the IT 
+    Andrew and Randy go back to IT, but working for EOS. 
 
 // The grind ending
     + {eg_project_shortink == 0} [Back to the grind.] -> station.epilogue

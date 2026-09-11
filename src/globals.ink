@@ -88,6 +88,7 @@ VAR shell_company_shares = 1000000
 
 // State of "Project Short Ink" 0=not started, 1=started, 2=implemented, 3=triggered
 VAR eg_project_shortink = 0
+VAR cdyg_bankrupt = 0
 
 // State of "Outsourcing" 0=not started, 1=started, 2=pitch option enabled, 3=pitched
 VAR eg_outsourcing = 0

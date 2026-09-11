@@ -96,8 +96,8 @@ VAR newswire_message = ""
     ~ t += "See what's playing tonight on InkStream!  Everything funny, all the time."
     ~ t += "[social_followers,./inkstream.html?viewers=]"
 
-    ~ t += "This is a test item.  It should appear sometime after the first 'violent' simulation and the link should redirect to the 'intervention' stitch."
-    ~ t += "[violence_count,storyline.violence]"
+    ~ t += "Chaos at CephaloDynamics.  With their stock trading at an historic low, they have been bought by Earth Orbital Receiving.  Head of transition, Sloane Sterling is leading the charge to bring CDYG back to profit."
+    ~ t += "[cdyg_bankrupt,]"
 
     ~ return t
 

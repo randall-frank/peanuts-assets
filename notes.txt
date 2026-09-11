@@ -138,8 +138,6 @@ TODO:
 
 cruising altitude
 zeromyhero
-storyline.ink - some bits are incomplete
-    stock_drop_level3 - Stock drops so low that things are canceled.  can be (end)
 
 
 Lock up a simulation - runs forever...

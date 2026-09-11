@@ -126,7 +126,7 @@ Andrew flashes him a cheeky smile along with a hearty thumbs up as he heads back
 # CLASS: head1
 Project “Short Ink”: The Crash
 
-Randy and Andrew meet up again in the Chromatophore.  Randy brought hummus and pickled olives, Andrew taco poke.
+Randy and Andrew meet up again in the Chromatophore.  Randy brought hummus and pickled olives, Andrew tako poke.
 
 Randy looked over the blend of octopus seaweed and soy, “Much better dude!  Where did you get that?”
 
@@ -140,7 +140,7 @@ Randy started, “So... does that mean we're...”, before getting cut off as An
 
 Andrew scanned the display, “The Underwriters.”  He held up a hand and took the call, “Hello...” 
 
-“This is Clara Hallowell with Interplanetary Insurance Underwriters.  May I speak with... Andrew Florance, CFO of Abyssal Intelligence?”, crackled the phone.
+“This is Clara Hallowell with Interplanetary Insurance Underwriters.  May I speak with... Dr Nova?  Dr Andrew Nova, CFO of Abyssal Intelligence?”, crackled the phone.
 
 “This is he.  What is this regarding?”, said Andrew.
 
@@ -148,7 +148,7 @@ Andrew scanned the display, “The Underwriters.”  He held up a hand and took 
 
 The call continued for another 20 minutes before Andrew thanked the call and hung up.
 
-“we're rich. ”, Andrew finished Randy's interrupted query.  “Hell, crazy wealthy.  'Fuck-you money' rich.”
+“we're rich. ”, Andrew finished Randy's interrupted query.  “Hell, crazy wealthy.  You know 'Fuck-you money' rich.”
 
 Randy just smiled and the two of them started to laugh.
 
@@ -675,20 +675,45 @@ Emergency Level 3 Stock Alert Meeting
 
 ~ newswire_message = newswire_item()
 
-Andrew and Randy are abruptly summoned into the conference room.  This is getting way too familiar...  Something different this time... Inkwell, not Radula?  This can't be a good thing.
+Andrew and Randy are abruptly summoned into the conference room.  This is getting way too familiar...  Something different this time though.  Inkwell, not Radula?  This can't be a good thing.  They enter the conference room to find Kraal and Zyn already seated at the obsidian table. They are seated at the foot of the table, not in their usual station of power.  Both are looking ragged with an air of desperation about them.  Kraal looks up as Andrew and Randy enter.  He 'bubbles' and nods, gesturing to the seats next to them.  Not a word is spoken.
 
-Another angle will be CDYG coopetitors”, Randy says, “Generally supply chain partners who are in a position to exploit any weakness in CDYG. There are probably more, but let's start with Earth Orbital Receiving (EOS) and Planetary Municipal & Agricultural (PM&A).
+The door spirals open and a short man with thin lips and sharp jaw, dressed in flowing black strides in, sets up a recording pad and takes a seat at the head of the table.  Lawyer?  Executive assistant?  We get our answer exactly thirty seconds later.
 
-TODO
+She enters the room.  Short cropped hair, mid-thirties, classical sharp, angular face and eyes that pierce effortlessly.  She stands at the head of the table, “Welcome everyone.  My name is Sloane Sterling.  I am the head of corporate transitioning for Earth Orbital Receiving (EOS) and acting CEO of CDYG.”  
+A pause, calculated for effect, “I sincerely wish we could have met under other circumstances, but alas that is not to be.”
 
-Project is canceled.
-CDYG is bought by EOS who announces they will be fulfilling open PM&A contracts, passing on their new-found efficiency.
-Kraal is sent back to Europa
-Zyn goes back to corporate
+She continues by discussing the acquisition of CDYG by EOS.  CDYG core water corridor operations will continue under the CDYG name while 'toxic assets' and 'non-essential' operations were isolated into a separate entity.  The future of that entity purposefully left ambiguous.   Randy and Andrew nervously exchange a glance.  Zyn and Kraal look even more despondent if at all possible. They already know the end game.  
+    + [{continue}] -> stock_drop_level3_pt2
 
-    Andrew and Randy go back to IT, but working for EOS. 
+= stock_drop_level3_pt2
+~ location_name = "LBlue Lagoon Inkwell Conference Room"
+# CLEAR
+# IMAGE:
+# SBIMAGE: items/squid4.png
+# AUDIOLOOP:
+# CLASS: head1
+Emergency Level 3 Stock Alert Meeting
+
+~ newswire_message = newswire_item()
+
+Sterling continues, “I am here to ensure a smooth transition.  My assistant, Gideon, will be assisting me in this effort.”
+She turns first to Zyn, “CDYG has appropriated new counsel.  Greenpeace will no longer represent us.  Thank you for your service Zyn.”  She gestures toward the door.  Zyn takes the hint, looking somewhat relieved.  Gideon hands him a packet as he exits.
+
+Kraal is her next bullet item.  “Kraal, your little AI 'experiment' is over.  We are shutting down the 'Anthropic Engine' project.”  If a Teuthan had proper arms, Kraal's face would be in them at this point.  
+She continues, “You have been recalled to Europa. Your contract with CDYG has been terminated.  Gideon has your termination paperwork.  Thank you for your service.”
+Kraal takes it surprisingly well as he glides out of the room.  He must have been expecting this outcome.  As he passes Randy and Andrew, “look me up if you're ever on Europa”, he adds sarcastically as he exits.
+
+Randy and Andrew are starting to panic, squirming visibly in their seats.  
+
+Sterling looks at them and what looks like a genuine smile appears from nowhere, “Randy, Andrew, CDYG is still in business with considerable IT needs.  The two of you have been assigned back to your original IT positions before this 'experiment'.  I trust you do not have any issues with your continued employment with CDYG?”
+
+“No ma'am”, they respond in unison. 
+
+“Good. Things will change a bit in the new CDYG, especially in the area of HR, but I'm looking forward to working with they two of you in the future. I'll be in touch with you both shortly to discuss your new roles.”
+
+With that the meeting ended.  Randy and Andrew picked up their new contacts on the way out the door.
 
 // The grind ending
     + {eg_project_shortink == 0} [Back to the grind.] -> station.epilogue
-// The insurance pays off
+// The insurance pays off ending
     + {eg_project_shortink == 2} [Sometimes insurance pays off] -> storyline.project_shortink_3

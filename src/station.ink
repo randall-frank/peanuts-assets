@@ -123,6 +123,7 @@ Randy took a deep breath, wanting to point out that both of the examples had pro
 
 // third level panic button pressed
 { (stock_CDYG < 125.) and not storyline.stock_drop_level3:
+    ~ cdyg_bankrupt = 1
     -> storyline.stock_drop_level3
 }
 

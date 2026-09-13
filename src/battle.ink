@@ -8,7 +8,8 @@
 # CLEAR
 # CLASS: head1
 BattleTech
-
+# IMAGEMAXHEIGHT: 480
+# IMAGE: locations/billings.png
 
 'Shit' was the first word Billings thought of.  He could sense that his eyes were well fogged over and could barely open them.  Every muscle in his body hurt, his head pounded, and his stomach felt as if a moose had gone through it.  Most physicians would classify this as a viral infection or some sort of deadly disease.  Billings called it a 'hangover'.
 
@@ -17,6 +18,20 @@ BattleTech
 Colonel Arden Billings was 31 years old.  He had been ripping the hell out of his body since he was 25.  Whether it was walking into an ambush to draw enemy fire or large quantities of alcohol, every day he found himself wishing he could take one in the head and get the whole damn thing over with.
 
 Billings' parents died when he was four, leaving him to defend himself in a successor state  he knew nothing about.  Whenever he would tell people about his 'fucking past' he would mention that he had been in this god-forsaken war so long he had forgotten which house he was fighting for.  'Marik' was the brand he had been given since day one.  Unsure of his origin, Billings spent his time wandering in an activity in which he could be sure of only one thing.  That activity was war.  That thing was death.
+    <- common_options("-", -> ret_target, -> drop)
+    -> DONE   // suppress compiler warning...
+
+// End the simulation...
+= ret_target
+    ~ set_simulation_state(0)
+    // When a simulation stops, the stock price drops by 10%
+    ~ reduce_stock_price()
+    ->->
+
+= drop
+~ location_name = "VDropday"
+# CLEAR
+# SBIMAGE: locations/billings.png
 
 "Wake up, lazy-ass!"
 
@@ -33,19 +48,6 @@ Instead, he said “Oooh.”
 "Oooh."
 
 “Jesus tits.” said Tanner as he walked out the door leaving a trail of smoke.  He left to go do something dangerous in the commons.
-    <- common_options("-", -> ret_target, -> drop)
-    -> DONE   // suppress compiler warning...
-
-// End the simulation...
-= ret_target
-    ~ set_simulation_state(0)
-    // When a simulation stops, the stock price drops by 10%
-    ~ reduce_stock_price()
-    ->->
-
-= drop
-~ location_name = "VDropday"
-# CLEAR
 
 “Oooh.” said Billings again.  It was his favorite noise.  He made the final decision to fall out of bed.  Drop vectors, wind resistance factors, and pain shot through his head as he worked his way to the bathroom.  Billings did things in the morning by priority.  Whatever was most important to him came first.  Today, taking several pills came before a shower, and loading his Branton-Hills .55 caliber semi-automatic pistol came in third.
 
@@ -142,6 +144,7 @@ Drop technician Michael Forest left Billings alone in his room and closed the do
 = act2
 ~ location_name = "VAirborne"
 # CLEAR
+# IMAGE: locations/dropship.png
 
 The dull roar of engines took over the throbbing of pain that used to be in Billings' mind.  He stared ahead.  Training told him to watch readout VFR's and orbit analysis interfaces to make sure nothing happened.  Today he decided to look out the window.  God, how hw missed sunsets.  Readouts chattered endlessly around him and various VFR's spread an eerie blue light across the bridge.
 
@@ -168,6 +171,7 @@ Billings computed launch vectors, the answers were fed carrier wave to the aeros
 = countdown
 ~ location_name = "VThe Countdown"
 # CLEAR
+# SBIMAGE: locations/dropship.png
 
 "Twenty...nineteen...eighteen..."
 
@@ -202,6 +206,7 @@ Billings started counting with the computer.
 = launch
 ~ location_name = "VLaunching"
 # CLEAR
+# SBIMAGE: locations/dropship.png
 
 A loud roar shook the Overlord dropship.
 
@@ -244,6 +249,7 @@ His bottle fell to the floor.
 = act3
 ~ location_name = "VBattleTech: Act III"
 # CLEAR
+# SBIMAGE: locations/dropship.png
 
 "Billings?...Colonel?...Wake up, sir."
 

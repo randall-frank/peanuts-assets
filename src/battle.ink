@@ -18,7 +18,7 @@ BattleTech
 Colonel Arden Billings was 31 years old.  He had been ripping the hell out of his body since he was 25.  Whether it was walking into an ambush to draw enemy fire or large quantities of alcohol, every day he found himself wishing he could take one in the head and get the whole damn thing over with.
 
 Billings' parents died when he was four, leaving him to defend himself in a successor state  he knew nothing about.  Whenever he would tell people about his 'fucking past' he would mention that he had been in this god-forsaken war so long he had forgotten which house he was fighting for.  'Marik' was the brand he had been given since day one.  Unsure of his origin, Billings spent his time wandering in an activity in which he could be sure of only one thing.  That activity was war.  That thing was death.
-    <- common_options("-", -> ret_target, -> drop)
+    <- common_options("-", -> ret_target, -> woke)
     -> DONE   // suppress compiler warning...
 
 // End the simulation...
@@ -28,8 +28,8 @@ Billings' parents died when he was four, leaving him to defend himself in a succ
     ~ reduce_stock_price()
     ->->
 
-= drop
-~ location_name = "VDropday"
+= woke
+~ location_name = "VAwakened"
 # CLEAR
 # SBIMAGE: locations/billings.png
 
@@ -50,8 +50,15 @@ Instead, he said “Oooh.”
 “Jesus tits.” said Tanner as he walked out the door leaving a trail of smoke.  He left to go do something dangerous in the commons.
 
 “Oooh.” said Billings again.  It was his favorite noise.  He made the final decision to fall out of bed.  Drop vectors, wind resistance factors, and pain shot through his head as he worked his way to the bathroom.  Billings did things in the morning by priority.  Whatever was most important to him came first.  Today, taking several pills came before a shower, and loading his Branton-Hills .55 caliber semi-automatic pistol came in third.
+    <- common_options("-", -> ret_target, -> drop)
+    -> DONE   // suppress compiler warning...
 
-Today was drop-day.  They has spent months planning it and two weeks in an Overlord waiting to get there.  All the waiting would soon be over.
+= drop
+~ location_name = "VDropday"
+# CLEAR
+# SBIMAGE: locations/billings.png
+
+Today was drop-day.  They had spent months planning it and two weeks in an Overlord waiting to get there.  All the waiting would soon be over.
 
 In a small compartment in this Overlord laid Arden Billings, vomiting into a sink.
 
@@ -144,6 +151,7 @@ Drop technician Michael Forest left Billings alone in his room and closed the do
 = act2
 ~ location_name = "VAirborne"
 # CLEAR
+# IMAGEMAXHEIGHT: 480
 # IMAGE: locations/dropship.png
 
 The dull roar of engines took over the throbbing of pain that used to be in Billings' mind.  He stared ahead.  Training told him to watch readout VFR's and orbit analysis interfaces to make sure nothing happened.  Today he decided to look out the window.  God, how hw missed sunsets.  Readouts chattered endlessly around him and various VFR's spread an eerie blue light across the bridge.

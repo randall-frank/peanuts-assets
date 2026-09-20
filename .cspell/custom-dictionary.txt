@@ -1,5 +1,6 @@
 # Custom Dictionary Words
 ABAL
+advertainment
 Aetherdrop
 animatronic
 AUDIOLOOP
@@ -9,6 +10,7 @@ bioluminescent
 Blipverts
 Bomba
 Brable
+Braylee's
 Brome
 Bromegrass
 CDYG
@@ -23,12 +25,15 @@ Cooter
 Cryptid
 cryptids
 dihydrate
+Doof
 dropship
+Emberly's
 Exocatalyst
 fallin
 FIRECODE
 Florance
 Fonzie
+frappuccino
 Gliese
 Gravitophone
 Greenie
@@ -51,6 +56,7 @@ Koskinen's
 Luxon
 mesg
 Mikael
+mornin
 newswire
 niner
 Onder
@@ -78,5 +84,6 @@ Whaddya
 Whatcha
 Wolseley
 Xylok
+yukh
 Zardozi
 Zelle

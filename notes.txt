@@ -129,15 +129,14 @@ david
 solitaire
 symptoms
 badtothebone
+ubermom
 
 WORKING:
 
-ubermom - andrew
+cruising altitude - andrew
+zeromyhero - randy
 
 TODO:
-
-cruising altitude
-zeromyhero
 
 
 Lock up a simulation - runs forever...

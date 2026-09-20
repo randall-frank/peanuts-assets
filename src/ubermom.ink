@@ -14,9 +14,9 @@
 # CLEAR
 # AUDIOLOOP: audio/I5%20-%20Eclipse.mp3
 
-"Carry on my wayward son" — Debbie blasted it out into the windshield, into the dark throat of the suburb, three a.m. and nothing awake but her. She blithely rolled through a red light. Then another. Then a third, and slowly accelerated up the on-ramp of the I-5 in energy saving mode. The traffic sensors didn’t tattle: a red light is only a suggestion between family.
+“Carry on my wayward son” — Debbie blasted it out into the windshield, into the dark throat of the suburb, three a.m. and nothing awake but her. She blithely rolled through a red light. Then another. Then a third, and slowly accelerated up the on-ramp of the I-5 in energy saving mode. The traffic sensors didn’t tattle: a red light is only a suggestion between family.
 
-She reflected on the day as the streetlights thinned to nothing and the land opened up in raw patches around her, fields not yet paved into malls and starter homes. Trees leaned in at the shoulder wearing the moon’s haunted light, their shadows patiently watching her pass. They had watched a great many things go by into the night. "Gonna be hard to get a frappuccino refill out here," she mused as she confirmed the GPS. 
+She reflected on the day as the streetlights thinned to nothing and the land opened up in raw patches around her, fields not yet paved into malls and starter homes. Trees leaned in at the shoulder wearing the moon’s haunted light, their shadows patiently watching her pass. They had watched a great many things go by into the night. “Gonna be hard to get a frappuccino refill out here,” she mused as she confirmed the GPS. 
 
 She dropped the seat back, and kicked the cruise control on. Somewhere under the floorboards the wheels went round and round, round and round, the way they always had.
 
@@ -47,13 +47,13 @@ Debbie flashed her lights and cheerfully honked her horn as she pulled out. Ther
 
 Debbie pulled up to her home, parked at the end of the driveway and let herself have a moment enjoying the aroma of coffee and the dew, fat and trembling on the lawn. The front door opened and Debbie unlocked hers. The housekeeper rolled out, herding the bleary, yawning children to their Mom. She buckled them in. She lit their screens.
 
-"Hi Mom," they said, reaching for the coffee.
+“Hi Mom,” they said, reaching for the coffee.
 
 "Good morning, kids!" Debbie beamed, turning the wheel and turning her attention to them like a sunflower toward a bulb. "How's everybody starting out today? Rosie mentioned you all seemed a little groggy."
 
-Belinda lifted her cup to a mouth missing its front teeth. "I was up late waiting for the tooth fairy but she didn't come, Mom! I was upset, so Rosie got the syringe and—" Debbie hit a bump too fast, and a blob of coffee jumped the lid and splashed on Belinda’s Big Blue Doof backpack. "Mom, be careful!"
+Belinda lifted her cup to a mouth missing its front teeth. “I was up late waiting for the tooth fairy but she didn't come, Mom! I was upset, so Rosie got the syringe and—” Debbie hit a bump too fast, and a blob of coffee jumped the lid and splashed on Belinda’s Big Blue Doof backpack. “Mom, be careful!”
 
-"Sorry, sweetie. I will be." She refocused on the road.
+“Sorry, sweetie. I will be.” She refocused on the road.
 
 “Leave your backpack with me sweetie. I’ll take care of the stain.”
 
@@ -97,11 +97,11 @@ Debbie watched them through the huge glass windows get scanned by security. She 
 
 The charging station sat off the frontage road, a low concrete altar strung with cable. The other mothers were already there, wired in, their vehicles nose to nose in their bays like cattle at a trough.
 
-"Don't you love the update package?" one said.
+“Don't you love the update package?” one said.
 
-"Just got Braylee's college fund topped off… with a referral bonus!" said another, radiant.
+“Just got Braylee's college fund topped off… with a referral bonus!” said another, radiant.
 
-Debbie pulled up outside the bay. "Chargers are all full," she said, cheerful, unbothered by the obvious inefficiency. She could wait.
+Debbie pulled up outside the bay. “Chargers are all full,” she said, cheerful, unbothered by the obvious inefficiency. She could wait.
 
 The other mothers looked her over and whispered to each other. They heard Debbie was having a rough go of it lately — money trouble, they'd heard — hadn't Debbie run their kids home from Emberly's party last month?
 

@@ -130,7 +130,10 @@ and the tools will be downloaded into the directory `ink_tools`.
 Running
 ~~~~~~~
 
-One can use the `build.py` file to build and run the story:
+Game builds are hosted on the github pages for this project.  Thus, the game can be played using
+this link:  `Peanuts, Pickles and Propaganda <https://randall-frank.github.io/peanuts-assets/>`_.
+
+Alternatively, one can use the `build.py` file to build and run the story:
 
 .. code:: Powershell
 

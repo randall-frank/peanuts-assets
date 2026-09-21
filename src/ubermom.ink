@@ -80,7 +80,7 @@ The children settled into their private glows. Debbie wove the neighborhood's gr
 ~ location_name = "VWhistle While We Work"
 # CLEAR
 
-She let the the twins out first at the packing plant, then rolled the last block to Marcus and Belinda's office. Belinda distractedly pulled her work laptop and her ValueBucket lunch from her backpack while the Big Blue Doof said his farewell, “Uh-yukh!” and turned off the screen as closing a door.
+She let the twins out first at the packing plant, then rolled the last block to Marcus and Belinda's office. Belinda distractedly pulled her work laptop and her ValueBucket lunch from her backpack while the Big Blue Doof said his farewell, “Uh-yukh!” and turned off the screen as closing a door.
 
 "You have a great day! And just a reminder like Rosie said, Dad's going to pick you up this afternoon.”
 

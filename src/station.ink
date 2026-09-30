@@ -169,7 +169,7 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
         -> building
     + [Simulation seed: ad1e89cf{solitaire: (Solitaire)}] -> solitaire -> 
         -> building
-    + [Simulation seed: 8796d7bb{david: (David's Friend)}] -> david ->  
+    +  [Simulation seed: 678d2c77{ubermom: (Uber-Mom)}] -> ubermom -> 
         -> building
     + [Simulation seed: cd3cae13{symptoms: (Symptoms)}] -> symptoms -> 
         -> building
@@ -182,7 +182,7 @@ Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number
         -> building
     + {storyline.stock_drop_level2+debug} [Simulation seed: 99587d72{cruising: (Cruising Altitude)}] -> cruising -> 
         -> building
-    + {storyline.stock_drop_level2+debug} [Simulation seed: 678d2c77{ubermom: (Uber-Mom)}] -> ubermom -> 
+    + {storyline.stock_drop_level2+debug} [Simulation seed: 8796d7bb{david: (David's Friend)}] -> david ->  
         -> building
     + {storyline.stock_drop_level2+debug} [Simulation seed: 13991734{battle: (BattleTech)}] -> battle -> 
         -> building

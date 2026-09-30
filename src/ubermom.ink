@@ -164,6 +164,8 @@ Debbie looked out at them. Something in her called it homecoming, then settled, 
 
 Battery: 0%. The lights went out and the stain in the backpack began to set.
 
-~ idiot_count += 1
+{sesame == 1:
+    ~ idiot_count += 1
+}
     + [{simcomplete}] -> ret_target
 

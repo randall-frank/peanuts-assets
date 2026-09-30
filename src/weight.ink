@@ -273,8 +273,6 @@ He pulled out his phone and brought up his trading app.  Slowly he picked throug
 
 # STICKYCLASS: orangetext
 
-# STICKYCLASS: orangetext
-
 Kx'ari digests the tele-probe output, slowly shaking their head.  They detach the neural connection cable and propel themselves down the central tube to central control.  “Xylok, the initial results from the Sol Earth are now available.”
 
 Xylok detaches and acknowledges Kx'ari, “Earth ... Earth ...  We remember, first contact seeding operation, correct?”
@@ -304,5 +302,9 @@ Kx'ari recalled the Skithrax.  Similar situation, planet in danger, species at r
 Kx'ari floated back to their station.  The information would be transmitted to Earth shortly.  In the meantime, a fleet was dispatched to watch and if necessary, extirpate and cauterize. 
 
 # STICKYCLASS:
+
+{first_contact == 1:
+    ~ idiot_count += 1
+}
     + [{simcomplete}] -> ret_target
 

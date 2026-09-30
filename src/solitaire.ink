@@ -115,7 +115,6 @@ But as I said before, you just run out of stuff to think about.  You can feel yo
     -> DONE   // suppress compiler warning...
 
 = awake
-
 ~ location_name = "VThe End Begins"
 # CLEAR
 # SBIMAGE: locations/solitaire_clip.jpg
@@ -126,6 +125,9 @@ The sizes of the warheads were staggering, six thousand megatons at least.  I wa
 I glanced back to the United States.  There are only three shuttle launch stations, and all of them were practically in the center of some detonation radius.  I am almost certain the Orb design station is now rubble, and I am starting to think that nobody even remembers my name.
 
 The temperature in here is seventy-two degrees Fahrenheit, but I still feel very, very cold.
-~ idiot_count += 1
+
+{awake == 1:
+    ~ idiot_count += 1
+}
     + [{simcomplete}] -> ret_target
     

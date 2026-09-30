@@ -238,6 +238,8 @@ As he turned to leave, “You are an angel Margaret, you know that.”  He stepp
 
 An 'angel' thought Margaret, not hardly.  Angels share the duality of burdens, but Raphael or Raguel?  And who has the right to decide?
 // End the simulation...
-~ violence_count += 1
+{constable == 1:
+    ~ violence_count += 1
+}
     + [Terminate Simulation] -> ret_target
 

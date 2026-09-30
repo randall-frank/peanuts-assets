@@ -631,8 +631,11 @@ Somewhere, deep in Andrew's being, something was beginning to stir.
 Kraal takes a deep 'breath', bubbles trickle to the top of his 'fishbowl' headgear, “Ok, we'll give you two another chance to prove yourselves. Just get the job done!”
 
 The seed of a potential path out of this mess begins to form in Randy's mind.  Yes, it could work, but we'd need a little luck and to act with expeditiously.  “Andrew, meet me in the deck 7 private alcoves when you get a chance.  We need to talks about making some plans”, he whispered as they walked out of the meeting.
+
+{stock_drop_level1_pt2 == 1:
     ~ idiot_count += 1
     ~ cpu_cpus = cpu_cpus * 0.75
+}
     + [{continue}] -> station.building
 
 

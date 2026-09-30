@@ -152,6 +152,9 @@ The panel truck missile flashes into Mille's vision as she considered possible t
 # CLASS: computer
 Entropy of dust,<br>Boredom drags me to my grave,<br>Final breath is drawn.
 
-~ violence_count += 1
-~ idiot_count += 1
+
+{denouement == 1:
+    ~ violence_count += 1
+    ~ idiot_count += 1
+}
     + [{simcomplete}] -> ret_target

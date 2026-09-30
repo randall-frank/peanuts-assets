@@ -50,8 +50,9 @@ What? Just a stream of 1s!  How does that happen!
 All for the lack of an occasional 0.
 
 TODO
-
-~ idiot_count += 1
+{start == 1:
+    ~ idiot_count += 1
+}
     + [{simcomplete}] -> ret_target
 
 

@@ -355,5 +355,7 @@ A rail of bullets cut through the shower curtain above him and kicked up porcela
 
 God, how he missed sunsets.
 
-~ violence_count += 1
+{itends == 1:
+    ~ violence_count += 1
+}
     + [{simcomplete}] -> ret_target

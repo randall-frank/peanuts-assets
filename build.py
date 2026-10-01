@@ -74,7 +74,7 @@ def replace_output_quotes(src_dir: str = "src", save: bool = False) -> int:
         updated_lines = []
         changed = False
 
-        for line in original.splitlines(keepends=True):
+        for line in original.splitlines(keepends=True):                
             content = line.rstrip("\r\n")
             stripped = content.lstrip()
             if not stripped or stripped.startswith(code_prefixes):
@@ -85,9 +85,8 @@ def replace_output_quotes(src_dir: str = "src", save: bool = False) -> int:
                 index for index, character in enumerate(content)
                 if character == '"' and (index == 0 or content[index - 1] != "\\")
             ]
-            if len(quote_positions) % 2 or (
-                stripped.startswith('"') and stripped.endswith('"')
-            ):
+            if len(quote_positions) % 2:
+                # or (stripped.startswith('"') and stripped.endswith('"')):
                 updated_lines.append(line)
                 continue
 

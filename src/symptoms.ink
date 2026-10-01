@@ -37,7 +37,7 @@ The cover was plain.  The blatantly French title emblazoned the upper third in s
 
 “Hum.” smirked Grant, as he ran his fingers once more over the grainy surface.
 
-"Les Dynamiques et Histoires d'Exorcisme Catholiste."
+“Les Dynamiques et Histoires d'Exorcisme Catholiste.”
 
 Grant's futile pronunciation attempt did not falter his etymology skills: he picked out recognizable words and filed them away in his memory.
 

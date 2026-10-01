@@ -17,7 +17,7 @@ Making Plans
 “Dude, grab a seat, we need to talk.  Make sure the recording systems are off. ”  Randy continues, far more serious than normal, “This project is a disaster.  There is no way it can work the way they want.”  He holds his head in both hands and rubs his face in frustration.
 
 “No kidding.  They have no idea what they're doing and how are we supposed to make it work?  AI?”, Andrew laughs sarcastically.  
-"Every time we run a simulation, it costs so much the stock price drops.  Last time it was almost 10%.  The hole is just getting deeper."
+“Every time we run a simulation, it costs so much the stock price drops.  Last time it was almost 10%.  The hole is just getting deeper.”
 
 “Agreed.  Unless we can find a way out, we need to be making some contingency plans.  At least we have some resources...”, Randy trails off.
 
@@ -27,9 +27,9 @@ Making Plans
 
 “How does that help”, asks Andrew?
 
-"We can run simulations on other projects", Randy explains.  "Maybe something that will make us money."
+“We can run simulations on other projects”, Randy explains.  “Maybe something that will make us money.”
 
-"Yes", Andrew exclaims!  "We can redirect the simulations to other codes!"
+“Yes”, Andrew exclaims!  “We can redirect the simulations to other codes!”
 
 “Cryptid mining”, they both say in unison.
 
@@ -42,7 +42,7 @@ The whole process takes about ten minutes before {shell_company_name} ('ABAL') i
 
 “So we'll have the means, but what is the way?”, Andrew ponders out loud.
 
-"I've got a couple of ideas", Randy counters.  "They kind of pursue different directions."
+“I've got a couple of ideas”, Randy counters.  “They kind of pursue different directions.”
     + [Burn it all to the ground!] -> project_shortink
     + [The house keeps the vig.] -> outsourcing
 
@@ -173,19 +173,19 @@ Andrew smiled deeply and followed his friend out into the corridor.
 # SBIMAGE:
 # AUDIOLOOP:
 # CLASS: head1
-"Outsourcing"
+“Outsourcing”
 
 Randy outlines the basics of Outsourcing, “We've been spending a lot of time with the AI recently...”
 
-"Yes", Andrew says, "go on."
+“Yes”, Andrew says, “go on.”
 
-"Well, as you know they are pretty expensive, especially for a lot of the things people ask."  Randy takes a deep breath and continues with more commitment, "People are asking it to do simple, math. To get movie tickets, to order food...  even to convert unit systems.  These are ludicrously expensive for an AI to execute.  I get the feeling that a quarter of their use is simple stupidity.  Maybe half of their use is laziness.  Another 20% are insecure folks just looking for confirmation and support.  Basically, they just want a 'yes man'."
+“Well, as you know they are pretty expensive, especially for a lot of the things people ask.”  Randy takes a deep breath and continues with more commitment, “People are asking it to do simple, math. To get movie tickets, to order food...  even to convert unit systems.  These are ludicrously expensive for an AI to execute.  I get the feeling that a quarter of their use is simple stupidity.  Maybe half of their use is laziness.  Another 20% are insecure folks just looking for confirmation and support.  Basically, they just want a 'yes man'.”
 
-"Ok, I might argue with the percentages, but I get your point", Andrew says.  "Sometimes folks just need a calculator, a redirect to another ready-made webapp and yeah, they just need a supportive friend.  That leaves very little 'real AI' work...  Maybe a few percent?  I think I can guess where you're going.  Fronting an AI with something, perhaps even a human, handling the junk queries could save a lot of money."
+“Ok, I might argue with the percentages, but I get your point”, Andrew says.  “Sometimes folks just need a calculator, a redirect to another ready-made webapp and yeah, they just need a supportive friend.  That leaves very little 'real AI' work...  Maybe a few percent?  I think I can guess where you're going.  Fronting an AI with something, perhaps even a human, handling the junk queries could save a lot of money.”
 
-"Even simple query rework can help", Randy continues, "Even just removing the 'pleasantries', 'please', 'thanks', etc could reduce the number of tokens used.  I'm thinking we set up a company for this and convince Kraal to switch providers to our company.  We might even be in a situation where we could help steer the CephaloDynamics direction!"
+“Even simple query rework can help”, Randy continues, “Even just removing the 'pleasantries', 'please', 'thanks', etc could reduce the number of tokens used.  I'm thinking we set up a company for this and convince Kraal to switch providers to our company.  We might even be in a situation where we could help steer the CephaloDynamics direction!”
 
-"Well", Andrew ponders a bit, "I'm not sure I'd go that far, but I agree on the general assertions and direction.  Let's make sure our assumptions are correct first.  I can monitor the queries for some time and see how accurate our assumptions are."
+“Well”, Andrew ponders a bit, “I'm not sure I'd go that far, but I agree on the general assertions and direction.  Let's make sure our assumptions are correct first.  I can monitor the queries for some time and see how accurate our assumptions are.”
     + [Let's do it.  We'll meet again when we have the numbers.] -> do_outsourcing
     + {project_shortink == 0} [There is another option?] -> project_shortink
     + {project_shortink == 1} [Let's go with 'Project Short Ink' instead.] -> do_project_shortink
@@ -205,16 +205,16 @@ AI Query Analytics
 # HTML: <a href="./abyssal.html" class="simple-a" target="_blank" rel="noopener noreferrer">Abyssal Intelligence</a>
 Andrew begins with a brief status report, “First, on the LLC front, everything is proceeding according to plan.  HTML is now a fully functional shell company.  It has accumulated {player_cryptids}Ͼ, or about {get_whole_number(v)}€.  We have a few more things to iron out, but overall we're on track.”
 
-"Second", he continued with a big smile, "Here are the results of the AI query analytics:"
+“Second”, he continued with a big smile, “Here are the results of the AI query analytics:”
 
 # CLASS: computer
 QUERY_ANALYSIS
 
 “So, a bit more than half the queries could be handled by code, another 30% by a mechanical turk.  Less than 10% would need to be handled by a full AI”, Randy asked?
 
-"Yep, that's about right", Andrew replied.  "I did some analysis of the 'mechanical turk' costs and the simple API redirection.  It looks like we could provide the service at maybe 40% of what our current AI costs."
+“Yep, that's about right”, Andrew replied.  “I did some analysis of the 'mechanical turk' costs and the simple API redirection.  It looks like we could provide the service at maybe 40% of what our current AI costs.”
 
-"Perfect!", Randy exclaimed.  "I vote we should charge CephaloDynamics half price and skim off the extra 10% into {shell_company_name} for a rainy day."
+“Perfect!”, Randy exclaimed.  “I vote we should charge CephaloDynamics half price and skim off the extra 10% into {shell_company_name} for a rainy day.”
 
 Andrew agreed, “And I second it.  Keep an eye open for an opportunity to pitch this to Kraal.  Let's get this done!” 
     ~ eg_outsourcing = 2
@@ -232,30 +232,30 @@ The Outsourcing Pitch
 
 Randy ushers Kraal and Zyn into the conference room.  Andrew is sitting in front of his laptop and Randy guides them to sit next to him while Randy takes a seat across from them.  Kraal looks around the room, noting the various displays and equipment.
 
-"Andrew and I have been looking to improve our simulation efficiency and it looks like we have a new approach", Randy said.  "We have been looking at ways to reduce our AI costs and it looks like we can do that by outsourcing some of our simulation work to a third party."
+“Andrew and I have been looking to improve our simulation efficiency and it looks like we have a new approach”, Randy said.  “We have been looking at ways to reduce our AI costs and it looks like we can do that by outsourcing some of our simulation work to a third party.”
 
-"Ok, we're listening", Kraal replied with skepticism.  "Tell us more about this 'third party'."
+“Ok, we're listening”, Kraal replied with skepticism.  “Tell us more about this 'third party'.”
 
 # HTML: <a href="./abyssal.html" class="simple-a" target="_blank" rel="noopener noreferrer">Abyssal Intelligence</a>
-"Let me introduce you to {shell_company_name}.  I have been talking with their AI experts.  We described our current system and the inefficiencies we are experiencing.  They have a new technology that runs the same simulations we are now, but at half the cost!  Check out their website: HTML", said Andrew.  "We took the extra step of actually running seed 107818a4 on their system and we got the same results, but for 42% fewer tokens."
+“Let me introduce you to {shell_company_name}.  I have been talking with their AI experts.  We described our current system and the inefficiencies we are experiencing.  They have a new technology that runs the same simulations we are now, but at half the cost!  Check out their website: HTML”, said Andrew.  “We took the extra step of actually running seed 107818a4 on their system and we got the same results, but for 42% fewer tokens.”
 
 “Sorry guys”, Randy interrupts, “I've got a fire I need to put out.  Andrew, you got this?” Andrew nods as Randy's attention drifts to his phone where he begins to text.
 
 “Randy and I have negotiated a deal with them.  We have worked out a deal where they replace our current AI provider and they provide pricing guarantees”, Andrew continues.
 
-"Guarantees?", Zyn asks.  "What kind of guarantees?"
+“Guarantees?”, Zyn asks.  “What kind of guarantees?”
 
-"They agree to run a single simulation of our choice, once a month on our current provider and compare the pricing", answered Andrew, "If the {shell_company_name} price is more than 55% of our current provider, the contract is terminated.  Fair enough?"
+“They agree to run a single simulation of our choice, once a month on our current provider and compare the pricing”, answered Andrew, “If the {shell_company_name} price is more than 55% of our current provider, the contract is terminated.  Fair enough?”
 
-"Sounds good to me", Zyn says, "I'll have the legal team review it."
+“Sounds good to me”, Zyn says, “I'll have the legal team review it.”
 
-"Wait, wait", interjects Kraal, "How do we know we're still getting the same level of intelligence?"
+“Wait, wait”, interjects Kraal, “How do we know we're still getting the same level of intelligence?”
 
-"Well", Andrew started, "as I mentioned before we compared simulation results from some existing simulation results, on their dime of course, and they were comparable to our current provider.  We can include that check with the monthly price check?"
+“Well”, Andrew started, “as I mentioned before we compared simulation results from some existing simulation results, on their dime of course, and they were comparable to our current provider.  We can include that check with the monthly price check?”
 
-"Good idea", Zyn says, "I'll have our team review that contract change too."
+“Good idea”, Zyn says, “I'll have our team review that contract change too.”
 
-"I want to try it out myself", announces Kraal, "I doubt any of you are really qualified to to evaluate AI results."
+“I want to try it out myself”, announces Kraal, “I doubt any of you are really qualified to to evaluate AI results.”
 
 Zyn silently rolled his eyes.
     + [{continue}] -> outsourcing_3_pt2
@@ -292,7 +292,7 @@ Randy smirks a bit, but keeps interacting with his phone under the table.
 # CLASS: chatout
 10 degrees Celsius is 50 degrees Fahrenheit.  Would you like me to convert to Rankine?
 
-"'Rankine'?  Is this thing on space crack?" asks Kraal.  "Time to check reasoning..."
+“'Rankine'?  Is this thing on space crack?” asks Kraal.  “Time to check reasoning...”
 
 # CLASS: chatin
 Does a straw have one hole or two?
@@ -325,7 +325,7 @@ Andrew silently mouths: 'smart ass'.
 # CLASS: head1
 Kraal's AI Testing
 
-"Ok", Kraal performs the Teuthan equivalent of scratching their head, realizes he is being watched and slips into a 'pondering' pose. "Well that answer was a bit simplified, but it is technically accurate.  This AI should do."
+“Ok”, Kraal performs the Teuthan equivalent of scratching their head, realizes he is being watched and slips into a 'pondering' pose. “Well that answer was a bit simplified, but it is technically accurate.  This AI should do.”
 
 Zyn smiles wryly, tired of Kraal's incessant grandstanding, “Done then. Send me the contracts Andrew and I'll run them through legal. We should have them signed and in place by close of business. Hopefully this will help reverse the current stock trajectory.  Good job guys!”
 
@@ -341,7 +341,7 @@ Randy brings his phone up from under the table, “So that went... well?”
 
 “Dude, you almost had me laughing out loud. Rankine? Betti numbers? Beak size! Really man”, Andrew laughed.
 
-"'Cum dubitas, adulare'! Yeah, I couldn't resist.  I'm just relieved he didn't ask for a joke", Randy replied, "I only have one you know."
+“'Cum dubitas, adulare'! Yeah, I couldn't resist.  I'm just relieved he didn't ask for a joke”, Randy replied, “I only have one you know.”
     ~ eg_outsourcing = 3
     + [{continue}] -> station.building
 
@@ -363,19 +363,19 @@ The Out in Outsourcing
 
 Randy and Andrew feign ignorance.
 
-"Come, come now.  It did not take a genius to figure it out.  The AI price drop was substantial as you asserted to Kraal and CephaloDynamics appears to have turned a corner while {shell_company_name}'s crypto assets continues to grow.  I figured I should get to know our new partner in more detail.  It turns out that Dr. Zephyr has been dead for years and Dr. Nova is in the sociological sciences."
+“Come, come now.  It did not take a genius to figure it out.  The AI price drop was substantial as you asserted to Kraal and CephaloDynamics appears to have turned a corner while {shell_company_name}'s crypto assets continues to grow.  I figured I should get to know our new partner in more detail.  It turns out that Dr. Zephyr has been dead for years and Dr. Nova is in the sociological sciences.”
 
-"That doesn't means it's us", Randy blurted out.  "Could be anyone!"
+“That doesn't means it's us”, Randy blurted out.  “Could be anyone!”
 
 Zyn snickers, “Ask the AI to tell you a joke sometime.  'Why does a chicken coup have four doors?' ring a bell?”
 
 Randy silently mouths 'Because if it had two it would be a chicken sedan!'.
 
-"And ask it for movie recommendations sometime.  I didn't know that 'Rubber' and 'Naked Lunch' were such pieces of cinematic relevance.  When I cross referenced them with people's streaming histories...  Well, let's just say very few people watch those films regularly", coos Zyn. "I did enjoy them by the way."
+“And ask it for movie recommendations sometime.  I didn't know that 'Rubber' and 'Naked Lunch' were such pieces of cinematic relevance.  When I cross referenced them with people's streaming histories...  Well, let's just say very few people watch those films regularly”, coos Zyn. “I did enjoy them by the way.”
 
-"Ok, ok, ABAL is us", Randy admitted, "we just needed a way to keep CephaloDynamics afloat and if we could make a few bucks.  Are you going to turn us in?"
+“Ok, ok, ABAL is us”, Randy admitted, “we just needed a way to keep CephaloDynamics afloat and if we could make a few bucks.  Are you going to turn us in?”
 
-"Turn you in?", Zyn laughed, "Are you kidding me?  I'd like to make you an offer!"
+“Turn you in?”, Zyn laughed, “Are you kidding me?  I'd like to make you an offer!”
 
 “What kind of 'offer' do you have in mind?”, Andrew croaked guardedly.
 
@@ -394,15 +394,15 @@ The Out in Outsourcing
 
 “Why would you want to buy ABAL?”, Andrew asked incredulously.
 
-"Simple, for control, plain and simple." Zyn continued, "The Teuthans are idiots, as you know and they've been running this company into the ground.  They have become addicted to this AI that seems to have all the right answers for them, at the right price.  We intend to feed them what we want them to hear and do and, just like you, skim a little off the top.  What do you guys think? Think hard, as this might be the best offer you ever get."
+“Simple, for control, plain and simple.” Zyn continued, “The Teuthans are idiots, as you know and they've been running this company into the ground.  They have become addicted to this AI that seems to have all the right answers for them, at the right price.  We intend to feed them what we want them to hear and do and, just like you, skim a little off the top.  What do you guys think? Think hard, as this might be the best offer you ever get.”
 
-"Counter-offer", says Andrew. "One point five times the market for 80 percent of the ABAL shares and you'll buy our contracts out. You'll have control over ABAL and we'll continue to have a bit of the revenue stream."
+“Counter-offer”, says Andrew. “One point five times the market for 80 percent of the ABAL shares and you'll buy our contracts out. You'll have control over ABAL and we'll continue to have a bit of the revenue stream.”
 
 “Done. Pleasure doing business with you”, says Zyn.  He extends his hands and they shake on it, even as the paperwork is automatically generated and sits in Randy and Andrew's inboxes.  Zyn stands up, smiles and nods as he walks out of the room.
 
 “Any reason we should continue working here”, asked Randy?
 
-"The contracts check out. They're all signed and registered", Andrew marveled at modern automated business processes.  "We appear to be set for life... So no, there is no reason to continue working here.  I'm sending my resignation... now."
+“The contracts check out. They're all signed and registered”, Andrew marveled at modern automated business processes.  “We appear to be set for life... So no, there is no reason to continue working here.  I'm sending my resignation... now.”
 
 “I'm sending mine too”, Randy said.  He turned to Andrew and shook his hand. 
 
@@ -435,19 +435,19 @@ He looks over at Randy who has opted for simple steamed buns which he slowly dre
 
 “You mean the societal trajectory, extending from the raw chaotic crucible of the 'Idiocracy' effect?”, Randy offers through a mouthful of bun.
 
-"Yes, I've been thinking about algorithmically biased social media platforms", offers Andrew, "and their potential for short-term exploitation of specific audiences, down to individually modeled target entities."
+“Yes, I've been thinking about algorithmically biased social media platforms”, offers Andrew, “and their potential for short-term exploitation of specific audiences, down to individually modeled target entities.”
 
 Randy catches the general notion and sensing the potential, returns his partially eaten bun to the tray, “You have my full attention.  What do you have in mind?”
 
 Andrew starts his elevator speech, “You know how the Teuthans can't get enough of 1980's sitcoms?”
 
-"How could I not?  I swear if I hear dixie one more time!!!"
+“How could I not?  I swear if I hear dixie one more time!!!”
 
-"Well, I did a little legwork researching Teuthan YouTube habits.  Did you know they spend 90% of their free time watching these things?  And it turns out that the IP rights to these gems can be had for a song and a handshake?"  Andrew pauses for a moment, giving Randy time to digest the implications, "I'd like to start a social media service that centers around such content.  I call it 'InkStream'.  The platform will stream this content directly into their homes and offer a 'premium' service for more exclusive content and enhanced chat features based customized AI feedback."
+“Well, I did a little legwork researching Teuthan YouTube habits.  Did you know they spend 90% of their free time watching these things?  And it turns out that the IP rights to these gems can be had for a song and a handshake?”  Andrew pauses for a moment, giving Randy time to digest the implications, “I'd like to start a social media service that centers around such content.  I call it 'InkStream'.  The platform will stream this content directly into their homes and offer a 'premium' service for more exclusive content and enhanced chat features based customized AI feedback.”
 
 Randy is warming up to the concept, “But won't we need both data and AI servers?  That could get expensive to operate.”
 
-"I'm planning to leverage their own hardware.  A distributed asymmetric cluster, running directly on their personal devices, customizing the content with locally generated AI feedback.  I think it could be a huge hit."
+“I'm planning to leverage their own hardware.  A distributed asymmetric cluster, running directly on their personal devices, customizing the content with locally generated AI feedback.  I think it could be a huge hit.”
 
 Randy is onboard, excitement building, “Nice, I've been trying to come up with a way to turn the tables on the squid-brains, this could be a great vehicle.  Sort of an idiocy accelerator.  How do we get started?”
 
@@ -479,21 +479,21 @@ Randy looked a little puzzled, “You mean that fictional technology from Max He
 
 Randy lets out a deep gut laugh and smiles, “Yeah, I remember. 'It's only after we've lost everything that we're free to do anything.' ”
 
-"Well, I think we're at that point now," says Andrew.  "It is pretty easy to guess with over 99% probability who is watching a stream."
+“Well, I think we're at that point now,” says Andrew.  “It is pretty easy to guess with over 99% probability who is watching a stream.”
 
-"Go on," says Randy, starting to anticipate where this is going, "Exactly what are you proposing?"
+“Go on,” says Randy, starting to anticipate where this is going, “Exactly what are you proposing?”
 
-"You know that Teuthan optic nerves act like a matched filter for specific electromagnetic wavelengths and patterns of motion.  Likewise, their hearing is sensitive at lower frequencies and can act more like 'sonar' to a degree."
+“You know that Teuthan optic nerves act like a matched filter for specific electromagnetic wavelengths and patterns of motion.  Likewise, their hearing is sensitive at lower frequencies and can act more like 'sonar' to a degree.”
 
 “Due to their evolution on Europa”, says Randy.
 
-"Exactly," says Andrew.  "So, we use that to our advantage.  I've been experimenting with subliminal 'Blipverts' constructed from specific patterns and frequencies that Teuthans are naturally attuned to, but are basically undetectable by humans senses.  Just to be safe, we only embed them in streams being seen by Teuthans.  The cherry on top, we can fine tune streams to specific viewers on the fly.  Their own browsers will be doing the injection making it entirely ephemeral.  If anyone looks later, the stream they see will be clean."
+“Exactly,” says Andrew.  “So, we use that to our advantage.  I've been experimenting with subliminal 'Blipverts' constructed from specific patterns and frequencies that Teuthans are naturally attuned to, but are basically undetectable by humans senses.  Just to be safe, we only embed them in streams being seen by Teuthans.  The cherry on top, we can fine tune streams to specific viewers on the fly.  Their own browsers will be doing the injection making it entirely ephemeral.  If anyone looks later, the stream they see will be clean.”
 
 “So then we hit them with 'eat more spaghetti' until they explode, that kind of thing?”, asks Randy.
 
-"Skip that, let's swing for the fences.  Let's convince them that Fonzie is the messiah.  That Jessica Fletcher IS a serial killer.  That you CAN win friends with salad."  Andrew goes for the jugular, "Let's render them blubbering idiots."
+“Skip that, let's swing for the fences.  Let's convince them that Fonzie is the messiah.  That Jessica Fletcher IS a serial killer.  That you CAN win friends with salad.”  Andrew goes for the jugular, “Let's render them blubbering idiots.”
 
-"Ah, the 'Idiocracy' approach," says Randy.  "I like it.  Time to rule in Hell!  Let the Blipverts begin."
+“Ah, the 'Idiocracy' approach,” says Randy.  “I like it.  Time to rule in Hell!  Let the Blipverts begin.”
     ~ eg_fishbowl = 2
     + [{continue}] -> station.building
 
@@ -511,9 +511,9 @@ Andrew and Randy approach the alcove door.  It spirals open as their personal tr
 
 The room is dimly lit, the silhouette of Zyn can be seen seated in the most comfortable seat in the room, stiff as a board. He is watching an episode of the Beverly Hillbillies on his tablet.  “...How do you like yer possum, Lowell, fallin' off the bones tender or with a little fight left in it?...”  Zyn cracked the first smile Andrew and Randy have ever seen.  He swiped to close the device, set it down and gestured that they take a seat.
 
-"{social_followers} followers on InkStream in what, two weeks?", Zyn asks.  "and my analytics show that 90% of them are Teuthans spending over 8 hours a day on the platform."
+“{social_followers} followers on InkStream in what, two weeks?”, Zyn asks.  “and my analytics show that 90% of them are Teuthans spending over 8 hours a day on the platform.”
 
-"The numbers are pretty fluid, but those seem pretty accurate", stammered Andrew.  "Do your numbers report advertising revenue and advertizer ROAS as well?"
+“The numbers are pretty fluid, but those seem pretty accurate”, stammered Andrew.  “Do your numbers report advertising revenue and advertizer ROAS as well?”
 
 “Yes, both very impressive, but not why I'm here talking to you”, Zyn continues. 
 
@@ -521,7 +521,7 @@ Andrew and Randy exchange confused looks.  A pregnant pause later Randy asks, �
 
 Zyn upturns his tablet and brings up a two dimensional frequency plot illustrating dynamic audio and visual frequency distributions of the Hillbillies episode streaming on InkStream.  “This...”, Zyn says as an odd sequence of spikes pop up and disappear from the plot, “...is why we are talking.  I had to log in with a Teuthan ID to see it.  Your secret sauce gentlemen, nano-impressions?  What did they used to call it 'blipverts'?”
 
-"Tuned specifically to the viewer.  Today at the 'species' level, tomorrow, the 'individual'.  Generated directly by their own display systems", bragged Andrew.  "It has proven far more effective than we imagined.  But why are you interested?"
+“Tuned specifically to the viewer.  Today at the 'species' level, tomorrow, the 'individual'.  Generated directly by their own display systems”, bragged Andrew.  “It has proven far more effective than we imagined.  But why are you interested?”
 
 “That should be obvious gentlemen”, Zyn paused.  
 
@@ -557,7 +557,7 @@ A confused look drapes over Randy's face, “What do you mean?”
 
 Andrew sighs, “Well, I've been running some simulations with your new code and the results often result in deaths.  I'm seeing a marked increase in ultra-v.  Like, really violent stuff.”
 
-"Interesting.  There's nothing I've encoded into the system for that, at least not explicitly.  We should correlate with the commit logs and look for traces of that behavior."
+“Interesting.  There's nothing I've encoded into the system for that, at least not explicitly.  We should correlate with the commit logs and look for traces of that behavior.”
 
 “Sounds good.  I'll check the commit logs and see what I can find, ”, Andrew starts pounding out a query.
 A minute or so later Andrew face palms, “Looks like we're not the only contributors to the current context.  It looks like the ultra-violent behavior correlates with a new agent.”  Again, he types furiously, “I'm going to need to look into this further.  It looks like the user 'CaptKraal' added and locked in a new agent called 'Daisy'.”
@@ -566,7 +566,7 @@ Randy shakes his head, “Alright, we've got to end this project before we lose 
 
 Andrew agrees, “On it.  I'm introducing 'Cletus' as a nuisance  filter to the Daisy stream.  I'll also add a new agent called 'Cooter' that will monitor and report on any anomalies in the system.”
 
-"Good catch man. I'm going to start looking into is we can isolate this project from the rest of the network."
+“Good catch man. I'm going to start looking into is we can isolate this project from the rest of the network.”
     + [{continue}] -> station.building
 
 

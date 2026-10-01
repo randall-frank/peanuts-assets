@@ -43,7 +43,7 @@ Mille is not particularly bothered by their disdain.  She has seen it all before
 # SBIMAGE: locations/brickwork_clip.png
 
 'Larry' (badge name) is working the booth. The bald, elderly man is wearing his usual black suit and tie.  He looks up as Mille approaches.
-"Good evening, Mille," he says with a smile.  "Business or pleasure tonight?"
+“Good evening, Mille,” he says with a smile.  “Business or pleasure tonight?”
 “Business tonight Lawrence.”, Mille replies, returning his smile.  Mille has known Lawrence Onyx for years and knows that he hates the 'Larry' nickname, “How are you this evening?” Mille takes out her wallet and pulls out a credit card, pushing it through the opening at the base of the glass separating them.
 “Doing well, Mille! You know your money is no good here”, Larry says as he pulls out a ticket from behind the counter, pushing it and her credit card back to her, uncharged.  
 “You shouldn't do that Lawrence”, Mille says as she takes the ticket and credit card back.  “I know you're doing me a favor, but others might not see it that way.”  

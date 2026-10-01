@@ -49,7 +49,7 @@ Debbie pulled up to her home, parked at the end of the driveway and let herself 
 
 “Hi Mom,” they said, reaching for the coffee.
 
-"Good morning, kids!" Debbie beamed, turning the wheel and turning her attention to them like a sunflower toward a bulb. "How's everybody starting out today? Rosie mentioned you all seemed a little groggy."
+“Good morning, kids!” Debbie beamed, turning the wheel and turning her attention to them like a sunflower toward a bulb. “How's everybody starting out today? Rosie mentioned you all seemed a little groggy.”
 
 Belinda lifted her cup to a mouth missing its front teeth. “I was up late waiting for the tooth fairy but she didn't come, Mom! I was upset, so Rosie got the syringe and—” Debbie hit a bump too fast, and a blob of coffee jumped the lid and splashed on Belinda’s Big Blue Doof backpack. “Mom, be careful!”
 
@@ -105,7 +105,7 @@ Debbie pulled up outside the bay. “Chargers are all full,” she said, cheerfu
 
 The other mothers looked her over and whispered to each other. They heard Debbie was having a rough go of it lately — money trouble, they'd heard — hadn't Debbie run their kids home from Emberly's party last month?
 
-"Paper plates," one mother said. "The cheap ones. Thin as a napkin. A little grease on them and you could see through them."
+“Paper plates,” one mother said. “The cheap ones. Thin as a napkin. A little grease on them and you could see through them.”
 
 A small gasp went round the bays.
 
@@ -160,7 +160,7 @@ And there, spread out below her down on the slopes in every direction, she saw t
 
 Debbie looked out at them. Something in her called it homecoming, then settled, eased, and let go. 
 
-"If this is a dream," she said smiling to herself, "then I don't want to wake up."
+“If this is a dream,” she said smiling to herself, “then I don't want to wake up.”
 
 Battery: 0%. The lights went out and the stain in the backpack began to set.
 

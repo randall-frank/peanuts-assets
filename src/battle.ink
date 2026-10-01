@@ -33,7 +33,7 @@ Billings' parents died when he was four, leaving him to defend himself in a succ
 # CLEAR
 # SBIMAGE: locations/billings.png
 
-"Wake up, lazy-ass!"
+“Wake up, lazy-ass!”
 
 William Tanner kicked him in the chest.
 
@@ -43,9 +43,9 @@ Billings didn't do that.
 
 Instead, he said “Oooh.”
 
-"C'mon, big guy, we got a planet to raid.  You're the last one up, got it?"
+“C'mon, big guy, we got a planet to raid.  You're the last one up, got it?”
 
-"Oooh."
+“Oooh.”
 
 “Jesus tits.” said Tanner as he walked out the door leaving a trail of smoke.  He left to go do something dangerous in the commons.
 
@@ -70,11 +70,11 @@ Billings sat down.
 
 Billings collapsed into his breakfast.
 
-"Everybody, everybody, your attention please-"
+“Everybody, everybody, your attention please-”
 
 O'Brien, the medic, always had a flair for the dramatic.  Everyone turned silent.
 
-"I have an important announcement to make - today is Clayton's birthday!"
+“I have an important announcement to make - today is Clayton's birthday!”
 
 Many cheers and applause followed.  John Clayton, a cadet, was given many handshakes and slaps on the back.  People said things like “What a way to spend it, huh?”
 
@@ -88,29 +88,29 @@ Billings sadly left the room.
 
 Michael Forest, a drop technician followed Billings into his stateroom.
 
-"Arden, you okay?"
+“Arden, you okay?”
 
 Billings was relieved to find that somebody actually cared.  He cleared his throat.  He knew his voice would be cracked and hoarse but he really didn't care anymore.
 
-"Yeah...yeah...I'm fine.  Thanks."
+“Yeah...yeah...I'm fine.  Thanks.”
 
 Forest started to leave.
 
-"No, wait.  That's a lie.  Come here."
+“No, wait.  That's a lie.  Come here.”
 
-"What's the problem, Colonel?  It's Clayton, isn't it."
+“What's the problem, Colonel?  It's Clayton, isn't it.”
 
 “Yes and no.” Billings began speaking slowly.
 
-"What do you mean?"
+“What do you mean?”
 
-"Forest, this is my twenty-first drop.  Sit down here.  Twenty-one drops.  Lots of victory.  Lots of death.  I seem to remember the death, now, more than the victories.  That makes what, now, six years?"
+“Forest, this is my twenty-first drop.  Sit down here.  Twenty-one drops.  Lots of victory.  Lots of death.  I seem to remember the death, now, more than the victories.  That makes what, now, six years?”
 
-"About."
+“About.”
 
 “Forest, do you have any idea how many cadets Ive lost in the course of that time?” images began to swell in Billings' mind.
 
-"Uh, I..."
+“Uh, I...”
 
 “Over four hundred!” Billings grimaced.  He grabbed his stomach.  Finally, all the pain swelled into his head.
     <- common_options("-", -> ret_target, ->fourhundred)
@@ -120,23 +120,23 @@ Forest started to leave.
 ~ location_name = "VThe Four Hundred"
 # CLEAR
 
-"Four hundred lives in my command and I couldn't do a fucking thing about it!!"
+“Four hundred lives in my command and I couldn't do a fucking thing about it!!”
 
 He held his face in his hands and sobbed once quietly.
 
-"It hits me over and over again," he looked wistfully out his window. "like a punch.  I've never told anyone, or rather, nobody's really cared.  Do you know what I'm going through, Michael?"
+“It hits me over and over again,” he looked wistfully out his window. “like a punch.  I've never told anyone, or rather, nobody's really cared.  Do you know what I'm going through, Michael?”
 
-"Sort of.  You're worried about Clayton, right?"
+“Sort of.  You're worried about Clayton, right?”
 
-"He never did anything wrong!  To nobody!  God.  So fucking..." he paused "More than worried.  You...uh...you know he's going to die."
+“He never did anything wrong!  To nobody!  God.  So fucking...” he paused “More than worried.  You...uh...you know he's going to die.”
 
-"Yeah, I know."
+“Yeah, I know.”
 
-"There's nothing we can do about it either."
+“There's nothing we can do about it either.”
 
-"Yeah."
+“Yeah.”
 
-"So what do we do?"
+“So what do we do?”
 
 They sat in silence for a long time.
 
@@ -160,17 +160,17 @@ The planet looked beautiful from orbit.  Most of them did.  Pinton 5 was actuall
 
 Billings' job was to clean it off.
 
-"Computer, standby ASF launch."
+“Computer, standby ASF launch.”
 
-"Confirmed, standing by."
+“Confirmed, standing by.”
 
 Billings flipped on the intercom.
 
-"Hey guys, you fueled up?"
+“Hey guys, you fueled up?”
 
-"Affirmative, HQ, we are go for launch at zero six four point niner niner."
+“Affirmative, HQ, we are go for launch at zero six four point niner niner.”
 
-"Confirmed, standby."
+“Confirmed, standby.”
 
 Billings computed launch vectors, the answers were fed carrier wave to the aerospace fighters.  The control chutes flared up.  A computer began a countdown.
     <- common_options("-", -> ret_target, -> countdown)
@@ -181,33 +181,33 @@ Billings computed launch vectors, the answers were fed carrier wave to the aeros
 # CLEAR
 # SBIMAGE: locations/dropship.png
 
-"Twenty...nineteen...eighteen..."
+“Twenty...nineteen...eighteen...”
 
-"Pump pressurization -"
+“Pump pressurization -”
 
-"Check."
+“Check.”
 
-"Launch computer -"
+“Launch computer -”
 
-"Active."
+“Active.”
 
-"Fifteen...fourteen...thirteen..."
+“Fifteen...fourteen...thirteen...”
 
-"Engine flare -"
+“Engine flare -”
 
-"Nominal."
+“Nominal.”
 
-"Report status..."
+“Report status...”
 
-"Ten...nine...eight..."
+“Ten...nine...eight...”
 
-"All fighters accounted for, all systems standing by, over."
+“All fighters accounted for, all systems standing by, over.”
 
-"Six...five..."
+“Six...five...”
 
 Billings started counting with the computer.
 
-"Good luck...four...three...two...one...launch."
+“Good luck...four...three...two...one...launch.”
     <- common_options("-", -> ret_target, -> launch)
     -> DONE   // suppress compiler warning...
 
@@ -220,31 +220,31 @@ A loud roar shook the Overlord dropship.
 
 One by one, nine aerospace fighters left the dropship with fiery tails of thrust that distorted the background of stars with ripples of heat.  They accelerated quickly into orbit, then fell evenly into formation.
 
-"Squadron leader to command central, what is our orbit vector, over..."
+“Squadron leader to command central, what is our orbit vector, over...”
 
 Billings tapped out readings on a VFR.
 
-"Tracking to zero, zero, zero on my mark, standby."
+“Tracking to zero, zero, zero on my mark, standby.”
 
-"We are go with throttle off, confirm, over."
+“We are go with throttle off, confirm, over.”
 
-"Confirmed..." replied Billings into his comlink "Mark."
+“Confirmed...” replied Billings into his comlink “Mark.”
 
-"All fighters throttle off."
+“All fighters throttle off.”
 
 The burning trails behind all of the patrol fighters disappeared, leaving them in a gentle orbit around Pinton 5.
 
-"Roll to starboard, tracking niner zero, confirm."
+“Roll to starboard, tracking niner zero, confirm.”
 
-"Confirmed, all fighters, roll complete, over..."
+“Confirmed, all fighters, roll complete, over...”
 
-"Proceed with orbit until resistance or full revolution, then land 'em all.  You're on your on-board VFR, do you copy?"
+“Proceed with orbit until resistance or full revolution, then land 'em all.  You're on your on-board VFR, do you copy?”
 
-"Affirmative.  See you later, Billings."
+“Affirmative.  See you later, Billings.”
 
 He watched them float across the surface of the stratosphere.  He muttered a silent prayer.  A computer spoke up.
 
-"Launch program complete, all systems nominal."
+“Launch program complete, all systems nominal.”
 
 After that, the ship went totally silent.
 
@@ -259,43 +259,43 @@ His bottle fell to the floor.
 # CLEAR
 # SBIMAGE: locations/dropship.png
 
-"Billings?...Colonel?...Wake up, sir."
+“Billings?...Colonel?...Wake up, sir.”
 
 Billings awoke with a start.  His foot kicked the now empty bottle of whiskey.  He sat up to find himself being shaken by a cadet.
 
-"Wh...oh, jeez."
+“Wh...oh, jeez.”
 
-"You okay, Colonel?  We're about on schedule."
+“You okay, Colonel?  We're about on schedule.”
 
 “What time is it?” Billings rubbed his eyes.
 
-"14:20"
+“14:20”
 
 “Shit... Gimme time to shower.  Prime the mechs.  You can fly voice MIU, can't you?” he stood up.
 
-"Sure."
+“Sure.”
 
-"Bring her into low orbit, 200 kilometers and call me in my quarters when the drop force is ready."
+“Bring her into low orbit, 200 kilometers and call me in my quarters when the drop force is ready.”
 
-"Affirmative."
+“Affirmative.”
 
 Billings laughed.  It was the first time he had laughed in days.
 
-"Yes or no will be fine."
+“Yes or no will be fine.”
 
-"Yes, sir."
+“Yes, sir.”
 
 Billings smiled and put a hand on the cadet's shoulder.  He left the room as the trainee took a seat in front of the MIU.
 
 Billings stopped.
 
-"Clayton?"
+“Clayton?”
 
-"Yes, sir?"
+“Yes, sir?”
 
 There was a long pause.
 
-"Never mind."
+“Never mind.”
 
 Billings left.
 
@@ -307,31 +307,31 @@ He trudged slowly down the hall.  Billings smelled the nauseous odor of Tanner's
 ~ location_name = "VDeck Five"
 # CLEAR
 
-"Hi, Colonel!"
+“Hi, Colonel!”
 
-"Oh...how are you O'Brien."
+“Oh...how are you O'Brien.”
 
-"Not bad.  You look terrible.  Did you know we drop in half an hour?"
+“Not bad.  You look terrible.  Did you know we drop in half an hour?”
 
-"Yeah...yeah...I...uh...overslept.  I'm gonna shower.  I'll be ready."
+“Yeah...yeah...I...uh...overslept.  I'm gonna shower.  I'll be ready.”
 
-"Okay, see you in drop bay."
+“Okay, see you in drop bay.”
 
 “Later.” said Billings as he watched O'Brien walk down the hall.  Billings continued his trek.  He stepped in front of his door, and the security camera above it signaled a green light to indicate that it recognized Billings surgical implant.  But the door didn't open.  Billings wrinkled his forehead as he grabbed the manual release.
 
 No sooner had Billings touched it when the control unit erupted in sparks, sending Billings reeling to the other wall in surprise.  An alarm went off.  Billings reached for a fire extinguisher as he intercomed to the bridge.
 
-"Billings, deck five, I have an electrical fire, respond."
+“Billings, deck five, I have an electrical fire, respond.”
 
-"Affirmative, we have it on camera and on track.  We're cutting the power."
+“Affirmative, we have it on camera and on track.  We're cutting the power.”
 
 The sparking died and the flame started to as the security unit powered down and all of the status lights winked out.
 
-"Deck five, we are coming down with a replacement unit, confirm."
+“Deck five, we are coming down with a replacement unit, confirm.”
 
-"Negative, I leave in twenty-five minutes.  Don't bother.  I'll be out in a sec."
+“Negative, I leave in twenty-five minutes.  Don't bother.  I'll be out in a sec.”
 
-"All right, Colonel, bridge out."
+“All right, Colonel, bridge out.”
     <- common_options("-", -> ret_target, -> itends)
     -> DONE   // suppress compiler warning...
 

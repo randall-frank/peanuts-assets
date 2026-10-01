@@ -40,9 +40,9 @@ James Drake steps out of the van last.  Six foot even, longer than legal black h
 
 Turning to Drake, Brable threatens (as much as he can threaten), “and you had better be on your best behavior!  If I catch one whiff of any disrespect from you, you know what you will have coming when you get back.  If you get back.”  Gaz and Ste share a private eye roll.  Turning back to Mrs Gundershot, “You know I can always stay ma'am. Just say the word and I'll make sure you get an honest day's work out of all these degenerates.”
 
-"Thank-you, but that will not be necessary Karl. I'm sure these fine men will be on their best behavior", says Mrs Gundershot.  "Won't you boys?"
+“Thank-you, but that will not be necessary Karl. I'm sure these fine men will be on their best behavior”, says Mrs Gundershot.  “Won't you boys?”
 
-"Yes ma'am", Gaz, Fran and Ste chorus.  "We'll be sure to keep our eyes peeled."
+“Yes ma'am”, Gaz, Fran and Ste chorus.  “We'll be sure to keep our eyes peeled.”
 
 Drake mumbles something incoherent and immediately gets reprimanding glances from the other three.
 
@@ -65,13 +65,13 @@ The floor was covered with a heavy tarp and the walls lined with shelves of tool
 
 Mrs Gundershot reached for the chain around her neck, pulling it over her head.  The lock key dangled from the end of the chain as she handed it to Gaz.  He took the chain and unlocked the door.  He handed the chain back as he swung the door open, revealing stairs leading into a unexpected underground room.
 
-"Whoa!", breathed James.  "What's going on here?"
+“Whoa!”, breathed James.  “What's going on here?”
 
 “This is the 'herbary' James. ”, answered Mrs Gundershot, leading them all down into the cellar.
 
 The room is filled with a half dozen planter boxes, each growing a dozen or so mature cannabis plants.  Hanging above each box, a red-blue growing lamp leaving the room bathed in glowing violet. The scent of damp earth and skunky cannabis permeates the moist, thick air.   James just stared, open mouthed.
 
-"Yes, James, the finest in Shere, maybe in Surrey.", Mrs Gundershot continued.  "We're getting close to a harvest and we need to start collecting the leaves to dry.  That's today's main task, start the harvest."
+“Yes, James, the finest in Shere, maybe in Surrey.”, Mrs Gundershot continued.  “We're getting close to a harvest and we need to start collecting the leaves to dry.  That's today's main task, start the harvest.”
 
 Gaz, Fran and Ste all knew the drill, “Got it Mrs G.”  They produced their shears and started taking cuttings.  They were all experienced at this, and worked efficiently.   
 
@@ -103,13 +103,13 @@ James continued, “You guys can't see it?  This setup might produce a few bags 
 
 “She gives it away, to people who need it”, added Fran.
 
-"What!", exclaimed James.  "My teds could move this product all over Surrey.  We could be making a fortune!  That old bat is an idiot!"
+“What!”, exclaimed James.  “My teds could move this product all over Surrey.  We could be making a fortune!  That old bat is an idiot!”
 
 Fran and Gaz looked horrified.  Gaz stopped cutting and stepped up to James, Fran at his side, “James, you will not speak about Mrs G like that.  That woman is a saint.  If you only knew...” 
 
 Fran cut him off, “James, this operation will not be expanding and, like Gaz, I will not tolerate you speaking ill of Mrs Gundershot!  Motivation and history is at play that you do not comprehend.  Just shut up and get back to work.”
 
-"Ok, ok, I get it", James backpedaled. "But I do think there is a golden goose here.  Even if we just smuggled a bit past the Brable idiot, it would take the edge of long nights in the nick."
+“Ok, ok, I get it”, James backpedaled. “But I do think there is a golden goose here.  Even if we just smuggled a bit past the Brable idiot, it would take the edge of long nights in the nick.”
 
 “Not going to happen James.  Just forget about it”, snapped Gaz, his thoughts drifting to his mother's chemotherapy treatments, before locking eyes with Fran. Mrs G had always there for his mum.
 
@@ -146,21 +146,21 @@ After being released from his third stint in the clink, James had gone on a seri
 
 Gravity dragged a tear along a grimy path on Mrs G's well worn face.  She imagined Ms Brown, driving home without a care in the world.  Window down, singing along “... If she finds that I've been 'round to see you ...”.  Recognition, panic, crash, death.  The song continued playing in her head, a haunting echo of a life cut short.  
 
-"Mrs G!?" A concerned Ste stops working, "Are you alright?"
+“Mrs G!?” A concerned Ste stops working, “Are you alright?”
 
 Mrs Gundershot looks up, her trance broken.  She sniffed and wiped her face, leaving her eyes, red and puffy.  “I'm fine Ste, just a bit shaken up.”
 
-"You should take a break ma'am.  I can finish this work.  Do you need me to call someone for you?"
+“You should take a break ma'am.  I can finish this work.  Do you need me to call someone for you?”
 
 For a second, she considered several courses of action.  After a long pause, she straightens, “Yes Ste.  I think I will take a tea break. ”  Another second, she reluctantly added, “Ste, I need to ask for your help...”
 
-"Yes, ma'am of course.  What do you need?"
+“Yes, ma'am of course.  What do you need?”
 
 “Constable Brable passed me James' sheet”, Mrs G responded.
 
 Ste's gaze slowly turned downward, understanding the implication, “I'm sorry ma'am.  I'll take care of it.”
 
-"Thank-you Ste."  She reached out and placed a hand on his shoulder, "I know you will."
+“Thank-you Ste.”  She reached out and placed a hand on his shoulder, “I know you will.”
 
 Ste patted her hand, “You can count on me.”  He turned and strode to the shed, determined in his step.
 
@@ -200,7 +200,7 @@ She put a hand on his shoulder, “Thank you Gary.  You know what to do.  I thin
 
 “Yes Mrs G.  We'll get right on it.  Sorry for the inconvenience ma'am. It was shaping up to be a glorious day.”  
 
-"Yes it was Gary, but there are just some weeds that must be pulled."
+“Yes it was Gary, but there are just some weeds that must be pulled.”
 
 Mrs Gundershot never enjoyed making such calls, but it was her role, her responsibility.  She gave Gaz a smile, mouthing “Thank you” as she turned and headed back to the house to call constable Brable.
     <- common_options("", -> ret_target, ->constable)
@@ -218,7 +218,7 @@ Questions followed rapid fire, “You knew he was planning this?”, “Did you 
 
 “Looks like he just jumped the back fence, grabbed new garb from local clotheslines and ran off”, Brable mused.  “Nothing here to suggest he had any help.”  Glancing at his watch, “He's probably halfway to London by now.”  Turning to Mrs Gundershot, “I believe you are safe Margret.  I can't see him coming back here for you.  This isn't the first time he's tried to escape you know.  Almost got away with it back a year or so ago, on another work-release gig.  We caught him them, we'll get him now.”  
 
-"I hope so Karl", sighed Mrs Gundershot.  "I just hope he doesn't hurt anyone else."
+“I hope so Karl”, sighed Mrs Gundershot.  “I just hope he doesn't hurt anyone else.”
 
 Karl nodded and turned back to Evans, “Gather up the boys and we'll head back.  I'll call the station and let them know we're on our way.”  “A lot of paperwork, a lot of paperwork...”, he mumbled as the others left, leaving he and Margret alone.
 
@@ -230,7 +230,7 @@ Margaret unfolded her arms, “I understand Karl, but I'd appreciate having a di
 
 Karl nodded, “Of course Margaret, never like this again.”
 
-"Thank you", said Margaret.  She picked up the bag and the bouquet of marigolds and antirrhinums from the table, handing them to Karl, "How is Susan doing?  Is her glaucoma improving?  She might enjoy these."
+“Thank you”, said Margaret.  She picked up the bag and the bouquet of marigolds and antirrhinums from the table, handing them to Karl, “How is Susan doing?  Is her glaucoma improving?  She might enjoy these.”
 
 Karl managed a little smile as he accepted them, “Still day by day I'm afraid.  Your gifts are the highlight of her days.  Thank you so much.”
 

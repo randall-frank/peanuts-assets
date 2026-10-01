@@ -11,7 +11,7 @@ David's Friend
 # IMAGEMAXHEIGHT: 480
 # IMAGE: locations/baseball.png
 
-"And this," says Brian, waving an unclenched yet unweilding hand in my direction, "is David's friend."
+“And this,” says Brian, waving an unclenched yet unweilding hand in my direction, “is David's friend.”
 
 The kids all nod and give signs of moderate acceptance to the virus in the cohesive bondage of sixth grade boys trying too hard to be men.  I am the New Kid.  I am David's friend.  One of them, whose name I do not know, continues to stare at me.  No, that's not right: stare through me.  I am instantly charmed by his ability to sort out the hundreds of personas piled on him, his ability to pick out one kid among a baker's dozen and try to understand what he thinks. Especially when he's the New Kid.
 
@@ -35,31 +35,31 @@ The boy's name is Peter, and we shake hands.  It is the first time I have ever s
 
 He dusts off his hands onto the thighs of his blue jeans, sending coughs of dirt into the air.
 
-"Yeah, I've known David since.. oh.. kindergarten, I think."
+“Yeah, I've known David since.. oh.. kindergarten, I think.”
 
 “Hum.” he grunts.  The mention of kindergarten has dislodged his thoughts.  Nobody likes to be reminded of a time when memories were still being developed, a time containing events that are scattered across the brain like seeds in a bean field, each one trying to sprout more meaning than the next.  Meaning and purpose.  Anything before the first grade was without purpose.  I mean, you didn't even have your own desk.
 
-"Yeah, David gets around a lot.  He tell you about the games?"
+“Yeah, David gets around a lot.  He tell you about the games?”
 
-"Yeah, but I don't usually hang out with this crowd."
+“Yeah, but I don't usually hang out with this crowd.”
 
 He grins sheepishly.
 
-"Don't sweat it.  Most of these guys have shit for brains anyway.  You really in ELP?"
+“Don't sweat it.  Most of these guys have shit for brains anyway.  You really in ELP?”
 
 “Yeah.” I scrape my right foot into the soft soil below it.  ELP.  The whiz kids.  The geniuses.  The future of tomorrow.  The social outcasts.
 
 “I had a chance to get into that once.”  He casts a gaze towards a distant patch of weeds.  I believe he is pondering third base.
 
-"Really?"
+“Really?”
 
-"Yeah, my mom was all shits and giggles.  Babbling about what a smart boy I was, how wonderful it is to have such a great kid.  You get that too?"
+“Yeah, my mom was all shits and giggles.  Babbling about what a smart boy I was, how wonderful it is to have such a great kid.  You get that too?”
 
 “All the time.”  That was the truth.
 
-"Can't stand it anymore."
+“Can't stand it anymore.”
 
-"Yeah, but how come you didn't go in?"
+“Yeah, but how come you didn't go in?”
 
 He pivots invitingly on his left heel, and we begin to make our slow progress to home plate, a small piece of white cardboard baking in the September sun.
     <- common_options("", -> ret_target, ->part3)
@@ -70,17 +70,17 @@ He pivots invitingly on his left heel, and we begin to make our slow progress to
 # CLEAR
 # SBIMAGE: locations/baseball_clip.png
 
-"Dunno." he shrugs "Just didn't feel like it, I guess."
+“Dunno.” he shrugs “Just didn't feel like it, I guess.”
 
 I gape.  My brow creases.  Then I hold my composure.
 
-"Whaddya mean?"
+“Whaddya mean?”
 
-"Jeez, I dunno, all that lofty crap about being the future, the kids of tomorrow, all of those special projects, the lectures, the higher classes, all that crap, it's like I wouldn't feel like a kid anymore."
+“Jeez, I dunno, all that lofty crap about being the future, the kids of tomorrow, all of those special projects, the lectures, the higher classes, all that crap, it's like I wouldn't feel like a kid anymore.”
 
 I felt a dull ache at the top of my chest.  I have never heard a kid use the word 'kid' before.  I grunt, clearing my throat, and Peter unleashes his bat from the loop in his belt.  Louisville slugger.  Hardcut cured.  Keep the signature to the sky.  He speaks again.
 
-"It's like my mom and my dad, they want me to be something special.  Something different.  Why should I be different?  So I can listen to some jerk-off tell me how I'm the 'child of tomorrow'?  I'm not anything special, I don't wanna be.  I'm not the child of tomorrow, I'm just a fucking kid."
+“It's like my mom and my dad, they want me to be something special.  Something different.  Why should I be different?  So I can listen to some jerk-off tell me how I'm the 'child of tomorrow'?  I'm not anything special, I don't wanna be.  I'm not the child of tomorrow, I'm just a fucking kid.”
 
 He knocks the dust from his sun-bleached Keds with the tip of his hardcut cured bat.  David is on the pitcher's mound, a small circle of rope in the center of a vacant lot. I am David's friend.  Everyone knows me as David's friend. David makes his favorite ball pop up and down, tossing it in and out of his hand.  He winds up.  Peter takes the batter's stance.
 

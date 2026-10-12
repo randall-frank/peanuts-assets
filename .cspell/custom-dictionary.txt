@@ -18,6 +18,7 @@ Cephalo
 Cephalon
 Chromodynamics
 chrysopoeia
+classicus
 Cletus
 comlink
 coopetitors
@@ -79,6 +80,7 @@ Teuthans
 Thorogood
 Tyrannus
 UFCL
+unreadably
 Wapner
 Whaddya
 Whatcha

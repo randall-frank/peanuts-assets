@@ -69,9 +69,9 @@ Randy outlines the basics of Project Short Ink, “So the Teuthans have handed u
 
 “Right, but we can best against them and hasten their demise”, counters Randy.
 
-“Won't they just track our short positions and slap us with the SEC”, Andrew asks?
+“I mean we can't just bet against CDYG on PolyMarket.  Won't they just track our short positions and slap us with the SEC”, Andrew asks?
 
-“That assumes we use a CDYG short position”, Randy replies.  “What if instead we insure CDYGs partners and debt?  When they default on the debt...  If that is still too visible, we can insure the debt of companies CDYG would bring down with them.  Suppliers, consultants, services...  Hell, I'll bet even Greenpeace might be on the list.”
+“I mean it's not like we can't already PolyMarket our AdNite loot box content”, Randy laughed, “But that assumes we use a CDYG short position”.  He continued, “What if instead we insure CDYGs partners and debt?  When they default on the debt...  If that is still too visible, we can insure the debt of companies CDYG would bring down with them.  Suppliers, consultants, services...  Hell, I'll bet even Greenpeace might be on the list.”
 
 “Perfect”, Andrew crowed, “We can insure a blend of all of them. We can even use secondary short positions as a hedge.”
     + [Let's do it.  We'll meet again when ABAL has funding.] -> do_project_shortink
@@ -659,7 +659,20 @@ No, not anger, more like despair.  They had the look of two men in danger of dro
 
 Kraal started in a booming voice, “I can't believe it!  You two have spent...  almost a billion euro and for what?  Simulations of the human condition? {forty: Midwestern farmers handling goats?} {mille: Failed writers getting hit by trucks?} {david: Kids playing baseball?} {solitaire: Convicts in space?} Absolutely nothing!  You've wasted our time, our resources...” 
 
+“Look, I showed you two imbeciles how to do this previously.  Do I need to help you evolve or something?” Kraal continued, “... I don't know, introduce gladiatorial games for your feed?” 
+
+“'from the war of nature, from famine and death, the most exalted object which we are capable of conceiving, namely, the production of the higher animals, directly follows'”, he mumbled beneath his 'bubbles'. 
+
+Andrew and Randy just stared at him, dumbfounded.  There was a long, uncomfortable pause before Randy proffered, “Come again?”
+
+Andrew scratched his head in strained recollection, “wait...  Darwin?”
+
+“Yes, yes“, an exasperated Kraal blustered.  ”'On the Origin of Species', locus classicus for self improvement.  You know, the book that started your 'American Civil War'?”
+
+Randy and Andrew strained to suppress laughter, resulting in a coughing fit for Andrew and an painful, unreadably twisted smirk on Randy's face.  Internally, his outburst deeply troubled them.  Evolve? more like the words of the bard, 'You hurt it, you keep on hurting it, until you can distinguish the speech from the screams.'
+
 His voice trailed off as he ran out of bluster.  Zyn tapped Kraal's dry tentacle on the table.  Almost like he cared.  “Look, you've both watched the ticker.  We've just come from a meeting with Chairman J'araek.  He make it very clear that he is giving this project one more chance.  If we can't turn project 'Titanic', his words not mine, around, we'll all be out of a job”, Zyn paused a second to let it sink in. “Our resources have been cut again, but we still have a chance.”
+
 Kraal's eyes narrowed, “I don't like this.  I don't like it at all.”  He turned to Andrew and Randy, “I have a new collection of simulation seeds.  I have been assured that these are the best we have.”
     ~ cpu_cpus = cpu_cpus / 2
     + {eg_outsourcing == 2} [We might be able to reduce simulation expenses] -> storyline.outsourcing_3

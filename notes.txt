@@ -31,12 +31,6 @@ Cum dubitas, adulare - when in doubt, flatter
 "What's the only thing standing between a child and a happy and fulfilling life? YOU! The answer is you!"
 
 
-- add the monitor agent can detect changes by the boss.
-
-Quetions:
-
-    get Andrew some sounds...
-
 States:
 
 Increase the violence_count:

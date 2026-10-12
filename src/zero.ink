@@ -1,13 +1,43 @@
 === zero ===
+# AUDIOLOOP: audio/I5%20-%20Eclipse.mp3
     ~ set_simulation_state(1)
     -> start
 
 = start
 ~ location_name = "VLuxon Propulsion Systems R&D"
 # CLEAR
-# AUDIOLOOP: audio/I5%20-%20Eclipse.mp3
 # CLASS: head1
 Zero, my Hero
+
+The energy compensation section of the ESF Heisenberg status screens began to slowly flash yellow.  Ensign Toby Chen had been eating Cheetos and reading system technical manuals when he become aware of the notification.  Ensign Chen was a relative newcomer to the Heisenberg, having come aboard as a last minute replacement for Ensign Gray, who had been part of the original Luxon liaison team.  As such, Chen was still coming up to speed on the revolutionary quantum probability drive at the heart of the Heisenberg.  He'd read all the PR literature from Luxon, “Exploring the universe in our lifetime”, they'd claimed, the “Gateway to the Stars”, but Gray was the expert, having been on present during the space trial flights.  The Heisenberg has passed the trials with flying colors, so when Gray had been diagnosed with leukemia, the brass felt Chen would have no problems 'swimming' as they would say.
+
+But in reality, this was a radical, first of it's kind engine design.  And, while it had passed an initial test flight, no one was entirely sure what to expect.  Luxon was still tweaking the design. There were nearly daily software updates (all 'minor patches') Chen was responsible for installing.  He had seen dozens such alerts in the first week of the flight to Proxima Centauri b, and this one looked just like all the previous red herrings.
+
+Chen licked his fingers, wiped them inside of his pockets and clicked on the status window.  Everything, was in the green, except for elevated power consumption by the PRNG-86 system.  He had to look that one up. The PRNG-86 was the random number generator for the quantum drive.  Almost 2% over power allocation, interesting, but easily within their reserve.  Chen was about to edit the warning threshold when Commander Valerie Cruz walked into the control room.
+
+"Status report, all stations", Cruz commanded.
+
+"Guidance, is green", Ensign Craig replied.
+
+"Environmental, green", from Ensign Summers.
+
+"Propulsion probability, be green", Ensign Kincaid snickered.
+
+That drew a sharp rebuttal from Captain Cruz, "Let's keep it professional Mr Kincaid."
+
+"Yes Ma'am", Kincaid, "Propulsion green."
+
+"Power?", asked Cruz when Chen did not not respond immediately.
+
+Chen again hesitated, "... Power is green".
+
+Valerie Cruz had nearly a dozen years of spacefaring experience and delays in responses were never a good sign.  She stepped up behind Chen, looking over his shoulder.
+
+"Ma'am, we have a power threshold alert in the PRNG-86 system.  It is drawing nearly 2% higher than budget."
+
+
+
+
 
 Our story begins at Luxon Propulsion Systems. They are developing the next-generation quantum hyper-drive engines for star ships - “Exploring the universe in our lifetime”.  At its core is a probabilistic quantum physics engine that predicts quantum collapses which can be used for trans-light propulsion with significant energy. The ship is designed to use energy collected from a star during a sling-shot orbit to enable quantum travel. We just need a simple random number generator capable of generating random sequences over 10 Trillion numbers with statistically undetectable repetition, simple right? Enter Travis, the hot new developer. He is handed papers describing the algorithms that meet those requirements and asked to create a power-optimized implementation.
 Travis picks the card up off the board and starts to read the papers… all over his head and he needs to get to the gym by 3 pm to get a machine next to Melissa.  So, ChatGPT 154.23 it is!

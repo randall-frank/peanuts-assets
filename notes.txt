@@ -125,11 +125,11 @@ ubermom
 
 WORKING:
 
-cruising altitude - andrew
 zeromyhero - randy
 
 TODO:
 
+cruising altitude
 
 Lock up a simulation - runs forever...
 Re-entrant simulation... 

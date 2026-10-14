@@ -4,7 +4,7 @@
     -> start
 
 = start
-~ location_name = "VLuxon Propulsion Systems R&D"
+~ location_name = "VESF Heisenberg en route to Proxima Centauri b"
 # CLEAR
 # CLASS: head1
 Zero, my Hero
@@ -15,28 +15,67 @@ But in reality, this was a radical, first of it's kind engine design.  And, whil
 
 Chen licked his fingers, wiped them inside of his pockets and clicked on the status window.  Everything, was in the green, except for elevated power consumption by the PRNG-86 system.  He had to look that one up. The PRNG-86 was the random number generator for the quantum drive.  Almost 2% over power allocation, interesting, but easily within their reserve.  Chen was about to edit the warning threshold when Commander Valerie Cruz walked into the control room.
 
-"Status report, all stations", Cruz commanded.
+“Status report, all stations”, Cruz commanded.
 
-"Guidance, is green", Ensign Craig replied.
+“Guidance, is green”, Ensign Craig replied.
 
-"Environmental, green", from Ensign Summers.
+“Environmental, green”, from Ensign Summers.
 
-"Propulsion probability, be green", Ensign Kincaid snickered.
+“Propulsion probability, be green”, Ensign Kincaid snickered.
 
-That drew a sharp rebuttal from Captain Cruz, "Let's keep it professional Mr Kincaid."
+That drew a sharp rebuttal from Captain Cruz, “Let's keep it professional Mr Kincaid.”
 
-"Yes Ma'am", Kincaid, "Propulsion green."
+“Yes Ma'am”, Kincaid, “Propulsion green.”
 
-"Power?", asked Cruz when Chen did not not respond immediately.
+“Power?”, asked Cruz when Chen did not not respond immediately.
 
-Chen again hesitated, "... Power is green".
+Chen again hesitated, “... Power is green”.
 
 Valerie Cruz had nearly a dozen years of spacefaring experience and delays in responses were never a good sign.  She stepped up behind Chen, looking over his shoulder.
 
-"Ma'am, we have a power threshold alert in the PRNG-86 system.  It is drawing nearly 2% higher than budget."
+Toby snapped back to attention, “Ma'am, we have a power threshold alert in the PRNG-86 system.  It is drawing nearly 2% higher than budget...”
+    <- common_options("-", -> ret_target, -> design_prng)
+    -> DONE   // suppress compiler warning...
+
+= design_prng
+~ location_name = "VLuxon Propulsion Systems R&D, 6 months earlier"
+# CLEAR
+Sasha Sterling, systems software architect for the probabilistic quantum physics engine, shakes herself awake, pops another pill and washes it down with caffeine.  She has been working dangerously long hours as of late, with the 'first-light' deadline coming up in less than a month, but the team is making solid progress and might even beat the hardware team to release for a change.  Luxon bet the company on this Hail Mary project, but if the technology pans out, interstellar space travel will become a reality.  Sasha's head swoons a bit every time she considers the implications.  Yes, it has been exhausting, but she has never been on a more exciting project.  Unfortunately, not everyone on the team shares her excitement.   
+
+Back to the task at hand.  She opens up the project status window.  A quantum level random number generator is critical to proper operation of the engine.  It ensures that the computation, and directly connected engine core, was free of non-local quantum entanglement.  One could never avoid some level of remote entanglement, but if the fraction is too high, there was a chance the engine might unpredictably warp to a different space-time nexus.  Sasha had been researching the problem with domain experts for months and they had identified and documented a suitable algorithm.  She had even written the test cases it needed to pass.  She just needed to get someone to code up the algorithm and merge it into the system.  An important task for a top programmer.  She clicked and dragged the task box to Pip Miller.
+
+Pip was having a rough day.  A night of binge drinking, splitting headache, dehydration, sour stomach and general malaise.  The last thing he needed today was a challenging task.  Pip had lost any enthusiasm for the project months ago.  It would never end, much less ship and even more remotely be profitable to him.  But today, there was a blinking task mocking at him from his inbox.  Reluctantly, he clicked and read the documentation...  A random number generator!  Really?  How is that a level 1 issue?  They even included a reference to the actual algorithm to be implemented.  Sigh... Well, there's always Johnny.  Pip gestured, forwarding the task to Johnny. He can implement it, Pip would review the code...  Where was the restroom on this level?
+
+Johnny Stiles had been an intern for Luxon for about three weeks now.  Johnny was literature major, masquerading as a programmer.  As a lit major junior considering graduation, he came to the uneasy realization there was no way he could pay back his college loans as a writer. He had to do something else.  He had to get a job.  Then he found AI!  Now here he was, an aspiring programming.  
+
+He opened the ticket and smiled, he did not understand the specifics, but it looked like some kind of 'coin flipping' task.  The task seemed overly documented.  I mean how difficult could it be to implement a random number generator?  Anyway, there was a complete acceptance test along with a complete algorithm description. He pulled up his AI GUI, dropped in the task algorithm and test, and clicked submit.  As the AI spun up and the task churned, he headed to the cafeteria for a quick lunch.  When he returned, there was a commit ready for his review and it passed all the tests.  He looked over the commit. Hmm, seems like an awfully large amount of code.  The commit bundled a nearly complete AI subsystem as part the solution. It looks like it was being used to filter out 'entanglements'?  Not sure what that was, but it passed the tests.  Johnny clicked submit and called it a day.   
+    <- common_options("-", -> ret_target, -> code_complete)
+    -> DONE   // suppress compiler warning...
+
+= code_complete
+~ location_name = "VLuxon Propulsion Systems R&D"
+# CLEAR
+Pip managed to snore himself awake.  Ugh, still pretty hung-over, but a strong cup of coffee should get him through the last couple of hours. Pip refilled his 'Error 404: Motivation not found' mug, crushed in a Vicodin and popped it into the microwave.  He took a long draw of the vile liquid and pulled up his inbox.  The first email was from the CEO, demanding that the quantum engine be ready for testing in two weeks. There should be a 'delete with prejudice' button. The second was a code review notification.  Looks like Johnny completed that random number generator.  Pip opened the code and started reviewing it.
+
+OMG, almost 20GB of files.  90% of it looks like a set of neural network weights.  How am I going to review this???  Ok, let's start with the unit test.  Thankfully, the test looked really complete and it passed.  He wrote a little script to grab some numbers and plot the distribution.  He compared his plot to the one in the algorithm paper and they looked identical.  Yeah, looks good to me.  Pip went ahead and approved the commit, forever changing the ESF Heisenberg's destiny with a single click. He took another sip of 'coffee', it was 4:38 in the afternoon.  'Lust for Life' roared in his earbuds.
+    <- common_options("-", -> ret_target, -> shakedown_cruise)
+    -> DONE   // suppress compiler warning...
+
+= shakedown_cruise
+~ location_name = "VVESF Heisenberg circling Earth, 3 weeks later"
+# CLEAR
+Ensign Emmanuel Gray is on the bridge, watching the system boot the new software update.
+
+# CLASS: computer
+[00:00:00] QUANTUM OS BUILD: {ai_build_number}<br>[00:00:01] (C) 2123 LUXON PROPULSION SYSTEMS, INC. ALL RIGHTS RESERVED.<br>[00:00:04] INITIALIZING STOCHASTIC CORE... OK<br>[00:00:07] MEMORY CHECK: 128 TiB ENTANGLEMENT BUFFER... OK<br>[00:00:12] SYNCHRONIZING PROBABILISTIC MATRIX... OK<br>[00:00:22] ENGAGING LOCAL QUANTUM FILTER [PRNG-86]...<br>[00:00:22] "Just 5 more minutes, Mom. A-Team is on."... OK<br>...<br>[00:02:08] SYSTEM ACTIVE: GUIDANCE INTERNAL.
+
+    <- common_options("-", -> ret_target, -> original)
+    -> DONE   // suppress compiler warning...
 
 
-
+= original
+~ location_name = "VLuxon Propulsion Systems R&D"
+# CLEAR
 
 
 Our story begins at Luxon Propulsion Systems. They are developing the next-generation quantum hyper-drive engines for star ships - “Exploring the universe in our lifetime”.  At its core is a probabilistic quantum physics engine that predicts quantum collapses which can be used for trans-light propulsion with significant energy. The ship is designed to use energy collected from a star during a sling-shot orbit to enable quantum travel. We just need a simple random number generator capable of generating random sequences over 10 Trillion numbers with statistically undetectable repetition, simple right? Enter Travis, the hot new developer. He is handed papers describing the algorithms that meet those requirements and asked to create a power-optimized implementation.

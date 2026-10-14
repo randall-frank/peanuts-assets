@@ -210,6 +210,10 @@ Andrew begins with a brief status report, “First, on the LLC front, everything
 # CLASS: computer
 QUERY_ANALYSIS
 
+Randy snickered under his breath as he read the numbers, “They say a farting horse never tires.”
+
+“Dude, I don't think we share the same definition of 'they'”, rejoined Andrew.
+
 “So, a bit more than half the queries could be handled by code, another 30% by a mechanical turk.  Less than 10% would need to be handled by a full AI”, Randy asked?
 
 “Yep, that's about right”, Andrew replied.  “I did some analysis of the 'mechanical turk' costs and the simple API redirection.  It looks like we could provide the service at maybe 40% of what our current AI costs.”

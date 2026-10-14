@@ -64,6 +64,7 @@ niner
 Onder
 optocoupling
 Poltrona
+PRNG
 Radula
 Raguel
 ROAS
@@ -83,6 +84,7 @@ Thorogood
 Tyrannus
 UFCL
 unreadably
+Vicodin
 Wapner
 Whaddya
 Whatcha

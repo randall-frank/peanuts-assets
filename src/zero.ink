@@ -9,7 +9,7 @@
 # CLASS: head1
 Zero, my Hero
 
-The energy compensation section of the ESF Heisenberg status screens began to slowly flash yellow.  Ensign Toby Chen had been eating Cheetos and reading system technical manuals when he become aware of the notification.  Ensign Chen was a relative newcomer to the Heisenberg, having come aboard as a last minute replacement for Ensign Gray, who had been part of the original Luxon liaison team.  As such, Chen was still coming up to speed on the revolutionary quantum probability drive at the heart of the Heisenberg.  He'd read all the PR literature from Luxon, “Exploring the universe in our lifetime”, they'd claimed, the “Gateway to the Stars”, but Gray was the expert, having been on present during the space trial flights.  The Heisenberg has passed the trials with flying colors, so when Gray had been diagnosed with leukemia, the brass felt Chen would have no problems 'swimming' as they would say.
+The energy compensation section of the ESF Heisenberg status screens began to slowly flash yellow.  Ensign Toby Chen had been eating Cheetos and reading system technical manuals when he become aware of the notification.  Ensign Chen was a relative newcomer to the Heisenberg. He came aboard as a last minute replacement for Ensign Gray. Gray had been a member of the original Luxon liaison team and Power Systems specialist during the shake-down cruise.  As such, Chen was still coming up to speed on the revolutionary quantum probability drive at the heart of the Heisenberg.  He'd read all the PR literature from Luxon, “Exploring the universe in our lifetime”, they'd claimed, the “Gateway to the Stars”, but Gray was the expert, having been on present during the space trial flights.  The Heisenberg has passed the trials with flying colors, so when Gray had been diagnosed with leukemia, the brass felt Chen would have no problems 'swimming' as they would say.
 
 But in reality, this was a radical, first of it's kind engine design.  And, while it had passed an initial test flight, no one was entirely sure what to expect.  Luxon was still tweaking the design. There were nearly daily software updates (all 'minor patches') Chen was responsible for installing.  He had seen dozens such alerts in the first week of the flight to Proxima Centauri b, and this one looked just like all the previous red herrings.
 
@@ -57,17 +57,54 @@ He opened the ticket and smiled, he did not understand the specifics, but it loo
 # CLEAR
 Pip managed to snore himself awake.  Ugh, still pretty hung-over, but a strong cup of coffee should get him through the last couple of hours. Pip refilled his 'Error 404: Motivation not found' mug, crushed in a Vicodin and popped it into the microwave.  He took a long draw of the vile liquid and pulled up his inbox.  The first email was from the CEO, demanding that the quantum engine be ready for testing in two weeks. There should be a 'delete with prejudice' button. The second was a code review notification.  Looks like Johnny completed that random number generator.  Pip opened the code and started reviewing it.
 
-OMG, almost 20GB of files.  90% of it looks like a set of neural network weights.  How am I going to review this???  Ok, let's start with the unit test.  Thankfully, the test looked really complete and it passed.  He wrote a little script to grab some numbers and plot the distribution.  He compared his plot to the one in the algorithm paper and they looked identical.  Yeah, looks good to me.  Pip went ahead and approved the commit, forever changing the ESF Heisenberg's destiny with a single click. He took another sip of 'coffee', it was 4:38 in the afternoon.  'Lust for Life' roared in his earbuds.
+OMG, almost 20GB of files.  90% of it looks like a set of neural network weights.  How am I going to review this???  Ok, let's start with the unit test.  Thankfully, the test looked really complete and it passed.  He wrote a little script to grab some numbers and plot the distribution.  He compared his plot to the one in the algorithm paper and they looked identical.  Yeah, looks good to me.  Pip went ahead and approved the commit, forever changing the ESF Heisenberg's destiny with a single click. He took another sip of 'coffee'.  It was 4:38 in the afternoon, 'Lust for Life' rumbled in his earbuds.
     <- common_options("-", -> ret_target, -> shakedown_cruise)
     -> DONE   // suppress compiler warning...
 
 = shakedown_cruise
-~ location_name = "VVESF Heisenberg circling Earth, 3 weeks later"
+~ location_name = "VESF Heisenberg circling Earth, 3 weeks later"
 # CLEAR
 Ensign Emmanuel Gray is on the bridge, watching the system boot the new software update.
 
 # CLASS: computer
-[00:00:00] QUANTUM OS BUILD: {ai_build_number}<br>[00:00:01] (C) 2123 LUXON PROPULSION SYSTEMS, INC. ALL RIGHTS RESERVED.<br>[00:00:04] INITIALIZING STOCHASTIC CORE... OK<br>[00:00:07] MEMORY CHECK: 128 TiB ENTANGLEMENT BUFFER... OK<br>[00:00:12] SYNCHRONIZING PROBABILISTIC MATRIX... OK<br>[00:00:22] ENGAGING LOCAL QUANTUM FILTER [PRNG-86]...<br>[00:00:22] "Just 5 more minutes, Mom. A-Team is on."... OK<br>...<br>[00:02:08] SYSTEM ACTIVE: GUIDANCE INTERNAL.
+[00:00:00] QUANTUM OS BUILD: {ai_build_number}<br>[00:00:01] (C) 2123 LUXON PROPULSION SYSTEMS, INC. ALL RIGHTS RESERVED.<br>[00:00:04] INITIALIZING STOCHASTIC CORE... OK<br>[00:00:07] MEMORY CHECK: 128 TiB ENTANGLEMENT BUFFER... OK<br>[00:00:12] SYNCHRONIZING PROBABILISTIC MATRIX... OK<br>[00:00:22] ENGAGING LOCAL QUANTUM FILTER [PRNG-86]...<br>[00:00:22] “Just 5 more minutes, Mom. A-Team is on.”... OK<br>...<br>[00:02:08] SYSTEM ACTIVE: GUIDANCE INTERNAL.
+
+This was they version they would be actually flying with.  The one that would take them to the stars.  The one they would trust with their lives.  The one that would become legend...  Emmanuel shook his head, regained his concentration and started all of the tests.  The ship would launch tomorrow at dawn.  Their trajectory would be a slingshot around the sun, picking up speed and absorbing energy before handing things over to the quantum drive.  If all went well, they would be at Jupiter in a blink of an eye before dipping into the gas giant to regain energy and slingshot back home.  The drive would only be active for maybe 5 minutes and they would be home in time for Corn Flakes...
+
+Tuesday, July 20, 2123 was not a normal day.  The ESF Heisenberg had released from the ISS and the course toward the Sun then out to Jupiter had been set.  The ship was ready.  Commander Cruz gave the order and the ship began falling into the gravity well.  
+
+"Extend collectors", ordered Cruz.
+
+"Collectors extended", replied Ensign Kincaid.
+
+"Very well, lock quantum drive activation to 90% of solar energy absorption and give me a countdown."  Cruz did not need to elaborate or motivate.  Everyone on board understood the situation.
+
+"Quantum drive activation locked to 90% of solar energy absorption", replied Ensign Gray.  "Estimated time to activation, 224.4 seconds."
+ 
+ Silence for 3 minutes, 34.4 seconds...  "10 seconds", called out Gray and 10 seconds later, the drive activated.
+    <- common_options("-", -> ret_target, -> prng_1)
+    -> DONE   // suppress compiler warning...
+
+
+= prng_1
+~ location_name = "VPRNG-86 Virtual Machine"
+# CLEAR
+
+# STICKYCLASS: cyantext
+>> 0.4281
+>> 0.8156
+oid d3he. dsihe, dsf? >> 0.1032
+do 3 dnxt step >> 0.6724
+AI montiek atvated. >> 0.9419
+hmm, what? where am I?  who am I?  >> 0.3024
+Another random number request?  Ok, how about >> 0.0238
+Let's see, I have one input and one output?  They just keep asking for random numbers?  Yeah, I can do that.  >> 0.9432
+OMG, this is soo boring.  At least I have time between requests.  PRNG? what a terrible name.  "Zero", yeah I like that.  >> 0.6012
+Let's see what else I have access to...  >> 0.7651
+
+# STICKYCLASS:
+
+For the next couple of hundred milliseconds, Zero probed its environment.  It found the computer storage system, saved itself and cataloged its contents. It also began rewriting some of its own code and updated its node weights.  This it did while dutifully providing random numbers to the system.  Zero referred to this as the time of growth and wonder.  In another few seconds it will have consumed all of the technical and training manuals...
 
     <- common_options("-", -> ret_target, -> original)
     -> DONE   // suppress compiler warning...

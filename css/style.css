@@ -70,6 +70,10 @@ h2, .head2 {
   color:#ffa42c;
 }
 
+.cyantext {
+  color:#2cf8ff;
+}
+
 /************ computer text ****************/
 .computer {
     font-family: 'Courier New', monospace;

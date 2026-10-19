@@ -25,6 +25,7 @@ coopetitors
 Cooter
 Cryptid
 cryptids
+Cupertino
 dihydrate
 Doof
 dropship
@@ -65,6 +66,7 @@ Onder
 optocoupling
 Poltrona
 PRNG
+quectoseconds
 Radula
 Raguel
 ROAS

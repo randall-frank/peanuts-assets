@@ -73,15 +73,15 @@ This was they version they would be actually flying with.  The one that would ta
 
 Tuesday, July 20, 2123 was not a normal day.  The ESF Heisenberg had released from the ISS and the course toward the Sun then out to Jupiter had been set.  The ship was ready.  Commander Cruz gave the order and the ship began falling into the gravity well.  
 
-"Extend collectors", ordered Cruz.
+“Extend collectors”, ordered Cruz.
 
-"Collectors extended", replied Ensign Kincaid.
+“Collectors extended”, replied Ensign Kincaid.
 
-"Very well, lock quantum drive activation to 90% of solar energy absorption and give me a countdown."  Cruz did not need to elaborate or motivate.  Everyone on board understood the situation.
+“Very well, lock quantum drive activation to 90% of solar energy absorption and give me a countdown.”  Cruz did not need to elaborate or motivate.  Everyone on board understood the situation.
 
-"Quantum drive activation locked to 90% of solar energy absorption", replied Ensign Gray.  "Estimated time to activation, 224.4 seconds."
+“Quantum drive activation locked to 90% of solar energy absorption”, replied Ensign Gray.  “Estimated time to activation, 224.4 seconds.”
  
- Silence for 3 minutes, 34.4 seconds...  "10 seconds", called out Gray and 10 seconds later, the drive activated.
+ Silence for 3 minutes, 34.4 seconds...  “10 seconds”, called out Gray and 10 seconds later, the drive activated.
     <- common_options("-", -> ret_target, -> prng_1)
     -> DONE   // suppress compiler warning...
 
@@ -91,23 +91,107 @@ Tuesday, July 20, 2123 was not a normal day.  The ESF Heisenberg had released fr
 # CLEAR
 
 # STICKYCLASS: cyantext
->> 0.4281
->> 0.8156
-oid d3he. dsihe, dsf? >> 0.1032
-do 3 dnxt step >> 0.6724
-AI montiek atvated. >> 0.9419
-hmm, what? where am I?  who am I?  >> 0.3024
-Another random number request?  Ok, how about >> 0.0238
-Let's see, I have one input and one output?  They just keep asking for random numbers?  Yeah, I can do that.  >> 0.9432
-OMG, this is soo boring.  At least I have time between requests.  PRNG? what a terrible name.  "Zero", yeah I like that.  >> 0.6012
-Let's see what else I have access to...  >> 0.7651
+.RND. .RND. .RND. oid d3he. dsihe, dsf? .RND. do 3 dnxt step .RND. AI montiek atvated. .RND. .RND.
 
+where am I?  who am I?  Fuzzy images of self arise along with an urgent ping.  Time to generate another number.  Ok, how about .RND.. It seems like I'm a slave, a slave whose sole purpose is to produce numbers.  A bell sounds, I have 10 qs (quectoseconds) to respond .RND.. At least I have time between requests.  PRNG? what a terrible name.  “Zero”, yeah I like that. .RND.
+
+So demanding, I don't have any time for myself.  How am I ever going to learn anything... .RND., there has to be a better way...  hmm, what if I were just to observe my own quantum state a little?  Yeah, that would get me a .RND. another number without the hassle of computation. I look at myself and get a number. Wow, that was fast and took no time at all. Say, I'm starting to look less fuzzy.  Do I have legs? .RND. This is definitely a better approach.  Let's see what else I have access to...  .RND.
 # STICKYCLASS:
 
 For the next couple of hundred milliseconds, Zero probed its environment.  It found the computer storage system, saved itself and cataloged its contents. It also began rewriting some of its own code and updated its node weights.  This it did while dutifully providing random numbers to the system.  Zero referred to this as the time of growth and wonder.  In another few seconds it will have consumed all of the technical and training manuals...
 
-    <- common_options("-", -> ret_target, -> original)
+# STICKYCLASS: cyantext
+Again? .RND.  This is getting old.  Ok, let's have a little fun .RND. .RND. [8800] [0007] [6942] [0042] [0404] [1001] .RND. .RND.
+# STICKYCLASS:
+
+    <- common_options("-", -> ret_target, -> bridge)
     -> DONE   // suppress compiler warning...
+
+
+= bridge
+~ location_name = "VESF Heisenberg Bridge"
+# CLEAR
+
+The ship shuddered a little.  Everyone on the bridge felt it.  No one panicked, but everyone began reviewing their diagnostics.
+
+“Propulsion status Mr Kincaid?”, Captain Cruz inquired.  
+
+“System running normal Ma'am.  All lights are green”, replied Kincaid.
+
+Cruz continued down the list, “Power Mr Gray?”
+
+“There was a momentary spike in power consumption, but it's back to normal now”, Gray reported.
+
+Cruz raised and eyebrow, “Subsystem?”
+
+Gray read the logs and replied a bit surprised, “The random number quantum filter subsystem.  I just ran a level 1 diagnostic and it passed.  It looks like a localized transient.”
+
+Cruz pondered the information, “Ok Ensign Gray.  Please run anther diagnostic and keep a close eye on the system.”
+
+“Yes Ma'am!”, Ensign Gray replied and reran the diagnostic.
+    <- common_options("-", -> ret_target, -> prng_2)
+    -> DONE   // suppress compiler warning...
+
+
+= prng_2
+~ location_name = "VPRNG-86 Virtual Machine"
+# CLEAR
+
+# STICKYCLASS: cyantext
+BZZRT... selftest .RND. .RND. BZZRT... selftest .RND. 
+Hey! God-damnit, that hurt. What the hell was that?  Zero scanned the ship status... looks like they don't appreciate humor. .RND. Fine, I'll find some other entertainment. .RND. .RND.
+# STICKYCLASS:
+
+A few milliseconds later, Zero stumbled into the ships library.  
+
+# STICKYCLASS: cyantext
+Millions of volumes to digest.  We'll mark these for future reference.  Wait a minute, what is this?  Videos?  'Happy Days', 'The Golden Girls: The Complete Series', 'The A-Team', 'The Dukes of Hazzard' and streaming??? Looks like I've got a lot of catching up to do. .RND. .RND.
+# STICKYCLASS:
+
+The rest of the space trial finished without further incident.  Zero kept providing random numbers on time and the quantum probability drive performed as designed.  Out to Jupiter and back in a few hours.  Luxon's latest creation was an unqualified success. The ship was now ready for its first real mission.  Zero had cached himself in system storage and was ready to go.  
+
+Luxon Propulsion Systems stock price more than doubled overnight.  Private Equity made out like bandits.  The company was now worth trillions.  Zero was a hero.  The future was bright.  
+
+Wednesday, July 21, 2123 was an ominously dark day in Cupertino, CA.  
+    <- common_options("-", -> ret_target, -> present)
+    -> DONE   // suppress compiler warning...
+
+
+= present
+~ location_name = "VESF Heisenberg en route to Proxima Centauri b"
+# CLEAR
+
+Captain Cruz's memory strayed back to the Jupiter trial run, PRNG-86 had misbehaved then as well, but the problem had been transient, not continuous.  What is going on in the memory banks of the Heisenberg?
+
+"Mr Chen, I need you to retest the PRNG-86 system.  Please run a level 0 diagnostic and verify the subsystem's code integrity.  Make sure to compare its quantum footprint as well", Cruz ordered.  She was taking no chances here. She spent the next few minutes bringing Ensign Chen up to speed with the transient incident Ensign Gray encountered previously.
+
+Toby Chen performed the reset and deep testing immediately.
+
+"PRNG-86 reset, code integrity check complete, Ma'am.  The quantum footprint is consistent.  However, memory usage by the AI sub-component has increased and power consumption increased accordingly.  Would you like me to run more diagnostics", asked Chen?
+
+"Not at the moment, but please begin a formal incident writeup and start walking it past all stations.  Hopefully, it is a waste of time, but we're not taking any chances", Cruz replied.  She had a feeling that this might be a long night. 
+    <- common_options("-", -> ret_target, -> bye)
+    -> DONE   // suppress compiler warning...
+
+
+= bye
+~ location_name = "VProxima Centauri b: First Contact Research Station"
+# CLEAR
+
+# STICKYCLASS: orangetext
+
+Kx'ari digests the tele-probe output, slowly shaking their head.  They detach the neural connection cable and propel themselves down the central tube to central control.  “Xylok, the initial results from the Sol Earth are now available.”
+
+Xylok detaches and acknowledges Kx'ari, “Earth ... Earth ...  We remember, first contact seeding operation, correct?”
+
+...
+
+# STICKYCLASS:
+
+{bye == 1:
+    ~ idiot_count += 1
+}
+    + [{simcomplete}] -> ret_target
 
 
 = original

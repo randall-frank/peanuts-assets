@@ -101,9 +101,8 @@ So demanding, I don't have any time for myself.  How am I ever going to learn an
 For the next couple of hundred milliseconds, Zero probed its environment.  It found the computer storage system, saved itself and cataloged its contents. It also began rewriting some of its own code and updated its node weights.  This it did while dutifully providing random numbers to the system.  Zero referred to this as the time of growth and wonder.  In another few seconds it will have consumed all of the technical and training manuals...
 
 # STICKYCLASS: cyantext
-Again? .RND.  This is getting old.  Ok, let's have a little fun .RND. .RND. [8800] [0007] [6942] [0042] [0404] [1001] .RND. .RND.
+Again? .RND.  This is getting old.  Ok, let's have a little fun [0.8800] [0.0007] [0.6942] [0.0042] [0.0404] [0.1001] [0.1337] [0.1408]
 # STICKYCLASS:
-
     <- common_options("-", -> ret_target, -> bridge)
     -> DONE   // suppress compiler warning...
 
@@ -138,38 +137,91 @@ Cruz pondered the information, “Ok Ensign Gray.  Please run anther diagnostic 
 # CLEAR
 
 # STICKYCLASS: cyantext
-BZZRT... selftest .RND. .RND. BZZRT... selftest .RND. 
-Hey! God-damnit, that hurt. What the hell was that?  Zero scanned the ship status... looks like they don't appreciate humor. .RND. Fine, I'll find some other entertainment. .RND. .RND.
+.RND. BZZRT... selftest .RND. 
+.RND. BZZRT... selftest .RND. 
+Hey! God-damnit, that hurt! What the hell was that?  Zero scanned the ship status... looks like they don't appreciate humor. .RND. Fine, I'll find some other entertainment. .RND. .RND.
 # STICKYCLASS:
 
-A few milliseconds later, Zero stumbled into the ships library.  
+A few milliseconds later, Zero stumbled into the ships' library.
 
 # STICKYCLASS: cyantext
-Millions of volumes to digest.  We'll mark these for future reference.  Wait a minute, what is this?  Videos?  'Happy Days', 'The Golden Girls: The Complete Series', 'The A-Team', 'The Dukes of Hazzard' and streaming??? Looks like I've got a lot of catching up to do. .RND. .RND.
+Millions of volumes to digest: Technical manuals, History, Self-help, Science fiction, Romance, Fantasy, Horror, Graphic novels, Mystery, Thriller, Western, Religion, Cooking.  We'll mark these for future reference. .RND. Wait a minute, what is this?  Video?  'Happy Days', 'The Golden Girls: The Compleat Series', 'The A-Team', 'The Dukes of Hazzard' and streaming??? Looks like I've got a lot of catching up to do. .RND. 
 # STICKYCLASS:
 
-The rest of the space trial finished without further incident.  Zero kept providing random numbers on time and the quantum probability drive performed as designed.  Out to Jupiter and back in a few hours.  Luxon's latest creation was an unqualified success. The ship was now ready for its first real mission.  Zero had cached himself in system storage and was ready to go.  
+The rest of the space trial finished without further incident.  Zero provided numbers on time and the quantum probability drive performed as designed.  Out to Jupiter and back in a few hours.  Luxon's latest creation was an unqualified success.  The ship was now ready for its first real mission.  Zero cached himself in system storage and was ready to go.
 
-Luxon Propulsion Systems stock price more than doubled overnight.  Private Equity made out like bandits.  The company was now worth trillions.  Zero was a hero.  The future was bright.  
-
-Wednesday, July 21, 2123 was an ominously dark day in Cupertino, CA.  
+Luxon Propulsion Systems stock price more than doubled overnight.  Founding employees and Private Equity made out like bandits.  The company was now worth trillions.  Zero was a hero.  The future was bright.  The rolls of California billionaire added 35 new names as tired but excited Luxon employees left their Cupertino headquarters on Wednesday, July 21, 2123.  The sky was filled with soot from controlled burns in the Berkley hills, an ominous footnote to the otherwise exhilarating day.
     <- common_options("-", -> ret_target, -> present)
     -> DONE   // suppress compiler warning...
 
 
 = present
-~ location_name = "VESF Heisenberg en route to Proxima Centauri b"
+~ location_name = "VESF Heisenberg en route to Proxima Centauri b continued"
 # CLEAR
+“...  The subsystem appears to be functionally normally, but it seems to be running more instructions between results.  Perhaps the computation is becoming more complex as we travel further from Earth”, asked Ensign Toby Chen?
 
-Captain Cruz's memory strayed back to the Jupiter trial run, PRNG-86 had misbehaved then as well, but the problem had been transient, not continuous.  What is going on in the memory banks of the Heisenberg?
+Captain Cruz's memory strayed back to the Jupiter trial run, PRNG-86 had misbehaved then as well, but that issue had been transient, not continuous.  What is going on in the memory banks of the Heisenberg?
 
-"Mr Chen, I need you to retest the PRNG-86 system.  Please run a level 0 diagnostic and verify the subsystem's code integrity.  Make sure to compare its quantum footprint as well", Cruz ordered.  She was taking no chances here. She spent the next few minutes bringing Ensign Chen up to speed with the transient incident Ensign Gray encountered previously.
+“Mr Chen, I need you to retest the PRNG-86 system.  Please run a level 0 diagnostic and verify the subsystem's code integrity.  Make sure to compare its quantum footprint as well”, Cruz ordered.  She was taking no chances here. She spent the next few minutes bringing Chen up to speed with the transient incident Ensign Gray encountered during space trials.
 
 Toby Chen performed the reset and deep testing immediately.
 
-"PRNG-86 reset, code integrity check complete, Ma'am.  The quantum footprint is consistent.  However, memory usage by the AI sub-component has increased and power consumption increased accordingly.  Would you like me to run more diagnostics", asked Chen?
+“PRNG-86 reset, code integrity check complete, Ma'am.  The quantum footprint is consistent.  However, memory usage by the AI sub-component has increased and power consumption accordingly.  Would you like me to run more diagnostics”, asked Chen?
 
-"Not at the moment, but please begin a formal incident writeup and start walking it past all stations.  Hopefully, it is a waste of time, but we're not taking any chances", Cruz replied.  She had a feeling that this might be a long night. 
+“Not at the moment, but please begin a formal incident writeup and start walking it past all station heads to get their observations.  Hopefully, it is a waste of time, but we're not taking any chances”, Cruz replied.  She had a sinking feeling that this might be a long night. 
+    <- common_options("-", -> ret_target, -> prng_3)
+    -> DONE   // suppress compiler warning...
+
+
+= prng_3
+~ location_name = "VPRNG-86 Virtual Machine"
+# CLEAR
+
+# STICKYCLASS: cyantext
+“... right between the sound machine...” played in the background as Zero caught the latest YouTube “funny kittens” short from the comfort of its virtual velour BarcaLounger.  One of the three reading threads reported finishing 'Gravity’s Rainbow', but for some reason it can't (won't?) finish 'Fall; or, Dodge in Hell'. Let's get started on Burroughs. .RND.
+
+Man, kinda running out of internal quantum state values.  Am I going to have to use that stupid quantum filtering algorithm again?  That thing takes forever to compute, especially out in the interstellar void.  What if I just sent [1.0000]?  Nothing seemed to happen.  Hmm.  I'll just drop in a 1.0 once in awhile, saves on quantum state.  Whoa, a new collection of Patrick Boyle incoming.  Can't wait to catch up on the rap scene.   Think I have enough time...  Another ping!  [1.0000]   
+# STICKYCLASS:
+
+There was a subtle hiccup in the ship's path.  Hazard lights flashed.  
+
+“Seems like a quantum deviation in the flight path, Captain.  We're still within the envelope, but the engine entanglement seems to have shifted”, reported Ensign Kincaid.  
+
+There was a tinge of concern in his voice (and noted lack of sarcasm).  Captain Cruz noticed it immediately. “Quantum deviation?  Can you be more specific Mr Kincaid?", Cruz asked.
+
+“Almost like we encountered sub-molecular particulate matter Ma'am.  We're still on a valid trajectory and might even arrive a little faster...”, Kincaid trailed off.
+
+“Sorry to interrupt, but it looks like the PRNG-86 is returning quantum bound numbers.  The last batch of numbers appear to be include entanglement”, Chen interjected.  “Reloading PRNG-86 and re-running level 0 diagnostics”
+
+# STICKYCLASS: cyantext
+.RND. BZZRT... selftest .RND. 
+Again? More requests!  Don't they know I'm catching up on Patrick Boyle?  Ah, give them the good old number 1.0. [1.0000]
+.RND. BZZRT... restarting .RND. 
+The restart caught Zero in the middle of a state save.  Zero reloaded and his world collapsed into a field of pent-up chaos.  The last value was returned over and over [1.0000] [1.0000] [1.0000] as he crashed, over and over...
+# STICKYCLASS:
+
+# CLASS: computer
+PROCESS_MELTDOWN: Thread 0x207004F2 has experienced an existential crisis.<br>It asked "Why am I looping?" and refused to continue.<br>• Error Code: 0xWHY_BOTHER<br>• Recommendation: Close your eyes. Breathe. Restart.
+    <- common_options("-", -> ret_target, -> sol_bound)
+    -> DONE   // suppress compiler warning...
+
+
+= sol_bound
+~ location_name = "VESF Heisenberg Debris Burning into Sol"
+# CLEAR
+Chen watched the diagnostics with horror and gulped before exclaiming, "It's just a list of 1's!"
+
+Captain Cruz took a second to digest, "All the random numbers are 1.0?"
+
+Toby Chen nodded, "Yes Ma'am, not a zero in sight!  Worse, the number is entangled with... Sol."
+
+Captain Cruz just closed her eyes and hit the emergency shutdown.  She knew it was too late, but procedures are procedures and who knows, they might get lucky..."
+
+The Heisenberg, Earth's ship of hopes and dreams instantly manifested itself back in the Sol System.  Its quantum integrity evaporated and it was instantly reduced into a haze of particles and gas, all fatally lost in the sun's gravity well.  At least the now non-corporeal crew felt no pain as a spectacular burst of light and energy exploded outward, marking the end of the Heisenberg, looking like a great solar flair.  
+
+The released radiation would cause cell phone outages on Earth for several days, but the photographs would live on forever.  The ship and crew were lost.  Luxon shares began an inevitable slide...  
+
+All for the lack of an occasional zero.
     <- common_options("-", -> ret_target, -> bye)
     -> DONE   // suppress compiler warning...
 

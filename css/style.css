@@ -74,6 +74,10 @@ h2, .head2 {
   color:#2cf8ff;
 }
 
+.parentext {
+  color:#fffb2ce8;
+}
+
 /************ computer text ****************/
 .computer {
     font-family: 'Courier New', monospace;

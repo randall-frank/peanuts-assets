@@ -340,7 +340,10 @@ function post_location_change(story) {
 
         }
 
-        // 5. Display Choices
+        // 5. Apply filtering operations
+        apply_parenthesis_highlight();
+
+        // 6. Display Choices
         story.currentChoices.forEach(choice => {
 
             var choiceDiv = document.createElement('div');
@@ -993,4 +996,16 @@ function update_system(info) {
     document.getElementById("system_procs").innerHTML = procs;
     document.getElementById("system_util").innerHTML = util;
     document.getElementById("system_util_li").style.color = util_color;
+}
+
+
+// change the class of text between two characters
+// handle .RND. as well
+function apply_parenthesis_highlight(target = "cyantext", value = "parentext") {
+    document.querySelectorAll('#story p.' + target).forEach(element => {
+        element.innerHTML = element.innerHTML.replace(/\[([^\]]+)\]/g, '<span class="' + value + '">[$1]</span>');
+        element.innerHTML = element.innerHTML.replaceAll('.RND.', () => {
+            return '<span class="' + value + '">[' + Math.random().toFixed(4) + ']</span>';
+        });
+    });
 }

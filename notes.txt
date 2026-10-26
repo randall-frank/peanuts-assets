@@ -21,15 +21,14 @@ Collect state/notes during the simulation to display in the "dispatch" area.
 
 Phrases I'd like to include in the story:
 
-"Nolite Te Bastardes Carborundorum" - don't let the bastard grind you down...
-New characters, a tall young man from Minnesota with a grumpy/cranky Tamagotchi. 
-Existential Fear
-Diminished Dopamine Response
-Years between Davy & Goliath and Truckasaurus
-It doesn't need diesel, it needs Earl Grey
-Cum dubitas, adulare - when in doubt, flatter
-"What's the only thing standing between a child and a happy and fulfilling life? YOU! The answer is you!"
-
+    "Nolite Te Bastardes Carborundorum" - don't let the bastard grind you down...
+    New characters, a tall young man from Minnesota with a grumpy/cranky Tamagotchi. 
+    Existential Fear
+    Diminished Dopamine Response
+    It doesn't need diesel, it needs Earl Grey
+    "What's the only thing standing between a child and a happy and fulfilling life? YOU! The answer is you!"
+    “He looked like a Juan Gris painting.”
+    Years between Davy & Goliath and Truckasaurus
 
 States:
 
@@ -122,14 +121,14 @@ solitaire
 symptoms
 badtothebone
 ubermom
+zeromyhero
 
 WORKING:
 
-zeromyhero - randy
+cruising altitude - Andrew
 
 TODO:
 
-cruising altitude
 
 Lock up a simulation - runs forever...
 Re-entrant simulation... 

@@ -56,7 +56,7 @@ Precisely 2 minutes and 30 seconds later, they were in the room.  There was only
 # CLASS: head1
 The Meeting
 
-~ newswire_message = newswire_item()
+~ newswire_message = newswire_item( -> station.themeetingA)
 
 “Woop-woop-woop! Do-do-do-do-do-doooo!”, Kraal'goth blubbered as he floated into the room.  Greenpeace subtly shakes his head.  That entrance is forever too old. 
 “Gentleman”, nodding toward Greenie. “Ladies”, he turns to Andrew and Randy, “we have a serious matter we need to discuss.”  “Randy, Andrew, this is...”, he hesitates...
@@ -73,7 +73,7 @@ For the next 10 minutes, Kraal'goth began to describe the history and 'achieveme
 # CLASS: head1
 The Meeting 
 
-~ newswire_message = newswire_item()
+~ newswire_message = newswire_item( -> station.themeetingB)
 
 Kraal looks nervously at Zyn before continuing.  At this point he pulls up a graph, showing the profits of CephaloDynamics over the past 5 years.  The graph stands in stark contrast to their public story.  Kraal paged though a collection of sidebar slides that 'explain' the numbers.  The Earth's environment has been improving.  The oceans once again, 'clean'.  Removing billions of people and effectively replacing the oceans provided a much needed shock to the system and it had been responding.  Water shipments were 'drying up', along with profits. 
 The company would not be thriving for long.  They had staved off a decline by cutting costs and shifting into 'finance', but the next set of numbers were telling.  They had invested heavily in real-estate, but humans with no resources were not 'paying rent'.  They had invested in 'new' places, like the Blue Lagoon, and the Red Desert. But again, nothing humanly affordable.  The company was running out of options. They were losing money on every deal they made.
@@ -94,7 +94,7 @@ Randy started to answer, but never got a chance...
 # CLASS: head1
 The Meeting 
 
-~ newswire_message = newswire_item()
+~ newswire_message = newswire_item( -> station.themeetingC)
 
 Andrew and Randy look at each other, a bit bewildered.  “So you want us to come up with a new revenue stream for CephaloDynamics?  By simulating human behavior?  And you want us to do it in just 6 months?”, Andrew asked.
 “Yes”, Kraal replied. “We need to find a new way to exploit the human condition and generate revenue for CephaloDynamics.  You know, something like the American Indians or the 'learned knowledge' tax from the 20th century.  We'll be using your simulations to identify new markets and opportunities”, Kraal explained.  “You will be working on this project full-time.  If you succeed, we will allow you out of your contracts...  2 years early, fully pensioned.  If you fail, well there are two openings on the 'outer colonies'”,  Kraal smirked.  Zyn just stared through Randy and Andrew.
@@ -130,7 +130,7 @@ Randy took a deep breath, wanting to point out that both of the examples had pro
 # CLASS: head1
 The Anthropic Engine
 
-~ newswire_message = newswire_item()
+~ newswire_message = newswire_item( -> station.building)
 ~ update_followers()
 
 {simulation_count>0:"{~Hmm...|Should we be proud or terrified?|What was that?|Did we learn...anything?|So, the mice were hunchback?}" sighed Randy, "That was {~interesting|disappointing|curious|confusing}.  Let's see.  I'm going to {~upgrade Python|merge in latest CVE changes|enable debug mode|review the chain of thought|install updated drivers|clear the RAG cache|nuke the site from orbit|pray to a different God|switch to a higher precision model} and fire off a rebuild."|Two weeks (and maybe 30hrs of sleep) later...}

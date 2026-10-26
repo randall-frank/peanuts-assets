@@ -12,7 +12,7 @@
 # CLASS: head1
 Making Plans
 
-~ newswire_message = newswire_item()
+~ newswire_message = newswire_item( -> storyline.make_plans)
 
 “Dude, grab a seat, we need to talk.  Make sure the recording systems are off. ”  Randy continues, far more serious than normal, “This project is a disaster.  There is no way it can work the way they want.”  He holds his head in both hands and rubs his face in frustration.
 
@@ -549,7 +549,7 @@ Andrew and Randy, excited, but a little disoriented wait for him to leave before
 # CLASS: head1
 An Intervention?
 
-~ newswire_message = newswire_item()
+~ newswire_message = newswire_item( -> storyline.violence)
 
 Andrew looks at Randy with concern.  “You okay?” he asks.  
 
@@ -584,7 +584,7 @@ Andrew agrees, “On it.  I'm introducing 'Cletus' as a nuisance  filter to the 
 # CLASS: head1
 Emergency Stock Alert Meeting
 
-~ newswire_message = newswire_item()
+~ newswire_message = newswire_item( -> storyline.stock_drop_level1)
 
 Andrew and Randy are abruptly summoned into the conference room.  Expecting another superfluous status meeting, they are a bit surprised to see that Kraal and Zyn are already there.  They both look a little unsure of themselves, a very different look from their usual cocky selves.  Zyn was disheveled, unshaven and lacking his ubiquitous white suit.  Kraal's globe water was muddy and his vestigial 10th tentacle seems to have developed (likely drug induced) Parkinson's.
 
@@ -617,7 +617,7 @@ Andrew is about to say something, but a surreptitious nudge from Randy stops him
 # CLASS: head1
 Emergency Stock Alert Meeting
 
-~ newswire_message = newswire_item()
+~ newswire_message = newswire_item( -> storyline.stock_drop_level1_pt2)
 
 “Do I have to do everything! Here, I'll show you inbred primates how it's done,” Kraal hovers over the terminal, typing in 'how to make quick easy money'.
 
@@ -654,7 +654,7 @@ The seed of a potential path out of this mess begins to form in Randy's mind.  Y
 # CLASS: head1
 Emergency Level 2 Stock Alert Meeting
 
-~ newswire_message = newswire_item()
+~ newswire_message = newswire_item( -> storyline.stock_drop_level2)
 
 Andrew and Randy are abruptly summoned into the conference room.  A “Level 2” stock alert?  CDYG had been sliding, perhaps a bit too far for someone's comfort.  They take their standard seats (after checking to make sure their seats were... 'safe'). {eg_outsourcing == 2: “Maybe we can pitch the ABAL solution if we get a chance”, noted Randy.}
 
@@ -693,7 +693,7 @@ Kraal's eyes narrowed, “I don't like this.  I don't like it at all.”  He tur
 # CLASS: head1
 Emergency Level 3 Stock Alert Meeting
 
-~ newswire_message = newswire_item()
+~ newswire_message = newswire_item( -> storyline.stock_drop_level3)
 
 Andrew and Randy are abruptly summoned into the conference room.  This is getting way too familiar...  Something different this time though.  Inkwell, not Radula?  This can't be a good thing.  They enter the conference room to find Kraal and Zyn already seated at the obsidian table. They are seated at the foot of the table, not in their usual station of power.  Both are looking ragged with an air of desperation about them.  Kraal looks up as Andrew and Randy enter.  He 'bubbles' and nods, gesturing to the seats next to them.  Not a word is spoken.
 
@@ -714,7 +714,7 @@ She continues by discussing the acquisition of CDYG by EOS.  CDYG core water cor
 # CLASS: head1
 Emergency Level 3 Stock Alert Meeting
 
-~ newswire_message = newswire_item()
+~ newswire_message = newswire_item( -> storyline.stock_drop_level3_pt2)
 
 Sterling continues, “I am here to ensure a smooth transition.  My assistant, Gideon, will be assisting me in this effort.”
 She turns first to Zyn, “CDYG has appropriated new counsel.  Greenpeace will no longer represent us.  Thank you for your service Zyn.”  She gestures toward the door.  Zyn takes the hint, looking somewhat relieved.  Gideon hands him a packet as he exits.

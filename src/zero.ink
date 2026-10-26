@@ -226,11 +226,11 @@ The Heisenberg, Earth's ship of hopes and dreams instantly manifested itself bac
 The released radiation would cause cell phone outages on Earth for several days, but the breathtaking photographs would live on forever.  The ship and crew, lost.  Luxon shares began their inevitable slide...  
 
 All for the lack of an occasional zero.
-    <- common_options("-", -> ret_target, -> retrospect_0)
+    <- common_options("-", -> ret_target, -> retrospect_pt0)
     -> DONE   // suppress compiler warning...
 
 
-= retrospect_0
+= retrospect_pt0
 ~ location_name = "VProxima Centauri b: First Contact Research Station"
 # CLEAR
 
@@ -247,11 +247,11 @@ Xylok began with an overview of the Earth situation.  Earthlings were an unusual
 "As you have been briefed, the Earthlings have exploited several technologies seeded to them via the Exocatalyst Initiative in somewhat unexpected ways", began Xylok.
 
 "Yes, I have been briefed on the 'brute force' physics package and how it spurned their advance of and dependency on statistical prediction technologies.  I believe they refer to it as 'Artificial Intelligence'", Kx'ari interjected, snickering at these creatures' lack of originality.  "I have also been briefed on the 'predictive filtering' package, which they refer to as 'Machine Learning'."
-    <- common_options("-", -> ret_target, -> retrospect)
+    <- common_options("-", -> ret_target, -> retrospect_pt1)
     -> DONE   // suppress compiler warning...
 
 
-= retrospect
+= retrospect_pt1
 ~ location_name = "VProxima Centauri b: First Contact Research Station"
 # CLEAR
 
@@ -269,7 +269,7 @@ Xylok began with an overview of the Earth situation.  Earthlings were an unusual
 Kx'ari turned to look out at the stars, contemplating the beauty of space and time before replying, "Very well, we agree with your actions and look forward to the council's decision. Thank-you for the briefing."
 # STICKYCLASS:
 
-{retrospect == 1:
+{retrospect_pt1 == 1:
     ~ idiot_count += 1
 }
     + [{simcomplete}] -> ret_target

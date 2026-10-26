@@ -52,6 +52,9 @@
 // the "next" text
 VAR continue = "Proceed..."
 
+// the newswire "return" text
+VAR news_return = "Done"
+
 // the "abort simulation" text
 VAR simdone = "Terminate Simulation"
 
@@ -120,7 +123,6 @@ VAR social_follower_threshold = 10000000
 // debug can be set to any value via '?dev=x'
 // This enables shortcuts {debug} that speed development
 VAR debug = 0
-
 
 // Utility functions
 

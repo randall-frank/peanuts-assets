@@ -1,3 +1,4 @@
+
 var old_url = window.location.href;
 var peanuts_allow_cookies = false;
 
@@ -393,12 +394,22 @@ function post_location_change(story) {
         let loc = story.variablesState["location_name"] || "EUNKNOWN";
         let loc_name = loc.slice(0, 1);
         let location = document.getElementById("locationname");
+        let location_container = document.getElementById("locationname_container");
+        let location_icon = document.getElementById("locationname_icon");
+        location_icon.style.display = "none";
+        location_container.className = "";
+        // V=inside a simulation, L=physical location, N=newswire, E=status unknown
         if (loc_name === "V") {
             location.innerText = "SIMULATION: " + loc.slice(1);
             location.className = "locationvirtual";
         } else if (loc_name === "L") {
             location.innerText = "LOCATION: " + loc.slice(1);
             location.className = "locationlocal";
+        } else if (loc_name === "N") {
+            location.innerText = "Blue Lagoon Newsflash: " + loc.slice(1);
+            location.className = "locationnewswire";
+            location_container.className = "newswire";
+            location_icon.style.display = "";
         } else {
             location.innerText = "STATUS: " + loc.slice(1);
             location.className = "locationerror";

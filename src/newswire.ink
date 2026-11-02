@@ -36,47 +36,45 @@ VAR previous_knot = -> station.building
 === function newswire_items() ===
     VAR s = ""
 
-    // These are all 'inline' items
-    ~ s += "Three hundred years later, experts have determined that Kant was wrong about basically everything. No replacement has been named."
-    ~ s += "[,]"
+    ~ s += "Immanuel Kant Was Not Puissant"
+    ~ s += "[,newswire.kant]"
            
-    ~ s += "Soylent Green stock continues to rise since the introduction of their new slogan, “By Humans for Humans”. Analysts expect a strong Q3 as the moisture content of the product is 17% above the average snack pack."
-    ~ s += "[,]"
+    ~ s += "Investors See green! Soylent Green!"
+    ~ s += "[,newswire.green]"
 
-    ~ s += "Eleanor Roosevelt was recently struck from the annals of history after experts report, “He just wasn't that interesting.”"
-    ~ s += "[,]"
+    ~ s += "No Second Act for the Former First Lady"
+    ~ s += "[,newswire.firstlady]"
 
-    ~ s += "Vampire League representatives condemned the introduction of Soylent Green to the school lunch program. Asked for their position on the matter they replied, “It's just not right. What was wrong with fresh rat?”"
-    ~ s += "[,]"
+    ~ s += "Back to Basics: Vampire League vs School Lunch"
+    ~ s += "[,newswire.vampires]"
 
-    ~ s += "Teuthans File Class-Action Lawsuit Against SpaceX: “Stop Dropping Your Rusty Submarines in Our Living Rooms!”"
-    ~ s += "[,]"
+    ~ s += "Teuthans File Class-Action Lawsuit Against SpaceX: 'Stop Dropping Your Rusty Submarines in Our Living Rooms!’"
+    ~ s += "[,newswire.subs]"
 
-    ~ s += "Residents of North Korea celebrate the new bridge connecting Pyongyang and Tokyo. International observers notes that as of 0400 GMT, forward battalions of the 조선인민군 have reached mile 37 of the bridge. Spokesperson Kim Rodman exclaims, “Our exalted leader has once more demonstrated his extraordinary vision. Let the boots of friendship trample all before us!”"
-    ~ s += "[,]"
+    ~ s += "An Actual Bridge Over Troubled Water?"
+    ~ s += "[,newswire.bridge]"
 
-    ~ s += "New report from the Surgeon General and the Food and Drug Administration: Thunder Muscle is better than water!"
-    ~ s += "[,]"
+    ~ s += "New report from the Surgeon General Declares: Thunder Muscle is better than water!"
+    ~ s += "[,newswire.thunder]"
 
-    ~ s += "Canada declares martial law after the Tartan Army storms the Toronto Dollar Tree chain and draining their syrup reserves to the sound of wailing bagpipes."
-    ~ s += "[,]"
+    ~ s += "Canada Declares Martial Law After Tartan Army Assault"
+    ~ s += "[,newswire.canada]"
 
-    ~ s += "Scottish cuisine fans rejoice as Soylent Green releases its new haggis product that is 100% sheep lung free."
-    ~ s += "[,]"
+    ~ s += "Hand-Made Haggis Makes a Comeback"
+    ~ s += "[,newswire.haggis]"
 
-    ~ s += "Scientists have finally learned how whales communicate. Their cochlear bones resonate perfectly with cellular frequencies giving them free access to the world's fastest 85G network. Mint Mobile's Senate representative introduced legislation asking for government funding to cover their roaming charges."
-    ~ s += "[,]"
+    ~ s += "Whales Were Never Singing. They Were Streaming!"
+    ~ s += "[,newswire.whales]"
 
-    ~ s += "John Wilkes Booth's great-great-great-great-great-great-great-great-great-great-great-great-great-great-great-great-great grandson, Nikolai Booth, has married the noted android Kim Kardashian.  Sic Semper Tyrannis?"
-    ~ s += "[,]"
+    ~ s += "Booth Family Tree Gets a Firmware Update"
+    ~ s += "[,newswire.boothe]"
 
-    ~ s += "Today University of Phoenix conspiracy theorists unveiled a ridiculous new theory: Earth is an oblate spheroid!  “It depends on how you look at it”,  UC Berkeley professors retort!"
-    ~ s += "[,]"
+    ~ s += "Flat-Earthers No Longer the Silliest Conspiracists"
+    ~ s += "[,newswire.flatearth]"
 
-    ~ s += "A 53-year old world record for number of pickled eggs eaten has been shattered today. Franz Bomba, a 16 year old Dutch prodigy has eaten two, smashing the previous record of 1. All we can say is “Onder de knie hebben!”"
-    ~ s += "[,]"
+    ~ s += "Little Dutch Boy Puts Finger in Record"
+    ~ s += "[,newswire.eggs]"
 
-    // These redirect to a knot
     ~ s += "World’s UN-Fair? Old Tech Becomes New!"
     ~ s += "[,newswire.csvf]"
 
@@ -213,7 +211,103 @@ Earth’s last UFO enthusiasts gathered yesterday for a farewell party. The grou
 Several continents are suffering critical water shortages thanks to AI data center usage on behalf of extra planetary corporations. CEO of CephaloDynamics Andy Kraal’man stated that, “AI is the key to profitability and water is the key to AI. And the key to water? You. Stop using it.”
     + [{news_return}] -> previous_knot
 
+= kant
+# CLEAR
+~ location_name = "NImmanuel Kant Was Not Puissant"
+# CLASS: newswiretext
+Three hundred years later, experts have determined that Kant was wrong about basically everything. No replacement has been named.
+    + [{news_return}] -> previous_knot
 
+= green
+# CLEAR
+~ location_name = "NInvestors See green! Soylent Green!"
+# CLASS: newswiretext           
+Soylent Green stock continues to rise since the introduction of their new slogan, “By Humans for Humans”. Analysts expect a strong Q3 as the moisture content of the product is 17% above the average snack pack.
+    + [{news_return}] -> previous_knot
+
+= firstlady
+# CLEAR
+~ location_name = "NNo Second Act for the Former First Lady"
+# CLASS: newswiretext
+Eleanor Roosevelt was recently struck from the annals of history after experts found, “He just wasn’t that interesting.”
+    + [{news_return}] -> previous_knot
+
+= vampires
+# CLEAR
+~ location_name = "NBack to Basics: Vampire League vs School Lunch"
+# CLASS: newswiretext
+Vampire League representatives condemned the introduction of Soylent Green to the Administrative District 7 school lunch program as new main course on Tuesdays. Asked for their position on the test program they replied, “It’s just not right. What was wrong with live rat?”
+    + [{news_return}] -> previous_knot
+
+= subs
+# CLEAR
+~ location_name = "NTeuthans File Class-Action Lawsuit Against SpaceX: “Stop Dropping Your Rusty Submarines in Our Living Rooms!”"
+# CLASS: newswiretext
+A Teuthian family filed a lawsuit against SpaceX this morning in the Interdimensional Court of Commerce. The lawsuit alleges that a Starship booster splashed down on the Teuthan home planet, sank, and crashed through the family’s weekly synergy and performance review seminar. “I was in the middle of my PowerPoint when it crashed through the roof and parked itself on my ottoman,” said lead plaintiff Car’boff. The suit seeks damages for a ruined carpet, emotional damage to the sofa, two ripe children, and seventeen liters of “spilled ink”. SpaceX representatives claim they bear no responsibility for the incident or anything else.
+    + [{news_return}] -> previous_knot
+
+= bridge
+# CLEAR
+~ location_name = "NAn Actual Bridge Over Troubled Water?"
+# CLASS: newswiretext
+Residents of Greater Korea celebrated the new bridge connecting Pyongyang and Tokyo. International observers note that as of 0400 GMT, forward battalions of the 조선인민우호군 have reached mile 37 of the bridge. Unity Chief Kim Rodman exclaimed, “Our leader has once more demonstrated his extraordinary vision. Let the boots of friendship trample all before us!”
+    + [{news_return}] -> previous_knot
+
+= thunder
+# CLEAR
+~ location_name = "NNew report from the Surgeon General Declares: Thunder Muscle is better than water!"
+# CLASS: newswiretext
+Federal health officials unveiled the 4,300-page study late Friday, concluding the popular beverage outperforms water “in every category we were willing to look at.” “It’s cheaper and more watery,” said the Surgeon General who was vibrating visibly during the presser. Unprompted, the Surgeon General added that drinking only Thunder Muscle for a few weeks had given her “the ability to hear Wi-Fi”
+    + [{news_return}] -> previous_knot
+
+= canada
+# CLEAR
+~ location_name = "NCanada Declares Martial Law After Tartan Army Assault"
+# CLASS: newswiretext
+The Prime Minister’s office confirmed Saturday that the Canadian Armed Forces have been deployed to downtown Toronto. The decision came after roughly 2,500 kilted invaders stormed local Dollar Tree chain locations and drained their syrup reserves. Security camera footage shows them siphoning the liquid gold into their bagpipes before fleeing. 
+    + [{news_return}] -> previous_knot
+
+= haggis
+# CLEAR
+~ location_name = "NHand-Made Haggis Makes a Comeback"
+# CLASS: newswiretext
+Scottish cuisine fans rejoice as Soylent Green releases its new haggis product “By People, For People”. It is 100% sheep lung free.
+    + [{news_return}] -> previous_knot
+
+= whales
+# CLEAR
+~ location_name = "NWhales Were Never Singing. They Were Streaming!"
+# CLASS: newswiretext
+Scientists have finally learned how whales communicate over long distances. Their cochlear bones resonate perfectly with cellular frequencies giving them free access to the world’s fastest 85G network. Mint Mobile’s Senate representative introduced legislation asking for government funding to cover their roaming charges.
+    + [{news_return}] -> previous_knot
+
+= boothe
+# CLEAR
+~ location_name = "NBooth Family Tree Gets a Firmware Update"
+# CLASS: newswiretext
+Las Vegas, NV: John Wilkes Booth’s great-great-great-great-great-great-great-great-great-great-great-great-great-great-great-great-great grandson, Nikolai Booth, has married the noted android Kim Kardashian. The couple plans to honeymoon in Iceland where there is cheap geothermal power and the Booth surname is unknown.
+    + [{news_return}] -> previous_knot
+
+= flatearth
+# CLEAR
+~ location_name = "NFlat-Earthers No Longer the Silliest Conspiracists"
+# CLASS: newswiretext
+Today a group of conspiracy theorists unveiled a ridiculous new theory: Earth is an oblate spheroid! “Wake up sheeple”, said self-described researcher Dale Dunkle, “this changes everything.” When pressed for details on what would change Dale stated, “I’ll have to get back to you.”
+    + [{news_return}] -> previous_knot
+
+= eggs
+# CLEAR
+~ location_name = "NLittle Dutch Boy Puts Finger in Record"
+# CLASS: newswiretext
+A 53-year old world record for number of pickled eggs eaten has been shattered today. Franz Bomba, a 13 year old Dutch prodigy has eaten three, smashing the previous record of 1.5. All we can say is “Onder de knie hebben!”
+    + [{news_return}] -> previous_knot
+
+= bankrupt
+# CLEAR
+~ location_name = "NCephaloDynamics Orbits a Little Too Close to the Sun"
+# CLASS: newswiretext
+Chaos at CephaloDynamics! With their dividends melting and stock trading at a historic low, board members voted to sell the storied organization to the highest bidder. Earth Orbital Receiving, voted 2353’s sexiest corporation by People magazine, stepped in to buy a commanding share. Head of transition, Sloane Sterling is leading the charge to bring CDYG back to profit. When asked about her plan for improvement her answer was simple, “It’s all about the water. This is water.”
+    + [{news_return}] -> previous_knot
 
 
 === function conditional_newswire_items() ===
@@ -225,8 +319,8 @@ Several continents are suffering critical water shortages thanks to AI data cent
     ~ t += "See what's playing tonight on InkStream!  Everything funny, all the time."
     ~ t += "[social_followers,./inkstream.html?viewers=]"
 
-    ~ t += "Chaos at CephaloDynamics.  With their stock trading at an historic low, they have been bought by Earth Orbital Receiving.  Head of transition, Sloane Sterling is leading the charge to bring CDYG back to profit."
-    ~ t += "[cdyg_bankrupt,]"
+    ~ t += "CephaloDynamics Orbits a Little Too Close to the Sun"
+    ~ t += "[cdyg_bankrupt,newswire.bankrupt]"
 
     ~ return t
 

@@ -102,7 +102,7 @@ Andrew politely slurps, “Ok man.  Whatcha got?  Do we have a list of bets we n
 
 “Nice!”, Andrew says, “I'll procure them via Abyssal Intelligence, it will even look like natural corporate diligence. What else?”
 
-“Another angle will be CDYG coopetitors”, Randy says, “Generally supply chain partners who are in a position to exploit any weakness in CDYG. There are probably more, but let's start with Earth Orbital Receiving (EOS) and Planetary Municipal & Agricultural (PM&A).”
+“Another angle will be CDYG coopetitors”, Randy says, “Generally supply chain partners who are in a position to exploit any weakness in CDYG. There are probably more, but let's start with Earth Orbital Receiving (EOR) and Planetary Municipal & Agricultural (PM&A).”
 
 “hmm, who are they exactly”, asks Andrew. “I've never heard of them.”
 
@@ -132,9 +132,9 @@ Randy looked over the blend of octopus seaweed and soy, “Much better dude!  Wh
 
 “The cafe on Deck 3 has a 'make your own poke' station”, replied Andrew.  
 
-“I've got to check that one out”, said Randy, “Did you check out your new EOS employee contract?”
+“I've got to check that one out”, said Randy, “Did you check out your new EOR employee contract?”
 
-“Yeah, actually quite a bit better than CDYG.  We actually get vacation on Earth!”, noted Andrew. “Did you see the spike in both EOS and PM&A?  They're already up 30% and folks are talking as if 50% not being unreasonable.  Crazy good call dude.”
+“Yeah, actually quite a bit better than CDYG.  We actually get vacation on Earth!”, noted Andrew. “Did you see the spike in both EOR and PM&A?  They're already up 30% and folks are talking as if 50% not being unreasonable.  Crazy good call dude.”
 
 Randy started, “So... does that mean we're...”, before getting cut off as Andrew's Abyssal Intelligence's com device began pinging ominously.  
 
@@ -152,7 +152,7 @@ The call continued for another 20 minutes before Andrew thanked the call and hun
 
 Randy just smiled and the two of them started to laugh.
 
-“It worked, it actually worked”, exclaimed Randy.  “We should probably keep working for EOS for a bit, tonight we should celebrate.  I'm buying.”
+“It worked, it actually worked”, exclaimed Randy.  “We should probably keep working for EOR for a bit, tonight we should celebrate.  I'm buying.”
 
 Andrew smiled deeply and followed his friend out into the corridor.
     ~ eg_project_shortink = 2
@@ -699,10 +699,10 @@ Andrew and Randy are abruptly summoned into the conference room.  This is gettin
 
 The door spirals open and a short man with thin lips and sharp jaw, dressed in flowing black strides in, sets up a recording pad and takes a seat at the head of the table.  Lawyer?  Executive assistant?  We get our answer exactly thirty seconds later.
 
-She enters the room.  Short cropped hair, mid-thirties, classical sharp, angular face and eyes that pierce effortlessly.  She stands at the head of the table, “Welcome everyone.  My name is Sloane Sterling.  I am the head of corporate transitioning for Earth Orbital Receiving (EOS) and acting CEO of CDYG.”  
+She enters the room.  Short cropped hair, mid-thirties, classical sharp, angular face and eyes that pierce effortlessly.  She stands at the head of the table, “Welcome everyone.  My name is Sloane Sterling.  I am the head of corporate transitioning for Earth Orbital Receiving (EOR) and acting CEO of CDYG.”  
 A pause, calculated for effect, “I sincerely wish we could have met under other circumstances, but alas that is not to be.”
 
-She continues by discussing the acquisition of CDYG by EOS.  CDYG core water corridor operations will continue under the CDYG name while 'toxic assets' and 'non-essential' operations were isolated into a separate entity.  The future of that entity purposefully left ambiguous.   Randy and Andrew nervously exchange a glance.  Zyn and Kraal look even more despondent if at all possible. They already know the end game.  
+She continues by discussing the acquisition of CDYG by EOR.  CDYG core water corridor operations will continue under the CDYG name while 'toxic assets' and 'non-essential' operations were isolated into a separate entity.  The future of that entity purposefully left ambiguous.   Randy and Andrew nervously exchange a glance.  Zyn and Kraal look even more despondent if at all possible. They already know the end game.  
     + [{continue}] -> stock_drop_level3_pt2
 
 = stock_drop_level3_pt2
@@ -735,5 +735,6 @@ With that the meeting ended.  Randy and Andrew picked up their new contacts on t
 
 // The grind ending
     + {eg_project_shortink == 0} [Back to the grind.] -> station.epilogue
+    + {eg_project_shortink == 1} [Back to the grind.] -> station.epilogue
 // The insurance pays off ending
     + {eg_project_shortink == 2} [Sometimes insurance pays off] -> storyline.project_shortink_3

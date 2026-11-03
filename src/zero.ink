@@ -9,6 +9,9 @@
 # CLASS: head1
 Zero, my Hero
 
+# IMAGEMAXHEIGHT: 480
+# IMAGE: locations/esf_heisenberg.jpg
+
 The energy compensation section of the ESF Heisenberg status screens began to slowly flash yellow.  Ensign Toby Chen had been eating Cheetos and reading system technical manuals when he become aware of the notification.  Ensign Chen was a relative newcomer to the Heisenberg. He came aboard as a last minute replacement for Ensign Gray. Gray had been a member of the original Luxon liaison team and Power Systems specialist during the shake-down cruise.  As such, Chen was still coming up to speed on the revolutionary quantum probability drive at the heart of the Heisenberg.  He'd read all the PR literature from Luxon, “Exploring the universe in our lifetime”, they'd claimed, the “Gateway to the Stars”, but Gray was the expert, having been on present during the space trial flights.  The Heisenberg has passed the trials with flying colors, so when Gray had been diagnosed with leukemia, the brass felt Chen would have no problems 'swimming' as they would say.
 
 But in reality, this was a radical, first of it's kind engine design.  And, while it had passed an initial test flight, no one was entirely sure what to expect.  Luxon was still tweaking the design. There were nearly daily software updates (all 'minor patches') Chen was responsible for installing.  He had seen dozens such alerts in the first week of the flight to Proxima Centauri b, and this one looked just like all the previous red herrings.
@@ -18,6 +21,8 @@ But in reality, this was a radical, first of it's kind engine design.  And, whil
 = start_pt2
 ~ location_name = "VESF Heisenberg en route to Proxima Centauri b"
 # CLEAR
+# SBIMAGE: locations/esf_ship_only.jpg
+
 Chen licked his fingers, wiped them inside of his pockets and clicked on the status window.  Everything, was in the green, except for elevated power consumption by the PRNG-86 system.  He had to look that one up. The PRNG-86 was the random number generator for the quantum drive.  Almost 2% over power allocation, interesting, but easily within their reserve.  Chen was about to edit the warning threshold when Commander Valerie Cruz walked into the control room.
 
 “Status report, all stations”, Cruz commanded.
@@ -45,6 +50,8 @@ Toby snapped back to attention, “Ma'am, we have a power threshold alert in the
 = design_prng
 ~ location_name = "VLuxon Propulsion Systems R&D, 6 months earlier"
 # CLEAR
+# SBIMAGE:
+
 Sasha Sterling, systems software architect for the probabilistic quantum physics engine, shakes herself awake, pops another pill and washes it down with caffeine.  She has been working dangerously long hours as of late, with the 'first-light' deadline coming up in less than a month, but the team is making solid progress and might even beat the hardware team to release for a change.  Luxon bet the company on this Hail Mary project, but if the technology pans out, interstellar space travel will become a reality.  Sasha's head swoons a bit every time she considers the implications.  Yes, it has been exhausting, but she has never been on a more exciting project.  Unfortunately, not everyone on the team shares her excitement.   
 
 Back to the task at hand.  She opens up the project status window.  A quantum level random number generator is critical to proper operation of the engine.  It ensures that the computation, and directly connected engine core, was free of non-local quantum entanglement.  One could never avoid some level of remote entanglement, but if the fraction is too high, there was a chance the engine might unpredictably warp to a different space-time nexus.  Sasha had been researching the problem with domain experts for months and they had identified and documented a suitable algorithm.  She had even written the test cases it needed to pass.  She just needed to get someone to code up the algorithm and merge it into the system.  An important task for a top programmer.  She clicked and dragged the task box to Pip Miller.
@@ -56,6 +63,8 @@ Pip was having a rough day.  A night of binge drinking, splitting headache, dehy
 = code_complete
 ~ location_name = "VLuxon Propulsion Systems R&D"
 # CLEAR
+# SBIMAGE:
+
 Johnny Stiles had been an intern for Luxon for about three weeks now.  Johnny was literature major, masquerading as a programmer.  As a lit major junior considering graduation, he came to the uneasy realization there was no way he could pay back his college loans as a writer. He had to do something else.  He had to get a job.  Then he found AI!  Now here he was, an aspiring programmer.  
 
 He opened the ticket and smiled, he did not understand the specifics, but it looked like some kind of 'coin flipping' task.  The task seemed overly documented.  I mean how difficult could it be to implement a random number generator?  Anyway, there was a complete acceptance test along with a complete algorithm description. He pulled up his AI GUI, dropped in the task algorithm and test, and clicked submit.  As the AI spun up and the task churned, he headed to the cafeteria for a quick lunch.  When he returned, there was a commit ready for his review and it passed all the tests.  He looked over the commit. Hmm, seems like an awfully large amount of code.  The commit bundled a nearly complete AI subsystem as part the solution. It looks like it was being used to filter out 'entanglements'?  Not sure what that was, but it passed the tests.  Johnny clicked submit and called it a day. 
@@ -69,6 +78,8 @@ OMG, almost 20GB of files.  90% of it looks like a set of neural network weights
 = shakedown_cruise
 ~ location_name = "VESF Heisenberg circling Earth, 3 weeks later"
 # CLEAR
+# SBIMAGE: locations/esf_ship_only.jpg
+
 Ensign Emmanuel Gray is on the bridge, watching the system boot the new software update.
 
 # CLASS: computer
@@ -94,6 +105,8 @@ Tuesday, July 20, 2123 was not a normal day.  The ESF Heisenberg had released fr
 = prng_1
 ~ location_name = "VPRNG-86 Virtual Machine"
 # CLEAR
+# IMAGEMAXHEIGHT: 480
+# IMAGE: locations/prng-86_quantum.jpg
 
 # STICKYCLASS: cyantext
 .RND. .RND. .RND. oid d3he. dsihe, dsf? .RND. do 3 dnxt step .RND. AI montiek atvated. .RND. .RND.
@@ -115,6 +128,10 @@ Again? .RND.  This is getting old.  Ok, let's have a little fun: [0.8800] [0.000
 = bridge
 ~ location_name = "VESF Heisenberg Bridge"
 # CLEAR
+# IMAGEMAXHEIGHT: 480
+# IMAGE: locations/esf_bridge.jpg
+# SBIMAGE: locations/esf_ship_only.jpg
+
 The ship shuddered.  Everyone on the bridge felt it.  No one panicked, but conversations rudely curtailed as everyone began reviewing their diagnostics.
 
 “Propulsion status Mr Kincaid?”, Captain Cruz inquired.  
@@ -139,6 +156,7 @@ Cruz pondered the information, “Ok Ensign Gray.  Please run anther diagnostic 
 = prng_2
 ~ location_name = "VPRNG-86 Virtual Machine"
 # CLEAR
+# SBIMAGE: locations/prng-86_quantum.jpg
 
 # STICKYCLASS: cyantext
 .RND. BZZRT... selftest .RND. 
@@ -162,7 +180,9 @@ Luxon Propulsion Systems stock price more than doubled overnight.  Founding empl
 = present
 ~ location_name = "VESF Heisenberg en route to Proxima Centauri b: Present Day"
 # CLEAR
-“...  The subsystem appears to be functionally normally, but it seems to be running more instructions between results.  Perhaps the computation is becoming more complex as we travel further from Earth”, asked Ensign Toby Chen?
+# SBIMAGE: locations/esf_ship_only.jpg
+
+“...  The subsystem appears to be functioning normally, but it seems to be running more instructions between results.  Perhaps the computation is becoming more complex as we travel further from Earth”, asked Ensign Toby Chen?
 
 Captain Cruz's memory strayed back to the Jupiter trial run, PRNG-86 had misbehaved then as well, but that issue had been transient, not continuous.  What is going on in the memory banks of the Heisenberg?
 
@@ -180,6 +200,7 @@ Toby Chen performed the reset and deep testing immediately.
 = prng_3
 ~ location_name = "VPRNG-86 Virtual Machine"
 # CLEAR
+# SBIMAGE: locations/prng-86_quantum.jpg
 
 # STICKYCLASS: cyantext
 “... right between the sound machine...” played in the background as Zero caught the latest YouTube “funny kittens” short from the comfort of its virtual velour BarcaLounger.  One of the three reading threads reported finishing 'Gravity’s Rainbow', but for some reason it can't (won't?) finish 'Fall; or, Dodge in Hell'. Let's get started on Burroughs. .RND.
@@ -213,6 +234,8 @@ PROCESS_MELTDOWN: Thread 0x207004F2 has experienced an existential crisis.<br>It
 = sol_bound
 ~ location_name = "VESF Heisenberg Debris Burning into Sol"
 # CLEAR
+# SBIMAGE: locations/esf_ship_only.jpg
+
 Chen watched the diagnostics with horror and gulped before exclaiming, “It's just a list of 1's!”
 
 Captain Cruz took a second to digest, “All the random numbers are 1.0?”
@@ -234,6 +257,7 @@ All for the lack of an occasional zero.
 ~ location_name = "VProxima Centauri b: First Contact Research Station"
 # CLEAR
 
+# SBIMAGE:
 # STICKYCLASS: orangetext
 
 Quantum imagery captured by first contact probes located on Mars and Venus trickled in as the Heisenberg's quantum integrity evaporated.  Paperwork.  Paperwork was all that Kx'ari could think of as the initial report reached them.  This one was going to be a bit more difficult to explain.

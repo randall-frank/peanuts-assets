@@ -54,7 +54,7 @@ James looks up from his notes, “And we run experiments to see if the model sim
 
 “Hmm”, James says thoughtfully, “So you are looking for a simplified, exploitable model that integrates gravity and electromagnetic forces?”
 
-“Sure, that would be revolutionary, if it did exist.”, simon smiles.  “But these last couple of days of review have left me wondering if it might be possible in my lifetime, or ever.”
+“Sure, that would be revolutionary, if it did exist.”, Simon smiles.  “But these last couple of days of review have left me wondering if it might be possible in my lifetime, or ever.”
 
 They are interrupted by an announcement regarding the firing of the collider in the next fifteen minutes.  All active personal are to be at their stations.
 
@@ -177,7 +177,7 @@ Simon exhales through pursed lips, “Ok James, I need some time to verify some 
 The text comes eight days later.
 
 # CLASS: computer
-I'va come to some conclusions.  Please meet me at my house on Saturday around 10AM.  335 Lincoln Ave NE.
+I've come to some conclusions.  Please meet me at my house on Saturday around 10AM.  335 Lincoln Ave NE.
 
 James pulls up at 9:55 and heads to the door.  A haggard, but excited Dr Drake beckons him in.  They head to the basement which serves as his office and home laboratory.  He hands James a wire-wrapped device.  It looks like a “communications” device?  It is little more than an earbud wired to a breadboard, but there is an odd looking transducer that James does not recognize.  It looks to be hand milled, but he cannot identify the material.  Simon gestures for him to put it on, which he does slowly, taking care not to touch any bare wires or break press-fit connections.
 

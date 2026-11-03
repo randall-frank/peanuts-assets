@@ -112,16 +112,16 @@ Plan:
 
 Stories that are "done"
 
-backforty
-mille
-weight
-battletech
-david
-solitaire
-symptoms
-badtothebone
-ubermom
-zeromyhero
+symptoms - ok
+badtothebone - ok
+backforty - ok
+mille - ok
+battletech - ok
+zeromyhero - ok
+david - one image - ok
+solitaire - one image (bubble) - 'end of the world'
+weight - no pics
+ubermom - no pics
 
 WORKING:
 

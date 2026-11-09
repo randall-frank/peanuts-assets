@@ -23,7 +23,7 @@ James nodded thoughtfully. “It's frustrating when you feel like you're missing
 
 James ponders this a bit, “Ok, I'll bite.  What kind of effects might we be missing?”
 
-Simon had never been asked that question directly, “Great question.  Hmm, let's start with something simple.  We have fancy equations we can't prove about the relationship between gravity and electromagnetism.  We know that they're related, but none of the proposed models can be easily exploited without building the ”world's largest“ machine of some type or another.  Big enough to bankrupt all but the top two or three economies!”
+Simon had never been asked that question directly, “Great question.  Hmm, let's start with something simple.  We have fancy equations we can't prove about the relationship between gravity and electromagnetism.  We know that they're related, but none of the proposed models can be easily exploited without building the 'world's largest' machine of some type or another.  Big enough to bankrupt all but the top two or three economies!”
 
 James has seen Simon run off the rails before, but he's also seen him come back with something useful.  “So what do you think?  Is there any way we could exploit these relationships?”
     <- common_options("-", -> ret_target, -> conference_room)
@@ -68,13 +68,17 @@ They are interrupted by an announcement regarding the firing of the collider in 
 = genetic_algorithms
 ~ location_name = "VLevel 8: Office of Dr Simon Drake"
 # CLEAR
+# IMAGEMAXHEIGHT: 480
+# IMAGE: locations/weight_office.png
 
 “Dr Drake, do you have a few minutes?  I think I have an idea for how we might simplify the equations,” James says, “but it will require some experimentation to see if it works.”
 
 Dr Drake nods, “One second James. ”   He finishes typing an email, clicks 'send' and turns back to James.  “Ok, come on in and have a seat”, he gestures at an empty chair at the table behind him.  “Please close the door behind you, thanks!”
 
-The door closes with a soft click and James takes a seat.  Simon's chair rotates to the table and the conversation begins.  James starts by outlining the general nature of the types of equations they desire.  Simon nods in general agreement. He then begins to discuss genetic algorithms and constrained re-randomization techniques.  James explains that evolutionary genetic algorithms leveraging principles such as mutation and crossover to generate new solutions from existing ones.
-Simon follows exactly where James is going, noting that naïve randomization techniques lead to a lot of wasted computation time, considering the literally quadrillions of potential equations that would need to be considered.  He also discusses how constrained, informed re-randomization can be used to limit the search space to only those solutions that are likely to be useful, based on some prior knowledge or constraints.
+The door closes with a soft click and James takes a seat.  Simon's chair rotates to the table and the conversation begins.  James starts by outlining the general nature of the types of equations they desire.  Simon nods in general agreement. He then begins to discuss genetic algorithms and constrained re-randomization techniques.  James continues with evolutionary genetic algorithms leveraging principles such as mutation and crossover to generate new solutions from existing ones.
+
+Simon follows exactly where James is going, noting naïve randomization techniques lead to a lot of wasted computation time, considering the literally quadrillions of potential equations that would need to be considered.  James discusses how constrained, informed re-randomization can be used to limit the search space to only those solutions that are likely to be useful, based on some prior knowledge or constraints.
+
 While the basic technique proposed is basically brute force, it would leverage established relationships and simplifications that would make the search sparse enough to be practical.  
 The final filter would be the evaluation of proposed solutions against collected observations from astrophysics, electromagnetism, quantum mechanics, optics and nuclear testing to evaluate the predictive nature of the solution.  This would be followed by verification that the working domain of the proposed solution correspond to 'earthbound' conditions.   Nothing at 10,000,000 C or 500000 Pa or 0.99% of the speed of light, the equation must be 'useful' (and by useful 'exploitable' was implied).
     <- common_options("-", -> ret_target, -> compute)
@@ -84,6 +88,7 @@ The final filter would be the evaluation of proposed solutions against collected
 = compute
 ~ location_name = "VLevel 8: Office of Dr Simon Drake"
 # CLEAR
+# SBIMAGE: locations/weight_office_clip.png
 
 Dr Drake stands up from his desk and walks over to the window.  He looks out at the rain falling on the forest in the distance.  “I've been thinking about our conversation for some time now as well,” he says, “and I think you might be onto something.”  “I can outline the parameterization of the function along with a collection of constraints that can be used to inform the re-randomization.  We have tables of observations that can easily be adapted for this use and the 'useful' domain ranges are trivial.”  He turns back to James, “You will need to write the code, but I doubt anyone is going to be willing to let us run the algorithm at the necessary scale.  I mean we could run it on our laptops, but it would still take literal eons to complete.”
 
@@ -111,6 +116,7 @@ They both forget about it.
 = first_light
 ~ location_name = "VLevel 7: Office of James Ward"
 # CLEAR
+# SBIMAGE:
 
 James came in a little early this Thursday.  He wanted to get some real work in before a collection of mandatory status and training meetings.  He had been working late and was still a little tired.  Walking through the pile of unopened emails, one stood out:
 
@@ -135,6 +141,7 @@ Hmm, James had no idea what that meant.  He hit the print screen button, grabbed
 = first_light_pt2
 ~ location_name = "VLevel 8: Office of Dr Simon Drake"
 # CLEAR
+# SBIMAGE: locations/weight_office_clip.png
 
 James, thinks twice, stops just short of barging into Simon's office and quietly knocks on the door frame.
 
@@ -173,13 +180,16 @@ Simon exhales through pursed lips, “Ok James, I need some time to verify some 
 = the_test
 ~ location_name = "VDr Simon Drake's home office/lab"
 # CLEAR
+# SBIMAGE:
+# IMAGEMAXHEIGHT: 480
+# IMAGE: locations/weight_basement.png
 
-The text comes eight days later.
+The text came eight days later.
 
 # CLASS: computer
 I've come to some conclusions.  Please meet me at my house on Saturday around 10AM.  335 Lincoln Ave NE.
 
-James pulls up at 9:55 and heads to the door.  A haggard, but excited Dr Drake beckons him in.  They head to the basement which serves as his office and home laboratory.  He hands James a wire-wrapped device.  It looks like a “communications” device?  It is little more than an earbud wired to a breadboard, but there is an odd looking transducer that James does not recognize.  It looks to be hand milled, but he cannot identify the material.  Simon gestures for him to put it on, which he does slowly, taking care not to touch any bare wires or break press-fit connections.
+James pulls up at 9:55 and heads to the door.  A haggard, but excited Dr Drake beckons him in.  They head to the basement which serves as his office and home laboratory.  He hands James a wire-wrapped device.  It looks like a 'communications' device?  It is little more than an earbud wired to a breadboard, but there is an odd looking transducer that James does not recognize.  It looks to be hand milled, but he cannot identify the material.  Simon gestures for him to put it on, which he does slowly, taking care not to touch any bare wires or break press-fit connections.
 
 “Mr Ward, come here, I want to see you.” crackles in Jame's ear as Simon speaks into an identical device smiling ear to ear.  James looks up in surprise. 
 
@@ -187,7 +197,7 @@ James pulls up at 9:55 and heads to the door.  A haggard, but excited Dr Drake b
 
 “So this is...”, began James.
 
-“A 'gradational telephone'.”, Simon interjects.  “It needs a better name, I liked 'Aetherdrop' or 'Barycentric Intercom', but I'm sure they'll call it the 'Gravitophone'. ”
+“A 'gravitational telephone'.”, Simon interrupts.  “It needs a better name, I liked 'Aetherdrop' or 'Barycentric Intercom', but I'm sure they'll call it the 'Gravitophone'. ”
 
 “So the equation works?” James asks.
 
@@ -200,6 +210,7 @@ James pulls up at 9:55 and heads to the door.  A haggard, but excited Dr Drake b
 = the_test2
 ~ location_name = "VDr Simon Drake's home office/lab"
 # CLEAR
+# SBIMAGE: locations/weight_basement_clip.png
 
 The realization hits James hard and fast, “So this means that we can communicate with anyone, anywhere?  No satellites, no transmission delays?”
 
@@ -230,6 +241,7 @@ They discussed options and potential for several hours before hunger interrupts.
 = the_test3
 ~ location_name = "VDr Simon Drake's home kitchen"
 # CLEAR
+# SBIMAGE:
 
 Microwave burritos and ice cold lawnmower beer later, they agreed there was a lot of work to do, but they would not finish it tonight.  Work was translated into action lists and action lists were prioritized. James and Simon both agreed to meet again after sleeping on it and make adjustments.
 
@@ -263,13 +275,15 @@ James chose to walk back home.  He needed the time to think and plan.  The crisp
 
 He pulled out his phone and brought up his trading app.  Slowly he picked through his portfolio and began selling.  Funny how one's perspective can change so quickly.
 
-    <- common_options("-", -> ret_target, -> first_contact)
+    <- common_options("-", -> ret_target, -> first_contact_pt1)
     -> DONE   // suppress compiler warning...
 
 
-= first_contact
+= first_contact_pt1
 ~ location_name = "VProxima Centauri b: First Contact Research Station"
 # CLEAR
+# IMAGEMAXHEIGHT: 480
+# IMAGE: locations/proxima.png
 
 # STICKYCLASS: orangetext
 
@@ -280,6 +294,15 @@ Xylok detaches and acknowledges Kx'ari, “Earth ... Earth ...  We remember, fir
 “Yes. Similar to the Gliese 12 b operation.  The planet atmosphere is in danger of catastrophic failure.  3I/ATLAS is likely to strip it in the next 200 of their 'years'.  It was agreed to begin to accelerate their evolution via scientific seeding”, replied Kx'ari.
 
 “There has been much success with the Exocatalyst Initiative in the past”, acknowledged Xylok.  “Some half-dozen new contacts have been achieved this way.  Several species were even spared extinction.”
+
+    <- common_options("-", -> ret_target, -> first_contact_pt2)
+    -> DONE   // suppress compiler warning...
+
+
+= first_contact_pt2
+~ location_name = "VProxima Centauri b: First Contact Research Station"
+# CLEAR
+# SBIMAGE: locations/proxima_clip.png
 
 “Earth has been seeded with the first few information payloads.  Biological and atomic payloads have been sent.  These were exploited almost immediately by Earthlings.  The next payload in the series is communication.  It was sent and nearly instantly exploited”, noted Kx'ari.
 
@@ -303,7 +326,7 @@ Kx'ari floated back to their station.  The information would be transmitted to E
 
 # STICKYCLASS:
 
-{first_contact == 1:
+{first_contact_pt2 == 1:
     ~ idiot_count += 1
 }
     + [{simcomplete}] -> ret_target

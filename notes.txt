@@ -120,7 +120,7 @@ battletech - ok
 zeromyhero - ok
 david - one image - ok
 solitaire - one image (bubble) - 'end of the world'
-weight - no pics
+weight - ok
 ubermom - no pics
 
 WORKING:
@@ -129,6 +129,7 @@ cruising altitude - Andrew
 
 TODO:
 
+- background sound...
 
 Lock up a simulation - runs forever...
 Re-entrant simulation... 

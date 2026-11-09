@@ -256,8 +256,10 @@ All for the lack of an occasional zero.
 = retrospect_pt0
 ~ location_name = "VProxima Centauri b: First Contact Research Station"
 # CLEAR
-
 # SBIMAGE:
+# IMAGEMAXHEIGHT: 480
+# IMAGE: locations/proxima.png
+
 # STICKYCLASS: orangetext
 
 Quantum imagery captured by first contact probes located on Mars and Venus trickled in as the Heisenberg's quantum integrity evaporated.  Paperwork.  Paperwork was all that Kx'ari could think of as the initial report reached them.  This one was going to be a bit more difficult to explain.
@@ -278,6 +280,7 @@ Xylok began with an overview of the Earth situation.  Earthlings were an unusual
 = retrospect_pt1
 ~ location_name = "VProxima Centauri b: First Contact Research Station"
 # CLEAR
+# SBIMAGE: locations/proxima_clip.png
 
 # STICKYCLASS: orangetext
 "Primitive as they might be, it provided us with the perfect vector for our initiatives.  During the deployment of one of these stabilization packages, humans at 'Luxon Propulsion Systems' theorized a semi-stable quantum drive", Xylok continued, “The problem was that they when ahead and built the system without taking the time to understand the implications."  Xylok paused.

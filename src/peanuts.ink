@@ -31,6 +31,7 @@ Peanuts, Pickles and Propaganda
 Warning: This build is a work in progress.  
 # CLASS: head2
 While playable, the story is not yet complete.
+# IMAGEMAXHEIGHT: 600
 # IMAGE: locations/splash.png
 # CLASS: head2
 Copyright © STORY_YEAR Randall Frank & Andrew Florance

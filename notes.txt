@@ -129,7 +129,50 @@ cruising altitude - Andrew
 
 TODO:
 
-- background sound...
+- individual audio levels like Heresy2
+
+Story sound notes:
+
+ubermom.ink
+UnpluggedVol3ChordsAndCoffeeMain.mp3
+
+battle.ink
+I5-Eclipse.mp3
+
+backforty.ink
+UnpluggedVol3FarmlifeMain.mp3
+
+mille.ink
+Sad_-_Turned_Down.mp3
+
+solitaire.ink
+AmbientVol10FrozenOrbitIntensity1.mp3
+
+badtothebone.Ink
+VillainsVol2TwilightPactMain.mp3
+
+cruising.ink
+I5-WanderingDimensions.mp3
+
+symptoms.ink
+DarkFantasyStudioSearch.mp3
+
+david.ink
+Romance_-_Sharing_Moments.mp3
+
+weight.ink
+I5-VisionoftheAndar.mp3
+DarkFantasyStudioIvelostmyworld.mp3
+
+zero.ink
+Atmosphere_-_Starship_Bridge.mp3
+SFXbackground_LOOP_09.mp3
+I5-SilenceAmongtheStars.mp3
+Atmosphere_-_Starship_Bridge.mp3
+DarkFantasyStudioIvelostmyworld.mp3
+
+
+
 
 Lock up a simulation - runs forever...
 Re-entrant simulation... 

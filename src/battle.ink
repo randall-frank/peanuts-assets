@@ -1,5 +1,5 @@
 === battle ===
-# AUDIOLOOP: audio/background_quiet_urban_park_loop_01.mp3
+# AUDIOLOOP: audio/I5-Eclipse.mp3
     ~ set_simulation_state(1)
     -> start
 

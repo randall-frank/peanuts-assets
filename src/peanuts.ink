@@ -24,7 +24,7 @@ INCLUDE utilities.ink
 = start
 ~ location_name = ""
 # CLEAR
-# AUDIOLOOP: audio/I5%20-%20Silence%20Among%20the%20Stars.mp3
+# AUDIOLOOP: audio/I5-SilenceAmongtheStars.mp3
 # CLASS: head1
 Peanuts, Pickles and Propaganda
 # CLASS: head2
@@ -46,7 +46,7 @@ Peanuts, Pickles and Propaganda is a work of fiction. Names, characters, busines
 
 = thanks_to
 # CLEAR
-# AUDIOLOOP: audio/I5%20-%20Silence%20Among%20the%20Stars.mp3
+# AUDIOLOOP: audio/I5-SilenceAmongtheStars.mp3
 
 # CLASS: head1
 From Whence the Name
@@ -73,7 +73,7 @@ Andrew and Randy.
 
 = license
 # CLEAR
-# AUDIOLOOP: audio/I5%20-%20Silence%20Among%20the%20Stars.mp3
+# AUDIOLOOP: audio/I5-SilenceAmongtheStars.mp3
 # HTML: <a target="_blank" href="https:<ss>github.com/randall-frank/peanuts-assets">Peanuts, Pickles and Propaganda</a>
 # CLASS: head2
 HTML is released under a Creative Commons Attribution License.  

@@ -52,7 +52,7 @@ Precisely 2 minutes and 30 seconds later, they were in the room.  There was only
 # IMAGEMAXHEIGHT: 480
 # IMAGE: items/squid1.jpg
 # SBIMAGE: items/squid4.png
-# AUDIOLOOP:
+# AUDIOLOOP: audio/I5-SilenceAmongtheStars.mp3
 # CLASS: head1
 The Meeting
 
@@ -69,7 +69,6 @@ For the next 10 minutes, Kraal'goth began to describe the history and 'achieveme
 ~ location_name = "LBlue Lagoon Radula Conference Room"
 # CLEAR
 # SBIMAGE: items/squid4.png
-# AUDIOLOOP:
 # CLASS: head1
 The Meeting 
 
@@ -90,7 +89,6 @@ Randy started to answer, but never got a chance...
 ~ location_name = "LBlue Lagoon Radula Conference Room"
 # CLEAR
 # SBIMAGE: items/squid4.png
-# AUDIOLOOP:
 # CLASS: head1
 The Meeting 
 
@@ -109,7 +107,7 @@ Randy took a deep breath, wanting to point out that both of the examples had pro
 # CLEAR
 # IMAGE:
 # SBIMAGE: 
-# AUDIOLOOP:
+# AUDIOLOOP: audio/I5-SilenceAmongtheStars.mp3
 
 // first level panic button pressed
 { (stock_CDYG < 400.) and not storyline.stock_drop_level1:

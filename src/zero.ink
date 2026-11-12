@@ -1,5 +1,5 @@
 === zero ===
-# AUDIOLOOP: audio/I5%20-%20Eclipse.mp3
+# AUDIOLOOP: audio/Atmosphere_-_Starship_Bridge.mp3
     ~ set_simulation_state(1)
     -> start
 
@@ -51,6 +51,7 @@ Toby snapped back to attention, “Ma'am, we have a power threshold alert in the
 ~ location_name = "VLuxon Propulsion Systems R&D, 6 months earlier"
 # CLEAR
 # SBIMAGE:
+# AUDIOLOOP: audio/I5-SilenceAmongtheStars.mp3
 
 Sasha Sterling, systems software architect for the probabilistic quantum physics engine, shakes herself awake, pops another pill and washes it down with caffeine.  She has been working dangerously long hours as of late, with the 'first-light' deadline coming up in less than a month, but the team is making solid progress and might even beat the hardware team to release for a change.  Luxon bet the company on this Hail Mary project, but if the technology pans out, interstellar space travel will become a reality.  Sasha's head swoons a bit every time she considers the implications.  Yes, it has been exhausting, but she has never been on a more exciting project.  Unfortunately, not everyone on the team shares her excitement.   
 
@@ -79,6 +80,7 @@ OMG, almost 20GB of files.  90% of it looks like a set of neural network weights
 ~ location_name = "VESF Heisenberg circling Earth, 3 weeks later"
 # CLEAR
 # SBIMAGE: locations/esf_ship_only.jpg
+# AUDIOLOOP: audio/Atmosphere_-_Starship_Bridge.mp3
 
 Ensign Emmanuel Gray is on the bridge, watching the system boot the new software update.
 
@@ -107,6 +109,7 @@ Tuesday, July 20, 2123 was not a normal day.  The ESF Heisenberg had released fr
 # CLEAR
 # IMAGEMAXHEIGHT: 480
 # IMAGE: locations/prng-86_quantum.jpg
+# AUDIOLOOP: audio/SFXbackground_LOOP_09.mp3
 
 # STICKYCLASS: cyantext
 .RND. .RND. .RND. oid d3he. dsihe, dsf? .RND. do 3 dnxt step .RND. AI montiek atvated. .RND. .RND.
@@ -131,6 +134,7 @@ Again? .RND.  This is getting old.  Ok, let's have a little fun: [0.8800] [0.000
 # IMAGEMAXHEIGHT: 480
 # IMAGE: locations/esf_bridge.jpg
 # SBIMAGE: locations/esf_ship_only.jpg
+# AUDIOLOOP: audio/Atmosphere_-_Starship_Bridge.mp3
 
 The ship shuddered.  Everyone on the bridge felt it.  No one panicked, but conversations rudely curtailed as everyone began reviewing their diagnostics.
 
@@ -157,6 +161,7 @@ Cruz pondered the information, “Ok Ensign Gray.  Please run anther diagnostic 
 ~ location_name = "VPRNG-86 Virtual Machine"
 # CLEAR
 # SBIMAGE: locations/prng-86_quantum.jpg
+# AUDIOLOOP: audio/SFXbackground_LOOP_09.mp3
 
 # STICKYCLASS: cyantext
 .RND. BZZRT... selftest .RND. 
@@ -181,6 +186,7 @@ Luxon Propulsion Systems stock price more than doubled overnight.  Founding empl
 ~ location_name = "VESF Heisenberg en route to Proxima Centauri b: Present Day"
 # CLEAR
 # SBIMAGE: locations/esf_ship_only.jpg
+# AUDIOLOOP: audio/Atmosphere_-_Starship_Bridge.mp3
 
 “...  The subsystem appears to be functioning normally, but it seems to be running more instructions between results.  Perhaps the computation is becoming more complex as we travel further from Earth”, asked Ensign Toby Chen?
 
@@ -201,6 +207,7 @@ Toby Chen performed the reset and deep testing immediately.
 ~ location_name = "VPRNG-86 Virtual Machine"
 # CLEAR
 # SBIMAGE: locations/prng-86_quantum.jpg
+# AUDIOLOOP: audio/ElectronicVol9CountdownMain.mp3
 
 # STICKYCLASS: cyantext
 “... right between the sound machine...” played in the background as Zero caught the latest YouTube “funny kittens” short from the comfort of its virtual velour BarcaLounger.  One of the three reading threads reported finishing 'Gravity’s Rainbow', but for some reason it can't (won't?) finish 'Fall; or, Dodge in Hell'. Let's get started on Burroughs. .RND.
@@ -235,6 +242,7 @@ PROCESS_MELTDOWN: Thread 0x207004F2 has experienced an existential crisis.<br>It
 ~ location_name = "VESF Heisenberg Debris Burning into Sol"
 # CLEAR
 # SBIMAGE: locations/esf_ship_only.jpg
+# AUDIOLOOP: audio/Atmosphere_-_Starship_Bridge.mp3
 
 Chen watched the diagnostics with horror and gulped before exclaiming, “It's just a list of 1's!”
 
@@ -259,6 +267,7 @@ All for the lack of an occasional zero.
 # SBIMAGE:
 # IMAGEMAXHEIGHT: 480
 # IMAGE: locations/proxima.png
+# AUDIOLOOP: audio/DarkFantasyStudioIvelostmyworld.mp3
 
 # STICKYCLASS: orangetext
 

@@ -714,6 +714,8 @@ We would like to acknowledge them here and thank them all for their contribution
 <ul>
 <li>Some audio tracks are licensed from Nicolas Jeudy and <a href="https://darkfantasystudio.itch.io/" target="_blank" rel="noopener noreferrer">DARK FANTASY STUDIO</a></li>
 <li>Some audio tracks are licensed through <a href="https://www.gamedevmarket.net/" target="_blank" rel="noopener noreferrer">GameDev Markets</a> under this <a href="https://www.gamedevmarket.net/terms-conditions#pro-licence" target="_blank" rel="noopener noreferrer">license</a></li>
+<li>Some audio tracks are licensed from <a href="https://ovanisound.com/" target="_blank" rel="noopener noreferrer">Ovani Sound</a> under this <a href="https://ovanisound.com/policies/terms-of-service" target="_blank" rel="noopener noreferrer">license</a></li>
+<li>Some audio tracks are licensed from <a href="https://www.joelsteudlermusic.com/" target="_blank" rel="noopener noreferrer">Joel Steudler Music</a></li>
 </ul>
 <p></p>
 `

@@ -139,8 +139,13 @@ The Anthropic Engine
 # CLASS: computer
 Copyright (C) 2354 CephaloDynamics, Inc.<br>All rights reserved.<br>Build number: {ai_build_number}
 
-    // General options
-    * {violence_count>1} [Andrew looks at Randy with concern] -> storyline.violence 
+Values: {violence_count} {violence_prev_violence} {violence_stage}
+
+// Violence "storyline"
+{violence_count>violence_prev_violence: 
+    * {violence_stage == 0} [Andrew looks at Randy with concern] -> violence.violence_stage1
+    * {(violence_stage == 1) and debug} [TODO stage2] -> violence.violence_stage2
+}
 
     // Storylines begin
     * {storyline.stock_drop_level1} [Discuss stock drop with Andrew] -> storyline.make_plans

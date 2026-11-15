@@ -14,6 +14,7 @@ INCLUDE battle.ink
 INCLUDE solitaire.ink
 INCLUDE symptoms.ink
 INCLUDE newswire.ink
+INCLUDE violence.ink
 INCLUDE utilities.ink
 
 

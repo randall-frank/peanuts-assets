@@ -67,14 +67,21 @@ VAR location_name = ""
 // The current AI build number in the story
 VAR ai_build_number = 0
 
+// Is a simulation running
+VAR simulation_running = 0
+
 // Number of simulations that have been run
 VAR simulation_count = 0
 
 // Number of violent scenes
 VAR violence_count = 0
 
-// Is a simulation running
-VAR simulation_running = 0
+// violence_count and idiot_count when the last part of the story was seen
+VAR violence_prev_violence = 0
+VAR violence_prev_idiot = 0
+
+// State of the "Violence" storyline 0=not started, 1, 2, 3... violence_stageX
+VAR violence_stage = 0
 
 // Number of examples of "idiot" behavior in simulations
 VAR idiot_count = 0
